@@ -1,0 +1,7 @@
+.DS_Store
+*.stash
+*.user
+*.o
+Makefile
+moc_*.*
+*.app
