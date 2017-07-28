@@ -4,15 +4,28 @@
 
 TEMPLATE = app
 TARGET = jsonedit
-INCLUDEPATH += .
+INCLUDEPATH += . \
+                ./jsonvalue
 
 # Input
 SOURCES += main.cpp \
     jsonview.cpp \
-    jsonmodel.cpp
+    jsonmodel.cpp \
+    jsonvalue/schema.cpp \
+    jsonvalue/stringutils.cpp \
+    jsonvalue/value.cpp \
+    moc_mainwindow.cpp \
+    jsonvalue/3rdparty/jsmn/jsmn.c \
+    jsonvalue/3rdparty/utf8/utf8.c
 
 QT += widgets
 
 HEADERS += \
     jsonview.h \
-    jsonmodel.h
+    jsonmodel.h \
+    jsonvalue/3rdparty/jsmn/jsmn.h \
+    jsonvalue/3rdparty/utf8/utf8.h \
+    jsonvalue/linkedmap.h \
+    jsonvalue/schema.h \
+    jsonvalue/stringutils.h \
+    jsonvalue/value.h

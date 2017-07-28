@@ -1,0 +1,4 @@
+[submodule "jsonvalue"]
+	path = jsonvalue
+	url = git@github.com:AlexLBraits/jsonvalue.git
+	branch = master
