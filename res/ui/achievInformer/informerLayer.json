@@ -1,0 +1,16 @@
+{
+    "name": "root",
+    "vAlignment": "FROM_BOTTOM_TO_TOP",
+    "hAlignment": "CENTER",
+    "boxes": [
+        {
+            "name": "spacer",
+            "height": "28.5%SH"
+        },
+        {
+            "name": "notifiers_container",
+            "vAlignment": "FROM_BOTTOM_TO_TOP",
+            "hAlignment": "LEFT"
+        }
+    ]
+}

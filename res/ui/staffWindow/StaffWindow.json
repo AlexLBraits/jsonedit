@@ -1,0 +1,346 @@
+{
+    "name": "root",
+    "class": "cover_layer",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "backgroundColour": "#000000B2",
+	"activeBackgroundColour": "#000000B2",
+    "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true,
+        "onGuiFirstEnter": true,
+        "onDrag": true,
+        "onScroll": true
+    },
+    "boxes": [
+        {
+            "name": "content",
+            "hAlignment": "CENTER",
+            "vAlignment": "FROM_TOP_TO_BOTTOM",
+            "width": "44%sh",
+            "height": "60%Sh",
+            "_backgroundColour": "#FF7700FF",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [
+                {
+                    "name": "mainContainer",
+                    "hAlignment": "center",
+                    "vAlignment": "top",
+                    "width": "100%",
+                    "boxes": [
+                        {
+                            "name": "bgWithArrows",
+                            "height": "58%sh",
+                            "_backgroundColour": "#007700AA",
+                            "hAlignment": "center",
+                            "vAlignment": "bottom",
+                            "boxes": [
+                                {
+                                    "name": "windowBg",
+                                    "sizeBase": "panelContent",
+                                    "width": "44%sh",
+                                    "height": "100%",
+                                    "_backgroundColour": "#000000B2",
+                                    "vAlignment": "top",
+                                    "hAlignment": "center",
+                                    "class": "windowBackgroundClass"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "closeButtonContainer",
+                            "width": "114%",
+                            "height": "5.9%sh",
+                            "hAlignment": "right",
+                            "vAlignment": "bottom",
+                            "boxes": [
+                                {
+                                    "name": "close",
+                                    "class": "buttonClose"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "windowContent",
+                            "width": "100%",
+                            "height": "100%",
+                            "_backgroundColour": "#FF0000AA",
+                            "hAlignment": "CENTER",
+                            "vAlignment": "FROM_TOP_TO_BOTTOM",
+                            "boxes": [
+                                {
+                                    "name": "spacer",
+                                    "height": "10%SH",
+                                    "_backgroundColour": "#FFFF00FF"
+                                },
+                                {
+                                    "name": "middleContainer",
+                                    "width": "100%",
+                                    "height": "22%SH",
+                                    "_backgroundColour": "#00FF00AA",
+                                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                                    "vAlignment": "CENTER",
+                                    "boxes": [
+                                        {
+                                            "name": "progressAndButtonContainer",
+                                            "width": "50%",
+                                            "height": "70%",
+                                            "hAlignment": "CENTER",
+                                            "vAlignment": "FROM_TOP_TO_BOTTOM",
+                                            "_backgroundColour": "#FF0000AA",
+                                            "boxes": [
+                                                {
+                                                    "name": "progressContainerMain",
+                                                    "width": "100%",
+                                                    "height": "50%",
+                                                    "hAlignment": "CENTER",
+                                                    "vAlignment": "CENTER",
+                                                    "_backgroundColour": "#FF0000AA",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "progressContainer",
+                                                            "width": "100%",
+                                                            "hAlignment": "CENTER",
+                                                            "vAlignment": "FROM_TOP_TO_BOTTOM",
+                                                            "_backgroundColour": "#FF000055",
+                                                            "boxes": [
+                                                                {
+                                                                    "name": "levelText",
+                                                                    "height": "3.5%SH",
+                                                                    "maxWidth":"74%",
+                                                                    "hAlignment":"center",
+                                                                    "text": "workerWindowLevelText",
+                                                                    "font": {
+                                                                        "file": "res/fonts/Loyola.otf",
+                                                                        "colour": "#503200FF",
+                                                                        "size": "2.640845070422535%SH",
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "expBarContainer",
+                                                                    "width": "100%",
+                                                                    "height": "1.7%SH",
+                                                                    "_backgroundColour": "#FF0000FF",
+                                                                    "hAlignment": "CENTER",
+                                                                    "vAlignment": "CENTER",
+                                                                    "boxes": [
+                                                                        {
+                                                                            "name": "craftMasteryBarContainerMain",
+                                                                            "width": "60%",
+                                                                            "height": "1.4%sh",
+                                                                            "hAlignment": "center",
+                                                                            "vAlignment": "center",
+                                                                            "_backgroundColour": "#00000050",
+                                                                            "class": "progressBarGreenSmallClass"
+                                                                        },
+                                                                        {
+                                                                            "name": "levelIndicatorContainer",
+                                                                            "width": "75%",
+                                                                            "height": "100%",
+                                                                            "hAlignment": "LEFT",
+                                                                            "vAlignment": "CENTER",
+                                                                            "_backgroundColour": "#FF000055",
+                                                                            "boxes": [
+                                                                                {
+                                                                                    "name": "levelIndicator",
+                                                                                    "width": "4%SH",
+                                                                                    "height": "4%SH",
+                                                                                    "background": {
+                                                                                        "scale": "fit",
+                                                                                        "images": {
+                                                                                            "normal": "res/images/interface/windows/staffWindow/lvl_bg.png"
+                                                                                        }
+                                                                                    },
+                                                                                    "hAlignment": "CENTER",
+                                                                                    "vAlignment": "TOP",
+                                                                                    "boxes": [
+                                                                                        {
+                                                                                            "name": "levelIndicatorText",
+                                                                                            "text": "1",
+                                                                                            "width": "90%",
+                                                                                            "height": "105%",
+                                                                                            "hAlignment": "CENTER",
+                                                                                            "vAlignment": "CENTER",
+                                                                                            "textAlign": "CENTER",
+                                                                                            "_backgroundColour": "#FF0000AA",
+                                                                                            "font": {
+                                                                                                "file": "res/fonts/Loyola.otf",
+                                                                                                "colour": "#503200FF",
+                                                                                                "size": "3.3%SH"
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "name": "expCount",
+                                                                    "text": "100/300",
+                                                                    "font": {
+                                                                        "file": "res/fonts/Loyola.otf",
+                                                                        "colour": "#503200FF",
+                                                                        "size": "2.3%SH"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "fireButtonContainer",
+                                                    "height": "50%",
+                                                    "width": "100%",
+                                                    "hAlignment": "CENTER",
+                                                    "vAlignment": "CENTER",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "fireStaffButton",
+                                                            "class": "buttonRedScalable",
+                                                            "width": "12.7%sh",
+                                                            "height": "6.5%sh"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "iconContainer",
+                                            "width": "50%",
+                                            "height": "100%",
+                                            "hAlignment": "CENTER",
+                                            "vAlignment": "CENTER",
+                                            "_backgroundColour": "#FFFF00FF",
+                                            "boxes": [
+                                                {
+                                                    "name": "staffLevelupIconEffect",
+                                                    "width": "100%",
+                                                    "height": "100%",
+                                                    "_backgroundColour": "#FF0000AA",
+                                                    "hAlignment": "LEFT",
+                                                    "vAlignment": "BOTTOM",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "staffLevelupIconContainer",
+                                                            "width": "80%",
+                                                            "height": "90%",
+                                                            "_backgroundColour": "#00003375"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "infoButtonContainer",
+                                                    "width": "80%",
+                                                    "height": "100%",
+                                                    "hAlignment": "RIGHT",
+                                                    "vAlignment": "TOP",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "infoButton",
+                                                            "width": "3.8%SH",
+                                                            "height": "4%SH",
+                                                            "class": "button_class",
+                                                            "background": {
+                                                                "scale": "fit",
+                                                                "images": {
+                                                                    "normal": "res/images/interface/buttons/bttn_i.png",
+                                                                    "pressed": "res/images/interface/buttons/bttn_i.png"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "bottomContainer",
+                                    "width": "100%",
+                                    "height": "22%SH",
+                                    "_backgroundColour": "#FF000055",
+                                    "hAlignment": "CENTER",
+                                    "vAlignment": "FROM_TOP_TO_BOTTOM",
+                                    "boxes": [
+                                        {
+                                            "name": "skillsTitleText",
+                                            "_backgroundColour": "#FF0000AA",
+                                            "width": "100%",
+                                            "height": "4%SH",
+                                            "hAlignment": "CENTER",
+                                            "vAlignment": "CENTER",
+                                            "text": "workerWindowSkillsText",
+                                            "font": {
+                                                "file": "res/fonts/Loyola.otf",
+                                                "colour": "#503200FF",
+                                                "size": "2.640845070422535%SH",
+                                            }
+                                        },
+                                        {
+                                            "name": "skillItems",
+                                            "hAlignment": "from_left_to_right",
+                                            "vAlignment": "TOP",
+                                            "maxWidth": "37.68%sh",
+                                            "height": "15%sh",
+                                            "overflow": "scroll",
+                                            "_boxes": [
+                                                "res/ui/staffWindow/StaffSkillCellView.json",
+                                                "res/ui/staffWindow/StaffSkillCellView.json",
+                                                "res/ui/staffWindow/StaffSkillCellView.json",
+                                                "res/ui/staffWindow/StaffSkillCellView.json",
+                                                "res/ui/staffWindow/StaffSkillCellView.json"
+                                            ]
+                                        },
+                                        {
+                                            "name": "skillItemsScrollBar",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "width": "37.68%sh",
+                                            "height": "3%sh",
+                                            "_backgroundColour": "#00770077",
+                                            "boxes": [
+                                                {
+                                                    "class": "scrollSliderHorisontal"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "bottomButtonPanel",
+                                    "width": "100%",
+                                    "hAlignment": "CENTER",
+                                    "vAlignment": "CENTER",
+                                    "_backgroundColour": "#FF0000AA",
+                                    "boxes": [
+                                        {
+                                            "name": "okButton",
+                                            "class": "buttonGreenScalable",
+                                            "width": "19%sh",
+                                            "height": "8%sh",
+        		                            "hAlignment": "CENTER",
+		                                    "vAlignment": "CENTER"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "titlePanel",
+                            "width": "82%",
+                            "hAlignment": "center",
+                            "height": "8.5%sh",
+                            "vAlignment": "bottom",
+                            "_backgroundColour": "#FF00FFFF",
+                            "class": "windowFlatTitleClass"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

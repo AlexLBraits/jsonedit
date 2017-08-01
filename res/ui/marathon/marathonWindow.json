@@ -1,0 +1,159 @@
+{
+    "name": "root",
+    "class": "cover_layer",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "name": "windowBg",
+            "width": "90%",
+			"height": "90%",
+			"minHeight": 420,
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/commonArt/win/win.png"
+                },
+                "scale": "window",
+                "corner": [
+                    111,
+                    111
+                ]
+            },
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "_backgroundColour": "#FF000078",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [
+                {
+                    "name": "title",
+                    "class": "windowTitleClass"
+                },
+                {
+                    "name": "description",
+                    "maxWidth": 700,
+                    "height": 30,
+                    "text": "marathonText",
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "textAlign": "center",
+                    "textWrap": true,
+                    "margin": {
+                        "top": -7
+                    },
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": 17,
+                        "colour": "#7d5528ff"
+                    }
+                },
+                {
+                    "name": "scrollArea",
+                    "width": "96%",
+                    "hAlignment": "left",
+                    "margin": {
+                        "top": -10
+                    },
+                    "overflow": "scroll",
+                    "boxes": [
+                        {
+                            "hAlignment": "center",
+                            "minWidth": "100%",
+                            "boxes": [
+                                {
+                                    "name": "itemsContainer",
+                                    "height": 260
+                                }
+                            ]
+                        },
+                        {
+                            "hAlignment": "CENTER",
+                            "minWidth": "100%",
+                            "boxes": [
+                                {
+                                    "name": "coversContainer",
+                                    "height": 260
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                	"name": "spacer",
+                	"height": "auto"
+                },
+                {
+                    "vAlignment": "CENTER",
+                    "hAlignment": "CENTER",
+                    "width": "100%",
+                    "margin": {
+                        "top": 5,
+                        "bottom": 10
+                    },
+                    "animation": [
+                        {
+                            "alpha": [
+                                0,
+                                0,
+                                0.875
+                            ]
+                        },
+                        {
+                            "alpha": [
+                                0,
+                                1,
+                                0.25
+                            ]
+                        }
+                    ],
+                    "boxes": [
+                        {
+                            "name": "scrollPointerContainer",
+                            "boxes": [
+                                "res/ui/mainScreen/scrollPointWhite.json",
+                                "res/ui/mainScreen/scrollPointWhite.json"
+                            ]
+                        }
+                    ]
+                },
+                
+                {
+                    "name": "superb",
+                    "hAlignment": "center",
+                    "vAlignment": "bottom",
+                    "boxes": [
+                        {
+                            "name": "superbButton",
+                            "width": "18.1%SH",
+							"height": "8.4%SH",
+                            "class": "buttonYellowScalable"
+                        }
+                    ],
+                    "margin": {
+                        "bottom": -10
+                    }
+                }
+            ]
+        },
+        {
+            "name": "closeButton_container",
+            "hAlignment": "right",
+            "vAlignment": "top",
+            "width": "90%",
+			"height": "90%",
+			"minHeight": 420,
+            "_backgroundColour": "#FF000078",
+            "boxes": [
+                {
+                    "name": "closeButton",
+                    "class": "buttonClose",
+                    "margin": {
+                        "right": -15
+                    }
+                }
+            ]
+        }
+    ]
+}

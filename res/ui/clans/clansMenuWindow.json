@@ -1,0 +1,30 @@
+{
+	"name": "root",
+    "backgroundColour": "#000000B2",
+    "activeBackgroundColour": "#000000B2",
+    "hAlignment": "center",
+    "vAlignment": "from_top_to_bottom",
+    "class": "cover_layer",
+    "boxes":[
+    	{
+    		"name": "topMenuPanel",
+    		"width": "100%",
+    		"height": 100,
+    		"hAlignment": "center",
+			"vAlignment": "top",
+    		"boxes": [
+    			"res/ui/clans/clansTopPanel.json"
+    		]
+    	},
+    	{
+    		"name": "windowTab",
+    		"width": "100%",
+    		"height": "auto",
+    		"hAlignment": "center",
+    		"vAlignment": "center",
+    		"_boxes": [
+    			"res/ui/clans/clanLeaderboards.json"
+    		]
+    	}
+    ]
+}

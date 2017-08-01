@@ -1,0 +1,1142 @@
+{
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "animated_window_without_cover",
+    "boxes": [
+        {
+            "class": {
+                "_clansRatingsWindowTab": {
+                    "width": 112,
+                    "height": 80,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "tabName"
+                        }
+                    ]
+                },
+                "_tabIcon": {
+                    "width": 40,
+                    "height": 40,
+                    "hAlignment": "center",
+                    "vAlignment": "center"
+                },
+                "_line": {
+                    "width": 497,
+                    "height": 53,
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clans_wall/line.png"
+                    }
+                },
+                "swipeToLeft": {
+                    "applyTo": {
+                        "bttnPlayers": {
+                            "animation": [
+                                "xoffset",
+                                130,
+                                2,
+                                0.05
+                            ]
+                        }
+                    }
+                },
+                "swipeToRight": {
+                    "applyTo": {
+                        "bttnPlayers": {
+                            "animation": [
+                                "xoffset",
+                                2,
+                                130,
+                                0.05
+                            ]
+                        }
+                    }
+                },
+                "notSignedInFbOrNoneFriends": {
+                    "applyTo": {
+                        "emptyContainer": {
+                            "boxes": [
+                                {
+                                    "name": "topEmptyText",
+                                    "width": 350,
+                                    "margin": [
+                                        40
+                                    ],
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "textAlign": "center",
+                                    "textWrap": true,
+                                    "font": {
+                                        "file": "res/fonts/PTN75F_W.ttf",
+                                        "size": 20,
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "colour": "#fffffff",
+                                            "width": 1.5,
+                                            "yoffset": 0.5
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "fbButton",
+                                    "width": 122,
+                                    "height": 122,
+                                    "margin": [
+                                        20
+                                    ],
+                                    "class": "btn_tap_anim"
+                                },
+                                {
+                                    "name": "bottomEmptyText",
+                                    "width": 350,
+                                    "margin": [
+                                        20
+                                    ],
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "textAlign": "center",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 40,
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "colour": "#fffffff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "scroll": {
+                            "hidden": true
+                        },
+                        "scrollArea": {
+                            "call": "clearboxes"
+                        },
+                        "findMeButton": {
+                            "hidden": true
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "hAlignment": "center",
+            "vAlignment": "bottom",
+            "alpha": 0,
+            "animation": [
+                {
+                    "alpha": [
+                        0.0,
+                        1.0,
+                        0.5333333333333333
+                    ]
+                }
+            ],
+            "handlers": {
+                "onControlEventBegan": true,
+                "onControlEventEnded": true,
+                "onTap": true
+            },
+            "boxes": [
+                {
+                    "width": 611,
+                    "height": 118,
+                    "padding": [
+                        0,
+                        -4
+                    ],
+                    "margin": [
+                        0,
+                        0,
+                        504
+                    ],
+                    "hAlignment": "left",
+                    "vAlignment": "top",
+                    "boxes": [
+                        {
+                            "width": 57,
+                            "height": 77,
+                            "margin": [
+                                40,
+                                0
+                            ],
+                            "background": {
+                                "image": "res/images/interface/Island2Art/clansMainWindow/ribbon_back_left.png"
+                            },
+                            "animation": [
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        0.0,
+                                        0.2333333333333333
+                                    ]
+                                },
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        1.0,
+                                        0.4
+                                    ],
+                                    "offset": [
+                                        [
+                                            27.125,
+                                            -7.175000000000011
+                                        ],
+                                        [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        0.4
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "width": 55,
+                            "height": 72,
+                            "margin": [
+                                0,
+                                555
+                            ],
+                            "background": {
+                                "image": "res/images/interface/Island2Art/clansMainWindow/ribbon_back_right.png"
+                            },
+                            "animation": [
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        0.0,
+                                        0.2
+                                    ]
+                                },
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        1.0,
+                                        0.36666666666666664
+                                    ],
+                                    "offset": [
+                                        [
+                                            -21.699999999999932,
+                                            16.19999999999999
+                                        ],
+                                        [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        0.36666666666666664
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "height": 584,
+                    "width": 555,
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clansMainWindow/bg_bottom.png"
+                    },
+                    "hAlignment": "center",
+                    "vAlignment": "bottom",
+                    "boxes": [
+                        {
+                            "name": "tabPanel",
+                            "height": 77,
+                            "width": 555,
+                            "hAlignment": "left",
+                            "vAlignment": "center",
+                            "background": {
+                                "vAlignment": "bottom",
+                                "image": "res/images/interface/Island2Art/clansMainWindow/bg_tabs_dark.png"
+                            },
+                            "margin": [
+                                0,
+                                0,
+                                584
+                            ],
+                            "padding": [
+                                15
+                            ],
+                            "boxes": [
+                                {
+                                    "name": "tabName0",
+                                    "class": "_clansRatingsWindowTab",
+                                    "margin": [
+                                        0,
+                                        43
+                                    ],
+                                    "alpha": 0,
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/windows/leaderboardWindow/tab_1_off.png",
+                                            "pressedChecked": "res/images/interface/windows/leaderboardWindow/tab_1_on.png",
+                                            "checked": "res/images/interface/windows/leaderboardWindow/tab_1_on.png"
+                                        }
+                                    },
+                                    "padding": {
+                                        "bottom":20
+                                    },
+                                    "boxes": [
+                                        {
+                                            "class": "_tabIcon",
+                                            "background": {
+                                                "scale": "contain",
+                                                "image": "res/images/interface/windows/clans/icon_rating_union_points.png"
+                                            }
+                                        }
+                                    ],
+                                    "animation": [
+                                        {
+                                            "alpha": [
+                                                0.0,
+                                                0.0,
+                                                0.2666666666666667
+                                            ]
+                                        },
+                                        {
+                                            "offset": [
+                                                [
+                                                    0.0,
+                                                    32.625
+                                                ],
+                                                [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                0.1
+                                            ],
+                                            "alpha": [
+                                                0.0,
+                                                1.0,
+                                                0.1
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "tabName1",
+                                    "class": "_clansRatingsWindowTab",
+                                    "margin": [
+                                        0,
+                                        134
+                                    ],
+                                    "alpha": 0,
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/windows/leaderboardWindow/tab_2_off.png",
+                                            "pressedChecked": "res/images/interface/windows/leaderboardWindow/tab_2_on.png",
+                                            "checked": "res/images/interface/windows/leaderboardWindow/tab_2_on.png"
+                                        }
+                                    },
+                                    "padding": {
+                                        "bottom":30,
+                                        "right": 2
+                                    },
+                                    "boxes": [
+                                        {
+                                            "class": "_tabIcon",
+                                            "background": {
+                                                "scale": "contain",
+                                                "image": "res/images/interface/windows/clans/icon_top_xp_union.png"
+                                            }
+                                        }
+                                    ],
+                                    "animation": [
+                                        {
+                                            "alpha": [
+                                                0.0,
+                                                0.0,
+                                                0.2666666666666667
+                                            ]
+                                        },
+                                        {
+                                            "wait": {
+                                                "delay": 0.03333333333333333
+                                            }
+                                        },
+                                        {
+                                            "offset": [
+                                                [
+                                                    0.0,
+                                                    32.85000000000002
+                                                ],
+                                                [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                0.13333333333333333
+                                            ],
+                                            "alpha": [
+                                                0.0,
+                                                1.0,
+                                                0.13333333333333333
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "tabName2",
+                                    "class": "_clansRatingsWindowTab",
+                                    "margin": [
+                                        0,
+                                        226
+                                    ],
+                                    "alpha": 0,
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/windows/leaderboardWindow/tab_3_off.png",
+                                            "pressedChecked": "res/images/interface/windows/leaderboardWindow/tab_3_on.png",
+                                            "checked": "res/images/interface/windows/leaderboardWindow/tab_3_on.png"
+                                        }
+                                    },
+                                    "padding": {
+                                        "bottom":32,
+                                        "right": 0
+                                    },
+                                    "boxes": [
+                                        {
+                                            "class": "_tabIcon",
+                                            "background": {
+                                                "scale": "contain",
+                                                "image": "res/images/interface/windows/clans/icon_top_member.png"
+                                            }
+                                        }
+                                    ],
+                                    "animation": [
+                                        {
+                                            "alpha": [
+                                                0.0,
+                                                0.0,
+                                                0.2666666666666667
+                                            ]
+                                        },
+                                        {
+                                            "wait": {
+                                                "delay": 0.1
+                                            }
+                                        },
+                                        {
+                                            "offset": [
+                                                [
+                                                    0.0,
+                                                    32.400000000000006
+                                                ],
+                                                [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                0.13333333333333333
+                                            ],
+                                            "alpha": [
+                                                0.0,
+                                                1.0,
+                                                0.13333333333333333
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "lightTabPanel",
+                            "height": 77,
+                            "width": 555,
+                            "hAlignment": "left",
+                            "vAlignment": "center",
+                            "margin": [
+                                0,
+                                0,
+                                584
+                            ],
+                            "padding": [
+                                15
+                            ],
+                            "background": {
+                                "vAlignment": "bottom",
+                                "image": "res/images/interface/windows/leaderboardWindow/bg_tabs_light.png"
+                            }
+                        },
+                        {
+                            "width": 611,
+                            "margin": [
+                                0,
+                                0,
+                                504
+                            ],
+                            "padding": [
+                                0,
+                                -4
+                            ],
+                            "hAlignment": "left",
+                            "vAlignment": "top",
+                            "boxes": [
+                                {
+                                    "height": 118,
+                                    "width": 611,
+                                    "background": {
+                                        "image": "res/images/interface/windows/leaderboardWindow/ribbon_middle.png"
+                                    },
+                                    "hAlignment": "center",
+                                    "vAlignment": "bottom",
+                                    "alpha": 0,
+                                    "offset": [
+                                        0.00008087158198577526,
+                                        -11.924871063232558
+                                    ],
+                                    "scale": [
+                                        1.04998779296875,
+                                        1.19999694824219
+                                    ],
+                                    "animation": [
+                                        {
+                                            "alpha": [
+                                                0.0,
+                                                0.0,
+                                                0.0666666666666667
+                                            ]
+                                        },
+                                        {
+                                            "alpha": [
+                                                0.69921875,
+                                                1.0,
+                                                0.23333333333333334
+                                            ],
+                                            "offset": [
+                                                [
+                                                    0.00008087158198577526,
+                                                    -11.924871063232558
+                                                ],
+                                                [
+                                                    0.0,
+                                                    0.0
+                                                ],
+                                                0.23333333333333334
+                                            ],
+                                            "xscale": [
+                                                1.04998779296875,
+                                                1.0,
+                                                0.23333333333333334
+                                            ],
+                                            "yscale": [
+                                                1.19999694824219,
+                                                1.0,
+                                                0.23333333333333334
+                                            ]
+                                        }
+                                    ],
+                                    "boxes": [
+                                        {
+                                            "name": "tabIcon",
+                                            "width": 66,
+                                            "height": 58,
+                                            "margin": [
+                                                0,
+                                                0,
+                                                38
+                                            ],
+                                            "offset": [
+                                                -210
+                                            ],
+                                            "background": {
+                                                "scale": "contain",
+                                                "hAlignment": "center",
+                                                "vAlignment": "center"
+                                            }
+                                        },
+                                        {
+                                            "name": "tabText",
+                                            "width": 372,
+                                            "maxWidth": 372,
+                                            "height": 50,
+                                            "margin": [
+                                                0,
+                                                0,
+                                                52
+                                            ],
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "textAlign": "center",
+                                            "rotate": -2,
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 24,
+                                                "colour": "#ffffffff",
+                                                "outline": {
+                                                    "colour": "#6e0023ff",
+                                                    "width": 1.5,
+                                                    "yoffset": 1
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "name": "tabSubText",
+                                            "width": 372,
+                                            "maxWidth": 372,
+                                            "height": 50,
+                                            "margin": [
+                                                0,
+                                                0,
+                                                27
+                                            ],
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "textAlign": "center",
+                                            "rotate": -2,
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 17,
+                                                "colour": "#ffffffff",
+                                                "outline": {
+                                                    "colour": "#6e0023ff",
+                                                    "width": 1.5,
+                                                    "yoffset": 1
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "width": "100%",
+                            "height": "100%",
+                            "hAlignment": "LEFT",
+                            "vAlignment": "from_top_to_bottom",
+                            "padding": {
+                                "top": 47
+                            },
+                            "boxes": [
+                                {
+                                    "name": "socialContainer",
+                                    "boxes": [
+                                        {
+                                            "name": "socButtonsPanel",
+                                            "height": 80,
+                                            "width": 520,
+                                            "hAlignment": "from_left_to_right",
+                                            "vAlignment": "top",
+                                            "margin": [
+                                                0,
+                                                0,
+                                                460
+                                            ],
+                                            "boxes": [
+                                                {
+                                                    "name": "switchBg",
+                                                    "height": 74,
+                                                    "width": 272,
+                                                    "hAlignment": "left",
+                                                    "vAlignment": "top",
+                                                    "margin": [
+                                                        10,
+                                                        38
+                                                    ],
+                                                    "background": {
+                                                        "image": "res/images/interface/windows/leaderboardWindow/bg_players.png"
+                                                    },
+                                                    "_alpha": 0,
+                                                    "_animation": [
+                                                        {
+                                                            "alpha": [
+                                                                0.30078125,
+                                                                1.0,
+                                                                0.36666666666666664
+                                                            ],
+                                                            "xscale": [
+                                                                1.25,
+                                                                0.949996948242188,
+                                                                0.36666666666666664
+                                                            ],
+                                                            "yscale": [
+                                                                1.25,
+                                                                0.949996948242188,
+                                                                0.36666666666666664
+                                                            ]
+                                                        },
+                                                        {
+                                                            "xscale": [
+                                                                0.949996948242188,
+                                                                1.0,
+                                                                0.1
+                                                            ],
+                                                            "yscale": [
+                                                                0.949996948242188,
+                                                                1.0,
+                                                                0.1
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "boxes": [
+                                                        {
+                                                            "name": "bttnPlayers",
+                                                            "width": 138,
+                                                            "height": 53,
+                                                            "offset": [
+                                                                2
+                                                            ],
+                                                            "margin": [
+                                                                6
+                                                            ],
+                                                            "background": {
+                                                                "image": "res/images/interface/windows/leaderboardWindow/bttn_players.png"
+                                                            }
+                                                        },
+                                                        {
+                                                            "name": "allPlayersButton",
+                                                            "width": 128,
+                                                            "maxWidth": 128,
+                                                            "height": 50,
+                                                            "margin": [
+                                                                6,
+                                                                5
+                                                            ],
+                                                            "hAlignment": "center",
+                                                            "vAlignment": "center",
+                                                            "textAlign": "center",
+                                                            "text": "ratingAllPlayersButton",
+                                                            "font": {
+                                                                "file": "res/fonts/PTS75F_W.ttf",
+                                                                "size": 15,
+                                                                "colour": "#7d5528ff",
+                                                                "outline": {
+                                                                    "colour": "#ffffffff",
+                                                                    "yoffset": 1
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "name": "onlyFriendsButton",
+                                                            "width": 138,
+                                                            "maxWidth": 138,
+                                                            "height": 50,
+                                                            "margin": [
+                                                                6,
+                                                                130
+                                                            ],
+                                                            "hAlignment": "center",
+                                                            "vAlignment": "center",
+                                                            "textAlign": "center",
+                                                            "text": "ratingOnlyFriendsButton",
+                                                            "font": {
+                                                                "file": "res/fonts/PTS75F_W.ttf",
+                                                                "size": 15,
+                                                                "colour": "#7d5528ff",
+                                                                "outline": {
+                                                                    "colour": "#ffffffff",
+                                                                    "yoffset": 1
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "bttnInvite",
+                                                    "class": "btn_tap_anim",
+                                                    "width": 185,
+                                                    "height": 53,
+                                                    "margin": [
+                                                        16,
+                                                        0
+                                                    ],
+                                                    "padding": [
+                                                        0,
+                                                        0,
+                                                        4
+                                                    ],
+                                                    "hAlignment": "from_left_to_right",
+                                                    "vAlignment": "center",
+                                                    "background": {
+                                                        "image": "res/images/interface/windows/leaderboardWindow/bttn_invite.png"
+                                                    },
+                                                    "_alpha": 0.3,
+                                                    "_scale": 1.25,
+                                                    "boxes": [
+                                                        {
+                                                            "name": "bttnInviteIcon",
+                                                            "width": 32,
+                                                            "height": 32,
+                                                            "margin": [
+                                                                0,
+                                                                10
+                                                            ],
+                                                            "background": {
+                                                                "image": "res/images/interface/windows/leaderboardWindow/icon_fb.png",
+                                                                "scale": "fit"
+                                                            },
+                                                            "animation": {
+                                                                "loop": {
+                                                                    "times": 0,
+                                                                    "actions": [
+                                                                        {
+                                                                            "wait": {
+                                                                                "delay": 1.6
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "rotate": [
+                                                                                0,
+                                                                                1.9998508375413921,
+                                                                                0.1
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "rotate": [
+                                                                                1.9998508375413921,
+                                                                                -3.000105184704577,
+                                                                                0.1
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "rotate": [
+                                                                                -3.000105184704577,
+                                                                                4.0004663128940905,
+                                                                                0.06666666666666667
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "rotate": [
+                                                                                4.0004663128940905,
+                                                                                -3.000105184704577,
+                                                                                0.06666666666666667
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "rotate": [
+                                                                                -3.000105184704577,
+                                                                                0,
+                                                                                0.06666666666666667
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "width": 128,
+                                                            "maxWidth": 128,
+                                                            "margin": [
+                                                                0,
+                                                                6
+                                                            ],
+                                                            "hAlignment": "center",
+                                                            "textAlign": "center",
+                                                            "text": "inviteMoreFriends",
+                                                            "font": {
+                                                                "file": "res/fonts/PTS75F_W.ttf",
+                                                                "size": 15,
+                                                                "colour": "#7d5528ff",
+                                                                "outline": {
+                                                                    "colour": "#ffffffff",
+                                                                    "yoffset": 1
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "_animation": [
+                                                        {
+                                                            "alpha": [
+                                                                0.30078125,
+                                                                1.0,
+                                                                0.36666666666666664
+                                                            ],
+                                                            "xscale": [
+                                                                1.25,
+                                                                1.0,
+                                                                0.36666666666666664
+                                                            ],
+                                                            "yscale": [
+                                                                1.25,
+                                                                1.0,
+                                                                0.36666666666666664
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "scrollParentContainer",
+                                    "width": "100%",
+                                    "height": "AUTO",
+                                    "margin": [
+                                        10,
+                                        0,
+                                        49
+                                    ],
+                                    "vAlignment": "top",
+                                    "hAlignment": "left",
+                                    "boxes": [
+                                        {
+                                            "name": "scrollArea",
+                                            "vAlignment": "from_top_to_bottom",
+                                            "hAlignment": "center",
+                                            "stepVScroll": 80,
+                                            "width": 492.5,
+                                            "height": "100%",
+                                            "margin": [
+                                                0,
+                                                28
+                                            ],
+                                            "type": "Scroller",
+                                            "overflow": "scroll",
+                                            "vslider": "scroll"
+                                        },
+                                        {
+                                            "name": "emptyContainer",
+                                            "width": 490,
+                                            "height": "100%",
+                                            "margin": [
+                                                0,
+                                                30
+                                            ],
+                                            "vAlignment": "from_top_to_bottom",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "name": "topEmptyText",
+                                                    "width": 350,
+                                                    "margin": [
+                                                        40
+                                                    ],
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "textAlign": "center",
+                                                    "textWrap": true,
+                                                    "font": {
+                                                        "file": "res/fonts/PTN75F_W.ttf",
+                                                        "size": 20,
+                                                        "colour": "#7d5528ff",
+                                                        "outline": {
+                                                            "colour": "#fffffff",
+                                                            "width": 1.5,
+                                                            "yoffset": 0.5
+                                                        }
+                                                    },
+                                                    "text": "bla bla"
+                                                },
+                                                {
+                                                    "name": "fbButton",
+                                                    "width": 122,
+                                                    "height": 122,
+                                                    "margin": [
+                                                        20
+                                                    ],
+                                                    "class": "btn_tap_anim"
+                                                },
+                                                {
+                                                    "name": "bottomEmptyText",
+                                                    "width": 350,
+                                                    "margin": [
+                                                        20
+                                                    ],
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "textAlign": "center",
+                                                    "font": {
+                                                        "file": "res/fonts/loyola.otf",
+                                                        "size": 40,
+                                                        "colour": "#7d5528ff",
+                                                        "outline": {
+                                                            "colour": "#fffffff",
+                                                            "yoffset": 1
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "scroll",
+                                            "type": "Slider",
+                                            "scroller": "scrollArea",
+                                            "orientation": "vertical",
+                                            "hidden": true,
+                                            "width": 14,
+                                            "height": "100%",
+                                            "background": {
+                                                "scale": "window",
+                                                "corner": [
+                                                    7,
+                                                    16
+                                                ],
+                                                "image": "res/images/interface/windows/optionsWindow/scroll/scroll_bg.png"
+                                            },
+                                            "margin": [
+                                                -6,
+                                                522
+                                            ],
+                                            "thumb": {
+                                                "name": "scroll_bar",
+                                                "width": 14,
+                                                "height": 128,
+                                                "background": {
+                                                    "scale": "window",
+                                                    "corner": [
+                                                        7,
+                                                        16
+                                                    ],
+                                                    "image": "res/images/interface/windows/optionsWindow/scroll/scroll.png"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "LEFT",
+                            "width": "100%",
+                            "height": "100%",
+                            "padding": {
+                                "top": 39,
+                                "left": 28
+                            },
+                            "boxes": [
+                                {
+                                    "name": "spacer",
+                                    "sizeBase": "socialContainer",
+                                    "height": "100%"
+                                },
+                                {
+                                    "name": "topLine",
+                                    "class": "_line",
+                                    "width": 497,
+                                    "height": 53,
+                                    "margin": {
+                                        "left": 1
+                                    }
+                                },
+                                {
+                                    "name": "scrollSpacer",
+                                    "sizeBase": "scrollArea",
+                                    "height": "100%"
+                                },
+                                {
+                                    "name": "bottomLine",
+                                    "class": "_line",
+                                    "margin": {
+                                        "top": -53,
+                                        "left": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "findMeButton",
+                            "class": "btn_tap_anim",
+                            "margin": [
+                                0,
+                                0,
+                                -20
+                            ],
+                            "width": 173,
+                            "height": 66,
+                            "alpha": 0.0,
+                            "offset": [
+                                0.0,
+                                32.70000000000002
+                            ],
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "padding": {
+                                "left": 0,
+                                "right": 18
+                            },
+                            "boxes": [
+                                {
+                                    "name": "partsContainer",
+                                    "width": "100%",
+                                    "height": 66,
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "leftPart",
+                                            "width": 78,
+                                            "height": 66,
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/buttons/blueButton/bttn_blue_left.png"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "name": "middlePart",
+                                            "width": "AUTO",
+                                            "height": 66,
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/buttons/blueButton/bttn_blue_middle.png"
+                                                },
+                                                "scale": "stretch"
+                                            }
+                                        },
+                                        {
+                                            "name": "rightPart",
+                                            "width": 78,
+                                            "height": 66,
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/buttons/blueButton/bttn_blue_right.png"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "findMeButtonText",
+                                    "maxWidth": "80%",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 20,
+                                        "colour": "#ffffffff",
+                                        "outline": {
+                                            "width": 1.5,
+                                            "colour": "#00325aff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "hAlignment": "center",
+                                    "textAlign": "center",
+                                    "text": "findeMeButton"
+                                }
+                            ],
+                            "animation": [
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        0.0,
+                                        0.1333333333333333
+                                    ]
+                                },
+                                {
+                                    "alpha": [
+                                        0.0,
+                                        1.0,
+                                        0.3
+                                    ],
+                                    "offset": [
+                                        [
+                                            0.0,
+                                            32.70000000000002
+                                        ],
+                                        [
+                                            0.0,
+                                            0.0
+                                        ],
+                                        0.3
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

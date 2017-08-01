@@ -1,0 +1,600 @@
+{
+  "name": "root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "boxes": [
+    {
+      "name": "content",
+      "hAlignment": "CENTER",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "width": "40.0%sh",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "boxes": [
+        {
+          "height": "6%"
+        },
+        {
+          "name": "askersContainer",
+          "width": "100%",
+          "height": "23.0%sh",
+          "_backgroundColour": "#770000AA",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "boxes": [
+            {
+              "hAlignment": "from_left_to_right",
+              "width": "100%",
+              "height": "23.25%sh",
+              "vAlignment": "bottom",
+              "boxes": [
+                {
+                  "type": "spacer"
+                },
+                {
+                  "name": "leftFigureContainer",
+                  "width": "9%sh",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_bottom_to_top",
+                  "boxes": [
+                    {
+                      "name": "personAvatar",
+                      "_width": "12.126760563380282%sh",
+                      "_height": "17.302816901408452%sh",
+                      "width": "10.3%sh",
+                      "height": "14.7%sh",
+                      "background": {
+                        "_image": "res/images/icons/npcIcons/dialogBubbles/pirate_girl_1.png",
+                        "scale": "fit",
+                        "vAlignment": "bottom",
+                        "hAlignment": "center"
+                      }
+                    },
+                    {
+                      "name": "personBubble",
+                      "width": "7.7%sh",
+                      "height": "9.0%sh",
+                      "hAlignment": "center",
+                      "vAlignment": "top",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/badges/persons/badge_white.png",
+                          "checked": "res/images/badges/persons/badge_yellow.png"
+                        },
+                        "scale": "fit"
+                      },
+                      "boxes": [
+                        {
+                          "name": "badgeRes",
+                          "width": "5.5%sh",
+                          "height": "7%sh",
+                          "_backgroundColour": "#77000077",
+                          "background": {
+                            "_image": "res/images/icons/resourcesIcons/res_pizza.png",
+                            "image": "res/images/icons/resourcesIcons/res_corn.png",
+                            "scale": "fit",
+                            "vAlignment": "center"
+                          }
+                        },
+                        {
+                          "width": "7.0%sh",
+                          "_height": "7.2%sh",
+                          "height": "7.0%sh",
+                          "hAlignment": "right",
+                          "vAlignment": "bottom",
+                          "boxes": [
+                            {
+                              "name": "badgeCheck",
+                              "width": "4.55%sh",
+                              "height": "3.7%sh",
+                              "background": {
+                                "image": "res/images/interface/commonArt/sign_ok.png",
+                                "scale": "fit"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "width": "18.9%sh",
+                  "height": "28.7%sh",
+                  "vAlignment": "bottom",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "centerGlowFigure",
+                      "_width": "31.943661971830984%sh",
+                      "_height": "30.676056338028168%sh",
+                      "width": "25.0%sh",
+                      "height": "25.0%sh",
+                      "vAlignment": "bottom",
+                      "hAlignment": "center",
+                      "background": {
+                        "image": "res/images/interface/commonArt/glow.png",
+                        "scale": "fit",
+                        "vAlignment": "bottom",
+                        "hAlignment": "center"
+                      }
+                    },
+                    {
+                      "name": "centerFigure",
+                      "_width": "20.7887323943662%sh",
+                      "_height": "29.661971830985916%sh",
+                      "width": "17.765%sh",
+                      "height": "25.2%sh",
+                      "vAlignment": "bottom",
+                      "hAlignment": "center",
+                      "background": {
+                        "_image": "res/images/icons/npcIcons/dialogBubbles/vampire_1.png",
+                        "scale": "fit",
+                        "vAlignment": "bottom",
+                        "hAlignment": "center"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "rightFigureContainer",
+                  "width": "9%sh",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_bottom_to_top",
+                  "boxes": [
+                    {
+                      "name": "personAvatar",
+                      "width": "10.3%sh",
+                      "height": "14.7%sh",
+                      "background": {
+                        "_image": "res/images/icons/npcIcons/dialogBubbles/sleepy_girl_1.png",
+                        "scale": "fit",
+                        "vAlignment": "bottom",
+                        "hAlignment": "center"
+                      }
+                    },
+                    {
+                      "name": "personBubble",
+                      "width": "7.7%sh",
+                      "height": "9.0%sh",
+                      "hAlignment": "center",
+                      "vAlignment": "top",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/badges/persons/badge_white.png",
+                          "checked": "res/images/badges/persons/badge_yellow.png"
+                        },
+                        "scale": "fit"
+                      },
+                      "boxes": [
+                        {
+                          "name": "badgeRes",
+                          "width": "5.5%sh",
+                          "height": "7%sh",
+                          "_backgroundColour": "#77000077",
+                          "background": {
+                            "image": "res/images/icons/resourcesIcons/res_wheat.png",
+                            "scale": "fit",
+                            "vAlignment": "bottom"
+                          }
+                        },
+                        {
+                          "width": "7.0%sh",
+                          "_height": "7.2%sh",
+                          "height": "6.8%sh",
+                          "hAlignment": "right",
+                          "vAlignment": "bottom",
+                          "boxes": [
+                            {
+                              "name": "badgeCheck",
+                              "width": "4.55%sh",
+                              "height": "3.7%sh",
+                              "background": {
+                                "image": "res/images/interface/commonArt/sign_ok.png",
+                                "scale": "fit"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "spacer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mainContainer",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "width": "100%",
+          "boxes": [
+            {
+              "name": "bgWithArrows",
+              "height": "57.27%sh",
+              "_backgroundColour": "#007700AA",
+              "hAlignment": "from_left_to_right",
+              "vAlignment": "TOP",
+              "boxes": [
+                {
+                  "name": "leftArrow",
+                  "width": "5.5%sh",
+                  "height": "100.0%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#007700AA",
+                  "class": "button_anim_child_class",
+                  "boxes": [
+                    {
+                      "name": "tapAnimatedBox",
+                      "width": "5%sh",
+                      "height": "7.93%sh",
+                      "background": {
+                        "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "windowBg",
+                  "sizeBase": "contentWindow",
+                  "width": "100.0%",
+                  "height": "100%",
+                  "_backgroundColour": "#000000B2",
+                  "class": "windowFullFillingBackgroundClass"
+                },
+                {
+                  "name": "rightArrow",
+                  "width": "5.5%sh",
+                  "height": "100.0%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "class": "button_anim_child_class",
+                  "boxes": [
+                    {
+                      "name": "tapAnimatedBox",
+                      "width": "5%sh",
+                      "height": "7.93%sh",
+                      "background": {
+                        "image": "res/images/interface/buttons/bttn_arrow_right.png",
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "closeButtonContainer",
+              "width": "120%",
+              "height": "2.0%sh",
+              "hAlignment": "right",
+              "vAlignment": "bottom",
+              "boxes": [
+                {
+                  "name": "closeButton",
+                  "class": "buttonClose"
+                }
+              ]
+            },
+            {
+              "name": "contentWindow",
+              "width": "100%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "_backgroundColour": "#000000AA",
+              "boxes": [
+                {
+                  "name": "infoContainerMain",
+                  "width": "100%",
+                  "minHeight": "6.0%sh",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "boxes": [
+                    {
+                      "name": "infoContainer",
+                      "width": "100%",
+                      "minHeight": "100%",
+                      "hAlignment": "center",
+                      "vAlignment": "top",
+                      "_backgroundColour": "#000000AA",
+                      "boxes": [
+                        {
+                          "name": "labelPremiumContainer",
+                          "width": "90%",
+                          "height": "0",
+                          "hAlignment": "left",
+                          "vAlignment": "top",
+                          "_backgroundColour": "#007700AA",
+                          "boxes": [
+                            {
+                              "name": "labelPremium",
+                              "width": "5.598591549295775%sh",
+                              "height": "5.387323943661972%sh",
+                              "background": {
+                                "image": "res/images/interface/commonArt/labelPremium.png",
+                                "scale": "fit"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "personInfoButtonContainer",
+                      "width": "100%",
+                      "height": "6.5%sh",
+                      "_backgroundColour": "#000000B2",
+                      "hAlignment": "right",
+                      "vAlignment": "from_top_to_bottom",
+                      "boxes": [
+                        {
+                          "name": "spacer",
+                          "width": "95%",
+                          "height": "21%",
+                          "_backgroundColour": "#000000AA"
+                        },
+                        {
+                          "name": "personInfoButton",
+                          "width": "15%",
+                          "height": "81%",
+                          "_backgroundColour": "#000000B2",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "class": "button_class",
+                          "background": {
+                            "image": "res/images/interface/buttons/bttn_i.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "width": "86%",
+                  "maxHeight": "10%sh",
+                  "minHeight": "10%sh",
+                  "textWrap": true,
+                  "lineSpacing": 0.8,
+                  "_backgroundColour": "#00770077",
+                  "_text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed erat. In in velit quis arcu ornare lao!",
+                  "font": {
+                    "file": "res/fonts/PTS75F.ttf",
+                    "colour": "#503200FF",
+                    "minSize": "2.68%sh",
+                    "size": "2.9%sh"
+                  }
+                },
+                {
+                  "height": "2%sh"
+                },
+                {
+                  "name": "neededContainer",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#00007733",
+                  "height": "19%sh",
+                  "vAlignment": "bottom",
+                  "boxes": [
+                    {
+                      "name": "downArrow",
+                      "width": "9.93%sh",
+                      "height": "12.47%sh",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "_backgroundColour": "#77000011",
+                      "background": {
+                        "image": "res/images/interface/windows/askerWindow/deal_arrow.png",
+                        "scale": "fit"
+                      }
+                    },
+                    {
+                      "height": "100%",
+                      "width": "100%",
+                      "hAlignment": "center",
+                      "vAlignment": "from_bottom_to_top",
+                      "_backgroundColour": "#77000033",
+                      "boxes": [
+                        {
+                          "height": "6%sh"
+                        },
+                        {
+                          "name": "itemSellingContainer",
+                          "hAlignment": "from_left_to_right",
+                          "maxWidth": "37.68%sh",
+                          "height": "11%sh",
+                          "_рeight": "17.6%SH",
+                          "overflow": "scroll",
+                          "vAlignment": "bottom",
+                          "_backgroundColour": "#00770011",
+                          "_boxes": [
+                            "res/ui/askerWindow/askerWindowCell.json",
+                            "res/ui/askerWindow/askerWindowCell.json",
+                            "res/ui/askerWindow/askerWindowCell.json"
+                          ]
+                        },
+                        {
+                          "hidden": true,
+                          "name": "timerContainer",
+                          "hAlignment": "from_left_to_right",
+                          "vAlignment": "center",
+                          "height": "4.5%sh",
+                          "boxes": [
+                            {
+                              "name": "timerIcon",
+                              "width": "5.0%sh",
+                              "height": "5.0%sh",
+                              "background": {
+                                "image": "res/images/interface/commonArt/icon_time.png",
+                                "scale": "fit"
+                              }
+                            },
+                            {
+                              "name": "timerText",
+                              "text": "2h 30m",
+                              "lineSpacing": 0.5,
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "3.2%sh",
+                                "colour": "#91E600FF",
+                                "outline": [
+                                  {
+                                    "width": "5%",
+                                    "colour": "#503200FF",
+                                    "yoffset": "6%"
+                                  },
+                                  {
+                                    "width": "5%",
+                                    "colour": "#503200FF"
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "itemGettingContainer",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "center",
+                  "maxWidth": "37.68%sh",
+                  "height": "8.42%sh",
+                  "overflow": "scroll",
+                  "_backgroundColour": "#00000033",
+                  "_boxes": [
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json",
+                    "res/ui/askerWindow/askerWindowCellPremReward.json"
+                  ]
+                },
+                {
+                  "name": "rewardScrollBar",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "width": "37.68%sh",
+                  "height": "1.5%sh",
+                  "_backgroundColour": "#00770077",
+                  "boxes": [
+                    {
+                      "class": "scrollSliderHorisontal"
+                    }
+                  ]
+                },
+                {
+                  "height": "5.75%sh",
+                  "width": "100%",
+                  "boxes": [
+                    {
+                      "name": "buttonsContainer",
+                      "width": "100%",
+                      "height": "11.4%sh",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "bottomButton",
+                          "class": "buttonGreenScalable",
+                          "width": "12.7%sh",
+                          "height": "10.4%sh"
+                        },
+                        {
+                          "width": "80%",
+                          "vAlignment": "left",
+                          "boxes": [
+                            {
+                              "name": "rejectButton",
+                              "class": "buttonRedScalable",
+                              "width": "6.2%sh",
+                              "height": "6.2%sh",
+                              "hAlignment": "center",
+                              "vAlignment": "center"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+              "height": "27%sh",
+              "width": "60%",
+              "name": "askerNameContainer",
+              "_backgroundColour": "#00770033",
+              "hAlignment": "center",
+              "vAlignment": "top",
+              "boxes": [
+                {
+                  "name": "askerName",
+                  "maxWidth": "100%h",
+                  "height": "100%",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#00770077",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "4.4%sh",
+                    "colour": "#FFFFFFFF",
+                    "outline": [
+                      {
+                        "width": "5%",
+                        "colour": "#503200FF",
+                        "yoffset": "6%"
+                      },
+                      {
+                        "width": "5%",
+                        "colour": "#503200FF"
+                      }
+                    ]
+                  },
+                  "text": "Владислав"
+                }
+              ]
+            },
+    {
+      "name": "scrollDotsContainer",
+      "height": "99.5%",
+      "minHeight": "1.32%sh",
+      "vAlignment": "bottom",
+      "_backgroundColour": "#00770077",
+      "boxes": [
+        {
+          "name": "scrollDots",
+          "hAlignment": "from_left_to_right",
+          "_boxes": [
+            "res/ui/mainScreen/scrollPointWhite.json",
+            "res/ui/mainScreen/scrollPointWhite.json",
+            "res/ui/mainScreen/scrollPointWhite.json",
+            "res/ui/mainScreen/scrollPointWhite.json",
+            "res/ui/mainScreen/scrollPointWhite.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

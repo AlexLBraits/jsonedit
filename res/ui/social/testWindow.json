@@ -1,0 +1,49 @@
+{
+  "name": "cover",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "boxes": [
+    {
+      "name": "window",
+      "width": 375,
+      "height": 270,
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "background": {
+        "images": {
+          "normal": "res/images/interface/windows/inhabitantWindow/bubble_mat.png",
+          "subTexture": "render"
+        },
+        "shaders": {
+          "all": {
+            "vsh": "res/shaders/color_mix_alpha.vsh",
+            "psh": "res/shaders/color_mix_alpha.psh"
+          }
+        }
+      }
+    },
+    {
+      "vAlignment": "CENTER",
+      "hAlignment": "CENTER",
+      "offset": [
+        165,
+        -100
+      ],
+      "boxes": [
+        {
+          "name": "closeButton",
+          "background": {
+            "images": {
+              "normal": "res/images/interface/buttons/mainWndCloseButton/mainWndCloseButton.png",
+              "pressed": "res/images/interface/buttons/mainWndCloseButton/mainWndCloseButton_on.png"
+            }
+          },
+          "width": 45,
+          "height": 47
+        }
+      ]
+    }
+  ]
+}

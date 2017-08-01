@@ -1,0 +1,258 @@
+{
+  "name": "tapAnimatedBox",
+  "_backgroundColour": "#00000050",
+  "boxes": [
+    {
+      "name": "offsetContent",
+      "width": "17.5%sh",
+      "minWidth": "15.528%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "hAlignment": "right",
+      "_backgroundColour": "#00FF00FF",
+      "boxes": [
+        {
+          "name": "cellContent",
+          "width": "16.27%sh",
+          "minWidth": "14.43%SW",
+          "height": "28.20%sh",
+          "minHeight": "25.02%SW",
+          "_backgroundColour": "#00000075",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "center",
+          "background": {
+            "image": "res/images/interface/bottomMenu/slot_craft.png",
+            "scale": "fit",
+            "vAlignment": "bottom"
+          },
+          "boxes": [
+            {
+              "name": "upperRow",
+              "width": "100%",
+              "height": "40%",
+              "vAlignment": "bottom",
+              "hAlignment": "center",
+              "_backgroundColour": "#0000FF75",
+              "boxes": [
+                {
+                  "name": "iconContainer",
+                  "width": "120%",
+                  "height": "120%",
+                  "hAlignment": "left",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#00FFFF75",
+                  "boxes": [
+                    {
+                      "name": "buildingIcon",
+                      "height": "9%SH",
+                      "width": "9%SH",
+                      "minWidth": "7.1%SW",
+                      "minHeight": "7.1%SW",
+                      "_backgroundColour": "#FF000075",
+                      "overflow": "ignore",
+                      "hAlignment": "center",
+                      "vAlignment": "bottom",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/icons/resourcesIcons/res_bread.png"
+                        },
+                        "scale": "fit"
+                      }
+                    },
+                    {
+                      "name": "infoButtonContainer",
+                      "width": "70%",
+                      "height": "100%",
+                      "_backgroundColour": "#FFFF0075",
+                      "hAlignment": "left",
+                      "vAlignment": "FROM_BOTTOM_TO_TOP",
+                      "boxes": [
+                        {
+                          "name":"spacer",
+                          "height":"10%"
+                        },
+                        {
+                          "_backgroundColour": "#FF000075",
+                          "name": "infoButton",
+                          "width": "5.5%SH",
+                          "height": "5.5%SH",
+                          "minWidth": "5.11%SW",
+                          "minHeight": "5.11%SW",
+                          "class": "button_class",
+                          "hAlignment":"center",
+                          "vAlignment":"center",
+                          "boxes":[
+                            {
+                              "width": "3.5%SH",
+                              "height": "3.5%SH",
+                              "minWidth": "3.11%SW",
+                              "minHeight": "3.11%SW",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/buttons/bttn_i.png"
+                                },
+                                "scale": "fit"
+                              },
+                              "hAlignment": "center",
+                              "vAlignment": "center"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "warehouseContainer",
+                  "width": "94%",
+                  "height": "75%",
+                  "hAlignment": "left",
+                  "vAlignment": "top",
+                  "boxes": [
+                    {
+                      "name": "countContainer",
+                      "width": "99%",
+                      "height": "100%",
+                      "_backgroundColour": "#00FFFF75",
+                      "hAlignment": "right",
+                      "vAlignment": "bottom",
+                      "boxes": [
+                        {
+                          "name": "containerInner",
+                          "width": "100%",
+                          "height": "100%",
+                          "hAlignment": "center",
+                          "vAlignment": "from_top_to_bottom",
+                          "boxes": [
+                            {
+                              "name": "emptyBox",
+                              "height": "25%",
+                              "width": "10%",
+                              "_backgroundColour": "#0000FF75"
+                            },
+                            {
+                              "name": "containerInner2",
+                              "width": "115%",
+                              "height": "50%",
+                              "_backgroundColour": "#0000FF75",
+                              "hAlignment": "from_right_to_left",
+                              "vAlignment": "center",
+                              "boxes": [
+                                {
+                                  "name": "craftCountIcon",
+                                  "height": "6.0%SH",
+                                  "width": "6.0%SH",
+                                  "minHeight": "5.324%sw",
+                                  "minWidth": "5.324%sw",
+                                  "background": {
+                                    "images": {
+                                      "normal": "res/images/icons/shopIcons/tabicon_warehouses.png"
+                                    },
+                                    "scale": "fit"
+                                  },
+                                  "vAlignment": "bottom",
+                                  "hAlignment": "center",
+                                  "boxes": []
+                                },
+                                {
+                                  "name": "warehouse_counter",
+                                  "_backgroundColour": "#0000FF75",
+                                  "height": "80%",
+                                  "width": "50%",
+                                  "hAlignment": "right",
+                                  "font": {
+                                    "file": "res/fonts/Loyola.otf",
+                                    "size": "2.8%SH",
+                                    "minSize": "2.66%sw",
+                                    "maxSize": "2.8%SH",
+                                    "colour": "#503200FF"
+                                  },
+                                  "text": "x999"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "nameContainer",
+                  "width": "83%",
+                  "height": "20%",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#FF00FF75",
+                  "boxes": [
+                    {
+                      "name": "caption",
+                      "width": "100%",
+                      "_height": "5%SH",
+                      "maxHeight": "4.0%SH",
+                      "_backgroundColour": "#FFFF0075",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textAlign": "center",
+                      "lineSpacing": 0.8,
+                      "textWrap": true,
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "maxSize": "3%SH",
+                        "_minSize": "1.4%sw",
+                        "colour": "#f5dcb4FF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "text": "Корона спящей принцессы "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "box",
+              "width": "100%",
+              "height": "60%",
+              "vAlignment": "bottom",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#FF000033",
+              "boxes": [
+                {
+                  "name": "warehouseContainer2",
+                  "width": "100%",
+                  "height": "40%",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF000075",
+                  "boxes": [
+                    {
+					  "hidden": true,
+                      "name": "removeButton",
+                      "class": "buttonRedScalable",
+                      "_backgroundColour": "#00FF00AA",
+                      "height": "4.5%SH",
+                      "minHeight": "3.9%SW",
+                      "width": "90%",
+                      "hAlignment": "center",
+                      "vAlignment": "center"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

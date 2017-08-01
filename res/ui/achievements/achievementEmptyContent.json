@@ -1,0 +1,13 @@
+{
+  "name": "emptyText",
+  "maxWidth": "90%",
+  "height": "100%",
+  "textWrap": true,
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "font": {
+    "file": "res/fonts/Loyola.otf",
+    "colour": "#503200ff",
+    "size": "2%sh"
+  }
+}

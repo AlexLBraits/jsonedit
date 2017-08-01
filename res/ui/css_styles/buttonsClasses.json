@@ -1,0 +1,1870 @@
+{
+    "button_class": {
+        "enableGuiEvents": true,
+        "handlers": {
+            "onGuiFirstEnter": "onEnterTappableBox"
+        },
+        "dac": {
+            "gui_begin": {
+                "animation": {
+                    "scale": [
+                        [
+                            null,
+                            0.9,
+                            0.05
+                        ]
+                    ]
+                },
+                "clearAnim": true
+            },
+            "gui_back": {
+                "animation": {
+                    "scale": [
+                        [
+                            null,
+                            0.9,
+                            0.05
+                        ]
+                    ]
+                },
+                "clearAnim": true
+            },
+            "gui_leave": {
+                "animation": {
+                    "scale": [
+                        [
+                            null,
+                            1,
+                            0.05
+                        ]
+                    ]
+                },
+                "clearAnim": true
+            },
+            "gui_up": {
+                "animation": {
+                    "scale": [
+                        [
+                            null,
+                            1.1,
+                            0.05
+                        ],
+                        [
+                            null,
+                            0.9,
+                            0.05
+                        ],
+                        [
+                            null,
+                            1.1,
+                            0.05
+                        ],
+                        [
+                            null,
+                            1,
+                            0.05
+                        ]
+                    ]
+                },
+                "clearAnim": true
+            }
+        }
+    },
+    "button_class_no_anim": {
+        "enableGuiEvents": true,
+        "handlers": {
+            "onGuiFirstEnter": "onEnterTappableBox"
+        },
+        "dac": {
+            "gui_begin": {
+                "applyTo": {
+                    "buttonContent": {
+                        "offset": [
+                            0,
+                            2
+                        ]
+                    },
+                    "buttonIcon": {
+                        "offset": [
+                            0,
+                            2
+                        ]
+                    }
+                }	
+            },
+            "gui_back": {
+                "applyTo": {
+                    "buttonContent": {
+                        "offset": [
+                            0,
+                            2
+                        ]
+                    },
+                    "buttonIcon": {
+                        "offset": [
+                            0,
+                            2
+                        ]
+                    }
+                }
+            },
+            "gui_leave": {
+                "applyTo": {
+                    "buttonContent": {
+                        "offset": [
+                            0,
+                            0
+                        ]
+                    },
+                    "buttonIcon": {
+                        "offset": [
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            "gui_up": {
+                "applyTo": {
+                    "buttonContent": {
+                        "offset": [
+                            0,
+                            0
+                        ]
+                    },
+                    "buttonIcon": {
+                        "offset": [
+                            0,
+                            0
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "button_anim_child_class": {
+        "enableGuiEvents": true,
+        "handlers": {
+            "onGuiFirstEnter": "onEnterTappableBox"
+        },
+        "dac": {
+            "gui_begin": {
+                "applyTo": {
+                    "tapAnimatedBox": {
+                        "animation": {
+                            "scale": [
+                                [
+                                    null,
+                                    0.9,
+                                    0.05
+                                ]
+                            ]
+                        },
+                        "clearAnim": true
+                    }
+                }
+            },
+            "gui_leave": {
+                "applyTo": {
+                    "tapAnimatedBox": {
+                        "animation": {
+                            "scale": [
+                                [
+                                    null,
+                                    1,
+                                    0.05
+                                ]
+                            ]
+                        },
+                        "clearAnim": true
+                    }
+                }
+            },
+            "gui_back": {
+                "applyTo": {
+                    "tapAnimatedBox": {
+                        "animation": {
+                            "scale": [
+                                [
+                                    null,
+                                    0.9,
+                                    0.05
+                                ]
+                            ]
+                        },
+                        "clearAnim": true
+                    }
+                }
+            },
+            "gui_up": {
+                "applyTo": {
+                    "tapAnimatedBox": {
+                        "animation": {
+                            "scale": [
+                                [
+                                    null,
+                                    1.1,
+                                    0.05
+                                ],
+                                [
+                                    null,
+                                    0.9,
+                                    0.05
+                                ],
+                                [
+                                    null,
+                                    1.1,
+                                    0.05
+                                ],
+                                [
+                                    null,
+                                    1,
+                                    0.05
+                                ]
+                            ]
+                        },
+                        "clearAnim": true
+                    }
+                }
+            }
+        }
+    },
+    "highlight_only_class": {
+        "_enableGuiEvents": true,
+        "handlers": {
+            "onEnter": "onEnterTappableBox",
+            "onExit": "onExitTappableBox"
+        }
+    },
+    "buttonClose": {
+        "class": "button_class",
+        "width": "6.7%sh",
+        "height": "6.38%sh",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "boxes":[
+        	{
+        		"width": "3.7%sh",
+        		"height": "3.38%sh",
+        		"background": {
+					"image": "res/images/interface/buttons/button_close.png",
+					"scale": "fit"
+				}
+        	}
+        ]
+        
+    },
+    "buttonTwitter": {
+        "width": 100,
+        "height": 54,
+        "class": "button_class",
+        "hAlignment": "right",
+        "vAlignment": "center",
+        "background": {
+            "images": {
+                "normal": "res/images/interface/buttons/bttn_tw.png"
+            }
+        },
+        "boxes": [
+            {
+                "boxes": [
+                    {
+                        "name": "checker",
+                        "background": {
+                            "images": {
+                                "normal": "res/images/interface/commonArt/sign_ok.png"
+                            }
+                        },
+                        "height": 37,
+                        "width": 45
+                    }
+                ],
+                "hAlignment": "left",
+                "height": 0,
+                "name": "target_tw_flag",
+                "vAlignment": "top",
+                "width": "50%",
+                "hidden": "true"
+            },
+            {
+                "name": "priceContainer",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "width": "50%",
+                "_hidden": "true",
+                "height": 0,
+                "boxes": [
+                    {
+                        "name": "priceText",
+                        "maxWidth": 25,
+                        "height": 25,
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF",
+                                    "yoffset": 1
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200ff"
+                                }
+                            ]
+                        },
+                        "hAlignment": "CENTER",
+                        "vAlignment": "CENTER",
+                        "textAlign": "center",
+                        "text": "+2"
+                    },
+                    {
+                        "name": "pricePlate",
+                        "width": 25,
+                        "height": 25,
+                        "background": {
+                            "images": {
+                                "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                            },
+                            "scale": "fit"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "buttonFacebook": {
+        "width": 100,
+        "height": 54,
+        "hAlignment": "right",
+        "vAlignment": "center",
+        "class": "button_class",
+        "background": {
+            "images": {
+                "normal": "res/images/interface/buttons/bttn_fb.png"
+            }
+        },
+        "boxes": [
+            {
+                "boxes": [
+                    {
+                        "name": "checker",
+                        "background": {
+                            "images": {
+                                "normal": "res/images/interface/commonArt/sign_ok.png"
+                            }
+                        },
+                        "height": 37,
+                        "width": 45
+                    }
+                ],
+                "hAlignment": "left",
+                "height": 0,
+                "name": "target_fb_flag",
+                "vAlignment": "top",
+                "width": "50%",
+                "hidden": "true"
+            },
+            {
+                "name": "priceContainer",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "width": "50%",
+                "_hidden": "true",
+                "height": 0,
+                "boxes": [
+                    {
+                        "name": "priceText",
+                        "maxWidth": 25,
+                        "height": 25,
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF",
+                                    "yoffset": 1
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200ff"
+                                }
+                            ]
+                        },
+                        "hAlignment": "CENTER",
+                        "vAlignment": "CENTER",
+                        "textAlign": "center",
+                        "text": "+2"
+                    },
+                    {
+                        "name": "pricePlate",
+                        "width": 25,
+                        "height": 25,
+                        "background": {
+                            "images": {
+                                "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                            },
+                            "scale": "fit"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "buttonGC": {
+        "class": "button_class",
+        "width": 76,
+        "height": 71,
+        "background": {
+            "images": {
+                "normal": "res/images/interface/mainScreen/icon_gi.png"
+            }
+        }
+    },
+    "buttonGreenScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/7.png",
+                                        "pressed": "res/images/interface/buttons/green_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/8.png",
+                                        "pressed": "res/images/interface/buttons/green_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/9.png",
+                                        "pressed": "res/images/interface/buttons/green_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/4.png",
+                                        "pressed": "res/images/interface/buttons/green_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/5.png",
+                                        "pressed": "res/images/interface/buttons/green_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/6.png",
+                                        "pressed": "res/images/interface/buttons/green_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/1.png",
+                                        "pressed": "res/images/interface/buttons/green_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/2.png",
+                                        "pressed": "res/images/interface/buttons/green_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/3.png",
+                                        "pressed": "res/images/interface/buttons/green_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+            	
+				"name": "buttonIcon",
+				"hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+				"height": "90%",
+                "width": "90%",
+				"hidden": true,
+				"background":{  
+					"image":"res/images/icons/attributeIcons/exp_drop.png",
+					"scale":"fit",
+				    "hAlignment": "center"
+				}
+							
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ffff0075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "buttonGreenScalableForCraftCell": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/7.png",
+                                        "pressed": "res/images/interface/buttons/green_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/8.png",
+                                        "pressed": "res/images/interface/buttons/green_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/9.png",
+                                        "pressed": "res/images/interface/buttons/green_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/4.png",
+                                        "pressed": "res/images/interface/buttons/green_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/5.png",
+                                        "pressed": "res/images/interface/buttons/green_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/6.png",
+                                        "pressed": "res/images/interface/buttons/green_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/1.png",
+                                        "pressed": "res/images/interface/buttons/green_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/2.png",
+                                        "pressed": "res/images/interface/buttons/green_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/green/3.png",
+                                        "pressed": "res/images/interface/buttons/green_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+				"name": "buttonContent",
+				"hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "_backgroundColour": "#ff000075",
+				"height": "90%",
+                "width": "90%",
+                "boxes":[
+                    {
+                        "name":"spacer",
+                        "height":"0%"
+                    }
+                	{
+                		"name":"topRow",
+                		"hAlignment": "from_left_to_right",
+                		"vAlignment": "center",
+                		"_backgroundColour": "#ff000075",
+                		"height": "50%",
+                		"width": "100%",
+                		"boxes":[
+                            {  
+                                "name": "iconsContainer",
+                                "_backgroundColour": "#77000077",
+                                "hAlignment":"center",
+                                "vAlignment":"center",
+                                "width": "20%",
+                                "height": "100%",
+                                "boxes": [
+                                    {
+                                        "name": "buttonIcon",
+                                        "width": "100%H",
+                                        "height": "90%H",
+                                        "background":{  
+                                            "image":"res/images/icons/attributeIcons/exp_drop.png",
+                                            "scale":"fit",
+                                            "hAlignment":"center"
+                                        }
+                                    },
+                                    {
+                                        "name": "expIcon",
+                                        "width": "100%H",
+                                        "height": "90%H",
+                                        "_backgroundColour": "#77000077",
+                                        "hidden": false,
+                                        "hAlignment":"center",
+                                        "vAlignment":"center",
+                                        "background":{  
+                                            "image":"res/images/icons/attributeIcons/exp_drop.png",
+                                            "scale":"fit",
+                                            "hAlignment":"center"
+                                        },
+                                        "text": "12",
+                                        "font":{  
+                                            "file":"res/fonts/Loyola.otf",
+                                            "size":"2.4%sh",
+                                            "colour":"#ffffffFF",
+                                            "outline":[  
+                                                {  
+                                                    "width":"3%",
+                                                    "colour":"#503200ff",
+                                                    "yoffset":"3%"
+                                                },
+                                                {  
+                                                    "width":"3%",
+                                                    "colour":"#503200ff"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "width": "auto"
+                            },
+                			{
+                				"name": "textLevel",
+								"hAlignment": "center",
+								"vAlignment": "center",
+								"_backgroundColour": "#ffff0075",
+								"maxHeight": "100%",
+								"width": "83%",
+								"textAlign": "center",
+								"textWrap": true,
+								"text": "AlertNeedLvlBtn",
+								"font": {
+									"file": "res/fonts/Loyola.otf",
+									"colour": "#FFFFFFFF",
+									"size": "3.5%sh",
+									"outline": [
+										{
+											"width": "4%",
+											"colour": "#503200FF",
+											"yoffset": "4%"
+										},
+										{
+											"width": "4%",
+											"colour": "#503200FF"
+										}
+									]
+								}
+                			}
+                		]
+                	},
+                	{
+                		"name":"bottomRow",
+                		"hAlignment": "center",
+                		"vAlignment": "center",
+                		"_backgroundColour": "#ff000075",
+                		"height": "45%",
+                		"width": "100%",
+                		"boxes":[
+                			{
+                				"name":"containerBottomRow",
+                				"hAlignment": "from_left_to_right",
+                				"vAlignment": "center",
+                				"boxes":[
+                                        {
+                                            "name": "textValue",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "_backgroundColour": "#ffff0075",
+                                            "maxHeight": "100%",
+                                            "textAlign": "center",
+                                            "textWrap": true,
+                                            "text": "10000",
+                                            "font": {
+                                                "file": "res/fonts/Loyola.otf",
+                                                "colour": "#FFFFFFFF",
+                                                "size": "3.0%sh",
+                                                "outline": [
+                                                    {
+                                                        "width": "5%",
+                                                        "colour": "#503200FF",
+                                                        "yoffset": "5%"
+                                                    },
+                                                    {
+                                                        "width": "5%",
+                                                        "colour": "#503200FF"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                						{
+											"name": "buttonIconMoney",
+											"width": "100%H",
+											"height": "100%H",
+											"background":{  
+												"image":"res/images/icons/attributeIcons/money1_drop.png",
+												"scale":"fit"
+											}
+										},
+                				]
+                			}
+                		]
+                	}
+                ]
+				
+							
+            }
+        ]
+    },
+    "buttonBlueScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/7.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/8.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/9.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/4.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/5.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/6.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/1.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/2.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/blue/3.png",
+                                        "pressed": "res/images/interface/buttons/blue_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "buttonRedScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/7.png",
+                                        "pressed": "res/images/interface/buttons/red_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/8.png",
+                                        "pressed": "res/images/interface/buttons/red_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/9.png",
+                                        "pressed": "res/images/interface/buttons/red_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/4.png",
+                                        "pressed": "res/images/interface/buttons/red_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/5.png",
+                                        "pressed": "res/images/interface/buttons/red_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/6.png",
+                                        "pressed": "res/images/interface/buttons/red_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/1.png",
+                                        "pressed": "res/images/interface/buttons/red_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/2.png",
+                                        "pressed": "res/images/interface/buttons/red_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/red/3.png",
+                                        "pressed": "res/images/interface/buttons/red_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "buttonYellowScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/7.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/8.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/9.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/4.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/5.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/6.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/1.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/2.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/yellow/3.png",
+                                        "pressed": "res/images/interface/buttons/yellow_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "buttonVioletScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/7.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/8.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/9.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/4.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/5.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/6.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/1.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/2.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/violet/3.png",
+                                        "pressed": "res/images/interface/buttons/violet_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "buttonBeigeScalable": {
+        "height": "100%",
+        "width": "100%",
+        "_backgroundColour": "#00000075",
+        "class": "button_class_no_anim",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "call": "clearboxes",
+        "boxes": [
+            {
+                "name": "button_background",
+                "height": "100%",
+                "width": "100%",
+                "_backgroundColour": "#00000075",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "boxes": [
+                    {
+                        "name": "topRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "topLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/7.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/7.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right"
+                                }
+                            },
+                            {
+                                "name": "topCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/8.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/8.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "topRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/9.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/9.png"
+                                    },
+                                    "scale": "fit",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middleRow",
+                        "width": "100%",
+                        "height": "auto",
+                        "vAlignment": "center",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "middleLeft",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/4.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/4.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "center",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/5.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/5.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "middleRight",
+                                "width": "2.12%sh",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/6.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/6.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "name": "bottomRow",
+                        "width": "100%",
+                        "height": "2.12%sh",
+                        "hAlignment": "from_left_to_right",
+                        "boxes": [
+                            {
+                                "name": "bottomLeft",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/1.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/1.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            },
+                            {
+                                "name": "bottomCenter",
+                                "width": "auto",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/2.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/2.png"
+                                    },
+                                    "scale": "stretch"
+                                }
+                            },
+                            {
+                                "name": "bottomRight",
+                                "width": "100%h",
+                                "height": "100%",
+                                "background": {
+                                    "images": {
+                                        "normal": "res/images/interface/buttons/beige/3.png",
+                                        "pressed": "res/images/interface/buttons/beige_over/3.png"
+                                    },
+                                    "scale": "fit"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "buttonContent",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#ff000075",
+                "maxHeight": "90%",
+                "width": "90%",
+                "textAlign": "center",
+                "textWrap": true,
+                "_text": "Нажми сюда",
+                "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FFFFFFFF",
+                    "size": "3.5%sh",
+                    "outline": [
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                        },
+                        {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+}

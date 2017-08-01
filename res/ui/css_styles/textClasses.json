@@ -1,0 +1,194 @@
+{
+    "loyolaRelativeText": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#FFFFFFFF",
+            "size": "3.4%SH",
+            "outline": [{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaRedWithoutSizeText": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#f03c28ff",
+            "outline": [{
+                    "width": "5%",
+                    "colour": "#F0F0F0FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "5%",
+                    "colour": "#F0F0F0FF"
+                }
+            ]
+        }
+    },
+    "loyolaRelativeTextWithoutOutline": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#503200FF",
+            "size": "3.2%SH"
+        }
+    },
+    "loyolaRelativeText60": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#FFFFFFFF",
+            "size": "3.2%SH",
+            "outline": [
+            	{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaRelativeText50": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#FFFFFFFF",
+            "size": "2.64%SH",
+            "outline": [{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaRelativeText44": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#FFFFFFFF",
+            "size": "2.324%SH",
+            "outline": [{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaRelativeText40": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#FFFFFFFF",
+            "size": "1.8%SH",
+            "outline": [{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaOrangeWithoutSizeText": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#ffca2aFF",
+            "size": "100%",
+            "outline": [{
+                    "width": "4%",
+                    "colour": "#503200FF",
+                    "yoffset": "4%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaWhiteWithoutSizeText": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "100%",
+            "colour": "#FFFFFFFF",
+            "outline": [{
+                    "width": "4%",
+                    "colour": "#503200FF",
+                    "yoffset": "4%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaGreenWithoutSizeText": {
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "100%",
+            "colour": "#8cd214FF",
+            "outline": [{
+                    "width": "4%",
+                    "colour": "#503200FF",
+                    "yoffset": "4%"
+                },
+                {
+                    "width": "4%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "loyolaProgressBarText": {
+        "maxWidth": "90%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "center",
+        "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "100%",
+            "colour": "#FFFFFFFF",
+            "outline": [
+            	{
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                },
+                {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                }
+            ]
+        }
+    },
+    "actionPanelButtonsText": {
+    	"maxWidth": "100%",
+		"hAlignment":"center",
+		"vAlignment":"center",
+		"font":{  
+			"file":"res/fonts/Loyola.otf",
+			"maxSize":"2.33%sh",
+			"colour":"#b38f6bFF"
+		}
+    }
+}

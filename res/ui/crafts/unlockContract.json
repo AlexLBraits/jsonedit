@@ -1,0 +1,252 @@
+{
+  "name": "unlockContractWindow",
+  "height": "100%",
+  "width": "100%",
+  "backgroundColour": "#000000B2",
+  "backgroundActiveColour": "#000000B2",
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "name": "unlockContractBodyContainer",
+      "maxHeight": "100%SH",
+      "width": "100%",
+      "_backgroundColour": "#ff000050",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "boxes": [
+        {
+          "name": "unlockContractHeaderContainer",
+          "height": "14%sh",
+          "minHeight": "10.769230769230768%sw",
+          "width": "100%",
+          "_backgroundColour": "#00330050",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "boxes": [
+            {
+              "width": "54.401408450704224%sh",
+              "minWidth": "41.84723726977248%sw",
+              "height": "16.056338028169012%sh",
+              "minHeight": "12.351029252437701%sw",
+              "class": "titleRibbonOrangeText80"
+            }
+          ]
+        },
+        {
+          "name": "unlockContractContentContainer",
+          "width": "50%SH",
+          "minWidth": "38.46153846153846%sw",
+          "maxHeight": "90%SH",
+          "_backgroundColour": "#00330075",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "center",
+          "boxes": [
+            {
+              "width": "100%",
+              "height": "37%SH",
+              "minHeight": "28.46153846153846%SW",
+              "hAlignment": "center",
+              "vAlignment": "bottom",
+              "boxes": [
+                {
+                  "name": "unlockContractIconEffect",
+                  "width": "27%SH",
+                  "minWidth": "20.76923076923077%SW",
+                  "height": "27%SH",
+                  "minHeight": "20.76923076923077%SW",
+                  "_backgroundColour": "#ffffff50"
+                },
+                {
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "boxes": [
+                    {
+                      "name": "containerDescription",
+                      "width": "100%",
+                      "height": "10%sh",
+                      "minHeight": "7.692307692307692%sw",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "unlockContractCongratsText",
+                          "maxWidth": "80%",
+                          "height": "3.169014084507042%SH",
+                          "minHeight": "2.437703141928494%SW",
+                          "textAlign": "center",
+                          "textWrap": false,
+                          "class": "loyolaOrangeWithoutSizeText",
+                          "text": "You've got new recipe!"
+                        },
+                        {
+                          "height": "5%"
+                        },
+                        {
+                          "name": "unlockContractName",
+                          "maxWidth": "100%",
+                          "height": "3.169014084507042%SH",
+                          "minHeight": "2.437703141928494%SW",
+                          "textAlign": "center",
+                          "textWrap": false,
+                          "class": "loyolaWhiteWithoutSizeText",
+                          "text": "Vanilla Cookie"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "unlockContractIconBox",
+                      "width": "27%SH",
+                      "minWidth": "20.76923076923077%SW",
+                      "height": "27%SH",
+                      "minHeight": "20.76923076923077%SW",
+                      "_backgroundColour": "#ffffff50",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "unlockContractIconContainer",
+                          "width": "24.612676056338028%SH",
+                          "minWidth": "18.932827735644636%SW",
+                          "height": "26.83098591549296%SH",
+                          "minHeight": "20.639219934994582%SW",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#00003375",
+                          "background": {
+                            "image": "res/images/interface/commonArt/contract_frame.png",
+                            "scale": "fit",
+                            "vAlignment": "bottom"
+                          }
+                        },
+                        {
+                          "name": "unlockContractIcon",
+                          "_backgroundColour": "#00330075",
+                          "hAlignment": "right",
+                          "vAlignment": "bottom",
+                          "width": "15.84507042253521%SH",
+                          "minWidth": "12.188515709642468%SW",
+                          "height": "15.84507042253521%SH",
+                          "minHeight": "12.188515709642468%SW",
+                          "background": {
+                            "image": "res/images/icons/resourcesIcons/res_cookies.png",
+                            "scale": "fit",
+                            "hAlignment": "center",
+                            "vAlignment": "center"
+                          }
+                        },
+                        {
+                          "name": "markerContainer",
+                          "width": "70%",
+                          "height": "70%",
+                          "_backgroundColour": "#FF0000AA",
+                          "hAlignment": "RIGHT",
+                          "vAlignment": "BOTTOM",
+                          "boxes": [
+                            {
+                              "name": "markerIconContainer",
+                              "_backgroundColour": "#FF0000AA",
+                              "hAlignment": "CENTER",
+                              "vAlignment": "CENTER",
+                              "boxes": [
+                                {
+                                  "name": "markerIcon",
+                                  "_backgroundColour": "#FF0000FF",
+                                  "width": "9%SH",
+                                  "minWidth": "6.9230769230769225%SW",
+                                  "height": "10%SH",
+                                  "minHeight": "7.692307692307692%SW",
+                                  "hAlignment": "RIGHT",
+                                  "vAlignment": "BOTTOM",
+                                  "background": {
+                                    "scale": "fit",
+                                    "images": {
+                                      "normal": "res/images/icons/attributeIcons/production_water.png"
+                                    }
+                                  },
+                                  "boxes": [
+                                    {
+                                      "name": "markerIconText",
+                                      "_backgroundColour": "#FF0000FF",
+                                      "maxWidth": "100%",
+                                      "height": "5.3%SH",
+                                      "minHeight": "4.076923076923077%SW",
+                                      "hAlignment": "RIGHT",
+                                      "vAlignment": "center",
+                                      "textAlign": "RIGHT",
+                                      "class": "loyolaWhiteWithoutSizeText",
+                                      "text": "-1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "unlockContractNameContainer",
+              "width": "50%SH",
+              "minWidth": "38.46153846153846%SW",
+              "_backgroundColour": "#00330075",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+                {
+                  "name": "unlockAttrContainer",
+                  "width": "80%",
+                  "minHeight": "20%",
+                  "maxHeight": "100%",
+                  "_backgroundColour": "#00330075",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "_boxes": [
+                    "res/ui/crafts/unlockAttrCell.json",
+                    "res/ui/crafts/unlockAttrCell.json"
+                  ]
+                },
+                {
+                  "height": "1%sh",
+                  "minHeight": "0.7692307692307692%SW"
+                },
+                {
+                  "name": "unlockContractButtonContainer",
+                  "height": "8%SH",
+                  "minHeight": "6.153846153846153%SW",
+                  "width": "100%",
+                  "_backgroundColour": "#33000075",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "unlockContractButton",
+                      "width": "20%SH",
+                      "minWidth": "15.384615384615383%SW",
+                      "height": "8%SH",
+                      "minHeight": "6.153846153846153%SW",
+                      "_backgroundColour": "#33000075",
+                      "class": "buttonGreenScalable",
+                      "vAlignment": "center",
+                      "hAlignment": "center"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

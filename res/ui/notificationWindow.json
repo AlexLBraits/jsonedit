@@ -1,0 +1,245 @@
+{
+  "name": "root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true,
+    "onGuiFirstEnter": true,
+    "onDrag": true,
+    "onScroll": true
+  },
+  "boxes": [{
+    "name": "mainContent",
+    "width": "50%SH",
+    "height": "75%",
+    "hAlignment": "CENTER",
+    "vAlignment": "from_top_to_bottom",
+    "_backgroundColour": "#786800FF",
+    "boxes": [{
+        "name": "topChicken",
+        "_backgroundColour": "#786800FF",
+        "width": "80%",
+        "height": "23%sh",
+        "vAlignment": "BOTTOM",
+        "hAlignment": "CENTER",
+        "boxes": [{
+          "name": "chickenContainer",
+          "width": "100%",
+          "height": "23%SH",
+          "hAlignment": "CENTER",
+          "vAlignment": "CENTER",
+          "_backgroundColour": "#FF0000AA",
+          "handlers": {
+            "onTap": true
+          },
+          "boxes": [{
+            "name": "avatarImage",
+            "width": "23%sh",
+            "height": "23%sh",
+            "background": {
+              "scale": "fit",
+              "image": "res/images/interface/windows/alertWindow/alert_chicken1.png"
+            }
+          }]
+        }]
+      },
+      {
+        "name": "bubbleContainer",
+        "_backgroundColour": "#108800FF",
+        "width": "100%",
+        "height": "41.0%SH",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "boxes": [{
+            "name": "bubble",
+            "height": "51.60%sh",
+            "_backgroundColour": "#007700AA",
+            "hAlignment": "center",
+            "vAlignment": "top",
+            "boxes": [{
+                "name": "windowBg",
+                "sizeBase": "panelContent",
+                "width": "42.15%sh",
+                "height": "90.5%",
+                "_backgroundColour": "#000000B2",
+                "vAlignment": "top",
+                "hAlignment": "center",
+                "class": "windowBackgroundClass"
+              },
+              {
+                "name": "bgTail",
+                "width": "21%sh",
+                "hAlignment": "right",
+                "_backgroundColour": "#000000B2",
+                "boxes": [{
+                  "width": "5.6%sh",
+                  "height": "4.860%sh",
+                  "background": {
+                    "image": "res/images/interface/windows/askerWindow/deal_bg_tail.png",
+                    "scale": "fit",
+                    "vAlignment": "bottom"
+                  }
+                }]
+              }
+            ]
+          },
+          {
+            "name": "alertContentContainer",
+            "height": "100%",
+            "width": "80%",
+            "vAlignment": "from_top_to_bottom",
+            "hAlignment": "CENTER",
+            "_backgroundColour": "#0000FFAA",
+            "boxes": [{
+                "name": "spacer",
+                "height": "1.5%sh",
+                "width": "100%",
+                "_backgroundColour": "#00FF00AA"
+              },
+              {
+                "name": "titleContiner",
+                "vAlignment": "center",
+                "hAlignment": "CENTER",
+                "width": "90%",
+                "maxHeight": "8%SH",
+                "_backgroundColour": "#FF0000AA",
+                "boxes": [{
+                  "name": "title",
+                  "width": "auto",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "_backgroundColour": "#FF0000AA",
+                  "textWrap": "true",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#FF8467FF",
+                    "size": "3.4%sh",
+                    "outline": [{
+                        "width": "5%",
+                        "colour": "#503200FF",
+                        "yoffset": "5%"
+                      },
+                      {
+                        "width": "5%",
+                        "colour": "#503200FF"
+                      }
+                    ]
+                  },
+                  "text": "AlertNotificationsOnTitle"
+                }]
+              },
+              {
+                "name": "textContainer",
+                "width": "90%",
+                "height": "auto",
+                "hAlignment": "CENTER",
+                "vAlignment": "top",
+                "_backgroundColour": "#00FF00FF",
+                "boxes": [{
+                  "name": "text",
+                  "width": "100%",
+                  "maxHeight": "100%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF0000AA",
+                  "textWrap": true,
+                  "textAlign": "left",
+                  "lineSpacing": 0.8,
+                  "font": {
+                    "file": "res/fonts/PTS75F.ttf",
+                    "colour": "#503200FF",
+                    "minSize": "1.5%sh",
+                    "size": "2.4%sh"
+                  },
+                  "text": "AlertNotificationsOnText"
+                }]
+              },
+              {
+                "name": "emptyContainer",
+                "width": "90%",
+                "height": "56%",
+                "hAlignment": "CENTER",
+                "vAlignment": "TOP",
+                "boxes": [{
+                  "_backgroundColour": "#00aaFFFF",
+                  "name": "figureContainer",
+                  "width": "90%",
+                  "height": "100%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "TOP",
+                  "boxes": [{
+                    "name": "figure",
+                    "height": "18.7%sh",
+                    "width": "37.5%sh",
+                    "_backgroundColour": "#FF00FF44",
+                    "background": {
+                      "scale": "fit",
+                      "image": "res/images/interface/windows/alertWindow/icons/notificationsAlertIcon.png",
+                      "hAlignment": "center"
+                    }
+                  }]
+                }]
+              },
+              {
+                "height": "1%SH"
+              }, {
+                "name": "buttonsContainer",
+                "width": "100%",
+                "_height": "17%",
+                "height": "0%SH",
+                "_backgroundColour": "#FF0000AA",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "CENTER",
+                "boxes": [{
+                    "name": "laterButtonContainer",
+                    "width": "auto",
+                    "height": "8.4%SH",
+                    "hAlignment": "RIGHT",
+                    "vAlignment": "CENTER",
+                    "boxes": [{
+                      "name": "laterButton",
+                      "_backgroundColour": "#FF0000AA",
+                      "width": "12.0%SH",
+                      "height": "6.0%SH",
+                      "hAlignment": "center",
+                      "vAlignment": "CENTER",
+                      "class": "buttonYellowScalable"
+                    }]
+                  },
+                  {
+                    "name": "okButtonContainer",
+                    "width": "auto",
+                    "height": "8.4%SH",
+                    "hAlignment": "center",
+                    "vAlignment": "CENTER",
+                    "boxes": [{
+                      "name": "okButton",
+                      "_backgroundColour": "#FF0000AA",
+                      "width": "12.0%SH",
+                      "height": "8.4%SH",
+                      "hAlignment": "center",
+                      "vAlignment": "CENTER",
+                      "class": "buttonGreenScalable"
+                    }]
+                  },
+                  {
+                    "name": "emptyButtonContainer",
+                    "width": "auto",
+                    "height": "8.4%SH",
+                    "hAlignment": "center",
+                    "vAlignment": "CENTER"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }]
+}

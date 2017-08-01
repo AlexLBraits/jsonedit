@@ -1,0 +1,47 @@
+{
+	"name": "rowBody",
+	"hAlignment": "center",
+	"vAlignment": "from_top_to_bottom",
+	"width": 427,
+	"height": 168,
+	"boxes": [
+		{
+			"name": "separate_line",
+			"width":427,
+			"height":3, 
+			"background":{
+				"image": "res/images/interface/commonArt/separate_line.png",
+				"scale":"window",
+				"corner":[2, 2]
+			}
+		},
+		{
+            "name": "decriptionLabel",
+            "maxWidth": "75%",
+            "height": 20,
+            "hAlignment": "center",
+            "textAlign": "center",
+            "margin": {
+                "top": 5
+            },
+            "font": {
+                "file": "res/fonts/FryPro.otf",
+                "colour": "#503200FF",
+                "size": 16
+            }
+        },
+        {
+        	"name": "cellContainer",
+            "width": "100%",
+            "height": 130,
+            "vAlignment": "center",
+            "_backgroundColour": "#00FF0080",
+            "hAlignment": "from_left_to_right",
+            "_boxes": [
+	            "res/ui/leaderboards/legendaryPlayersCell.json",
+	            "res/ui/leaderboards/legendaryPlayersCell.json",
+	            "res/ui/leaderboards/legendaryPlayersCell.json"
+            ]
+        }
+	]
+}

@@ -1,0 +1,131 @@
+{
+  "name": "achievementContent",
+  "vAlignment": "center",
+  "hAlignment": "from_left_to_right",
+  "width": "100%",
+  "height": "100%",
+  "_backgroundColour": "#FFFFFFAA",
+  "boxes": [
+		{
+			"name":"inprogressContent",
+			"height":"100%",
+			"width":"50%",
+			"hAlignment": "center",
+			"vAlignment": "from_top_to_bottom",
+			"_backgroundColour": "#FF0000FF",
+			"boxes": [
+				{
+				  "name": "achievWindowInProgressText",
+				  "_backgroundColour": "#0000FF55",
+				  "font": {
+					"size": "2.640845070422535%SH",
+					"minSize": "2.3432520589374755%SW",
+					"file": "res/fonts/Loyola.otf",
+					"colour": "#503200FF",
+				  },
+				  "text": "achievWindowInProgressText"
+				},
+				{
+					"name":"inprogressScrollContent",
+					"height":"auto",
+					"width":"100%",
+					"hAlignment": "from_left_to_right",
+					"vAlignment": "center",
+					"_backgroundColour": "#FF0000FF",
+					"boxes": [
+						{
+						  "name": "scroll",
+						  "width": "auto",
+						  "height": "100%",
+						  "_backgroundColour": "#00FF0055",
+                          "hAlignment": "center",
+                          "vAlignment": "from_top_to_bottom",
+                          "type": "Scroller",
+                          "overflow": "scroll",
+                          "vslider": "scroller",
+						  "_boxes": [
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json"
+						  ]
+						},
+						{
+						  "name": "scrollBar",
+						  "height": "100%",
+						  "width": "1%SH",
+						  "class": "scrollSliderVertical"
+						}
+					]
+				}
+			]
+		},
+		{
+			"width": "1%SH"
+		},
+		{
+			"name":"doneContent",
+			"height":"100%",
+			"width":"50%",
+			"hAlignment": "center",
+			"vAlignment": "from_top_to_bottom",
+			"_backgroundColour": "#FF0000FF",
+			"boxes": [
+				{
+				  "name": "achievWindowDoneText",
+				  "_backgroundColour": "#0000FF55",
+				  "font": {
+					"size": "2.640845070422535%SH",
+					"minSize": "2.3432520589374755%SW",
+					"file": "res/fonts/Loyola.otf",
+					"colour": "#503200FF",
+				  },
+				  "text": "achievWindowDoneText"
+				},
+				{
+					"name":"doneScrollContent",
+					"height":"auto",
+					"width":"100%",
+					"hAlignment": "from_left_to_right",
+					"vAlignment": "center",
+					"_backgroundColour": "#FF0000FF",
+					"boxes": [
+						{
+						  "name": "scroll",
+						  "width": "auto",
+						  "height": "100%",
+						  "_backgroundColour": "#00FF0055",
+                          "hAlignment": "center",
+                          "vAlignment": "from_top_to_bottom",
+                          "type": "Scroller",
+                          "overflow": "scroll",
+                          "vslider": "scroller",
+						  "_boxes": [
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json",
+							  "res/ui/achievements/achievementCell.json"
+						  ]
+						},
+						{
+						  "name": "scrollBar",
+						  "height": "100%",
+						  "width": "5SH%",
+						  "class": "scrollSliderVertical"
+						}
+					]
+				}
+			]
+		}
+  ]
+}

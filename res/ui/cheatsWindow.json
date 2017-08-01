@@ -1,0 +1,37 @@
+{
+	"name": "coverrrr",
+	"blockImmuni": 1,
+	"hAlignment": "CENTER",
+	"vAlignment": "CENTER",
+	"backgroundColour": "#000000B2",
+	"activeBackgroundColour": "#000000B2",
+	"padding": 30,
+	"handlers": {
+		"onTap": "RemoveSelf",
+		"onControlEventBegan": true
+	},
+	"boxes": [{
+		"width": 0,
+		"height": "100%",
+		"name": "cheatsContent",
+		"hAlignment": "FROM_LEFT_TO_RIGHT",
+		"vAlignment": "CENTER",
+		"boxes": [{
+			"type": "scroll",
+			"handlers": {
+				"onTap": true
+			},
+			"name": "cheatsContainer",
+			"hAlignment": "LEFT",
+			"vAlignment": "FROM_TOP_TO_BOTTOM",
+			"backgroundColour": "#000080FF",
+			"activeBackgroundColour": "#000080FF",
+			"border": 5,
+			"borderColour": "#008080FF",
+			"padding": 10,
+			"width": 450,
+			"height": "100%",
+			"overflow": "scroll"
+		}]
+	}]
+}

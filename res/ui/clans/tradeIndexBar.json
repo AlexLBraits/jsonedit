@@ -1,0 +1,79 @@
+{
+
+    "name": "tradeIndexBar",
+    "width": 158,
+    "height": 53,
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "boxes": [
+        {
+            "name": "tradeIndexBar_container",
+            "width": 158,
+            "height": 53,
+            "hAlignment": "left",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "tradeIndexBar_background",
+                    "width": 157,
+                    "height": 53,
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/commonArt/progressBar/bar.png"
+                        }
+                    }
+                },
+                {
+                    "name": "tradeIndexBar_progress_width",
+                    "width": 125,
+                    "height": 22,
+                    "offset": [
+                        15,
+                        -2
+                    ],
+                    "boxes": [
+                        {
+                            "name": "tradeIndexBar_progress",
+                            "minWidth": 12,
+                            "height": 22,
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/commonArt/progressBar/bar_fill_green.png"
+                                },
+                                "scale": "window",
+                                "corner": [
+                                    4,
+                                    22
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tradeIndexBar_text",
+                    "width": "100%",
+                    "height": "100%",
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "textAlign": "center",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": 18,
+                        "colour": "#FFFFFFFF",
+                        "outline":[ 
+                            {
+                                "width": 1,
+                                "colour": "#503200FF",
+                                "yoffset":1
+                            },
+                            {
+                                "width": 1,
+                                "colour": "#503200FF" 
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

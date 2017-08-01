@@ -1,0 +1,26 @@
+{
+	"name": "placeCancel",
+	"width": 65,
+	"height": 65,
+	"background": {
+		"images": {
+			"normal": "res/images/interface/Island2Art/clansMainWindow/bttn_move.png"
+		}
+	},
+	"class": "btn_tap_highlight_anim",
+	"boxes": [
+		{
+			"name": "icon",
+			"width": 65,
+			"height": 65,
+			"background": {
+				"scale": "none",
+				"vAlignment": "CENTER",
+				"hAlignment": "CENTER",
+				"images": {
+					"normal": "res/images/interface/Island2Art/clansMainWindow/icon_cancel_128x128.png"
+				}
+			}
+		}
+	]
+}

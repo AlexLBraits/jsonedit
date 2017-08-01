@@ -1,0 +1,10 @@
+{
+	"hAlignment": "center",
+	"vAlignment": "bottom",
+	"width": 112,
+	"height": 118,
+	"handlers": {
+		"onOut": "friendCellOnOut",
+		"onBack": "friendCellOnBack"
+	}
+}

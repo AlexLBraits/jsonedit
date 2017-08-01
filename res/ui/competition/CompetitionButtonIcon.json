@@ -1,0 +1,25 @@
+{
+    "name": "icon_container",
+    "width": "9%SH",
+	  "minWidth":"7.987%sw",
+	  "height": "9%SH",
+	  "minHeight":"7.987%sw",
+    "_backgroundColour": "#00ff00ff",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "boxes":[
+    	{
+    		"name": "icon_for_button",
+			"width": "100%",
+			"height": "100%",
+			"_backgroundColour": "#00ff00ff",
+			"hAlignment": "CENTER",
+			"vAlignment": "CENTER",
+    		"background":{
+			"image":"res/images/interface/commonArt/minus_icon.png",
+			"scale":"fit"
+			}
+    	}
+    ]
+    
+}

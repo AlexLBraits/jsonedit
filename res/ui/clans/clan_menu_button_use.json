@@ -1,0 +1,36 @@
+{
+    "name": "backgrounds",
+    "width": "100%",
+    "height": "100%",
+    "minWidth": 127,
+    "minHeight": 55,
+    "boxes": [
+        {
+            "width": "50%",
+            "height": "100%",
+            "background": {
+                "scale": "window",
+                "corner": [
+                    62, 28
+                ],
+                "images": {
+                    "normal": "res/images/interface/Island2Art/clansMainWindow/bttn_110_bg_left.png"
+                }
+            }
+        },
+        {
+            "width": "50%",
+            "height": "100%",
+            "background": {
+                "scale": "window",
+                "corner": [
+                    1,
+                    28
+                ],
+                "images": {
+                    "normal": "res/images/interface/Island2Art/clansMainWindow/bttn_110_bg_right.png"
+                }
+            }
+        }
+    ]
+}

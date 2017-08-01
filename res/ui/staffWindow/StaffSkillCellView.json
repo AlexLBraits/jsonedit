@@ -1,0 +1,64 @@
+{
+    "vAlignment": "FROM_TOP_TO_BOTTOM",
+    "hAlignment": "center",
+    "width": "18.56%sh",
+    "height": "10.56%sh",
+    "_backgroundColour": "#77000077",
+    "boxes": [
+        {
+            "name": "icon",
+            "width": "100%h",
+            "height": "100%",
+            "hAlignment": "right",
+            "_backgroundColour": "#00770077",
+            "vAlignment": "bottom",
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "normal": "res/images/icons/attributeIcons/craft_animal.png"
+                }
+            },
+            "boxes": [
+                {
+                    "name": "itemCount",
+                    "maxWidth": "11%sh",
+                    "height": "3.8%sh",
+                    "vAlignment": "bottom",
+                    "hAlignment": "RIGHT",
+                    "_backgroundColour": "#00770077",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "3.2%sh",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                            {
+                                "width": "5%",
+                                "colour": "#503200FF",
+                                "yoffset": "6%"
+                            },
+                            {
+                                "width": "5%",
+                                "colour": "#503200FF"
+                            }
+                        ]
+                    },
+                    "text": "225/222"
+                }
+            ]
+        },
+        {
+            "name": "skillAndCount",
+            "width": "75%",
+            "_backgroundColour": "#00770077",
+            "textAlign" : "center",
+            "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": "2%SH",
+                "colour": "#503200FF",
+            },
+            "textWrap": true,
+            "maxHeight": "4%SH",
+            "text": "Animal Husbandry"
+        }
+    ]
+}

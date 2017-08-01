@@ -1,0 +1,110 @@
+{
+	"hAlignment": "CENTER",
+	"vAlignment": "CENTER",
+	"padding": {
+		"top": 55,
+		"left": 20,
+		"right": 20
+	},
+	"width": "90%",
+	"height": "100%",
+	"boxes": [
+		{
+			"hAlignment": "CENTER",
+			"vAlignment": "from_top_to_bottom",
+			"width": "100%",
+			"height": "100%",
+			"boxes": [
+				{
+					"width": "100%",
+					"height": 0,
+					"hAlignment": "CENTER",
+					"font": {
+						"file": "res/fonts/loyola.otf",
+						"size": 25,
+						"colour": "#7d5528FF",
+						"outline": {
+							"width": 0,
+							"colour": "#ffffffff",
+							"yoffset": 1
+						}
+					},
+					"text": "giftInEmpty",
+                    "name": "giftInEmptyTitle",
+					"textAlign": "center"
+				},
+				{
+					"margin": {
+						"top": 10
+					},
+					"width": "100%",
+					"height": 0,
+					"hAlignment": "CENTER",
+					"font": {
+						"file": "res/fonts/loyola.otf",
+						"size": 15,
+						"colour": "#7d5528FF",
+						"outline": {
+							"width": 0,
+							"colour": "#ffffffff",
+							"yoffset": 1
+						}
+					},
+                    "name": "giftInEmptyDesc",
+					"text": "giftInEmpty2",
+					"textAlign": "center",
+					"textWrap": true
+				},
+				{
+					"margin": {
+						"top": 15
+					},
+					"width": 108,
+					"height": 108,
+					"name": "inviteButton",
+                    "display": "block",
+					"background": {
+						"images": {
+							"normal": "res/images/interface/Island2Art/giftsWindow/bttn_Fb_connect.png"
+						}
+					},
+					"handlers": {
+						"onControlEventBegan": true,
+						"onControlEventEnded": true
+					}
+				},
+                {
+                    "name": "friendSearchButton",
+                    "display": "none",
+                    "class": "btn_tap_highlight_anim",
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "width": 108,
+                    "height": 108,
+                    "background": {
+                      	"images": {
+                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/square_button_background.png",
+                            "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/square_button_background.png"
+                        },
+                        "scale": "contain"
+                    },
+                    "boxes": [
+                        {
+                            "name": "icon_magnifier",
+                            "width": 87,
+                            "height": 87,
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/windows/clans/union_create_tabs/icon_magnifier.png"
+                                },
+                                "scale": "contain"
+                            }
+                        }
+                    ]
+                }
+			]
+		}
+	]
+}

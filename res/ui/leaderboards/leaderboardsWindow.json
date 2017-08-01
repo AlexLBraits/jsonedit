@@ -1,0 +1,244 @@
+{
+    "name": "cover",
+    "class": "cover_layer",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "backgroundColour": "#000000B2",
+    "activeBackgroundColour": "#000000B2",
+    "padding": {
+        "top": 23
+    },
+    "boxes": [
+    	{
+            "name": "leaderboardsWindow",
+            "hAlignment": "center",
+            "width": 510,
+            "height": 0,
+            "background": {
+				"image": "res/images/interface/commonArt/win/win.png",
+				"scale": "window",
+				"corner": [
+					111,
+					111
+				]
+			},
+            "handlers": {
+                "onTap": true
+            },
+            "boxes": [
+                { 
+                    "name": "title",
+                    "class": "windowTitleClass"
+                },
+                {
+		            "name":"closeButton_container",
+		            "hAlignment": "right",
+		            "vAlignment": "top",
+		            "width": 510,
+		            "_backgroundColour": "#FF000078",
+		            "boxes": [
+		                {
+		                    "name": "close",
+		                    "class": "buttonClose",
+		                    "margin": {
+		                        "right": -15
+		                    }
+		                }
+		            ]
+		        },
+                {
+		            "name": "tabs_container",
+		            "width": 590,
+                    "height": 0,
+		            "vAlignment": "TOP",
+		            "hAlignment": "right",
+		            "_backgroundColour": "#00FF0068",
+		            "hidden": false,
+		            "margin":{
+		                "top": 120
+		            },
+		            "handlers": {
+		                "onTap": true,
+		                "onControlEventBegan": true
+		            },
+		            "boxes": [
+		                {
+		                    "name": "tabPanelInactive",
+		                    "width": 60,
+		                    "height": 200,
+		                    "vAlignment": "from_top_to_bottom",
+		                    "hAlignment": "LEFT",
+		                    "boxes": [
+		                        {
+		                            "name": "tab_1",
+		                            "value": 1,
+		                            "width": 68,
+		                            "height": 85,
+		                            "background": {
+		                                "images": {
+		                                    "normal": "res/images/interface/commonArt/leaderboards/tabs/tab_1_off.png"
+		                                }
+		                            },
+		                            "margin": {
+		                                "left": 7,
+		                                "top": 0
+		                            },
+		                            "boxes": [
+		                                {
+		                                    "width": 43,
+		                                    "height": 33,
+		                                    "margin": {
+		                                        "top": 27,
+		                                        "left": 4
+		                                    },
+		                                    "background": {
+		                                        "images": {
+		                                            "normal": "res/images/interface/commonArt/leaderboards/icon_ratings.png"
+		                                        },
+		                                        "scale": "fit"
+		                                    }
+		                                }
+		                            ]
+		                        },
+		                        {
+		                            "name": "tab_2",
+		                            "width": 68,
+		                            "height": 85,
+		                            "value": 2,
+		                            "background": {
+		                                "images": {
+		                                    "normal": "res/images/interface/commonArt/leaderboards/tabs/tab_2_off.png"
+		                                }
+		                            },
+		                            "margin": {
+		                                "left": 8,
+		                                "top": 0
+		                            },
+		                            "boxes": [
+		                                {
+		                                    "width": 43,
+		                                    "height": 47,
+		                                    "margin": {
+		                                        "top": 16,
+		                                        "left": 4
+		                                    },
+		                                    "background": {
+		                                        "images": {
+		                                            "normal": "res/images/interface/commonArt/leaderboards/icon_legplayers.png"
+		                                        },
+		                                        "scale": "fit"
+		                                    }
+		                                }
+		                            ]
+		                        }
+		                    ]
+		                },
+		                {
+		                    "name": "tabPanelActive",
+		                    "width": 60,
+		                    "height": 200,
+		                    "vAlignment": "from_top_to_bottom",
+		                    "hAlignment": "LEFT",
+		                    "boxes": [
+		                        {
+		                            "name": "tab_1",
+		                            "width": 68,
+		                            "height": 85,
+		                            "value": 1,
+		                            "background": {
+		                                "images": {
+		                                    "normal": "res/images/interface/commonArt/leaderboards/tabs/tab_1_on.png"
+		                                }
+		                            },
+		                            "margin": {
+		                                "left": 6,
+		                                "top": 0
+		                            },
+		                            "boxes": [
+		                                {
+		                                    "width": 50,
+		                                    "height": 39,
+		                                    "margin": {
+		                                        "top": 23,
+		                                        "left": 4
+		                                    },
+		                                    "background": {
+		                                        "images": {
+		                                            "normal": "res/images/interface/commonArt/leaderboards/icon_ratings.png"
+		                                        }
+		                                    }
+		                                }
+		                            ]
+		                        },
+		                        {
+		                            "name": "tab_2",
+		                            "width": 68,
+		                            "height": 85,
+		                            "value": 2,
+		                            "background": {
+		                                "images": {
+		                                    "normal": "res/images/interface/commonArt/leaderboards/tabs/tab_2_on.png"
+		                                }
+		                            },
+		                            "margin": {
+		                                "left": 6,
+		                                "top": 0
+		                            },
+		                            "boxes": [
+		                                {
+		                                    "width": 51,
+		                                    "height": 55,
+		                                    "margin": {
+		                                        "top": 12,
+		                                        "left": 4
+		                                    },
+		                                    "background": {
+		                                        "images": {
+		                                            "normal": "res/images/interface/commonArt/leaderboards/icon_legplayers.png"
+		                                        }
+		                                    }
+		                                }
+		                            ]
+		                        }
+		                    ]
+		                }
+		            ]
+		        },
+		        {
+		        	"name": "tabsContainer",
+	            	"hAlignment": "center",
+		        	"vAlignment": "top",
+		        	"margin": {
+		            	"top": 45
+		            },
+		            "width": 490,
+		            "height": 550,
+		            "boxes": [
+			            "res/ui/leaderboards/leaderboardsNode.json"
+		            	"_res/ui/leaderboards/legendaryPlayersNode.json"
+		            ]
+	            },
+	            {
+                    "width": "100%",
+                    "height": 555,
+                    "margin": {
+		            	"top": 45
+		            },
+                    "hAlignment": "center",
+                    "vAlignment": "bottom",
+                    "_backgroundColour": "#00FF0068",
+                    "padding": {
+                        "bottom": -41
+                    },
+                    "boxes": [
+                        {
+                            "name": "findMeButton",
+                            "class": "buttonGreenScalable",
+                            "height": 54
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

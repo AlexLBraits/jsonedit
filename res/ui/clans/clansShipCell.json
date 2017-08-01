@@ -1,0 +1,17 @@
+{
+  	"hAlignment":"LEFT",
+	"vAlignment":"TOP",
+	"boxes":[
+		{
+			"name":"icon",
+        	"width": 55,
+            "height": 55,
+            "background": {
+                "images": {
+                    "normal": "res/images/icons/resourcesIcons/bridgeTreasuresChest1_1.png"
+                },
+                "scale": "fit"
+            }
+		}
+	]
+}

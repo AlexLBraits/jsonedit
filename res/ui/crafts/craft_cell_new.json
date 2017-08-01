@@ -1,0 +1,516 @@
+{
+  "name": "tapAnimatedBox",
+  "_backgroundColour": "#00000050",
+  "boxes": [
+    {
+      "name": "cellContent",
+      "width": "16.27%sh",
+      "minWidth": "14.43%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "_backgroundColour": "#00000075",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "background": {
+        "image": "res/images/interface/bottomMenu/slot_craft.png",
+        "scale": "fit",
+        "vAlignment": "bottom"
+      },
+      "boxes": [
+        {
+          "name": "upperRow",
+          "width": "100%",
+          "height": "40%",
+          "vAlignment": "bottom",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF75",
+          "boxes": [
+            {
+              "name": "iconContainer",
+              "width": "120%",
+              "height": "120%",
+              "hAlignment": "left",
+              "vAlignment": "center",
+              "_backgroundColour": "#00FFFF75",
+              "boxes": [
+                {
+                  "name": "buildingIcon",
+                  "height": "9%SH",
+                  "width": "9%SH",
+                  "minWidth": "7.1%SW",
+                  "minHeight": "7.1%SW",
+                  "_backgroundColour": "#FF000075",
+                  "overflow": "ignore",
+                  "background": {
+                    "images": {
+                      "normal": "res/images/icons/resourcesIcons/res_bread.png"
+                    },
+                    "scale": "fit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "warehouseContainer",
+              "width": "94%",
+              "height": "75%",
+              "hAlignment": "left",
+              "vAlignment": "top",
+              "boxes": [
+                {
+                  "name": "countContainer",
+                  "width": "99%",
+                  "height": "100%",
+                  "_backgroundColour": "#00FFFF75",
+                  "hAlignment": "right",
+                  "vAlignment": "bottom",
+                  "boxes": [
+                    {
+                      "name": "containerInner",
+                      "width": "100%",
+                      "height": "100%",
+                      "hAlignment": "center",
+                      "vAlignment": "from_top_to_bottom",
+                      "boxes": [
+                        {
+                          "name": "emptyBox",
+                          "height": "22%",
+                          "width": "10%",
+                          "_backgroundColour": "#0000FF75"
+                        },
+                        {
+                          "name": "containerInner2",
+                          "width": "115%",
+                          "height": "50%",
+                          "_backgroundColour": "#0000FF75",
+                          "hAlignment": "from_right_to_left",
+                          "vAlignment": "top",
+                          "boxes": [
+                            {
+                              "name": "craftCountIcon",
+                              "height": "3.5%SH",
+                              "width": "4.5%SH",
+                              "minHeight": "3.2%sw",
+                              "minWidth": "4%sw",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/commonArt/craft_slot_icon_store.png"
+                                },
+                                "scale": "fit"
+                              },
+                              "vAlignment": "bottom",
+                              "hAlignment": "center",
+                              "boxes": []
+                            },
+                            {
+                              "name": "warehouse_counter",
+                              "_backgroundColour": "#0000FF75",
+                              "height": "95%",
+                              "width": "50%",
+                              "vAlignment": "center",
+                              "hAlignment": "right",
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.8%SH",
+                                "minSize": "2.66%sw",
+                                "maxSize": "2.8%SH",
+                                "colour": "#503200FF"
+                              },
+                              "text": "x999"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "containerNotif",
+                      "width": "90%",
+                      "height": "90%",
+                      "vAlignment": "top",
+                      "hAlignment": "right",
+                      "_backgroundColour": "#000000ff",
+                      "boxes": [
+                        {
+                          "name": "boxNotif",
+                          "hidden": true,
+                          "_backgroundColour": "#000000ff",
+                          "vAlignment": "top",
+                          "hAlignment": "right",
+                          "width": "30%",
+                          "height": "40%",
+                          "boxes": [
+                            "res/ui/notifier.json"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "craftNameContainer",
+              "width": "83%",
+              "height": "22%",
+              "hAlignment": "center",
+              "vAlignment": "top",
+              "_backgroundColour": "#FF00FF75",
+              "boxes": [
+                {
+                  "width": "100%",
+                  "height": "3.6%SH",
+                  "_maxHeight": "3.6%SH",
+                  "minHeight": "3%SW",
+                  "_backgroundColour": "#FF00FFAA",
+                  "boxes": [
+                    {
+                      "name": "caption",
+                      "maxHeight": "100%",
+                      "minHeight": "100%",
+                      "width": "100%",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textAlign": "center",
+                      "lineSpacing": 0.8,
+                      "textWrap": true,
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "_maxSize": "3%SH",
+                        "size": "95%",
+                        "minSize": 11,
+                        "colour": "#f5dcb4FF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "text": "Pomme de terre au four"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "craftInfoButtonContainer",
+              "width": "120%",
+              "height": "70%",
+              "_backgroundColour": "#FFFF0075",
+              "hAlignment": "left",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "name": "craftInfoButton",
+                  "_backgroundColour": "#FF0000FF",
+                  "width": "5.5%SH",
+                  "height": "5.5%SH",
+                  "minWidth": "5.11%SW",
+                  "minHeight": "5.11%SW",
+                  "class": "button_class",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "boxes": [
+                    {
+                      "width": "3.5%SH",
+                      "height": "3.5%SH",
+                      "minWidth": "3.11%SW",
+                      "minHeight": "3.11%SW",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_i.png"
+                        },
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "panelInfo",
+          "width": "80%",
+          "height": "60%",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF75",
+          "vAlignment": "top",
+          "boxes": [
+            {
+              "name": "unlockedContent",
+              "width": "100%",
+              "height": "100%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+                {
+                  "width": "100%",
+                  "height": "2.0%sh",
+                  "minHeight": "1.774622892635315%sw",
+                  "_backgroundColour": "#00007799"
+                },
+                {
+                  "name": "craftMasteryRow",
+                  "width": "14%SH",
+                  "minWidth": "12.43%SW",
+                  "height": "3.0%SH",
+                  "minHeight": "2.6619343389529724%SW",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#77000050",
+                  "boxes": [
+                    {
+                      "name": "craftMasteryBarContainerMain",
+                      "width": "12.6%SH",
+                      "minWidth": "11.18%SW",
+                      "height": "1.5%SH",
+                      "minHeight": "1.33%sw",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "class": "progressBarGreenSmallClass",
+                      "_backgroundColour": "#00000050"
+                    },
+                    {
+                      "name": "craftMasteryTextContainer",
+                      "width": "120%",
+                      "height": "50%",
+                      "_backgroundColour": "#FF000050",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "craftMasteryText",
+                          "width": "80%",
+                          "_height": "100%",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "textAlign": "center",
+                          "_backgroundColour": "#00000050",
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": "2.9%SH",
+                            "minSize": "2.5182786%sw",
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                              {
+                                "width": "6%",
+                                "colour": "#503200FF",
+                                "yoffset": "6%"
+                              },
+                              {
+                                "width": "6%",
+                                "colour": "#503200FF"
+                              }
+                            ]
+                          },
+                          "text": "10/10"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "craftMasteryIconContainer",
+                      "width": "16.27%sh",
+                      "minWidth": "14.43%SW",
+                      "height": "3.7%SH",
+                      "minHeight": "3.28%sw",
+                      "vAlignment": "center",
+                      "_backgroundColour": "#00000050",
+                      "hAlignment": "right",
+                      "boxes": [
+                        {
+                          "width": "4.5%SH",
+                          "height": "3.7%SH",
+                          "minHeight": "3.28%sw",
+                          "minWidth": "3.992901508429459%sw",
+                          "vAlignment": "center",
+                          "hAlignment": "center",
+                          "_backgroundColour": "#00000050",
+                          "boxes": [
+                            {
+                              "name": "craftMasteryIconBackground",
+                              "hidden": true,
+                              "width": "4.8%SH",
+                              "height": "4.8%SH",
+                              "minHeight": "4.259094942324756%sw",
+                              "minWidth": "4.259094942324756%sw",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/commonArt/craft_recipe.png"
+                                },
+                                "scale": "fit"
+                              }
+                            },
+                            {
+                              "name": "craftMasteryIcon",
+                              "width": "3.6971830985915495%SH",
+                              "height": "3.6971830985915495%SH",
+                              "minHeight": "3.2805528825124664%sw",
+                              "minWidth": "3.2805528825124664%sw",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/icons/resourcesIcons/res_corn.png"
+                                },
+                                "scale": "fit"
+                              },
+                              "boxes": [
+                                {
+                                  "name": "craftMasteryIconArrowUpContainer",
+                                  "hidden": true,
+                                  "_backgroundColour": "#ff000050",
+                                  "width": "4.0%SH",
+                                  "height": "3.640845070422535%SH",
+                                  "minHeight": "3.230563505255133%sw",
+                                  "minWidth": "3.54924578527063%sw",
+                                  "vAlignment": "bottom",
+                                  "hAlignment": "right",
+                                  "boxes": [
+                                    {
+                                      "name": "craftMasteryIconArrowUp",
+                                      "_backgroundColour": "#ff000050",
+                                      "width": "2.640845070422535%SH",
+                                      "height": "2.640845070422535%SH",
+                                      "minHeight": "2.3432520589374755%sw",
+                                      "minWidth": "2.3432520589374755%sw",
+                                      "background": {
+                                        "images": {
+                                          "normal": "res/images/interface/buildingMenu/icon_upgrade.png"
+                                        },
+                                        "scale": "fit"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "res_price_container",
+                  "width": "115%",
+                  "height": "10.5%SH",
+                  "hAlignment": "by_width",
+                  "vAlignment": "by_height",
+                  "_backgroundColour": "#00000050",
+                  "_boxes": [
+                    "res/ui/crafts/craftPriceCell.json",
+                    "res/ui/crafts/craftPriceCell.json",
+                    "res/ui/crafts/craftPriceCell.json",
+                    "res/ui/crafts/craftPriceCell.json",
+                    "res/ui/crafts/craftPriceCell.json",
+                    "res/ui/crafts/craftPriceCell.json"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "lockedContent",
+              "width": "100%",
+              "height": "90%",
+              "_backgroundColour": "#0000FF75",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+              	{
+              		"name":"spacer",
+              		"width": "100%",
+                  	"height": "18%"
+              		
+              	},
+                {
+                  "name": "craftSoonText",
+                  "width": "100%",
+                  "maxHeight": "50%",
+                  "_backgroundColour": "#0000FF75",
+                  "textWrap": true,
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "textAlign": "center",
+                  "text": "ContractUnlockText",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "maxSize": "1.7%SH",
+                    "minSize": "1.3%sw",
+                    "colour": "#503200FF"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "craftNeedProductionTextContinaerMain",
+              "hidden": true,
+              "width": "100%",
+              "height": "90%",
+              "_backgroundColour": "#0000FF75",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+                {
+                  "name": "emptyBoxCraftNeedProduction",
+                  "width": "100%",
+                  "height": "17%",
+                  "_backgroundColour": "#0000FF75"
+                },
+                {
+                  "name": "craftNeedProductionTextContinaer",
+                  "width": "100%",
+                  "height": "80%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#0000FF75",
+                  "boxes": [
+                    {
+                      "name": "craftNeedText",
+                      "_backgroundColour": "#0000FF75",
+                      "width": "100%",
+                      "maxHeight": "30%",
+                      "textWrap": true,
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textAlign": "center",
+                      "text": "ContractLockedNeedWorkerText",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "maxSize": "1.7%SH",
+                        "minSize": "1.1%sw",
+                        "colour": "#503200FF"
+                      }
+                    },
+                    {
+                      "height": "3%"
+                    },
+                    {
+                      "name": "craftNeedProductionScroll",
+                      "width": "120%",
+                      "height": "100%",
+                      "_backgroundColour": "#0000FF75",
+                      "hAlignment": "by_width",
+                      "vAlignment": "by_width",
+                      "overflow": "scroll",
+                      "_boxes": [
+                        "res/ui/crafts/craftNeedSkillCell.json",
+                        "res/ui/crafts/craftNeedSkillCell.json",
+                        "res/ui/crafts/craftNeedSkillCell.json",
+                        "res/ui/crafts/craftNeedSkillCell.json",
+                        "res/ui/crafts/craftNeedSkillCell.json"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

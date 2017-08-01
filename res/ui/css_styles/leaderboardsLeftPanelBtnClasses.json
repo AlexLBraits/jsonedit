@@ -1,0 +1,387 @@
+{
+    "clansButtonClass": {
+        "height": 100,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 73,
+                "height": 91,
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_icon_clans_FISH.png"
+                }
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_on.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Clans",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "membersButtonClass": {
+        "height": 98,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 65,
+                "height": 91,
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_icon_members.png"
+                }
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Members",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "reputationButtonClass": {
+        "height": 102,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 94,
+                "height": 91,
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_icon_reputation.png"
+                }
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Reputation",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "expButtonClass": {
+        "height": 102,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 93,
+                "height": 96,
+                "hAlignment": "left",
+                "padding": {
+                    "left": 16
+                },
+                "vAlignment": "top",
+                "boxes": [
+                    {
+                        "width": 93,
+                        "height": 64,
+                        "background": {
+                            "image" : "res/images/interface/windows/leaderboards/icon_top_xp.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Experience",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "money1ButtonClass": {
+        "height": 102,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 93,
+                "height": 96,
+                "hAlignment": "center",
+                "vAlignment": "top",
+                "boxes": [
+                    {
+                        "width": 73,
+                        "height": 66,
+                        "background": {
+                            "image" : "res/images/interface/windows/leaderboards/icon_top_money.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Gold",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "achievementsButtonClass": {
+        "height": 102,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 93,
+                "height": 96,
+                "hAlignment": "center",
+                "vAlignment": "top",
+                "boxes": [
+                    {
+                        "width": 65,
+                        "height": 65,
+                        "background": {
+                            "image" : "res/images/interface/windows/leaderboards/icon_star.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Achievements",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "match3ButtonClass": {
+        "height": 102,
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "boxes": [
+            {
+                "width": 93,
+                "height": 96,
+                "hAlignment": "center",
+                "vAlignment": "top",
+                "boxes": [
+                    {
+                        "width": 55,
+                        "height": 66,
+                        "background": {
+                            "image" : "res/images/interface/windows/leaderboards/icon_top_match3.png"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "ribbon",
+                "width": 155,
+                "height": 50,
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "background": {
+                    "image" : "res/images/interface/windows/clans/clanLeaderboards/tab_ribbon_off.png"
+                },
+                "boxes": [
+                    {
+                        "name": "ribbonText",
+                        "maxWidth": 105,
+                        "text": "Match3",
+                        "padding": {
+                            "top": 14
+                        },
+                        "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": 18,
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                                {
+                                    "width": 1,
+                                    "yoffset": 1,
+                                    "colour": "#503200FF"
+                                },
+                                {
+                                    "width": 1,
+                                    "colour": "#503200FF" 
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

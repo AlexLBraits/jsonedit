@@ -1,0 +1,78 @@
+{
+  "name": "cover",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "boxes": [{
+    "name": "window",
+    "width": 359,
+    "minHeight": 222,
+    "hAlignment": "CENTER",
+    "vAlignment": "from_top_to_bottom",
+    "background": {
+      "scale": "window",
+      "corner": [
+        111,
+        111
+      ],
+      "images": {
+        "normal": "res/images/interface/commonArt/win/win.png"
+      }
+    },
+    "handlers": {
+      "onTap": true
+    },
+    "padding": {
+      "bottom": 23
+    },
+    "boxes": [{
+      "name": "centerContainer",
+      "width": 300,
+      "height": 106,
+      "hAlignment": "CENTER",
+      "vAlignment": "center",
+      "margin": {
+        "top": -5
+      },
+      "boxes": [{
+        "text": "pleaseWaitText",
+        "font": {
+          "file": "res/fonts/Loyola.otf",
+          "size": 16,
+          "colour": "#FFFFFFFF",
+          "outline": [
+            {
+              "width": 1,
+              "colour": "#503200FF",
+              "yoffset": 1
+            },
+            {
+              "width": 1,
+              "colour": "#503200FF"
+            }
+          ]
+        }
+      }]
+    }, {
+      "name": "cancelButton",
+      "width": 180,
+      "height": 35,
+      "vAlignment": "center",
+      "hAlignment": "center",
+      "backgroundColour": "#ff000066",
+      "margin": {
+        "top": 2,
+        "bottom": 0
+      },
+      "boxes": [{
+        "name": "buttonCancelLabel",
+        "text": "buttonCancelText",
+        "font": {
+          "file": "res/fonts/Loyola.otf",
+          "size": 14,
+          "colour": "#004080FF"
+        }
+      }]
+    }]
+  }]
+}

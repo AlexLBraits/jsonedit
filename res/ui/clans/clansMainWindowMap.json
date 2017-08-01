@@ -1,0 +1,273 @@
+{
+  	"name": "middle_panel",
+  	"hAlignment":"LEFT",
+	"vAlignment":"TOP",
+	"boxes":[
+		{
+			"name":"bg_image",
+			"width":960,
+			"height":540,
+			"background":{
+				"images":{
+					"normal":"res/images/interface/windows/clans/clanMap/ground.png"
+				},
+				"scale":"none"
+			},
+			"hAlignment":"LEFT",
+			"vAlignment":"TOP",
+			"boxes":[	
+				{
+					"name":"meta_tree",
+					"hAlignment":"left",
+					"vAlignment":"bottom",
+					"class": "highlight_only_class",
+					"width":177,
+					"height":143,
+					"margin":{
+						"left":301,
+						"top":281
+					},
+					"background":{
+						"images":{
+							"normal":"res/images/interface/windows/clans/clanMap/tree_of_life.png"
+						},
+						"scale":"none"
+					},
+					"boxes":[
+						{
+							"name":"chest_glow",
+							"hidden": true,
+							"width":65,
+							"height":66,
+							"margin":{
+								"left":27,
+								"bottom":39
+							},
+							"background":{
+								"images":{
+									"normal":"res/images/interface/windows/clans/clanMap/tree_cheasts/glow.png"
+								},
+								"scale":"none"
+							}
+						},
+						{
+							"name":"chest_tree",
+							"hidden": true,
+							"width":66,
+							"height":49,
+							"margin":{
+								"left":27,
+								"bottom":39
+							},
+							"background":{
+								"images":{
+									"normal":"res/images/interface/windows/clans/clanMap/tree_cheasts/chest_1.png"
+								},
+								"scale":"none"
+							}
+						}
+					]
+				},
+				{
+					"name":"meta_rock",
+					"width":169,
+					"height":162,
+					"class": "highlight_only_class",
+					"margin":{
+						"left":92,
+						"top":80
+					},
+					"background":{
+						"images":{
+							"normal":"res/images/interface/windows/clans/clanMap/rock_and_wigwam.png"
+						},
+						"scale":"none"
+					}
+				},
+				{
+					"name":"meta_yacht",
+					"width":111,
+					"height":68,
+					"class": "highlight_only_class",
+					"margin":{
+						"left":706,
+						"top":120
+					},
+					"background":{
+						"images":{
+							"normal":"res/images/interface/windows/clans/clanMap/regatta.png"
+						},
+						"scale":"none"
+					}
+				},
+				{
+					"name":"sheeps",
+					"width":52,
+					"height":48,
+					"class": "highlight_only_class",
+					"margin":{
+						"left":633,
+						"top":235
+					},
+					"background":{
+						"images":{
+							"normal":"res/images/interface/windows/clans/clanMap/sheeps.png"
+						},
+						"scale":"none"
+					}
+				},
+				{
+					"name":"lighthouse",
+					"width":86,
+					"height":133,
+					"class": "highlight_only_class",
+					"margin":{
+						"left":570,
+						"top":29
+					},
+					"background":{
+						"images":{
+							"normal":"res/images/interface/windows/clans/clanMap/lighthouse.png"
+						},
+						"scale":"none"
+					}
+				},
+				{
+					"name":"ship_container",
+					"width":"100%",
+					"height":"100%",
+					"hAlignment": "right",
+					"vAlignment": "bottom",
+					"_margin":{
+						"left":860,
+						"top":440
+					},
+					"_backgroundColour": "#FF000042",
+					"_border":1,
+					"_textAlign": "center",
+                    "_font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": 18,
+                        "minSize": 10,
+                        "colour": "#FFFFFFFF",
+                        "outline":[ 
+                            {
+                                "width": 1,
+                                "colour": "#503200FF",
+                                "yoffset":1
+                            },
+                            {
+                                "width": 1,
+                                "colour": "#503200FF" 
+                            }
+                        ]
+                    },
+                    "_text": "test_ship",
+                    "boxes": [
+                    	"res/ui/clans/clansShip.json"
+                    ]
+				},
+				{
+					"name":"place_0",
+					"margin":{
+						"left":63,
+						"top":268
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_1",
+					"margin":{
+						"left":308,
+						"top":133
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_2",
+					"margin":{
+						"left":158,
+						"top":373
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_3",
+					"margin":{
+						"left":393,
+						"top":263
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_4",
+					"margin":{
+						"left":358,
+						"top":413
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_5",
+					"margin":{
+						"left":458,
+						"top":33
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_6",
+					"margin":{
+						"left":498,
+						"top":158
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_7",
+					"margin":{
+						"left":575,
+						"top":351
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_8",
+					"margin":{
+						"left":688,
+						"top":253
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				},
+				{
+					"name":"place_9",
+					"margin":{
+						"left":808,
+						"top":168
+					},
+					"boxes": [
+						"res/ui/clans/clansMapPlaceCell.json"
+					]
+				}
+			]
+		}
+	]
+}

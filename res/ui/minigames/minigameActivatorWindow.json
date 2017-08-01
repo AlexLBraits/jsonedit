@@ -1,0 +1,520 @@
+{
+  "name": "activator_root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#0A0014BE",
+  "activeBackgroundColour": "#0A0014BE",
+  "applyTo": {
+    "acceptBtn": {
+      "scale": 0.5,
+      "alpha": 0,
+      "animation": [
+        {
+          "wait": {
+            "delay": 0.1
+          }
+        },
+        {
+          "scale": [
+            null,
+            1.0,
+            0.3
+          ],
+          "alpha": [
+            null,
+            1.0,
+            0.3
+          ]
+        }
+      ]
+    },
+    "ratingBtn": {
+      "scale": 0.5,
+      "alpha": 0,
+      "animation": [
+        {
+          "wait": {
+            "delay": 0.2
+          }
+        },
+        {
+          "scale": [
+            null,
+            1.0,
+            0.3
+          ],
+          "alpha": [
+            null,
+            1.0,
+            0.3
+          ]
+        }
+      ]
+    },
+    "declineBtn": {
+      "scale": 0.5,
+      "alpha": 0,
+      "animation": [
+        {
+          "wait": {
+            "delay": 0.3
+          }
+        },
+        {
+          "scale": [
+            null,
+            1.0,
+            0.3
+          ],
+          "alpha": [
+            null,
+            1.0,
+            0.3
+          ]
+        }
+      ]
+    },
+    "window": {
+      "scale": 0.5,
+      "alpha": 0,
+      "animation": {
+        "scale": [
+          null,
+          1.0,
+          0.2
+        ],
+        "alpha": [
+          null,
+          1.0,
+          0.2
+        ]
+      }
+    },
+    "badge": {
+      "scale": 0,
+      "animation": [
+        {
+          "wait": {
+            "delay": 0.35
+          }
+        },
+        {
+          "scale": [
+            null,
+            1.0,
+            0.1
+          ]
+        }
+      ]
+    }
+  },
+  "boxes": [
+    {
+      "name": "window",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "vAlignment": "LEFT",
+      "hAlignment": "TOP",
+      "boxes": [
+        {
+          "width": 375,
+          "height": 270,
+          "boxes": [
+            {
+              "name": "rubber",
+              "sizeBase": "textWrapper",
+              "height": "100%",
+              "width": "100%",
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/windows/inhabitantWindow/bubble_mat.png"
+                }
+              },
+              "vAlignment": "FROM_TOP_TO_BOTTOM",
+              "hAlignment": "LEFT"
+            }
+          ]
+        },
+        {
+          "width": 375,
+          "height": 270,
+          "sizeBase": "difficultyWrapper",
+          "background": {
+            "images": {
+              "normal": "res/images/interface/windows/inhabitantWindow/bubble_transp.png"
+            }
+          }
+        },
+        {
+          "hAlignment": "LEFT",
+          "vAlignment": "FROM_BOTTOM_TO_TOP",
+          "height": 215,
+          "width": "100%",
+          "boxes": [
+            {
+              "name": "difficultyWrapper",
+              "width": "100%",
+              "vAlignment": "CENTER",
+              "hAlignment": "CENTER",
+              "height": 120,
+              "boxes": [
+                {
+                  "name": "selectText",
+                  "font": {
+                    "size": 15,
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#ffffffff",
+                    "outline": [
+                      {
+                        "width": 1,
+                        "colour": "#553C1Eff",
+                        "yoffset": 1
+                      },
+                      {
+                        "width": 1,
+                        "colour": "#553C1Eff"
+                      }
+                    ]
+                  },
+                  "text": "miniGameOptionTextArea",
+                  "lineSpacing": 0.7,
+                  "textAlign": "CENTER",
+                  "margin": {
+                    "bottom": -7
+                  }
+                }
+              ]
+            },
+            {
+              "vAlignment": "TOP",
+              "hAlignment": "LEFT",
+              "width": "100%",
+              "boxes": [
+                {
+                  "name": "textWrapper",
+                  "width": "100%",
+                  "vAlignment": "FROM_TOP_TO_BOTTOM",
+                  "hAlignment": "CENTER",
+                  "margin": {
+                    "top": 10
+                  },
+                  "boxes": [
+                    {
+                      "name": "titleContainer",
+                      "width": "100%",
+                      "vAlignment": "TOP",
+                      "hAlignment": "CENTER",
+                      "boxes": [
+                        {
+                          "width": "100%",
+                          "height": 61,
+                          "hAlignment": "LEFT",
+                          "margin": {
+                            "top": -10
+                          },
+                          "boxes": [
+                            {
+                              "name": "gameIcon",
+                              "width": 100,
+                              "height": 61,
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/minigames/activatorWindow/gameicon_pairs.png"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "windowTitle",
+                          "font": {
+                            "size": 30,
+                            "file": "res/fonts/Loyola.otf",
+                            "colour": "#7d5528ff",
+                            "outline": {
+                              "width": 0,
+                              "colour": "#ffffffff",
+                              "yoffset": 1
+                            }
+                          },
+                          "text": "Quis vehicula",
+                          "lineSpacing": 0.7,
+                          "textAlign": "CENTER",
+                          "padding": {
+                            "top": 12,
+                            "left": 8
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "description",
+                      "maxWidth": 300,
+                      "width": "100%",
+                      "vAlignment": "TOP",
+                      "hAlignment": "CENTER",
+                      "font": {
+                        "size": 15,
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#7d5528ff",
+                        "outline": {
+                          "width": 0,
+                          "colour": "#ffffffff",
+                          "yoffset": 1
+                        }
+                      },
+                      "padding": {
+                        "bottom": 18
+                      },
+                      "lineSpacing": 0.78,
+                      "textWrap": true,
+                      "text": "\n\n\n",
+                      "textAlign": "LEFT",
+                      "margin": {
+                        "top": -20
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "acceptBtn",
+          "width": 193,
+          "height": 63,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/buttons/bttn_white.png"
+            }
+          },
+          "class": "btn_tap_anim",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "icon",
+              "width": 64,
+              "height": 64,
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/buttons/icon_ok_128x128.png"
+                }
+              }
+            },
+            {
+              "name": "btnText",
+              "width": "auto",
+              "vAlignment": "TOP",
+              "hAlignment": "left",
+              "font": {
+                "size": 15,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#7d5528ff",
+                "outline": {
+                  "width": 0,
+                  "colour": "#ffffffff",
+                  "yoffset": 1
+                }
+              },
+              "text": "ducksBtnAccept",
+              "textAlign": "left",
+              "margin": {
+                "left": -8
+              },
+              "padding": [
+                -5
+              ]
+            },
+            {
+              "name": "timer",
+              "hidden": "false",
+              "width": 123,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 14,
+                "colour": "#FFFFFFFF",
+                "outline": [
+                  {
+                    "width": 1,
+                    "colour": "#503200FF",
+                    "yoffset": 1
+                  },
+                  {
+                    "width": 1,
+                    "colour": "#503200FF"
+                  }
+                ]
+              },
+              "textWrap": true,
+              "textAlign": "CENTER",
+              "hAlingnment": "LEFT",
+              "vAlignment": "CENTER",
+              "text": "timerText",
+              "margin": {
+                "top": 40
+              }
+            },
+            {
+              "name": "priceHead",
+              "width": 123,
+              "hidden": "true",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "boxes": [
+                {
+                  "name": "priceText",
+                  "width": 123,
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": 14,
+                    "colour": "#FFFFFFFF",
+                    "outline": [
+                      {
+                        "width": 1,
+                        "colour": "#553c1eFF",
+                        "yoffset": 1
+                      },
+                      {
+                        "width": 1,
+                        "colour": "#553c1eFF"
+                      }
+                    ]
+                  },
+                  "hAlingnment": "LEFT",
+                  "vAlignment": "CENTER",
+                  "text": "priceText",
+                  "margin": {
+                    "top": 0,
+                    "right": 27
+                  }
+                }
+              ]
+            }
+          ],
+          "margin": {
+            "top": 225,
+            "left": 110
+          }
+        },
+        {
+          "name": "ratingBtn",
+          "width": 193,
+          "height": 63,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/buttons/bttn_white.png"
+            }
+          },
+          "handlers": {
+            "onTap": true
+          },
+          "class": "btn_tap_anim",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "icon",
+              "width": 37,
+              "height": 34,
+              "background": {
+                "scale": "stretch",
+                "images": {
+                  "normal": "res/images/minigames/activatorWindow/bttn_icon_ratings_fake.png"
+                }
+              },
+              "margin": {
+                "left": 15
+              }
+            },
+            {
+              "name": "btnText",
+              "width": "auto",
+              "vAlignment": "TOP",
+              "hAlignment": "left",
+              "font": {
+                "size": 15,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#7d5528ff",
+                "outline": {
+                  "width": 0,
+                  "colour": "#ffffffff",
+                  "yoffset": 1
+                }
+              },
+              "text": "ducksBtnRating",
+              "textAlign": "left",
+              "margin": {
+                "left": 4
+              },
+              "padding": [
+                -5
+              ]
+            }
+          ],
+          "margin": {
+            "top": 275,
+            "left": 110
+          }
+        },
+        {
+          "name": "declineBtn",
+          "width": 193,
+          "height": 63,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/buttons/bttn_white.png"
+            }
+          },
+          "class": "btn_tap_anim",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "icon",
+              "width": 64,
+              "height": 64,
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/buttons/icon_cancel_128x128.png"
+                }
+              }
+            },
+            {
+              "name": "btnText",
+              "width": "auto",
+              "vAlignment": "TOP",
+              "hAlignment": "left",
+              "font": {
+                "size": 15,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#7d5528ff",
+                "outline": {
+                  "width": 0,
+                  "colour": "#ffffffff",
+                  "yoffset": 1
+                }
+              },
+              "text": "ducksBtnDeny",
+              "textAlign": "left",
+              "margin": {
+                "left": -8
+              },
+              "padding": [
+                -5
+              ]
+            }
+          ],
+          "margin": {
+            "top": 325,
+            "left": 110
+          }
+        }
+      ]
+    }
+  ]
+}

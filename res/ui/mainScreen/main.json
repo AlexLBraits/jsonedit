@@ -1,0 +1,73 @@
+{
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "name": "mainScreenLayer",
+    "boxes": [
+        {
+            "name": "background",
+            "width": "100%",
+            "height": "100%",
+        },
+        {
+            "vAlignment": "from_top_to_bottom",
+            "hAlignment": "CENTER",
+            "width":"100%",
+            "height":"100%",
+            "boxes": [
+                {
+                    "name": "topPanel",
+                    "width": "100%",
+                    "_backgroundColour": "#00007777"
+                },
+                {
+                    "name": "questPanel",
+                    "width": "100%"
+                },
+                {
+                    "width": "100%",
+                    "height": "AUTO",
+                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                    "vAlignment": "top",
+                    "boxes": [
+                        {
+                            "name": "leftPanel",
+                            "height": "100%",
+                            "hAlignment": "left",
+                            "vAlignment": "center",
+                            "_backgroundColour": "#77007777"
+                        },
+                        {
+                            "type": "spacer"
+                        },
+                        {
+                            "name": "rightPanel",
+                            "height": "100%",
+                            "vAlignment": "center"
+                        }
+                    ]
+                },
+                {
+                    "name": "statePanel",
+                    "width": "100%",
+                    "height": 15
+                },
+                {
+                    "name": "zoomPanel",
+                    "width": "100%",
+                    "height": 15
+                },
+                {
+                    "name": "craftsPanel",
+                    "width": "100%",
+                    "hAlignment": "center",
+                    "_backgroundColour": "#77000077"
+                },
+                {
+                    "name": "bottomPanel",
+                    "width": "100%",
+                    "_backgroundColour": "#00770077"
+                }
+            ]
+        }
+    ]
+}

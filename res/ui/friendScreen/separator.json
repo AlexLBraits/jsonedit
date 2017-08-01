@@ -1,0 +1,44 @@
+{
+    "height": "100%",
+    "vAlignment": "bottom",
+    "_padding": {
+    	"bottom": 10
+    },
+    "boxes": [
+        {
+            "name": "background",
+            "width": 50,
+            "height": 115,
+            "background": {
+                "image": "res/images/interface/mainScreen/friendScreen/separate_blue.png"
+            },
+            "vAlignment": "CENTER",
+            "hAlignment": "LEFT",
+            "boxes": [
+                {
+                    "vAlignment": "CENTER",
+                    "hAlignment": "CENTER",
+                    "width": 1,
+                    "height": 1,
+                    "margin": {
+                        "left": 20
+                    },
+                    "rotate": -90,
+                    "boxes": [
+                        {
+                            "name": "text",
+                            "height": 20,
+                            "maxWidth": 120,
+                            "font": {
+                                "file": "res/fonts/loyola.otf",
+                                "size": 20,
+                                "colour": "#ffffffff"
+                            },
+                            "text": "Alies"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

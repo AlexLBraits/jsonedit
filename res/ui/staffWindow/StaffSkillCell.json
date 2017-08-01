@@ -1,0 +1,209 @@
+{
+    "name": "figure_cell_container",
+    "width": "20%sh",
+	"minWidth": "15.384615384615383%sw",
+	"height": "8.873239436619718%sh",
+	"minHeight": "6.825568797399783%sw",
+    "_backgroundColour": "#00ff00ff",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "boxes": [
+        {
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "boxes": [
+                {
+                    "name": "figure_cell",
+                    "width": "20.5%SH",
+                    "minWidth": "16.923076923076923%sw",
+                    "height": "10%SH",
+					"minHeight": "7.692307692307692%sw",
+                    "_backgroundColour": "#00ff00ff",
+                    "vAlignment": "CENTER",
+                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                    "boxes": [
+                        {
+                            "name": "spacer",
+                            "width": "1.5%SH",
+                            "minHeight": "1.1538461538461537%sw"
+                        },
+                        {
+                            "width": "7.922535211267605%SH",
+                            "minWidth": "6.094257854821234%sw",
+                            "height": "7.922535211267605%SH",
+                            "minHeight": "6.094257854821234%sw",
+                            "name": "skillIcon",
+                            "background": {
+                                "_images": {
+                                    "normal": "res/images/icons/resourcesIcons/res_egg.png"
+                                },
+                                "scale": "stretch",
+                                "hAlignment": "CENTER",
+                                "vAlignment": "CENTER"
+                            },
+                            "boxes":[ 
+                            {
+				"name": "contractBack",
+				"width": "7.8%SH",
+				"height": "7.8%SH",
+				"hidden": true,
+				"vAlignment": "CENTER",
+				"hAlignment": "CENTER",
+				"background": {
+				  "scale": "stretch",
+				  "hAlignment": "CENTER",
+				  "vAlignment": "CENTER",
+				  "images": {
+				    "normal": "res/images/interface/commonArt/contract_frame.png"
+				  }
+				},
+				"boxes": [
+				{
+				    "width": "5.022535211267605%SH",
+				    "_minWidth": "6.094257854821234%sw",
+				    "height": "5.022535211267605%SH",
+				    "_minHeight": "5.094257854821234%sw",
+				    "name": "contractIcon",
+				    "background": {
+					"images": {
+					    "normal": "res/images/icons/resourcesIcons/res_egg.png"
+					},
+					"scale": "stretch",
+					"hAlignment": "CENTER",
+					"vAlignment": "CENTER"
+				    },
+				}
+				]
+			      },
+                           ]
+                        },
+                        {
+			  "name": "middleSpicer",
+			  "width": "1%sh",
+			  "height": "100%"
+                        },
+                        {
+                            "name": "skillsContainer",
+                            "hAlignment": "CENTER",
+                            "vAlignment": "FROM_BOTTOM_TO_TOP",
+                            "width": "40%",
+                            "height": "70%",
+                            "_backgroundColour": "#ff00ffff",
+                            "boxes": [
+                                {
+									"height": "0%",
+                                    "name": "containerSkill",
+                                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                                    "vAlignment": "CENTER",
+                                    "_backgroundColour": "#ff000054",
+                                    "_boxes": [
+                                        {
+                                            "name": "minusSkillButton",
+                                            "width": "5%SH",
+											"minWidth": "3.846153846153846%sw",
+											"height": "5%sh",
+											"minHeight": "3.846153846153846%sw",
+                                            "_backgroundColour": "#33000075",
+                                            "class": "buttonGreenScalable",
+                                            "vAlignment": "center",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "name": "staffLevelupButtonText",
+                                                    "maxWidth": "100%",
+                                                    "height": "100%",
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "class": "loyolaWhiteWithoutSizeText",
+                                                    "text": "-"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                        	"width": "auto"
+                                        },
+                                        {
+                                            "name": "plusSkillButton",
+                                            "width": "5%SH",
+											"minWidth": "3.846153846153846%sw",
+											"height": "5%sh",
+											"minHeight": "3.846153846153846%sw",
+                                            "_backgroundColour": "#33000075",
+                                            "class": "buttonGreenScalable",
+                                            "vAlignment": "center",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "name": "staffLevelupButtonText",
+                                                    "maxWidth": "100%",
+                                                    "height": "100%",
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "class": "loyolaWhiteWithoutSizeText",
+                                                    "text": "+"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "skillsFormToContainer",
+                                    "hAlignment": "CENTER",
+                                    "vAlignment": "CENTER",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "_backgroundColour": "#00ff00ff",
+                                    "boxes": [
+                                        {
+                                            "name": "skillsFromTo",
+                                            "hAlignment": "FROM_LEFT_TO_RIGHT",
+                                            "vAlignment": "CENTER",
+											"width": "100%",
+                                            "height": "100%",
+                                            "boxes": [
+												{
+													"width": "auto"
+												},
+                                                {
+                                                    "name": "valueSkill",
+                                                    "_backgroundColour": "#00ff00ff",
+													"maxWidth": "8.2%SH",
+													"textAlign": "center",
+													"vAlignment": "CENTER",
+													"height": "3.6971830985915495%sh",
+                                                    "class": "loyolaWhiteWithoutSizeText",
+                                                    "text": "14"
+                                                },
+                                                {
+                                                    "name": "To",
+													"maxWidth": "100%",
+													"height": "3.6971830985915495%sh",
+													"minHeight": "2.8439869989165762%sw",
+                                                    "class": "loyolaWhiteWithoutSizeText",
+                                                    "text": ">"
+                                                },
+                                                {
+                                                    "name": "valueSkillTo",
+													"maxWidth": "100%",
+													"height": "3.6971830985915495%sh",
+													"minHeight": "2.8439869989165762%sw",
+                                                    "class": "loyolaGreenWithoutSizeText",
+                                                    "text": "14"
+                                                },
+                                                {
+													"width": "auto"
+												},
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "vAlignment": "bottom",
+    "hAlignment": "right",
+    "width": "10.56%SH",
+    "height": "10.6%SH",
+    "_backgroundColour": "#77000077",
+    "boxes": [
+        {
+            "name": "icon",
+    		"width": "10.56%SH",
+    		"height": "10.56%SH",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "normal": "res/images/icons/resourcesIcons/res_wheat.png"
+                }
+            }
+        },
+        {
+            "name": "item_count",
+            "maxWidth": "100%h",
+            "height": "100%",
+            "vAlignment": "bottom",
+            "_backgroundColour": "#00770077",
+            "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": "3.17%sh",
+                "colour": "#FFFFFFFF",
+				"outline": [
+					{
+						"width": "5%",
+						"colour": "#503200FF",
+						"yoffset": "6%"
+					},
+					{
+						"width": "5%",
+						"colour": "#503200FF"
+					}
+				]
+            },
+            "text": "5/1"
+        }
+    ]
+}

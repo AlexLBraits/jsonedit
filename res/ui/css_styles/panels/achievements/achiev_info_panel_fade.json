@@ -1,0 +1,94 @@
+{
+    "achiev_info_panel_hide": {
+        "applyTo": {
+            "stage": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "iconBg": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "title": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "backgrounds_root": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "_none_done": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "icon": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            },
+            "_none_light": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            0.75
+                        ]
+                    }
+                ]
+            },
+            "achiev_title": {
+                "animation": [
+                    {
+                        "alpha": [
+                            1.0,
+                            0.0,
+                            1.2916666666666667
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

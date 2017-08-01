@@ -1,0 +1,181 @@
+{
+    "name": "centerPanel",
+    "width": 0,
+    "height": 100,
+    "vAlignment": "center",
+    "hAlignment": "left",
+    "boxes": [
+        {
+            "name": "ribbon_bg",
+            "minWidth": 80,
+            "height": 79,
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "center",
+            "margin": {
+                "left": 0
+            },
+            "background": {
+                "scale": "window",
+                "corner": [
+                    57,
+                    41
+                ],
+                "images": {
+                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/ribbon_green.png"
+                }
+            },
+            "padding": {
+                "right": 45
+            },
+            "boxes": [
+                {
+                    "name": "avatarContainer",
+                    "vAlignment": "bottom",
+                    "hAlignment": "left",
+                    "width": 80,
+                    "height": 80,
+                    "boxes": [
+                        {
+                            "name": "avatar",
+                            "width": 56,
+                            "height": 56,
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "margin": {
+                                "bottom": 12,
+                                "left": 11
+                            }
+                        },
+                        {
+                            "width": 78,
+                            "height": 78,
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "name": "avatarFrame",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/frame_avatar_top.png"
+                                }
+                            },
+                            "margin": {
+                                "bottom": 2
+                            }
+                        },
+                        {
+                            "width": 55,
+                            "height": 55,
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "name": "levelStar",
+                            "margin": {
+                                "bottom": 35,
+                                "left": 30
+                            },
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/lvl_friend.png"
+                                }
+                            },
+                            "boxes": [
+                                {
+                                    "name": "friendLevelLabel",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "textAlign": "center",
+                                    "height": 0,
+                                    "width": 20,
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 20,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1,
+                                            "colour": "#6e2300ff",
+                                            "yoffset": 0
+                                        }
+                                    },
+                                    "margin": {
+                                        "left": 11
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "helpIcon",
+                            "width": 35,
+                            "height": 28,
+                            "background": {
+                                "scale": "stretch",
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/badge_help.png"
+                                }
+                            },
+                            "margin": {
+                                "left": 0,
+                                "bottom": 50
+                            },
+                            "hidden": true
+                        }
+                    ]
+                },
+                {
+                    "name": "friendActionButton",
+                    "class": "btn_tap_anim",
+                    "width": 68,
+                    "height": 68,
+                    "vAlignment": "top",
+                    "hAlignment": "left",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_friend_add.png",
+                            "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_friend_add.png"
+                        },
+                        "hAlignment": "center",
+                        "vAlignment": "center"
+                    },
+                    "handlers": {
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    }
+                },
+                {
+                    "name": "giftButton",
+                    "class": "btn_tap_anim",
+                    "width": 68,
+                    "height": 68,
+                    "vAlignment": "top",
+                    "hAlignment": "left",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_gift.png",
+                            "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_gift.png"
+                        }
+                    },
+                    "handlers": {
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    }
+                },
+                {
+                    "name": "clanButton",
+                    "class": "btn_tap_anim",
+                    "width": 68,
+                    "height": 68,
+                    "vAlignment": "top",
+                    "hAlignment": "left",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/windows/clans/bttn_union.png",
+                            "pressed": "res/images/interface/Island2Art/windows/clans/bttn_union.png"
+                        }
+                    },
+                    "handlers": {
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    }
+                },
+                "res/ui/friendScreen/topFriendBooklet.json"
+            ]
+        }
+    ]
+}

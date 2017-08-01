@@ -1,0 +1,368 @@
+{
+    "name": "root",
+    "backgroundColour": "#000000B2",
+    "activeBackgroundColour": "#000000B2",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "cover_layer",
+    "boxes": [
+        {
+            "name": "parent",
+            "width": "56%SH",
+            "height": "90%SH",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "_backgroundColour": "#FF000078",
+            "boxes": [
+                {
+                    "name": "lockRuinWindow",
+                    "width": "100%",
+                    "height": "85%",
+                    "_backgroundColour": "#FF000078",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/windows/lockRuin/background.png"
+                        },
+                        "scale": "fit"
+                    },
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "blockContainer",
+                            "vAlignment": "top",
+                            "boxes": [
+                                {
+                                    "width": "100%",
+                                    "height": "80%",
+                                    "handlers": {
+                                        "onTap": true,
+                                        "onControlEventBegan": true
+                                    }
+                                }
+                            ],
+                            "width": "100%",
+                            "height": "100%"
+                        },
+                        {
+                            "name": "windowContainer",
+                            "hAlignment": "center",
+                            "vAlignment": "from_top_to_bottom",
+                            "width": "97%",
+                            "height": "85%",
+                            "_backgroundColour": "#FF000078",
+                            "boxes": [
+                                {
+                                    "name": "titleContainer",
+                                    "_backgroundColour": "#FF000078",
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "width": "100%",
+                                    "height": "11%",
+                                    "boxes": [
+                                        {
+                                            "name": "titleLeftEmpty",
+                                            "_backgroundColour": "#FF000078",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "width": "20%",
+                                            "height": "100%"
+                                        },
+                                        {
+                                            "name": "titleNotEmpty",
+                                            "_backgroundColour": "#000000B2",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "width": "46%",
+                                            "height": "100%",
+                                            "boxes": [
+                                                {
+                                                    "name": "textTitle",
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "maxWidth": "100%",
+                                                    "height": "5%SH",
+                                                    "textWrap": false,
+                                                    "_backgroundColour": "#46298438",
+                                                    "textAlign": "center",
+                                                    "text": "Title",
+                                                    "font": {
+                                                        "file": "res/fonts/Loyola.otf",
+                                                        "size": "4.8%SH",
+                                                        "colour": "#FFFFFFFF",
+                                                        "outline": [
+                                                            {
+                                                                "width": "4%",
+                                                                "colour": "#874803FF",
+                                                                "yoffset": "4%"
+                                                            },
+                                                            {
+                                                                "width": "4%",
+                                                                "colour": "#874803FF"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "empty",
+                                    "_backgroundColour": "#FF000078",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "width": "68%",
+                                    "height": "2%"
+                                },
+                                {
+                                    "name": "icon",
+                                    "_backgroundColour": "#FF000078",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "width": "75%",
+                                    "height": "30%",
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/icons/lockRuin/meta_bridge.png"
+                                        },
+                                        "scale": "fit"
+                                    }
+                                },
+                                {
+                                    "name": "conditionContainer",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "width": "75%",
+                                    "height": "5%",
+                                    "boxes": [
+                                        {
+                                            "name": "textCondition",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "maxWidth": "100%",
+                                            "textAlign": "center",
+                                            "text": "condition",
+                                            "font": {
+                                                "file": "res/fonts/FryPro.otf",
+                                                "size": "3.4%SH",
+                                                "colour": "#FFFFFFFF",
+                                                "outline": [
+                                                    {
+                                                        "width": "6%",
+                                                        "colour": "#503200FF",
+                                                        "yoffset": "6%"
+                                                    },
+                                                    {
+                                                        "width": "6%",
+                                                        "colour": "#503200FF"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "descriptionContainer",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "width": "70%",
+                                    "height": "30%",
+                                    "boxes": [
+                                        {
+                                            "name": "textDescription",
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "width": "100%",
+                                            "maxHeight": "18%sh",
+                                            "textWrap": true,
+                                            "textAlign": "left",
+                                            "text": "Description text",
+                                            "font": {
+                                                "file": "res/fonts/FryPro.otf",
+                                                "size": "2.5%SH",
+                                                "colour": "#503200FF"
+                                            }
+                                        },
+                                        {
+                                            "hidden": true,
+                                            "name": "containerContainer",
+                                            "width": "100%",
+                                            "height": "100%",
+                                            "vAlignment": "from_top_to_bottom",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "name": "containerDescription",
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "width": "100%",
+                                                    "height": "50%",
+                                                    "textWrap": true,
+                                                    "textAlign": "left",
+                                                    "text": "Description text",
+                                                    "font": {
+                                                        "file": "res/fonts/Loyola.otf",
+                                                        "size": "2.3%SH",
+                                                        "colour": "#503200FF"
+                                                    }
+                                                },
+                                                {
+                                                    "width": "100%",
+                                                    "height:": "29%",
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "boxes": [
+
+                                                        {
+                                                            "name": "fillBarContainer",
+                                                            "width": "100%",
+                                                            "height": "4.9%sh",
+                                                            "hAlignment": "center",
+                                                            "vAlignment": "center",
+                                                            "boxes": [
+                                                                {
+                                                                    "width": "90%",
+                                                                    "height": "3.163%sh",
+                                                                    "class": "progressBarYellowBlueClass60"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "width": "100%",
+                                                            "height": "4.6%sh",
+                                                            "vAlignment": "bottom",
+                                                            "hAlignment": "left",
+                                                            "boxes": [
+                                                                {
+                                                                    "name": "fillAttributeIcon",
+                                                                    "width": "5%sh",
+                                                                    "height": "5%sh",
+                                                                    "_backgroundColour": "#ff00ffff",
+                                                                    "background": {
+                                                                        "images": {
+                                                                            "normal": "res/images/icons/attributeIcons/production_water.png"
+                                                                        },
+                                                                        "scale": "fit"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name":"sliderContainer",
+                                                    "height":"8.5%sh",
+                                                    "width":"27.4%sh",
+                                                    "hAlignment":"from_left_to_right",
+                                                    "vAlignment":"center",
+                                                    "_backgroundColour":"#00007878",
+                                                    "boxes":[
+                                                        {
+                                                            "name": "minusButton",
+                                                            "width":"4.5%sh",
+                                                            "height":"4%sh",
+                                                            "_backgroundColour":"#00007878",
+                                                            "background":{
+                                                                "image":"res/images/interface/commonArt/minus_icon.png",
+                                                                "scale":"fit"
+                                                            },
+                                                            "class":"button_class"
+                                                        },
+                                                        {
+
+
+                                                            "_backgroundColour":"#FF0078FF",
+                                                            "width":"20%sh",
+                                                            "height":"100%",
+                                                            "vAlignment": "center",
+                                                            "hAlignment": "center",
+                                                            "boxes": [
+                                                                {
+                                                                    "_backgroundColour":"#F0F078FF",
+                                                                    "width": "19.3359375%sh",
+                                                                    "height": "6.059375%sh",
+                                                                    "background":{
+                                                                        "image":"res/images/interface/windows/lockRuin/slider_wheel_background.png",
+                                                                        "scale":"fit"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "_backgroundColour":"#F0F0FFFF",
+                                                                    "name": "slider",
+                                                                    "width": "17.3828125%sh",
+                                                                    "height": "4.20390625%sh",
+                                                                    "background":{
+                                                                        "image":"res/images/interface/windows/lockRuin/slider_wheel_blue_1.png",
+                                                                        "scale":"fit"
+                                                                    },
+                                                                    "overflow": "scroll"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "width":"1.0%sh",
+                                                            "height": "100%"
+                                                        },
+                                                        {
+                                                            "name": "plusButton",
+                                                            "width":"4.5%sh",
+                                                            "height":"4%sh",
+                                                            "_backgroundColour":"#00007878",
+                                                            "background":{
+                                                                "image":"res/images/interface/commonArt/plus_icon.png",
+                                                                "scale":"fit"
+                                                            },
+                                                            "class":"button_class"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "spacer",
+                                    "height": "6.4%"
+                                },
+                                {
+                                  "name": "buttonsContainer",
+                                    "width": "100%",
+                                    "height": "6.8%SH",
+                                    "vAlignment": "center",
+                                    "boxes": [
+                                        {
+                                          "width":"19%",
+                                            "height": "100%"
+                                        },
+                                        {
+                                            "name": "bottomButtonLeft",
+                                            "width": "5.8%SH",
+                                            "height": "5.8%SH",
+                                            "hAlignment": "center",
+                                            "vAlignment": "CENTER",
+                                            "class": "buttonYellowScalable",
+                                            "hidden": "true"
+                                        },
+                                        {
+                                            "width": "4.2%",
+                                            "height": "100%"
+                                        },
+                                        {
+                                            "name": "bottomButtonRight",
+                                            "width": "19.0%SH",
+                                            "height": "7.8%SH",
+                                            "hAlignment": "center",
+                                            "vAlignment": "CENTER",
+                                            "class": "buttonGreenScalable"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

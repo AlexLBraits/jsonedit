@@ -1,0 +1,116 @@
+{
+  "name": "root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "name": "parent",
+      "width": "56%SH",
+      "minWidth": "43.07692307692307%sw",
+      "height": "80%sh",
+      "minHeight": "61.53846153846153%sw",
+      "hAlignment": "center",
+      "vAlignment": "center",
+      "_backgroundColour": "#FF000078",
+      "boxes": [
+        {
+          "name": "window",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "width": "100%",
+          "_backgroundColour": "#FF000055",
+          "handlers": {
+            "onTap": true
+          },
+          "boxes": [
+            {
+              "name": "congradLabel",
+              "width": "100%",
+              "height": "10%sh",
+              "minHeight": "7.692307692307692%sw",
+              "_backgroundColour": "#FF000066",
+              "hAlignment": "CENTER",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "width": "54.401408450704224%sh",
+                  "minWidth": "41.84723726977248%sw",
+                  "height": "16.056338028169012%sh",
+                  "minHeight": "12.351029252437701%sw",
+                  "class": "titleRibbonOrangeText70"
+                }
+              ]
+            },
+            {
+              "name": "levelUpBgWindow",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "width": "100%",
+              "height": "34%sh",
+              "minHeight": "26.153846153846153%sw",
+              "_backgroundColour": "#FF000055",
+              "boxes": [
+                {
+                  "name": "reputationContainer",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxes": [
+                    {
+                      "name": "reputationParticles",
+                      "width": "5%sh",
+                      "minWidth": "3.846153846153846%sw",
+                      "height": "5%sh",
+                      "minHeight": "3.846153846153846%sw"
+                    },
+                    {
+                      "name": "reputationIcon",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "width": "31.69014084507042%sh",
+                      "minWidth": "24.377031419284936%sw",
+                      "height": "31.69014084507042%sh",
+                      "minHeight": "24.377031419284936%sw",
+                      "background": {
+                        "image": "res/images/interface/windows/askerWindow/activateReputation.png",
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "5%sh"
+            },
+            {
+              "width": "100%",
+              "height": "10%sh",
+              "minHeight": "7.692307692307692%sw",
+              "hAlignment": "center",
+              "vAlignment": "top",
+              "_backgroundColour": "#0000FF55",
+              "boxes": [
+                {
+                  "name": "okButton",
+				  "width": "20%SH",
+				  "minWidth": "15.384615384615383%SW",
+				  "height": "8%SH",
+				  "minHeight": "6.153846153846153%SW",
+                  "class": "buttonGreenScalable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

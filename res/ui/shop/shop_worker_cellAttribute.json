@@ -1,0 +1,61 @@
+
+	 {
+      "name": "attributeIncreaceContainerSmall",
+	  "__width": "4.5%sh",
+	  "__minWidth": "3.549%SW",
+	  "__height": "3.697%sh",
+	  "__minHeight": "3.2806%SW",
+  	  "width": "4.0%sh",
+	  "minWidth": "3.54924578%SW",
+	  "height": "4.5%sh",
+	  "minHeight": "3.993%SW",
+      "hAlignment": "left",
+      "vAlignment": "center",
+      "_backgroundColour": "#0000FF75",
+      "boxes": [
+        {
+          "name": "attributeIcon",
+          "width": "3.697%sh",
+          "minWidth": "3.2806%SW",
+          "height": "3.697%sh",
+          "minHeight": "3.2806%SW",
+          "_backgroundColour": "#00FF0075",
+          "background": {
+            "image": "res/images/icons/attributeIcons/craft_milking.png",
+            "scale": "fit"
+          }
+        },
+		{
+		  "sizeBase": "panelTopContainer",
+		  "width": "98%",
+		  "height": "100%",
+		  "hAlignment": "right",
+		  "vAlignment": "bottom",
+		  "boxes": [
+			  {
+				  "name": "attributeCount",
+				  "_backgroundColour": "#FF000075",
+				  "font": {
+					"file": "res/fonts/Loyola.otf",
+					"maxSize": "2.113%SH",
+					"minSize": "1.875%sw",
+					"colour": "#FFFFFFFF",
+					"outline": [
+					  {
+						"width": "4%",
+						"colour": "#503200ff",
+						"yoffset": "5%"
+					  },
+					  {
+						"width": "4%",
+						"colour": "#503200ff"
+					  }
+					]
+				  },
+				  "text": "15"
+				}
+		  ]
+		}
+  
+      ]
+    }

@@ -1,0 +1,33 @@
+{
+    "name": "one_ticket",
+    "height": "100%",
+    "width": 200,
+    "backgroundColour": "#00FFFFFF",
+    "vAlignment": "CENTER",
+    "hAlignment": "CENTER",
+    "handlers": {
+    "onControlEventBegan": true,
+    "onTap": true
+  },
+    "boxes": [
+        {
+            "name": "caption_1",
+            "height": 100,
+            "width": "90%",
+            "margin": {
+                "top": 20
+            },
+            "backgroundColour": "#FFFF00FF",
+            "text": "Use ticket",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "textAlign": "CENTER",
+            "textWrap": true,
+            "font": {
+                "size": 26,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#000000FF"
+            }
+        }        
+    ]
+}

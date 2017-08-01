@@ -1,0 +1,351 @@
+{
+    "name": "mainTitle",
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "class": "animated_window",
+    "boxes": [
+        {
+            "class": {
+                "button_title_checked": {
+                    "height": 55,
+                    "hAlignment": "CENTER",
+                    "vAlignment": "CENTER",
+                    "boxes": [
+                        "res/ui/clans/clan_menu_button_use.json",
+                        {
+                            "name": "bttn_title_text",
+                            "text": "Union",
+                            "font": {
+                                "file": "res/fonts/loyola.otf",
+                                "size": 25,
+                                "outline": [
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF"
+                                    },
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF",
+                                        "yoffset": 1
+                                    }
+                                ]
+                            },
+                            "padding": {
+                                "left": 15,
+                                "right": 15
+                            }
+                        }
+                    ]
+                },
+                "button_title_non_checked": {
+                    "class": "btn_tap_anim",
+                    "height": 55,
+                    "hAlignment": "CENTER",
+                    "vAlignment": "CENTER",
+                    "boxes": [
+                        "_res/ui/buttons/button_green_55_background.json",
+                        {
+                            "name": "bttn_title_text",
+                            "text": "Union",
+                            "font": {
+                                "file": "res/fonts/loyola.otf",
+                                "size": 25,
+                                "outline": [
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF"
+                                    },
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF",
+                                        "yoffset": 1
+                                    }
+                                ]
+                            },
+                            "padding": {
+                                "left": 15,
+                                "right": 15
+                            }
+                        }
+                    ]
+                },
+                "button_chat_non_checked": {
+                    "class": "btn_tap_anim",
+                    "height": 55,
+                    "hAlignment": "CENTER",
+                    "vAlignment": "CENTER",
+                    "boxes": [
+                        "_res/ui/buttons/button_green_55_background.json",
+                        {
+                            "name": "bttn_title_text",
+                            "text": "union_chat_title",
+                            "font": {
+                                "file": "res/fonts/loyola.otf",
+                                "size": 25,
+                                "outline": [
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF"
+                                    },
+                                    {
+                                        "width": 1,
+                                        "colour": "#553c1eFF",
+                                        "yoffset": 1
+                                    }
+                                ]
+                            },
+                            "padding": {
+                                "left": 15,
+                                "right": 15
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "height": 105,
+            "minWidth": "100%",
+            "handlers": {
+                "onControlEventBegan": true,
+                "onControlEventEnded": true,
+                "onTap": true
+            }
+        },
+        {
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "name": "clans_window_container",
+            "margin": {
+                "top": 95
+            },
+            "_boxes": [
+                "res/ui/clans/clans_ratings_window.json"
+            ]
+        },
+        {
+            "name": "serviceLayer",
+            "width": "100%",
+            "height": "100%",
+            "boxes": []
+        },
+        {
+            "margin": {
+                "top": 5
+            },
+            "name": "title_ribbon",
+            "height": 105,
+            "width": "100%",
+            "background": {
+                "scale": "window",
+                "corner": [
+                    205,
+                    50
+                ],
+                "images": {
+                    "normal": "res/images/interface/Island2Art/clansMainWindow/ribbon.png"
+                }
+            },
+            "vAlignmnet": "center",
+            "hAlignment": "right",
+            "boxes": [
+                {
+                    "name": "closeButton",
+                    "class": "btn_tap_anim",
+                    "boxes": [
+                        "res/ui/clans/placeCancel.json"
+                    ],
+                    "margin": {
+                        "top": 12,
+                        "right": 10
+                    }
+                },
+                {
+                    "name": "settingsMenuBtn",
+                    "class": "btn_tap_anim",
+                    "width": 69,
+                    "height": 69,
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clansMainWindow/ribbonbutton_settings.png"
+                    },
+                    "handlers": {
+                        "onTap": true,
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "margin": {
+                        "top": 4,
+                        "right": 110
+                    },
+                    "boxes": [
+                        {
+                            "name": "countIcon",
+                            "height": 32,
+                            "width": 32,
+                            "maxWidth": 32,
+                            "hidden": true,
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "margin": {
+                                "left": 34
+                            },
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/clans_wall/levelup_numb_icon_bg.png"
+                                }
+                            },
+                            "font": {
+                                "file": "res/fonts/loyola.otf",
+                                "size": 18,
+                                "colour": "#ffffffff",
+                                "outline": {
+                                    "width": 1.5,
+                                    "colour": "#910005ff",
+                                    "yoffset": 0.5
+                                },
+                                "textWrap": true
+                            },
+                            "text": "42"
+                        }
+                    ]
+                },
+                {
+                    "name": "faq_btn",
+                    "class": "btn_tap_anim",
+                    "width": 69,
+                    "height": 69,
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clansMainWindow/ribbonbutton_questions.png"
+                    },
+                    "handlers": {
+                        "onTap": true,
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "margin": {
+                        "top": 5,
+                        "right": 165
+                    }
+                }
+            ]
+        },
+        {
+            "name": "clans_container",
+            "width": "100%",
+            "hAlignment": "center",
+            "boxes": [
+                {
+                    "name": "clans_button",
+                    "vAlignment": "CENTER",
+                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                    "width": "85%",
+                    "height": 70,
+                    "margin": {
+                        "top": 10
+                    },
+                    "padding": {
+                        "left": 50,
+                        "right": 150
+                    },
+                    "boxes": [
+                        {
+                            "width": "20%",
+                            "minWidth": "5",
+                            "hAlignment": "CENTER",
+                            "boxes": [
+                                {
+                                    "name": "bttn_chat",
+                                    "class": "button_chat_non_checked",
+                                    "boxes": [
+                                        {
+                                            "hAlignment": "right",
+                                            "vAlignmnet": "top",
+                                            "width": "100%w",
+                                            "height": "100%h",
+                                            "boxes": [
+                                                {
+                                                    "name": "countIcon",
+                                                    "height": 32,
+                                                    "width": 32,
+                                                    "maxWidth": 32,
+                                                    "hidden": true,
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/clans_wall/levelup_numb_icon_bg.png"
+                                                        }
+                                                    },
+                                                    "font": {
+                                                        "file": "res/fonts/loyola.otf",
+                                                        "size": 18,
+                                                        "colour": "#ffffffff",
+                                                        "outline": {
+                                                            "width": 1.5,
+                                                            "colour": "#910005ff",
+                                                            "yoffset": 0.5
+                                                        },
+                                                        "textWrap": true
+                                                    },
+                                                    "text": "42"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "hAlignment": "CENTER",
+                            "width": "20%",
+                            "minWidth": "5",
+                            "boxes": [
+                                {
+                                    "name": "tab0"
+                                }
+                            ]
+                        },
+                        {
+                            "hAlignment": "CENTER",
+                            "width": "20%",
+                            "minWidth": "5",
+                            "boxes": [
+                                {
+                                    "name": "tab1"
+                                }
+                            ]
+                        },
+                        {
+                            "hAlignment": "CENTER",
+                            "width": "20%",
+                            "minWidth": "5",
+                            "boxes": [
+                                {
+                                    "name": "tab2"
+                                }
+                            ]
+                        },
+                        {
+                            "hAlignment": "CENTER",
+                            "width": "20%",
+                            "minWidth": "5",
+                            "boxes": [
+                                {
+                                    "name": "tab3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true,
+        "onHover": true
+    }
+}

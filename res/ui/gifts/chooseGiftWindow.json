@@ -1,0 +1,273 @@
+{
+    "name": "cover",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "class": "animated_window",
+    "boxes": [
+        {
+            "width": 521,
+            "height": 615,
+            "hAlignment": "stack",
+            "vAlignment": "stack",
+            "handlers": {
+                "onTap": true
+            },
+            "boxes": [
+                {
+                    "vAlignment": "TOP",
+                    "hAlignment": "CENTER",
+                    "boxes": [
+                        {
+                            "name": "window",
+                            "width": "100%",
+                            "height": "100%",
+                            "hAlignment": "CENTER",
+                            "vAlignment": "top",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/giftsWindow/box.png"
+                                }
+                            },
+                            "boxes": [
+                                {
+                                    "width": 432,
+                                    "height": 101,
+                                    "margin": {
+                                        "top": 167
+                                    },
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/Island2Art/giftsWindow/box_shadow.png"
+                                        }
+                                    }
+                                },
+                                {
+                                    "width": 450,
+                                    "height": 360,
+                                    "margin": {
+                                        "top": 170,
+                                        "left": 50
+                                    },
+                                    "vAlignment": "center",
+                                    "hAlignment": "left_to",
+                                    "boxes": [
+                                        {
+                                            "name": "centerContainer",
+                                            "width": "100%",
+                                            "height": "100%",
+                                            "hAlignment": "left",
+                                            "vAlignment": "top",
+                                            "boxes": [
+                                                {
+                                                    "name": "giftReceiverContainer",
+                                                    "width": "100%",
+                                                    "height": "100%",
+                                                    "hAlignment": "from_left_to_right",
+                                                    "vAlignment": "top",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "btn_prev",
+                                                            "width": 39,
+                                                            "height": 49,
+                                                            "margin": {
+                                                                "left": 20,
+                                                                "top": 30
+                                                            },
+                                                            "background": {
+                                                                "image": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_L.png"
+                                                            },
+                                                            "class": "btn_tap_anim"
+                                                        },
+                                                        "res/ui/gifts/giftReceiverCell.json",
+                                                        {   
+                                                            "name": "btn_next",
+                                                            "width": 39,
+                                                            "height": 49,
+                                                            "margin": {
+                                                                "left": -10,
+                                                                "top": 30
+                                                        },
+                                                            "background": {
+                                                                "image": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_R.png"
+                                                            },
+                                                            "class": "btn_tap_anim"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "width": 362,
+                                                    "height": 53,
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/giftsWindow/line_01.png"
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "top": 72,
+                                                        "left": 50                                                      
+                                                    }
+                                                },
+                                                {
+                                                    "name": "items",
+                                                    "width": "100%",
+                                                    "height": 275,
+                                                    "margin": {
+                                                        "left": 15,
+                                                        "top": 92
+                                                    },
+                                                    "vAlignment": "from_top_to_bottom",
+                                                    "hAlignment": "center",
+                                                    "deltaHeight": 82,
+                                                    "overflow": "scroll",
+                                                    "type": "Scroller",
+                                                    "vslider": "scroll"
+                                                },
+                                                {
+                                                    "name": "scroll",
+                                                    "type": "Slider",
+                                                    "scroller": "items",
+                                                    "orientation": "vertical",
+                                                    "width": 14,
+                                                    "height": 245,
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/giftsWindow/scrollbar_choosewindow.png"
+                                                        }
+                                                    },
+                                                    "margin": {
+                                                        "top": 95,
+                                                        "left": 25
+                                                    },
+                                                    "thumb": {
+                                                        "name": "scroll_bar",
+                                                        "width": 12,
+                                                        "height": 128,
+                                                        "background": {
+                                                            "images": {
+                                                                "normal": "res/images/interface/Island2Art/shop/ui_shop_scroll_bar.png"
+                                                            }
+                                                        },
+                                                        "margin": {
+                                                            "left": 2
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "freeGiftsCount",
+                                    "textAlign": "center",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "margin": {
+                                        "top": 510
+                                    },
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 15,
+                                        "colour": "#7d5528FF",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "right",
+                                    "boxes": [
+                                        {
+                                            "width": 175,
+                                            "height": 166,
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/giftsWindow/box_ribbon.png"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "vAlignment": "TOP",
+                    "hAlignment": "RIGHT",
+                    "boxes": [
+                        {
+                            "name": "closeButton",
+                            "class": "btn_tap_highlight_anim",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_close.png",
+                                    "pressed": "res/images/interface/Island2Art/buttons/bttn_close.png"
+                                }
+                            },
+                            "margin": {
+                                "right": 10,
+                                "top": 73
+                            },
+                            "width": 64,
+                            "height": 64
+                        }
+                    ]
+                },
+                {
+                    "margin": {
+                        "top": 80
+                    },
+                    "width": "100%",
+                    "hAlignment": "center",
+                    "vAlignment": "top",
+                    "height": 36,
+                    "boxes": [
+                        {
+                            "hAlignment": "center",
+                            "vAlignment": "top",
+                            "minWidth": 160,
+                            "height": 48,
+                            "boxes": [
+                                {
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "padding": {
+                                        "top": 2,
+                                        "left": 5,
+                                        "right": 10
+                                    },
+                                    "minWidth": 264,
+                                    "maxWidth": 164,
+                                    "height": 48,
+                                    "rotate": -12,
+                                    "text": "giftWindowTitle",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 35,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 2,
+                                            "colour": "#6e2300ff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true,
+        "onHover": true
+    }
+}

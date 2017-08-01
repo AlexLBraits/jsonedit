@@ -1,0 +1,113 @@
+{  
+    "name":"actionPanelButton",
+    "vAlignment":"from_top_to_bottom",
+    "hAlignment":"CENTER",
+    "height":"16.73%sh",
+    "width":"13.21%sh",
+    "class":"button_class",
+    "background":{  
+        "image":"res/images/interface/mainScreen/craftSlots/craft_normal.png",
+        "scale":"fit"
+    },
+    "boxes":[  
+    	{
+    		"name": "paddingBox",
+    		"width": "85%",
+			"height": "20%"
+    	},
+    	{
+    		"name":"containerImageAndText",
+    		"width": "85%",
+			"height": "60%",
+			"vAlignment":"from_top_to_bottom",
+   			"hAlignment":"center",
+			"boxes":[
+					{  
+						"name": "iconsContainer",
+						"_backgroundColour": "#77000077",
+						"hAlignment":"center",
+						"vAlignment":"center",
+						"width": "100%",
+						"height": "60%",
+						"boxes": [
+							{
+								"name": "buttonIcon",
+								"width": "10.5633802%sh",
+								"height": "10.5633802%sh",
+								"background":{  
+									"image":"res/images/interface/buildingMenu/icon_rotate.png",
+									"scale":"fit"
+								}
+							},
+							{
+								"name": "expIcon",
+								"width": "10.5633802%sh",
+								"height": "10.5633802%sh",
+								"_backgroundColour": "#77000077",
+								"hidden": true,
+								"hAlignment":"center",
+								"vAlignment":"center",
+								"background":{  
+									"image":"res/images/icons/attributeIcons/exp_drop.png",
+									"scale":"fit"
+								},
+								"boxes": [
+								  {
+								    "_backgroundColour": "#77000077",
+								    "name": "expCount",
+								    "text": "99",
+									"width":"70%",
+									"height":"60%",
+									"hAlignment":"CENTER",
+									"vAlignment":"BOTTOM",
+								    "font":{  
+									    "file":"res/fonts/Loyola.otf",
+									    "size":"4.8%sh",
+									    "colour":"#ffffffFF",
+									    "outline":[  
+										    {  
+											    "width":"4%",
+											    "colour":"#503200ff",
+											    "yoffset":"4%"
+										    },
+										    {  
+											    "width":"4%",
+											    "colour":"#503200ff"
+										    }
+									    ]
+								    }
+								  }
+								]
+							}
+						]
+					},
+					{
+						"name": "paddingBox",
+						"width": "85%",
+						"height": "20%"
+					},
+					{
+						"name": "textContainer",
+						"_backgroundColour": "#00770077",
+						"hAlignment":"center",
+						"vAlignment":"center",
+						"width": "90%",
+						"height": "35%",
+						"boxes": [
+							{
+								"name": "buttonText",
+								"text": "BuildingMovingAcceptBtn",
+								"class": "actionPanelButtonsText"
+							}
+						]
+					}
+			]
+    	},
+        
+    	{
+    		"name": "paddingBox",
+    		"width": "85%",
+			"height": "5%"
+    	}
+    ]
+}

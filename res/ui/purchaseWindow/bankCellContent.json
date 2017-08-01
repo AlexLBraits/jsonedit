@@ -1,0 +1,266 @@
+{
+  "name": "tapAnimatedBox",
+  "vAlignment": "CENTER",
+  "hAlignment": "CENTER",
+  "boxes": [
+    {
+      "name": "slotBank",
+      "width": "15%sh",
+      "minWidth": "13.309671695%sw",
+      "height": "20.679%sh",
+      "minHeight": "18.3487133984%sw",
+      "_backgroundColour": "#00000075",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "background": {
+        "image": "res/images/interface/bottomMenu/slot_bank_money2.png",
+        "scale": "fit"
+      },
+      "boxes": [
+        {
+          "name": "spacer",
+          "height": "2%SH",
+          "width": "15%sh",
+      	  "minWidth": "13.309671695%sw",
+          "minHeight": "1.774622892635315%SW",
+          "_backgroundColour": "#00FF0055"
+        },
+        {
+          "name": "coinContainer",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "center",
+          "height": "2.025%SH",
+          "minHeight": "1.7968056787932563%SW",
+          "width": "75%",
+          "_backgroundColour": "#0000FF55",
+          "boxes": [
+            
+            {
+              "name": "iconCoin",
+              "width": "2.641%SH",
+              "minWidth": "2.34338953%SW",
+              "height": "2.641%SH",
+              "minHeight": "2.34338953%SW",
+              "_backgroundColour": "#00FF0099",
+              "background": {
+                "image": "res/images/icons/attributeIcons/money1_drop.png",
+                "scale": "fit"
+              }
+            },
+            {
+              "name": "spacer",
+              "width": "8.5%SH",
+              "minWidth": "7.542147293700089%SW",
+              "height": "2.641%SH",
+              "minHeight": "2.34338953%SW",
+              "_backgroundColour": "#00FF0099",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "boxes":[
+              	 {
+              "name": "inapValue",
+              "width": 0,
+              "maxWidth": "80%",
+              "_textWrap": false,
+              "_backgroundColour": "#FF000078",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "_lineSpacing": 1.5,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "_size": "2.113%SH",
+                "colour": "#FFFFFFFF",
+                "decoration": {
+										"type": "strikeout",
+										"colour": "#503200FF",
+										"thickness": 2
+									},
+                "outline": [
+                  {
+                    "width": "5.0%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "5.0%",
+                    "colour": "#503200FF"
+                  }
+                ]
+              },
+              "text": "12 000"
+            }
+              ]
+            },
+            {
+              "type": "spacer"
+            }
+          ]
+        },
+        {
+          "name": "coinContainer",
+          "hAlignment": "center",
+          "vAlignment": "CENTER",
+          "height": "2.025%SH",
+          "minHeight":"1.7968056787932563%sw",
+          "width": "100%",
+          "_backgroundColour": "#0000FF55",
+          "boxes":[
+          	{
+              "name": "inapNewValue",
+              "width": 0,
+              "maxWidth": "50%",
+              "_textWrap": false,
+              "_backgroundColour": "#FF000078",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "left",
+              "_lineSpacing": 1.5,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "_size": "2.113%SH",
+                "colour": "#FFC600FF",
+                "outline": [
+                  {
+                    "width": "5.0%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "5.0%",
+                    "colour": "#503200FF"
+                  }
+                ]
+              },
+              "text": "12 000"
+            }
+          ]
+        },
+        {
+          "name": "spacer",
+          "_height": "8.75%SH",
+          "_minHeight": "7.763975%SW",
+          "height": "7.5%SH",
+          "minHeight": "6.65483585%SW",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "_backgroundColour": "#00FF0099",
+          "boxes": [
+            {
+              "name": "iconMoney",
+              "width": "10.563%SH",
+              "minWidth": "9.3726708075%SW",
+              "height": "10.563%SH",
+              "minHeight": "9.3726708075%SW",
+              "_backgroundColour": "#00FF0099",
+              "background": {
+                "image": "res/images/icons/inapIcons/m1_3.png",
+                "scale": "fit"
+              }
+            }
+          ]
+        },
+        {
+          "name": "spacer",
+          "_height": "5.0%SH",
+          "_minHeight": "4.436557%SW",
+          "height": "7.5%SH",
+          "minHeight": "6.65483585%SW",
+          "width": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#FF000055",
+          "boxes": [
+            {
+              "name": "priceLabel",
+              "maxWidth": "65%",
+              "_backgroundColour": "#0000FF55",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "_size": "2.113%SH",
+                "colour": "#503200FF"
+              },
+              "_text": "120 000 USD",
+              "text": "7490,00 р."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RibbonContainer",
+      "hAlignment": "center",
+      "vAlignment": "bottom",
+      "width": "14.5%sh",
+      "minWidth": "12.86601597%sw",
+      "height": "11.0%sh",
+      "minHeight": "9.7604259095%sw",
+      "_backgroundColour": "#00FF0075",
+      "boxes": [
+        {
+          "name": "RibbonBox",
+          "width": "100%",
+          "_backgroundColour": "#FF000075",
+          "hAlignment": "center",
+          "vAlignment": "BOTTOM",
+          "boxes": [
+            {
+              "name": "textRibbon",
+              "width": "100%",
+              "height": "4.0%sh",
+              "minHeight": "3.5492458%sw",
+              "_backgroundColour": "#FF000075",
+              "vAlignment": "CENTER",
+              "hAlignment": "CENTER",
+              "background": {
+                "image": "res/images/interface/bottomMenu/ribbon_green_bank.png",
+                "scale": "fit",
+                "vAlignment": "bottom"
+              }
+            },
+            {
+              "name": "titleRibbonShiftBox",
+              "width": "100%",
+              "height": "3.8%SH",
+              "minHeight": "3.3717835%sw",
+              "vAlignment": "CENTER",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#0000FF78",
+              "boxes": [
+                {
+                  "name": "titleRibbon",
+                  "width": "85%",
+                  "maxHeight": "60%",
+                  "textWrap": true,
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "_backgroundColour": "#FF000078",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "_size": "1.901%sh",
+                    "_minSize": "1.686779%sw",
+                    "colour": "#FFFFFFFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#0000004C",
+                        "yoffset": "4%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#0000004C"
+                      }
+                    ]
+                  },
+                  "_text": "Лучшее предложение!",
+                  "text": "Лучшая цена на свете лаки стар total text!"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

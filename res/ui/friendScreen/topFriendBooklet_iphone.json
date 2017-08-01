@@ -1,0 +1,57 @@
+{
+    "name": "icon_booklet",
+    "width": 82,
+    "height": 70,
+    "background": {
+        "scale": "fit",
+        "images": {
+            "normal": "res/images/interface/Island2Art/mainScreen/infoPanel/iphone/icon_booklet.png"
+        }
+    },
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true
+    },
+    "boxes": [
+        {
+            "width": 82,
+            "height": 80,
+            "margin": [
+                -5,
+                4
+            ],
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "normal": "res/images/interface/Island2Art/mainScreen/infoPanel/icon_booklet_star.png"
+                }
+            },
+            "boxes": [
+                {
+                    "name": "icon_booklet_text",
+                    "width": 20,
+                    "height": 20,
+                    "maxWidth": 20,
+                    "maxHeight": 20,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "margin": {
+                        "top": 26,
+                        "left": 27
+                    },
+                    "text": "12",
+                    "font": {
+                        "size": 22,
+                        "colour": "#FFFFFFFF",
+                        "outline": {
+                            "width": 1.5,
+                            "colour": "#553C1EFF",
+                            "yoffset": 0.5
+                        },
+                        "file": "res/fonts/loyola.otf"
+                    }
+                }
+            ]
+        }
+    ]
+}

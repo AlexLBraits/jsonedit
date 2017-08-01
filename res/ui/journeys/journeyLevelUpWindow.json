@@ -1,0 +1,155 @@
+{
+    "name": "journeyLevelUpWindow",
+    "height": "100%",
+    "width": "100%",
+    "backgroundColour": "#000000B2",
+    "backgroundActiveColour": "#000000B2",
+    "vAlignment": "center",
+    "hAlignment": "center",
+    "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+    },
+    "boxes": [
+        {
+            "name": "parent",
+            "width": "56%SH",
+            "maxHeight": "100%SH",
+            "minHeight": "10%SH",
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "_backgroundColour": "#FF000078",
+            "boxes": [
+                {
+                    "name": "journeyLevelUpWindowHeaderContainer",
+      				"height": "12%SH",
+                    "width": "100%",
+                    "_backgroundColour": "#0000FFAA",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+						  "width": "46%sh",
+						  "height": "30%",
+						  "class": "windowTitleClass"
+                        }
+                    ]
+                },
+                {
+                    "name": "journeyLevelUpWindowBodyContainer",
+                    "height": "35%sh",
+                    "width": "100%",
+                    "_backgroundColour": "#00ff0050",
+                    "vAlignment": "from_top_to_bottom",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "journeyLevelUpWindowContentContainer",
+                            "width": "100%",
+                            "height": "100%",
+                            "_backgroundColour": "#00330075",
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "center",
+                            "boxes": [
+                                {
+                                    "name": "journeyLevelUpWindowCongratsText",
+                                    "width": "50%SH",
+                                    "maxHeight": "10%",
+                                    "minHeight": "5%sh",
+                                    "_backgroundColour": "#33000075",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "textWrap": true,
+                                    "textAlign": "center",
+                                    "font": {
+                                        "file": "res/fonts/Loyola.otf",
+                                        "size": "3.6971830985915495%SH",
+                                        "colour": "#ffca2aFF",
+                                        "outline": [
+                                            {
+                                                "width": "4%",
+                                                "colour": "#503200FF",
+                                                "yoffset": "4%"
+                                            },
+                                            {
+                                                "width": "4%",
+                                                "colour": "#503200FF"
+                                            }
+                                        ]
+                                    },
+                                    "text": "Пруд достиг 8 уровня !"
+                                },
+                                {
+                                    "name": "journeyLevelUpWindowIconEffect",
+                                    "width": "30%SH",
+                                    "height": "30%sh",
+                                    "_backgroundColour": "#ff000055",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "journeyLevelUpWindowIconContainer",
+                                            "width": "55%SH",
+                                            "height": "30%SH",
+                                            "_backgroundColour": "#ffff3375",
+                                            "background": {
+                                                "scale": "fit",
+                                                "image": "res/images/icons/lockRuin/ruin_pond.png",
+                                                "hAlignment": "center"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "journeyLevelUpWindowProgressContainerMain",
+                    "width": "100%",
+                    "_height": "34.86%SH",
+                    "_backgroundColour": "#0000FF75",
+                    "vAlignment": "top",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "journeyLevelUpWindowProgressContainer",
+                            "width": "100%",
+                            "_backgroundColour": "#33000075",
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "center",
+                             "_boxes": [
+								{
+									"height": "5%sh"
+								},
+								{
+									"height": "5%sh"
+								},
+								{
+									"height": "5%sh"
+								}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "journeyLevelUpWindowButtonContainer",
+                  	"height": "10%SH",
+                    "width": "100%",
+                    "_backgroundColour": "#33000075",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "journeyLevelUpWindowButton",
+                  			"width": "20%SH",
+                  			"height": "8%SH",
+                            "_backgroundColour": "#33000075",
+                            "class": "buttonGreenScalable"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

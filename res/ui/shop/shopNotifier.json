@@ -1,0 +1,12 @@
+{
+	"name": "notifierImage",
+	"_class":"button_class",
+	"background": {
+		"image": "res/images/interface/commonArt/notif/notif_dot.png",
+		"scale": "fit"
+	},
+	"width": "3.0%sh",
+	"minWidth":"2.662%sw",
+	"minHeight":"2.662%sw",
+	"height": "3.0%sh"
+}

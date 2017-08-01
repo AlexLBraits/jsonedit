@@ -1,0 +1,414 @@
+{
+  "name": "cover",
+  "width": "100%",
+  "height": "100%",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "name": "chest_info_window",
+      "width": 415,
+      "height": 0,
+      "background": {
+        "images": {
+          "normal": "res/images/interface/commonArt/win/win.png"
+        },
+        "scale": "window",
+        "corner": [
+          111,
+          111
+        ]
+      },
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "_backgroundColour": "#FF000078",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "boxes": [
+        {
+          "class": "windowTitleClass"
+        },
+        {
+          "name": "chestInfoContainer",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "width": 340,
+          "height": 90,
+          "margin": {
+            "top": -20,
+            "bottom": -20
+          },
+          "_backgroundColour": "#FF000078",
+          "boxes": [
+            {
+              "name": "infoTextJunk",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "text": "chest_info_text",
+              "textWrap": true,
+              "width": 340,
+              "_backgroundColour": "#FF000078",
+              "font": {
+                "file": "res/fonts/FryPro.otf",
+                "colour": "#503200FF",
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "itemsPanelJunk",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "_backgroundColour": "#00ff0077",
+          "margin": {
+            "top": -10
+          },
+          "boxes": [
+            {
+              "name": "infoTextJunkMoney",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "text": "bridgeTreasuresResultWindowMoneyForJunk",
+              "textWrap": true,
+              "width": 260,
+              "_backgroundColour": "#FF000078",
+              "font": {
+                "file": "res/fonts/FryPro.otf",
+                "colour": "#503200FF",
+                "size": 16
+              }
+            },
+            {
+              "hAlignment": "center",
+              "height": 90,
+              "vAlignment": "center",
+              "padding": {
+                "left": 19,
+                "right": 19
+              },
+              "margin": {
+                "top": 0
+              },
+              "boxes": [
+                {
+                  "hAlignment": "from_left_to_right",
+                  "height": 65,
+                  "width": "100%",
+                  "padding": {
+                    "left": -19,
+                    "right": -19
+                  },
+                  "vAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "leftArrowJunk",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_left.png"
+                        }
+                      }
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "auto"
+                    },
+                    {
+                      "name": "rightArrowJunk",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_right.png"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "sizeBase": "chestInfoContainer",
+                  "minWidth": "82%",
+                  "_backgroundColour": "#00ff0077",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "toolsScrollJunk",
+                      "overflow": "scroll",
+                      "maxWidth": 305,
+                      "height": 65,
+                      "boxes": [
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "dots_container_junk",
+              "hAlignment": "from_left_to_right",
+              "height": 9,
+              "margin": {
+                "top": -5
+              },
+              "boxes": [
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "itemsPanelResources",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "_backgroundColour": "#00ff0077",
+          "margin": {
+            "top": 10
+          },
+          "boxes": [
+            {
+              "name": "infoTextResources",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "text": "text_Resources",
+              "textWrap": true,
+              "width": 260,
+              "_backgroundColour": "#FF000078",
+              "font": {
+                "file": "res/fonts/FryPro.otf",
+                "colour": "#503200FF",
+                "size": 16
+              }
+            },
+            {
+              "hAlignment": "center",
+              "_backgroundColour": "#00ff0077",
+              "height": 90,
+              "margin": {
+                "top": -10
+              },
+              "vAlignment": "center",
+              "padding": {
+                "left": 19,
+                "right": 19
+              },
+              "boxes": [
+                {
+                  "hAlignment": "from_left_to_right",
+                  "height": 65,
+                  "width": "100%",
+                  "padding": {
+                    "left": -19,
+                    "right": -19
+                  },
+                  "vAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "leftArrowResources",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_left.png"
+                        }
+                      }
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "auto"
+                    },
+                    {
+                      "name": "rightArrowResources",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_right.png"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "sizeBase": "chestInfoContainer",
+                  "minWidth": "82%",
+                  "_backgroundColour": "#00ff0077",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "toolsScrollResources",
+                      "overflow": "scroll",
+                      "maxWidth": 305,
+                      "height": 65,
+                      "boxes": [
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "dots_container_resources",
+              "hAlignment": "from_left_to_right",
+              "height": 9,
+              "margin": {
+                "top": -5
+              },
+              "boxes": [
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "itemsPanelCollection",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "_backgroundColour": "#00ff0077",
+          "margin": {
+            "top": 10
+          },
+          "boxes": [
+            {
+              "name": "infoTextCollection",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "text": "bridgeTreasuresResultWindowTextCollection",
+              "textWrap": true,
+              "width": 260,
+              "_backgroundColour": "#FF000078",
+              "font": {
+                "file": "res/fonts/FryPro.otf",
+                "colour": "#503200FF",
+                "size": 16
+              }
+            },
+            {
+              "hAlignment": "center",
+              "_backgroundColour": "#00ff0077",
+              "height": 90,
+              "vAlignment": "center",
+              "padding": {
+                "left": 19,
+                "right": 19
+              },
+              "margin": {
+                "top": -10
+              },
+              "boxes": [
+                {
+                  "hAlignment": "from_left_to_right",
+                  "height": 65,
+                  "width": "100%",
+                  "padding": {
+                    "left": -19,
+                    "right": -19
+                  },
+                  "vAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "leftArrowCollection",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_left.png"
+                        }
+                      }
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "auto"
+                    },
+                    {
+                      "name": "rightArrowCollection",
+                      "width": 19,
+                      "height": 29,
+                      "class": "button_class",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/buttons/bttn_arrow_right.png"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "sizeBase": "chestInfoContainer",
+                  "minWidth": "82%",
+                  "_backgroundColour": "#00ff0077",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "toolsScrollCollection",
+                      "overflow": "scroll",
+                      "maxWidth": 305,
+                      "height": 65,
+                      "boxes": [
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json",
+                        "res/ui/mainScreen/nextLevelCell.json"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "dots_container_collection",
+              "hAlignment": "from_left_to_right",
+              "height": 9,
+              "margin": {
+                "top": -5
+              },
+              "boxes": [
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json",
+                "res/ui/mainScreen/scrollPointWhite.json"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "buttonsContainer",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "width": 250,
+          "height": 30,
+          "margin": {
+            "top": 10
+          },
+          "_backgroundColour": "#FF000078",
+          "boxes": [
+            {
+              "name": "bottomButton",
+              "class": "buttonBlueScalable"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

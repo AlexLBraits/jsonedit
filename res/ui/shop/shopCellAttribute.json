@@ -1,0 +1,30 @@
+{  
+	"name":"attributeIncreaceContainerSmall",
+	"height":"3.75%sh",
+	"minHeight":"3.33%SW",
+	"hAlignment":"from_left_to_right",
+	"vAlignment":"center",
+	"boxes":[  
+		{  
+			"name":"attributeCount",
+			"font":{  
+				"file":"res/fonts/Loyola.otf",
+				"maxSize":"2.4%SH",
+				"minSize":"2.1%sw",
+				"colour":"#503200FF"
+			},
+			"text":"+30"
+		},
+		{  
+			"name":"attributeIcon",
+			"width":"3.75%sh",
+			"height":"3.75%sh",
+			"minWidth":"3.33%SW",
+			"minHeight":"3.33%SW",
+			"background":{  
+				"image":"res/images/icons/attributeIcons/craft_gardening.png",
+				"scale":"fit"
+			}
+		}
+	]
+}

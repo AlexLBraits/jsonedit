@@ -1,0 +1,469 @@
+{
+  "name": "root",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "hAlignment": "center",
+  "vAlignment": "from_top_to_bottom",
+  "class": "cover_layer",
+  "boxes": [
+    {
+      "name": "topPanelSpace",
+      "height": "9.0%sh",
+      "width": "100%",
+      "_backgroundColour": "#0000FF33"
+    },
+    {
+      "name": "windowSpace",
+      "width": "100%",
+      "height": "auto",
+      "hAlignment": "center",
+      "vAlignment": "center",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+        {
+          "width": "100%",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "height": "4.2%sh",
+              "minHeight": "3.1484257871064467%sw"
+            },
+            {
+              "width": "48.5%sh",
+              "minWidth": "36.356821589205396%sw",
+              "height": "auto",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "class": "windowFullFillingBackgroundClass"
+            },
+            {
+              "height": "5%"
+            }
+          ]
+        },
+        {
+          "name": "windowContent",
+          "width": "96%",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "name": "titleContainer",
+              "width": "100%",
+              "height": "9%sh",
+              "minHeight": "6.746626686656671%sw",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "handlers": {
+                    "onTap": true,
+                    "onControlEventBegan": true
+                  },
+                  "class": "windowCompetitionTitleClass"
+                },
+                {
+                  "name": "closeButtonContainer",
+                  "width": "52%sh",
+                  "minWidth": "38.980509745127435%sw",
+                  "height": "13%sh",
+                  "minHeight": "8.995502248875562%sw",
+                  "hAlignment": "right",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#0000FF33",
+                  "boxes": [
+                    {
+                      "name": "closeButton",
+                      "class": "buttonClose"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "1%sh",
+              "minHeight": "0.7407407407407407%sw"
+            },
+            {
+              "name": "infoCompetitionContainerBox",
+              "width": "45%sh",
+              "minWidth": "33.733133433283356%sw",
+              "height": "20%sh",
+              "minHeight": "14.992503748125936%sw",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "boxes": [
+                {
+                  "width": "100%",
+                  "height": "100%",
+                  "class": "beigeBackground"
+                },
+                {
+                  "name": "infoCompetitionContainer",
+                  "width": "100%",
+                  "height": "90%",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF000033",
+                  "boxes": [
+                    {
+                      "width": "35%",
+                      "height": "100%",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#0000FF33",
+                      "boxes": [
+                        {
+                          "name": "icon",
+                          "width": "10.933098591549296%sh",
+                          "minWidth": "8.098591549295774%sw",
+                          "height": "10.933098591549296%sh",
+                          "minHeight": "8.098591549295774%sw",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "background": {
+                            "image": "res/images/interface/windows/competitions/icon_pursuit.png",
+                            "scale": "fit"
+                          }
+                        },
+                        {
+                          "height": "auto"
+                        },
+                        {
+                          "width": "100%",
+                          "hAlignment": "right",
+                          "vAlignment": "center",
+                          "boxes": [
+                            {
+                              "name": "descriptionTimerText",
+                              "hAlignment": "right",
+                              "vAlignment": "center",
+                              "textAlign": "right",
+                              "_backgroundColour": "#00FF0033",
+                              "lineSpacing": 1,
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "3.169014084507042%sh",
+                                "minSize": "2.3474178403755865%sw",
+                                "colour": "#503200FF"
+                              },
+                              "text": "Осталось:",
+                              "_text": "CompetitionsGlobalWindowTimeLeft"
+                            }
+                          ]
+                        },
+                        {
+                          "height": "1%"
+                        }
+                      ]
+                    },
+                    {
+                      "width": "auto",
+                      "height": "100%",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#00FF0033",
+                      "boxes": [
+                        {
+                          "name": "value",
+                          "width": "90%",
+                          "_height": "25%",
+                          "textWrap": false,
+                          "_backgroundColour": "#0000FF33",
+                          "textAlign": "center",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": "3.6971830985915495%sh",
+                            "minSize": "2.7386541471048513%sw",
+                            "colour": "#ffffffFF",
+                            "outline": [
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff",
+                                "yoffset": "4%"
+                              },
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff"
+                              }
+                            ]
+                          },
+                          "text": "Pursuit"
+                        },
+                        {
+                          "name": "finishTextStage",
+                          "maxWidth": "90%",
+                          "textWrap": false,
+                          "_backgroundColour": "#00FF0033",
+                          "font": {
+                            "file": "res/fonts/PTS75F.ttf",
+                            "colour": "#503200FF",
+                            "size": "2.640845070422535%sh",
+                            "minSize": "1.9796439808264878%sw"
+                          },
+                          "_text": "Собрано сообществом:",
+                          "text": "CompetitionsGlobalWindowCounterText"
+                        },
+                        {
+                          "name": "globalResult",
+                          "maxWidth": "90%",
+                          "_height": "25%",
+                          "textWrap": false,
+                          "_lineSpacing": 1,
+                          "_backgroundColour": "#0000FF33",
+                          "font": {
+                            "file": "res/fonts/PTS75F.ttf",
+                            "colour": "#503200FF",
+                            "size": "3.8028169014084505%sh",
+                            "minSize": "2.8506873323901427%sw"
+                          },
+                          "_text": "XXXXX"
+                        },
+                        {
+                          "name": "containerTimer",
+                          "width": "90%",
+                          "height": "auto",
+                          "vAlignment": "bottom",
+                          "hAlignment": "from_left_to_right",
+                          "_backgroundColour": "#00770077",
+                          "boxes": [
+                            {
+                              "name": "imageTimer",
+                              "width": "6%sh",
+                              "minWidth": "4.444444444444444%sw",
+                              "height": "6%sh",
+                              "minHeight": "4.444444444444444%sw",
+                              "hAlignment": "right",
+                              "background": {
+                                "image": "res/images/interface/commonArt/icon_time.png",
+                                "scale": "fit",
+                                "hAlignment": "right"
+                              }
+                            },
+                            {
+                              "name": "expBarExpLabelContainer",
+                              "width": "80%",
+                              "_height": "auto",
+                              "vAlignment": "center",
+                              "hAlignment": "left",
+                              "_backgroundColour": "#00770077",
+                              "boxes": [
+                                {
+                                  "name": "expBarExpLabel",
+                                  "_width": "75%",
+                                  "maxWidth": "90%",
+                                  "_height": "40%",
+                                  "textWrap": false,
+                                  "textAlign": "left",
+                                  "vAlignment": "center",
+                                  "hAlignment": "left",
+                                  "_lineSpacing": 0.8,
+                                  "_backgroundColour": "#00770077",
+                                  "font": {
+                                    "file": "res/fonts/Loyola.otf",
+                                    "size": "3.6971830985915495%sh",
+                                    "minSize": "2.7715015731570833%sw",
+                                    "colour": "#91E600FF",
+                                    "outline": [
+                                      {
+                                        "width": "4%",
+                                        "colour": "#503200FF",
+                                        "yoffset": "4%"
+                                      },
+                                      {
+                                        "width": "4%",
+                                        "colour": "#503200FF"
+                                      }
+                                    ]
+                                  },
+                                  "text": "7д 24ч 15м"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "1%sh",
+              "minHeight": "0.7407407407407407%sw"
+            },
+            {
+              "name": "scrollContent",
+              "width": "48.5%sh",
+              "minWidth": "36.356821589205396%sw",
+              "height": "auto",
+              "_height": "25%sh",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#FF000033",
+              "boxes": [
+                {
+                  "hidden": true,
+                  "name": "noRewardContiner",
+                  "maxWidth": "90%",
+                  "height": "50%",
+                  "textWrap": true,
+                  "textAlign": "center",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.6971830985915495%SH",
+                    "minSize": "2.7715015731570833%Sw",
+                    "colour": "#ffffffFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff",
+                        "yoffset": "5%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff"
+                      }
+                    ]
+                  },
+                  "text": "CompetitionsGlobalWindowCompetitionsBlockedText"
+                },
+                {
+                  "name": "rewardContainer",
+                  "height": "100%",
+                  "width": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "type": "Scroller",
+                  "overflow": "scroll",
+                  "vslider": "scroller",
+                  "_backgroundColour": "#0000FF33",
+                  "_boxes": [
+                    "res/ui/competition/GlobalCompetitionItem.json",
+                    "res/ui/competition/GlobalCompetitionItem.json",
+                    "res/ui/competition/GlobalCompetitionItem.json"
+                  ]
+                },
+                {
+                  "name": "arrowContainer",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "boxes": [
+                    {
+                      "name": "arrowTop",
+                      "width": "5.0%sh",
+                      "height": "5.0%sh",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "rotate": "90",
+                      "hidden": true,
+                      "class": "button_anim_child_class",
+                      "boxes": [
+                        {
+                          "name": "tapAnimatedBox",
+                          "width": "5%sh",
+                          "height": "5%sh",
+                          "background": {
+                            "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "height": "auto"
+                    },
+                    {
+                      "name": "arrowBottom",
+                      "width": "5.0%sh",
+                      "height": "5.0%sh",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "rotate": "-90",
+                      "hidden": true,
+                      "class": "button_anim_child_class",
+                      "boxes": [
+                        {
+                          "name": "tapAnimatedBox",
+                          "width": "5.0%sh",
+                          "height": "5.0%sh",
+                          "background": {
+                            "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "5%sh",
+              "minHeight": "3.748125937031484%sw"
+            },
+            {
+              "width": "50%sh",
+              "minWidth": "37.48125937031484%sw",
+              "height": "0%",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "width": "auto",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "backButton",
+                      "width": "6%SH",
+                      "height": "6%SH",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "class": "buttonYellowScalable"
+                    }
+                  ]
+                },
+                {
+                  "width": "auto",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "takeRewardButton",
+                      "width": "20%SH",
+                      "height": "8%SH",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "class": "buttonGreenScalable"
+                    }
+                  ]
+                },
+                {
+                  "width": "auto"
+                }
+              ]
+            },
+            {
+              "height": "6%",
+              "width": "100%",
+              "_backgroundColour": "#0000FF33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

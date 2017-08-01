@@ -1,0 +1,124 @@
+{
+    "name": "mCell",
+    "width": 165,
+    "height": "100%",
+    "vAlignment": "center",
+    "hAlignment": "center",
+    "boxes":[
+        {
+             "name":"stone",
+             "width":163,
+             "height":170,
+             "background":{
+             "images": {
+             "normal": "res/images/interface/windows/marathon2/pebble_blue_1.png"
+                }
+             }
+        },
+        {
+             "name":"dayN",
+             "vAlignment": "from_top_to_bottom",
+             "hAlignment": "center",
+             "padding":[30,0],
+             "boxes":[
+                      {
+                      "name": "day",
+                      "text": "marathonDay",
+                      "textAlign":"center",
+                      "font": {
+                      "size": 25,
+                      "colour": "#370f0080",
+                      "file": "res/fonts/Loyola.otf"
+                        }
+                      },
+                      {
+                      "name": "num",
+                      "text": "1",
+                      "textAlign":"center",
+                      "font": {
+                      "size": 45,
+                      "colour": "#370f0080",
+                      "file": "res/fonts/Loyola.otf"
+                        },
+                      "margin":{"top":-5}
+                      }
+                    ]
+        },
+        {
+             "name":"chameleon",
+             "width":163,
+             "height":170,
+             "background":{
+             "images": {
+             "normal": "res/images/interface/windows/marathon2/chameleon_pebbles.png"
+                }
+            }
+        },
+        {
+             "name":"tommorow",
+             "width":163,
+             "height":170,
+             "vAlignment": "center",
+             "hAlignment": "center",
+             "background":{
+             "images": {
+             "normal": "res/images/interface/windows/marathon2/ribbon_pebble_1.png"
+                }
+             },
+             "padding":[-50,50],
+             "boxes":[
+                      {
+                      "name":"tlabel",
+                      "text": "marathonTomorrow",
+                      "textAlign":"center",
+                      "font": {
+                      "size": 15,
+                      "colour": "#283c0080",
+                      "file": "res/fonts/Loyola.otf"
+                        }
+                      }
+             ]
+        },
+        {
+             "name":"reward",
+             "vAlignment": "center",
+             "hAlignment": "from_left_to_right",
+             "padding":[170,20],
+             "boxes":[
+                {
+                      "name":"rewlabel",
+                      "text": "+100",
+                      "textAlign":"center",
+                      "font": {
+                      "size": 30,
+                      "colour": "#ffffffff",
+                      "outline":[ 
+                          {
+                              "width": 1,
+                              "colour": "#553C1EFF",
+                              "yoffset":1
+                          },
+                          {
+                              "width": 1,
+                              "colour": "#553C1EFF" 
+                          }
+                      ],
+                      "file": "res/fonts/Loyola.otf"
+                      }
+                },
+                {
+                      "name":"rewPict",
+                      "width": 50,
+                      "height": 50,
+                      "background": {
+                      "scale":"fit",
+                      "images": {
+                      "normal": "res/images/icons/attributeIcons/money1_drop.png"
+                        }
+                      },
+                      "margin":{"left":1}
+                }
+             ]
+        }
+    ]
+}

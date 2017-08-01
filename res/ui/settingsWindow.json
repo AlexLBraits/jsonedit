@@ -1,0 +1,972 @@
+{
+  "name": "cover",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "class": "cover_layer",
+  "boxes": [
+    {
+      "class": {
+        "labels": {
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#503200FF",
+            "size": "2.4295774647887325%SH"
+          }
+        }
+      }
+    },
+    {
+      "name": "windowBackground",
+      "sizeBase": "alert_window",
+      "width": "100%",
+      "height": "100%",
+      "vAlignment": "CENTER",
+      "hAlignment": "CENTER",
+      "class": "windowFullFillingBackgroundClass",
+      "boxes": [
+        {
+          "name": "alert_window",
+          "width": "50%SH",
+          "height": "0",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "_backgroundColour": "#FF000078",
+          "handlers": {
+            "onTap": true,
+            "onControlEventBegan": true,
+            "onGuiFirstEnter": true
+          },
+          "boxes": [
+            {
+              "width": "40%sh",
+              "class": "windowTitleClass"
+            },
+            {
+              "height": "2%sh"
+            },
+            {
+              "name": "user_name_container",
+              "width": "85%",
+              "height": "3%SH",
+              "hAlignment": "left",
+              "vAlignment": "CENTER",
+              " backgroundColour": "#64565478",
+              "boxes": [
+                {
+                  "height": "100%",
+                  "width": "auto",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "vAlignment": "CENTER",
+                  "boxes": [
+                    {
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.640845070422535%SH",
+                        "colour": "#503200FF"
+                      },
+                      "text": "test_your_name"
+                    },
+                    {
+                      "width": "auto",
+                      "height": "100%",
+                      "vAlignment": "CENTER",
+                      "hAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "scrollBarBg",
+                          "hAlignment": "from_left_to_right",
+                          "vAlignment": "center",
+                          "width": "100%",
+                          "height": "2.640845070422535%sh",
+                          "boxes": [
+                            {
+                              "width": "1.4788732394366195%sh",
+                              "height": "100%",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/windows/settings/hd/name_back_left.png"
+                                },
+                                "scale": "fit",
+                                "hAlignment": "right"
+                              }
+                            },
+                            {
+                              "width": "auto",
+                              "height": "100%",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/windows/settings/hd/name_back_center.png"
+                                },
+                                "scale": "stretch"
+                              }
+                            },
+                            {
+                              "width": "1.4788732394366195%sh",
+                              "height": "100%",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/windows/settings/hd/name_back_right.png"
+                                },
+                                "scale": "fit",
+                                "hAlignment": "left"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "width": "90%",
+                          "height": "100%",
+                          "vAlignment": "CENTER",
+                          "hAlignment": "left",
+                          "boxes": [
+                            {
+                              "name": "user_name",
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.640845070422535%SH",
+                                "colour": "#503200FF"
+                              },
+                              "text": "Pupkin Vasiliy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "0.5%sh"
+            },
+            {
+              "name": "support_id_container",
+              "width": "85%",
+              "height": "3%SH",
+              "hAlignment": "left",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#64565478",
+              "boxes": [
+                {
+                  "height": "100%",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "vAlignment": "CENTER",
+                  "boxes": [
+                    {
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.640845070422535%SH",
+                        "colour": "#503200FF"
+                      },
+                      "text": "test_Support_ID"
+                    },
+                    {
+                      "name": "user_sid",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.640845070422535%SH",
+                        "colour": "#00acedFF"
+                      },
+                      "text": "132.321 (666)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "1%sh"
+            },
+            {
+              "sizeBase": "socialContainer",
+              "height": "15%sh",
+              "width": "47.5%sh",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "class": "beigeBackground",
+                  "height": "15%sh",
+                  "width": "100%"
+                },
+                {
+                  "name": "socialContainer",
+                  "height": "15%sh",
+                  "width": "100%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#FF000033",
+                  "boxes": [
+                    {
+                      "name": "faceBookContainer",
+                      "height": "7.5%sh",
+                      "width": "100%",
+                      "hAlignment": "from_left_to_right",
+                      "vAlignment": "CENTER",
+                      "_backgroundColour": "#00FF0078",
+                      "boxes": [
+                        {
+                          "height": "100%",
+                          "width": "8%sh",
+                          "hAlignment": "center",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#FF000078",
+                          "boxes": [
+                            {
+                              "name": "buildingImage",
+                              "width": "6.338028169014084%sh",
+                              "height": "6.338028169014084%sh",
+                              "vAlignment": "CENTER",
+                              "hAlignment": "CENTER",
+                              "_backgroundColour": "#FF000033",
+                              "background": {
+                                "image": "res/images/interface/commonArt/button/applegc_icon.png",
+                                "scale": "stretch"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "revardContainer",
+                          "height": "7%sh",
+                          "width": "4%sh",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#0000FF78"
+                        },
+                        {
+                          "width": "1%sh"
+                        },
+                        {
+                          "height": "6%sh",
+                          "width": "30%sh",
+                          "vAlignment": "CENTER",
+                          "hAlignment": "left",
+                          "_backgroundColour": "#00FF0078",
+                          "boxes": [
+                            {
+                              "name": "version_label_text",
+							  "maxHeight": "100%",
+							  "width": "auto",
+    	                      "vAlignment": "CENTER",
+	                          "hAlignment": "CENTER",
+                              "textWrap": true,
+                              "lineSpacing": 0.75,
+                              "textAlign": "left",
+                              "_backgroundColour": "#FF000078",
+                              "font": {
+                                "file": "res/fonts/PTS75F.otf",
+                                "size": "2.0070422535211265%SH",
+                                "colour": "#503200FF"
+                              },
+                              "text": "Подключено в Game Center для игры на нескольких IOS устройствах."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "faceBookContainer",
+                      "height": "7.5%sh",
+                      "width": "100%",
+                      "hAlignment": "from_left_to_right",
+                      "vAlignment": "CENTER",
+                      "_backgroundColour": "#00FF0078",
+                      "boxes": [
+                        {
+                          "height": "100%",
+                          "width": "8%sh",
+                          "hAlignment": "center",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#FF000078",
+                          "boxes": [
+                            {
+                              "name": "fb_button",
+                              "class": "button_class",
+                              "width": "6.443661971830986%sh",
+                              "height": "6.232394366197183%sh",
+                              "vAlignment": "CENTER",
+                              "hAlignment": "CENTER",
+                              "_backgroundColour": "#FF000033",
+                              "background": {
+                                "images": {
+                                  "normal": "res/images/interface/commonArt/button/FB_icon.png",
+                                  "pressed": "res/images/interface/commonArt/button/FB_icon_over.png"
+                                },
+                                "scale": "stretch"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "revardContainer",
+                          "height": "7%sh",
+                          "width": "4%sh",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#0000FF78",
+                          "boxes": [
+                            {
+                              "name": "buildingImage",
+                              "width": "4.647887323943662%sh",
+                              "height": "4.647887323943662%sh",
+                              "vAlignment": "CENTER",
+                              "hAlignment": "CENTER",
+                              "background": {
+                                "image": "res/images/icons/attributeIcons/money2_drop.png",
+                                "scale": "stretch"
+                              }
+                            },
+                            {
+                              "maxWidth": "100%",
+                              "height": "8%sh",
+                              "hAlignment": "CENTER",
+                              "vAlignment": "bottom",
+                              "_backgroundColour": "#0000FF78",
+                              "boxes": [
+                                {
+                                  "name": "priceText",
+                                  "width": "10%sh",
+                                  "height": "10%sh",
+                                  "vAlignment": "bottom",
+                                  "hAlignment": "center",
+                                  "font": {
+                                    "file": "res/fonts/Loyola.otf",
+                                    "size": "3.6971830985915495%SH",
+                                    "colour": "#ffffffFF",
+                                    "outline": [
+                                      {
+                                        "width": "4%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                      },
+                                      {
+                                        "width": "4%",
+                                        "colour": "#503200ff"
+                                      }
+                                    ]
+                                  },
+                                  "text": "+2"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "width": "1%sh"
+                        },
+                        {
+                          "height": "6%sh",
+                          "width": "30%sh",
+                          "vAlignment": "CENTER",
+                          "hAlignment": "left",
+                          "_backgroundColour": "#00FF0078",
+                          "boxes": [
+                            {
+                              "name": "version_label_text",
+                              "maxHeight": "100%",
+                              "width": "100%",
+    	                      "vAlignment": "CENTER",
+	                          "hAlignment": "CENTER",
+                              "textWrap": true,
+                              "textAlign": "left",
+                              "lineSpacing": 0.75,
+                              "font": {
+                                "file": "res/fonts/PTS75F.otf",
+                                "size": "2.0070422535211265%SH",
+                                "colour": "#503200FF"
+                              },
+                              "text": "Подключено в Game Center для игры на нескольких IOS устройствах."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spacer",
+              "height": "2%SH"
+            },
+            {
+              "name": "middle_buttons_container",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "height": "5%SH",
+              "width": "100%",
+              "boxes": [
+                {
+                  "name": "buttonsContainer",
+                  "height": "100%",
+                  "width": "100%",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "boxes": [
+                    {
+                      "type": "spacer"
+                    },
+                    {
+                      "name": "community",
+                      "width": "15%SH",
+                      "height": "6%SH",
+                      "class": "buttonYellowScalable"
+                    },
+                    {
+                      "type": "spacer"
+                    },
+                    {
+                      "name": "support",
+                      "width": "15%SH",
+                      "height": "6%SH",
+                      "class": "buttonYellowScalable"
+                    },
+                    {
+                      "type": "spacer"
+                    },
+                    {
+                      "name": "news_button",
+                      "width": "15%SH",
+                      "height": "6%SH",
+                      "class": "buttonYellowScalable"
+                    },
+                    {
+                      "type": "spacer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spacer",
+              "height": "2%SH"
+            },
+            {
+              "name": "checkBox_setting_container",
+              "width": "47.5%sh",
+              "height": "10%sh",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "class": "beigeBackground"
+                },
+                {
+                  "name": "settings_checkboxes_container",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "height": "8%SH",
+                  "width": "100%",
+                  "boxes": [
+                    {
+                      "name": "checkboxes_container",
+                      "height": "100%",
+                      "width": "100%",
+                      "hAlignment": "left",
+                      "vAlignment": "from_top_to_bottom",
+                      "_backgroundColour": "#0000FF33",
+                      "boxes": [
+                        {
+                          "name": "block_top",
+                          "width": "100%",
+                          "height": "50%",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#FF000033",
+                          "boxes": [
+                            {
+                              "name": "music_container",
+                              " backgroundColour": "#FF1534FF",
+                              "height": "50%",
+                              "width": "32%",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#00FF0033",
+                              "boxes": [
+                                {
+                                  "name": "music_checkbox",
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "CENTER",
+                                  "width": "5%sh",
+                                  "height": "2.5%sh",
+                                  "boxes": [
+                                    {
+                                      "name": "checkbox_bg",
+                                      "width": "2.5%sh",
+                                      "height": "2.5%sh",
+                                      "background": {
+                                        "scale": "fit",
+                                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                                      }
+                                    },
+                                    {
+                                      "height": "3%sh",
+                                      "width": "3.5%sh",
+                                      "hAlignment": "left",
+                                      "vAlignment": "bottom",
+                                      "boxes": [
+                                        {
+                                          "name": "checkbox_mark",
+                                          "width": "4%sh",
+                                          "height": "4%sh",
+                                          "hidden": true,
+                                          "background": {
+                                            "image": "res/images/interface/commonArt/sign_ok.png",
+                                            "scale": "fit"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "animation_label",
+                                  "text": "test_music",
+                                  "class": "labels"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "water_container",
+                              "height": "50%",
+                              "width": "32%",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#0000FF33",
+                              "boxes": [
+                                {
+                                  "name": "water_checkbox",
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "CENTER",
+                                  "width": "5%sh",
+                                  "height": "2.5%sh",
+                                  "boxes": [
+                                    {
+                                      "name": "checkbox_bg",
+                                      "width": "2.5%sh",
+                                      "height": "2.5%sh",
+                                      "background": {
+                                        "scale": "fit",
+                                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                                      }
+                                    },
+                                    {
+                                      "height": "3%sh",
+                                      "width": "3.5%sh",
+                                      "hAlignment": "left",
+                                      "vAlignment": "bottom",
+                                      "boxes": [
+                                        {
+                                          "name": "checkbox_mark",
+                                          "width": "4%sh",
+                                          "height": "4%sh",
+                                          "hidden": true,
+                                          "background": {
+                                            "image": "res/images/interface/commonArt/sign_ok.png",
+                                            "scale": "fit"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "animation_label",
+                                  "text": "test_water",
+                                  "class": "labels"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "hd_graphics_container",
+                              "height": "50%",
+                              "width": "32%",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#00FF0033",
+                              "boxes": [
+                                {
+                                  "name": "hd_graphics_checkbox",
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "CENTER",
+                                  "width": "5%sh",
+                                  "height": "2.5%sh",
+                                  "boxes": [
+                                    {
+                                      "name": "checkbox_bg",
+                                      "width": "2.5%sh",
+                                      "height": "2.5%sh",
+                                      "background": {
+                                        "scale": "fit",
+                                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                                      }
+                                    },
+                                    {
+                                      "height": "3%sh",
+                                      "width": "3.5%sh",
+                                      "hAlignment": "left",
+                                      "vAlignment": "bottom",
+                                      "boxes": [
+                                        {
+                                          "name": "checkbox_mark",
+                                          "width": "4%sh",
+                                          "height": "4%sh",
+                                          "hidden": true,
+                                          "background": {
+                                            "image": "res/images/interface/commonArt/sign_ok.png",
+                                            "scale": "fit"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "animation_label",
+                                  "text": "test_HDgraphics",
+                                  "class": "labels"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "block_bottom",
+                          "width": "100%",
+                          "height": "50%",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#FF000033",
+                          "boxes": [
+                            {
+                              "name": "sound_container",
+                              " backgroundColour": "#FF1534FF",
+                              "height": "50%",
+                              "width": "32%",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#00FF0033",
+                              "boxes": [
+                                {
+                                  "name": "sound_checkbox",
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "CENTER",
+                                  "width": "5%sh",
+                                  "height": "2.5%sh",
+                                  "boxes": [
+                                    {
+                                      "name": "checkbox_bg",
+                                      "width": "2.5%sh",
+                                      "height": "2.5%sh",
+                                      "background": {
+                                        "scale": "fit",
+                                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                                      }
+                                    },
+                                    {
+                                      "height": "3%sh",
+                                      "width": "3.5%sh",
+                                      "hAlignment": "left",
+                                      "vAlignment": "bottom",
+                                      "boxes": [
+                                        {
+                                          "name": "checkbox_mark",
+                                          "width": "4%sh",
+                                          "height": "4%sh",
+                                          "hidden": true,
+                                          "background": {
+                                            "image": "res/images/interface/commonArt/sign_ok.png",
+                                            "scale": "fit"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "animation_label",
+                                  "text": "test_sound",
+                                  "class": "labels"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "crafts_option_container",
+                              "height": "50%",
+                              "width": "auto",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#0000FF33",
+                              "boxes": [
+                                {
+                                  "name": "crafts_option__checkbox",
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "CENTER",
+                                  "width": "5%sh",
+                                  "height": "2.5%sh",
+                                  "boxes": [
+                                    {
+                                      "name": "checkbox_bg",
+                                      "width": "2.5%sh",
+                                      "height": "2.5%sh",
+                                      "background": {
+                                        "scale": "fit",
+                                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                                      }
+                                    },
+                                    {
+                                      "height": "3%sh",
+                                      "width": "3.5%sh",
+                                      "hAlignment": "left",
+                                      "vAlignment": "bottom",
+                                      "boxes": [
+                                        {
+                                          "name": "checkbox_mark",
+                                          "width": "4%sh",
+                                          "height": "4%sh",
+                                          "hidden": true,
+                                          "background": {
+                                            "image": "res/images/interface/commonArt/sign_ok.png",
+                                            "scale": "fit"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "animation_label",
+                                  "text": "test_WinowSettings_Manufacture",
+                                  "class": "labels"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spacer",
+              "height": "1%SH"
+            },
+            {
+              "name": "spend_money2_container",
+              "height": "5%SH",
+              "width": "47.5%sh",
+              "hAlignment": "FROM_LEFT_TO_RIGHT",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "name": "spend_money2_checkbox",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "width": "5%sh",
+                  "height": "2.5%sh",
+                  "boxes": [
+                    {
+                      "name": "checkbox_bg",
+                      "width": "2.5%sh",
+                      "height": "2.5%sh",
+                      "background": {
+                        "scale": "fit",
+                        "image": "res/images/interface/windows/rateItWindow/point.png"
+                      }
+                    },
+                    {
+                      "height": "3%sh",
+                      "width": "3.5%sh",
+                      "hAlignment": "left",
+                      "vAlignment": "bottom",
+                      "boxes": [
+                        {
+                          "name": "checkbox_mark",
+                          "width": "4%sh",
+                          "height": "4%sh",
+                          "hidden": true,
+                          "background": {
+                            "image": "res/images/interface/commonArt/sign_ok.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "animation_label",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.4295774647887325%SH",
+                    "colour": "#503200FF"
+                  },
+                  "text": "test_spend_money2_without_confirmation"
+                }
+              ]
+            },
+            {
+              "sizeBase": "planeContainer",
+			  "width": "47.5%sh",
+			  "heigth": "16%sh",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "class": "beigeBackground",
+                  "width": "100%",
+                  "height": "16%sh"
+
+                },
+                {
+                  "name": "planeContainer",
+                  "width": "47.5%sh",
+                  "heigth": "16%sh",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#00FF0055",
+                  "boxes": [
+                    "res/ui/settingsInfoCell.json",
+                    "res/ui/settingsInfoCell.json"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spacer",
+              "height": "1%SH"
+            },
+            {
+              "name": "policy_container",
+              "width": "90%",
+              "height": "6.4%SH",
+              "vAlignment": "center",
+              "hAlignment": "left",
+              "boxes": [
+                {
+                  "name": "gc_button",
+                  "class": "button_class",
+                  "width": "6.443661971830986%sh",
+                  "height": "6.232394366197183%sh",
+                  "background": {
+                    "images": {
+                      "normal": "res/images/interface/commonArt/button/Gi_icon.png",
+                      "pressed": "res/images/interface/commonArt/button/Gi_icon_over.png"
+                    },
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "condition",
+                  "height": "100%",
+                  "width": "100%",
+                  "vAlignment": "from_top_to_bottom",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "height": "auto"
+                    },
+                    {
+                      "name": "term_service",
+                      "class": "button_class",
+                      "height": "45%",
+                      "maxWidth": "80%",
+                      "vAlignment": "CENTER",
+                      "hAlignment": "center",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.1126760563380285%SH",
+                        "colour": "#503200FF",
+                        "decoration": {
+                          "type": "underline",
+                          "colour": "#503200FF",
+                          "thickness": 1
+                        }
+                      },
+                      "text": "term_service_label_text"
+                    },
+                    {
+                      "name": "privacy_policy",
+                      "class": "button_class",
+                      "height": "45%",
+                      "maxWidth": "80%",
+                      "vAlignment": "CENTER",
+                      "hAlignment": "center",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.1126760563380285%SH",
+                        "colour": "#503200FF",
+                        "decoration": {
+                          "type": "underline",
+                          "colour": "#503200FF",
+                          "thickness": 1
+                        }
+                      },
+                      "text": "privacy_policy_label_text"
+                    },
+                    {
+                      "height": "auto"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "version_container",
+              "height": "3%SH",
+              "hAlignment": "FROM_LEFT_TO_RIGHT",
+              "boxes": [
+                {
+                  "name": "version_label_text",
+                  "height": "100%",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.1126760563380285%SH",
+                    "colour": "#503200B2"
+                  },
+                  "vAlignment": "CENTER",
+                  "text": "test_version"
+                },
+                {
+                  "name": "version_label",
+                  "height": "100%",
+                  "vAlignment": "CENTER",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.1126760563380285%SH",
+                    "colour": "#503200B2"
+                  },
+                  "text": "00.000 (000)"
+                }
+              ]
+            },
+            {
+              "height": "1.25%sh"
+            }
+          ]
+        },
+        {
+          "name": "closeButton_container",
+          "hAlignment": "right",
+          "vAlignment": "top",
+          "width": "120%",
+          "height": "110%",
+          "_backgroundColour": "#FF000078",
+          "boxes": [
+            {
+              "name": "closeButton",
+              "class": "buttonClose"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

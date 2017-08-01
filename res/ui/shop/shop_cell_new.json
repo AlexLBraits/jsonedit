@@ -1,0 +1,389 @@
+{
+  "name": "tapAnimatedBox",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "name": "background_container",
+      "width": "16.27%sh",
+      "minWidth": "14.43%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "background": {
+        "image": "res/images/interface/bottomMenu/slot_craft.png",
+        "scale": "fit",
+        "vAlignment": "bottom"
+      },
+      "boxes": [
+        {
+          "name": "upperRow",
+          "width": "100%",
+          "height": "28.0%",
+          "hAlignment": "center",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "buildinCounterContainer",
+              "width": "80%",
+              "height": "45%",
+              "vAlignment": "center",
+              "hAlignment": "right",
+              "boxes": [
+                {
+                  "name": "buildingCounter",
+                  "height": "70%",
+                  "minWidth": "4.82%sw",
+                  "hidden":false,
+                  "hAlignment": "right",
+                  "textAlign": "right",
+                  "vAlignment": "bottom",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.9612676056338025%SH",
+                    "minSize": "3.5148780884062134%SW",
+                    "colour": "#503200ff"
+                  },
+                  "text": "0/3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "craftNameContainer",
+          "width": "85%",
+          "height": "19%",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "caption",
+              "width": "100%",
+              "maxHeight": "85%",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "lineSpacing": 0.8,
+              "textWrap": true,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#f5dcb4FF",
+                "outline": [
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                  }
+                ]
+              },
+              "text": "Wheat is important"
+            }
+          ]
+        },
+        {
+          "name": "bottomContent",
+          "width": "90%",
+          "height": "auto",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "boxes": [
+            {
+              "name": "activeContent",
+              "width": "100%",
+              "height": "94%",
+              "hidden": false,
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+                {
+                  "name": "topActiveContent",
+                  "height": "auto",
+                  "width": "100%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "attributesContainer",
+                      "width": "100%",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "singleAttrContainer",
+                          "height": "4.2%sh",
+                          "minHeight": "3.73%SW",
+                          "width": "100%",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "boxes": [
+                            {
+                              "name": "attributeIncreaceContainer",
+                              "height": "100%",
+                              "hAlignment": "from_left_to_right",
+                              "vAlignment": "center",
+                              "boxes": [
+                                {
+                                  "name": "attributeCount",
+                                  "font": {
+                                    "file": "res/fonts/Loyola.otf",
+                                    "maxSize": "3.9612676056338025%SH",
+                                    "minSize": "3.5148780884062134%sw",
+                                    "colour": "#503200FF"
+                                  },
+                                  "text": "+30"
+                                },
+                                {
+                                  "name": "attributeIcon",
+                                  "width": "4.4%sh",
+                                  "height": "4.4%sh",
+                                  "minWidth": "3.9%SW",
+                                  "minHeight": "3.9%SW",
+                                  "background": {
+                                    "image": "res/images/icons/attributeIcons/craft_gardening.png",
+                                    "scale": "fit"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "description",
+                          "width": "90%",
+                          "minHeight": "4.044%sw",
+                          "maxHeight": "4.5%sh",
+                          "textAlign": "center",
+                          "vAlignment": "center",
+                          "textWrap": true,
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "colour": "#503200FF",
+                            "maxSize": 24
+                          },
+                          "text": "Открывает Кондитерское мастерство"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "builtMaximumText",
+                      "width": "90%",
+                      "maxHeight": "70%",
+                      "hidden": true,
+                      "textWrap": true,
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textAlign": "center",
+                      "lineSpacing": 0.9,
+                      "text": "BuiltMaximumText",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "maxSize": 24,
+                        "colour": "#503200FF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "priceContainer",
+                  "maxWidth": "100%",
+                  "height": "3.697%SH",
+                  "minHeight": "3.280%SW",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "price",
+                      "vAlignment": "center",
+                      "hAlignment": "from_left_to_right",
+                      "boxes": [
+                        {
+                          "name": "moneyIcon",
+                          "width": "3.697%SH",
+                          "minWidth": "3.280%SW",
+                          "height": "3.697%SH",
+                          "minHeight": "3.280%SW",
+                          "background": {
+                            "image": "res/images/icons/attributeIcons/money1_drop.png",
+                            "scale": "fit"
+                          }
+                        },
+                        {
+                          "name": "priceLabel",
+                          "maxWidth": "70%",
+                          "vAlignment": "center",
+                          "hAlignment": "center",
+                          "_backgroundColour": "#FF000075",
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": "3.9612676056338025%SH",
+                            "minSize": "2.34325%SW",
+                            "colour": "#FFFFFFFF",
+                            "outline": [
+                              {
+                                "width": "5%",
+                                "colour": "#503200FF",
+                                "yoffset": "5%"
+                              },
+                              {
+                                "width": "5%",
+                                "colour": "#503200FF"
+                              }
+                            ]
+                          },
+                          "text": "100"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "lockedContent",
+              "width": "100%",
+              "height": "90%",
+              "hidden": true,
+              "vAlignment": "from_top_to_bottom",
+              "hAlignment": "center",
+              "boxes": [
+                {
+                  "name": "lockedGetLevelText",
+                  "maxWidth": "100%",
+                  "height": "2.5%sh",
+                  "minHeight": "2.22%SW",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "1.7%SH",
+                    "minSize": "1.5%sw",
+                    "colour": "#503200FF"
+                  },
+                  "text": "StoreMainWindowNeedLvl"
+                },
+                {
+                  "name": "levelIcon",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "background": {
+                    "image": "res/images/icons/attributeIcons/exp_drop.png",
+                    "scale": "fit"
+                  },
+                  "height": "7.0%SH",
+                  "minHeight": "6.211180124223603%SW",
+                  "width": "6.3%SH",
+                  "minWidth": "5.59%SW",
+                  "boxes": [
+                    {
+                      "name": "levelText",
+                      "textAlign": "center",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "3.381%SH",
+                        "minSize": "3.0%sw",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "text": "99"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "image_container",
+      "width": "18.5%sh",
+      "minWidth": "16.415%SW",
+      "height": "27.893%sh",
+      "minHeight": "24.75%SW",
+      "vAlignment": "top",
+      "hAlignment": "left",
+      "boxes": [
+        {
+          "name": "upperRowImage",
+          "width": "auto",
+          "height": "29.0%",
+          "hAlignment": "left",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "buildingIcon",
+              "width": "auto",
+              "height": "130.0%",
+              "vAlignment": "bottom",
+              "hAlignment": "center",
+              "overflow": "ignore",
+              "background": {
+                "image": "res/images/icons/buildingsShopIcons/admin_warehouse.png",
+                "_image": "res/images/icons/buildingsShopIcons/factory_kitchen.png",
+                "scale": "fit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "container_notif_base",
+      "width": "16.26760563380282%sh",
+      "minWidth": "14.434432683054853%SW",
+      "_height": "23.87323943661972%sh",
+      "_minHeight": "21.182998612794783%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "_backgroundColour": "#FF000075",
+      "boxes": [
+        {
+          "name": "spacer",
+          "width": "90%",
+          "height": "11.5%",
+          "_backgroundColour": "#FF000075"
+        },
+        {
+          "name": "containerNotif",
+          "width": "90%",
+          "height": "23%",
+          "vAlignment": "top",
+          "hAlignment": "right",
+          "_backgroundColour": "#000000ff",
+          "boxes": [
+            {
+              "name": "boxNotif",
+              "hidden": true,
+              "_backgroundColour": "#000000ff",
+              "vAlignment": "top",
+              "hAlignment": "right",
+              "width": "30%",
+              "height": "50%",
+              "boxes": [
+                "res/ui/notifier.json"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

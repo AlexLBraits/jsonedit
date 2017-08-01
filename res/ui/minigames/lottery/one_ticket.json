@@ -1,0 +1,113 @@
+{
+    "name": "one_ticket",
+    "height": "100%",
+    "width": 200,
+    "backgroundColour": "#00FFFFFF",
+    "vAlignment": "TOP",
+    "hAlignment": "CENTER",
+    "boxes": [
+        {
+            "name": "caption_1",
+            "height": 100,
+            "width": "90%",
+            "margin": {
+                "top": 20
+            },
+            "backgroundColour": "#FFFF00FF",
+            "text": "Buy 1 ticket for",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "textAlign": "CENTER",
+            "textWrap": true,
+            "font": {
+                "size": 26,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#000000FF"
+            }
+        },
+        {
+            "name": "ticket_price_container",
+            "width": "90%",
+            "height": 100,
+            "margin": {
+                "top": 130
+            },
+            "hAlignment": "FROM_LEFT_TO_RIGHT",
+            "vAlignment": "CENTER",
+            "boxes": [
+                {
+                    "name": "price",
+                    "width": "AUTO",
+                    "height": "100%",
+                    "backgroundColour": "#FF0000FF",
+                    "hAlignment": "RIGHT",
+                    "vAlignment": "CENTER",
+                    "text": "30",
+                    "font": {
+                        "size": 26,
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#000000FF"
+                    }
+                },
+                {
+                    "name": "price_icon",
+                    "width": "AUTO",
+                    "height": "100%",
+                    "backgroundColour": "#FFF0F0FF",
+                    "background": {
+                        "hAlignment": "LEFT",
+                        "vAlignment": "CENTER",
+                        "images": {
+                            "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "free_ticket_timer_container",
+            "height": 20,
+            "width": "100%",
+            "margin": {
+                "top": 230
+            },
+            "backgroundColour": "#00FF0F99",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "boxes": [
+                {
+                    "name": "timer_container",
+                    "height": "100%",
+                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                    "vAlignment": "CENTER",
+                    "boxes": [
+                        {
+                            "name": "timer_caption",
+                            "height": "100%",
+                            "text": "Free ticket timeout:",
+                            "font": {
+                                "size": 14,
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#000000FF"
+                            }
+                        },
+                        {
+                            "name": "spacer",
+                            "width": 3
+                        },
+                        {
+                            "name": "timer",
+                            "height": "100%",
+                            "text": "",
+                            "font": {
+                                "size": 14,
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#000000FF"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

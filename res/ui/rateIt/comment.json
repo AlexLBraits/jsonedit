@@ -1,0 +1,308 @@
+{
+	"name":"comment",
+	"_backgroundColour": "#00aaFFFF",
+	"width": "48%sh",
+	"height": "28%sh",
+	"hAlignment": "center",
+	"vAlignment": "from_top_to_bottom",
+	"boxes":[
+		{
+			"name": "commentText",
+			"width": "93%",
+			"maxHeight": "6%sh",
+			"hAlignment": "left",
+			"vAlignment": "center",
+			"_backgroundColour": "#FF0000AA",
+			"textWrap": true,
+			"textAlign": "left",
+			"font": {
+				"file": "res/fonts/Loyola.otf",
+				"size": "2.37%sh",
+				"minSize":"1.32%SW",
+				"colour": "#503200FF"
+			},
+			"text": "RateItWindowText2"
+		},
+		{
+			"name":"checkBoxContainer",
+			"_backgroundColour": "#FF0000AA",
+			"width": "100%",
+			"height":"13%SH",
+			"hAlignment": "from_left_to_right",		
+			"vAlignment": "CENTER",
+			"boxes":[
+				{
+					"name":"checkBoxContainerLeft",
+					"hAlignment": "left",
+					"width": "50%",
+					"height":"100%",
+					"_backgroundColour": "#FF0000AA",
+					"vAlignment": "from_top_to_bottom",
+					"boxes":[
+						{
+							"name": "crashesCheckBoxWithText",
+							"hAlignment": "from_left_to_right",
+							"width": "95%",
+							"height":"50%",
+							"_backgroundColour": "#FF0000AA",
+							"vAlignment": "CENTER",
+							"boxes":[
+								{
+									"name": "crashesCheckbox",
+									"hAlignment": "CENTER",
+									"vAlignment": "CENTER",
+									"height":"7%sh",
+									"width":"7%sh",
+									"boxes": [
+										{
+											"name": "checkbox_bg",
+											"width": "4%sh",
+											"height": "4%sh",
+											"background": {
+												"scale": "fit",
+												"image": "res/images/interface/windows/rateItWindow/point.png"
+											}
+										},
+										{
+											"name": "checkbox_mark",
+											"width": "5%sh",
+											"height": "5%sh",
+											"hidden": true,
+											"background": {
+												"image":"res/images/interface/commonArt/sign_ok.png",
+												"scale": "fit"
+											}
+										}
+									]
+								},
+								{
+									"name": "crashesCommentText",
+									"width": "75%",
+									"height": "100%",
+									"hAlignment": "center",
+									"vAlignment": "center",
+									"_backgroundColour": "#FF0000AA",
+									"textWrap": true,
+									"textAlign": "left",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "1.8%sh",
+										"minSize":"1.2%SW",
+										"colour": "#503200FF"
+									},
+									"text": "RateItWindowСrashesPointText"
+								}
+							]
+						},
+						{
+							"name": "boringCheckBoxWithText",
+							"hAlignment": "from_left_to_right",
+							"_backgroundColour": "#FF0000AA",
+							"vAlignment": "CENTER",
+							"width": "95%",
+							"height":"50%",
+							"boxes":[
+								{
+									"name": "boringCheckbox",
+									"hAlignment": "CENTER",
+									"vAlignment": "CENTER",
+									"height":"7%sh",
+									"width":"7%sh",
+									"boxes": [
+										{
+											"name": "checkbox_bg",
+											"width": "4%sh",
+											"height": "4%sh",
+											"background": {
+												"scale": "fit",
+												"image": "res/images/interface/windows/rateItWindow/point.png"
+											}
+										},
+										{
+											"name": "checkbox_mark",
+											"width": "5%sh",
+											"height": "5%sh",
+											"hidden": true,
+											"background": {
+												"image":"res/images/interface/commonArt/sign_ok.png",
+												"scale": "fit"
+											}
+										}
+									]
+								},
+								{
+									"name": "boringCommentText",
+									"width": "75%",
+									"height": "100%",
+									"hAlignment": "CENTER",
+									"vAlignment": "center",
+									"_backgroundColour": "#FF0000AA",
+									"textWrap": true,
+									"textAlign": "left",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "1.8%sh",
+										"minSize":"1.2%SW",
+										"colour": "#503200FF"
+									},
+									"text": "RateItWindowBoringPointText"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name":"checkBoxContainerRight",
+					"hAlignment": "left",
+					"width": "50%",
+					"height":"100%",
+					"vAlignment": "from_top_to_bottom",
+					"boxes":[
+						{
+							"name": "controlsCheckBoxWithText",
+							"hAlignment": "from_left_to_right",
+							"width": "95%",
+							"height":"50%",
+							"_backgroundColour": "#FF0000AA",
+							"vAlignment": "CENTER",
+							"boxes":[
+								{
+									"name": "controlsCheckbox",
+									"hAlignment": "CENTER",
+									"vAlignment": "CENTER",
+									"height":"7%sh",
+									"width":"7%sh",
+									"boxes": [
+										{
+											"name": "checkbox_bg",
+											"width": "4%sh",
+											"height": "4%sh",
+											"background": {
+												"scale": "fit",
+												"image": "res/images/interface/windows/rateItWindow/point.png"
+											}
+										},
+										{
+											"name": "checkbox_mark",
+											"width": "5%sh",
+											"height": "5%sh",
+											"hidden": true,
+											"background": {
+												"image":"res/images/interface/commonArt/sign_ok.png",
+												"scale": "fit"
+											}
+										}
+									]
+								},
+								{
+									"name": "controlsCommentText",
+									"width": "75%",
+									"height": "100%",
+									"hAlignment": "CENTER",
+									"vAlignment": "center",
+									"_backgroundColour": "#FF0000AA",
+									"textWrap": true,
+									"textAlign": "left",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "1.8%sh",
+										"minSize":"1.2%SW",
+										"colour": "#503200FF"
+									},
+									"text": "RateItWindowControlsPointText"
+								}
+							]
+						},
+						{
+							"name": "unobviousCheckBoxWithText",
+							"hAlignment": "from_left_to_right",
+							"_backgroundColour": "#FF0000AA",
+							"width": "95%",
+							"height":"50%",
+							"vAlignment": "CENTER",
+							"boxes":[
+								{
+									"name": "unobviousCheckbox",
+									"hAlignment": "CENTER",
+									"vAlignment": "CENTER",
+									
+									"height":"7%sh",
+									"width":"7%sh",
+									"boxes": [
+									
+										{
+											"name": "checkbox_bg",
+											"width": "4%sh",
+											"height": "4%sh",
+											"background": {
+												"scale": "fit",
+												"image": "res/images/interface/windows/rateItWindow/point.png"
+											}
+										},
+										{
+											"name": "checkbox_mark",
+											"width": "5%sh",
+											"height": "5%sh",
+											"hidden": true,
+											"background": {
+												"image":"res/images/interface/commonArt/sign_ok.png",
+												"scale": "fit"
+											}
+										}
+									]
+								},
+								{
+									"name": "unobviousCommentText",
+									"width": "75%",
+									"height": "100%",
+									"hAlignment": "CENTER",
+									"vAlignment": "center",
+									"_backgroundColour": "#FF0000AA",
+									"textWrap": true,
+									"textAlign": "left",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "1.8%sh",
+										"minSize":"1.2%SW",
+										"colour": "#503200FF"
+									},
+									"text": "RateItWindowUnobviousPointText"
+								}
+							]
+						}
+					]	
+				}
+			]
+		},
+		{
+			"name":"enterCommentContainer",
+			"hAlignment": "center",		
+			"vAlignment": "center",
+			"width": "100%",
+			"height": "30%",
+			"boxes":[
+				{
+				  "name": "containerBg",
+				  "class": "beigeBackground"
+				},
+				{
+					"name": "enterCommentText",
+					"width": "100%",
+					"maxHeight": "80%",
+					"hAlignment": "CENTER",
+					"vAlignment": "center",
+					"_backgroundColour": "#FF0000AA",
+					"textWrap": true,
+					"textAlign": "center",
+					"font": {
+						"file": "res/fonts/Loyola.otf",
+						"size": "1.8%sh",
+						"minSize":"1.2%SW",
+						"colour": "#503200B2"
+					},
+					"text": "RateItWindowFeedbackText"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,61 @@
+{
+	"name": "blackScreen",
+	"width": "100%",
+	"height": "100sh%",
+	"backgroundColour": "#000000ff",
+    "hAlignment": "center",
+    "vAlignment": "from_top_to_bottom",
+	"boxes":[
+        {
+            "name":"top",
+            "width": "100%",
+            "height": "10%sh",
+            "backgroundColour": "#000000ff",
+        },
+        {
+            "width": "100%",
+            "height": "80%sh",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "boxes": [{
+                    "name": "main",
+                    "width": "100%",
+                    "height": "100%",
+                }
+            ]
+        },
+                {
+            "name": "bottom",
+            "width": "100%",
+            "height": "10%sh",
+            "backgroundColour": "#000000ff",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "boxes":[
+                {
+                            "name":"bottomTitle",
+                            "maxWidth":"100%",
+                            "height":"4.1%SH",
+                            "vAlignment":"bottom",
+                            "font":{  
+                                "file":"res/fonts/Loyola.otf",
+                                "size":"3.2%SH",
+                                "colour":"#ffFFFFFF",
+                                "_outline":[  
+                                    {  
+                                        "width":"4%",
+                                        "colour":"#ffffffFF",
+                                        "yoffset":"5%"
+                                    },
+                                    {  
+                                        "width":"4%",
+                                        "colour":"#ffffffFF"
+                                    }
+                                ]
+                            },
+                            "text":"tap",
+                }
+            ]
+        }
+	]
+}

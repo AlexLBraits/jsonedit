@@ -1,0 +1,428 @@
+{
+  "name": "root",
+  "width": 186,
+  "height": 170,
+  "hAlignment": "top",
+  "vAlignment": "left",
+  "boxes": [
+    {
+      "name": "timerContainer",
+      "hidden":true,
+      "width": 163,
+      "height": 133,
+      "hAlignment": "left",
+      "vAlignment": "from_top_to_bottom",
+      "margin": {
+        "top":20,
+        "left":12,
+      },
+      "background": {
+            "images": {
+              "normal": "res/images/interface/windows/ordersWindow/empty_lot.png"
+            }
+          },
+      "boxes": [
+        {
+          "name": "pieceOfPaper",
+          "width": 75,
+          "height":54,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/windows/ordersWindow/piece_of_paper.png",
+            }
+          },
+          "margin": {
+            "left": 42,
+            "top": -15,
+          }
+        },
+        {
+          "name": "pinWait",
+          "hidden": true,
+          "width":20,
+          "height":22,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/windows/ordersWindow/pin_01.png",
+            }
+          },
+          "margin": {
+            "left": 80,
+            "top": -54,
+          }
+        },
+        {
+          "name": "pinWait2",
+          "hidden": true,
+          "width":20,
+          "height":22,
+          "background": {
+            "images": {
+              "normal": "res/images/interface/windows/ordersWindow/pin_02.png",
+            }
+          },
+          "margin": {
+            "left": 66,
+            "top":-22
+          }
+        },
+        {
+          "name": "timerText",
+          "width": "100%",
+          "height": 25,
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "textAlign": "center",
+          "margin": {
+            "top":32,
+            "left": 10,
+            "right": 10,
+          },
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": 25,
+            "colour": "#503200FF",
+
+          },
+          "text": "9m 35s"
+        },
+        { 
+            "widht": "100%",
+            "name": "instantBttn",
+            "margin": {
+                "left": 36,
+            },
+            "boxes": [
+                {
+                      "name": "instant_finish_button",
+                      "width": 86,
+                      "height": 44,
+                      "hAlignment": "from_left_to_right",
+                      "vAlignment": "center",
+                      "class": "button_class",
+                      "background": {
+                      "images": {
+                      "normal": "res/images/interface/buttons/speedup.png"
+                      }
+                      },
+                      "boxes": [
+                                {
+                                "name": "spacer",
+                                "width": "auto"
+                                },
+                                {
+                                "name": "price",
+                                "hAlignment": "right",
+                                "vAlignment": "center",
+                                "maxWidth":26,
+                                "text": "FREE",
+                                "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": 18,
+                                "colour": "#000000B1"
+                                }
+                                },
+                                {
+                                "name": "money_icon",
+                                "height": 24,
+                                "width": 18,
+                                "margin": {
+                                "right": 15,
+                                "left": 2
+                                },
+                                "background": {
+                                "images": {
+                                "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                                },
+                                "scale": "fit"
+                                }
+                                }
+                                ]
+                }
+            ],
+        }
+      ]
+    },
+    {
+      "hidden": true,
+      "name": "background",
+      "width": 186,
+      "height": 170,
+      "hAlignment": "left",
+      "vAlignment": "from_top_to_bottom",
+      "background": {
+        "images": {
+          "normal": "res/images/interface/windows/ordersWindow/order_bg_green.png",
+        },
+        "scale": "window",
+        "corner": [
+          12,
+          12
+        ]
+      },
+      "boxes": [
+        {
+          "name": "orderName",
+          "width": "100%",
+          "height": 50,
+          "textAlign": "center",
+          "textWrap": "true",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "margin":{ 
+            "top": 20,
+            "left": 26,
+            "right": 26,
+          },
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": 18,
+            "colour": "#FFFFFFFF",
+            "outline":[ 
+                {
+                    "width": 1,
+                    "colour": "#50320080",
+                    "yoffset":1
+                },
+                {
+                    "width": 1,
+                    "colour": "#50320080" 
+                }
+            ]
+          },
+          "text":"Uncle Thomas Farm"
+        },
+        {
+          "name": "rewardContainer",
+           "margin": {
+              "top": 0,
+              "left": 41,
+            },
+          "width": 118,
+          "height": 60,
+          "hAlignment":"from_left_to_right",
+          "boxes": [
+          {
+              "name": "money1Container",
+              "width": "50%",
+              "height": 40,
+              "hAlignment": "from_left_to_right",
+              "margin": {
+                "top": 10,
+              },
+              "boxes": [
+                {
+                  "name": "money1Icon",
+                  "width": 40,
+                  "height": 40,
+                  "background": {
+                    "images": {
+                      "normal": "res/images/icons/attributeIcons/money1_drop.png"
+                    },
+                    "scale": "contain"
+                  }
+                },
+                {
+                  "name": "money1Count",
+                  "height": 30,
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": 18,
+                    "colour": "#FFFFFFFF",
+                    "outline":[ 
+                        {
+                            "width": 1,
+                            "colour": "#503200FF",
+                            "yoffset":1
+                        },
+                        {
+                            "width": 1,
+                            "colour": "#503200FF" 
+                        }
+                    ]
+                  },
+                  "text": 100,
+                  "margin": {
+                    "left": -24,
+                    "top":16
+                  }
+                }
+              ]
+            },
+            {
+              "name": "expContainer",
+              "width": 40,
+              "height":40,
+              "hAlignment": "from_left_to_right",
+              "margin": { "top":10},
+              "boxes": [
+                {
+                  "name": "expIcon",
+                  "width": 40,
+                  "height": 40,
+                  "background": {
+                    "images": {
+                      "normal": "res/images/icons/attributeIcons/exp_drop.png"
+                    },
+                    "scale": "contain"
+                  }
+                },
+                {
+                  "name": "expCount",
+                  "height": 30,
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": 18,
+                    "colour": "#FFFFFFFF",
+                    "outline":[ 
+                        {
+                            "width": 1,
+                            "colour": "#503200FF",
+                            "yoffset":1
+                        },
+                        {
+                            "width": 1,
+                            "colour": "#503200FF" 
+                        }
+                    ]
+                  },
+                  "text": 50,
+                  "margin": {
+                    "left": -22,
+                    "top":16
+                  }
+                }
+              ]
+            },
+          ]
+          },
+          {
+            "name": "readyBackground",
+            "hidden": true,
+            "width": 186,
+            "height": 170,
+            "background": {
+              "images":{
+                "normal": "res/images/interface/windows/ordersWindow/order_bg_green_complete.png"
+              }
+            },
+            "margin": { "top": -130}
+          },
+          {
+            "name": "pinBox",
+            "width": 186,
+            "height": 22,
+            "vAlignment": "center",
+            "margin": { "top": -165},
+            "boxes": [
+            {
+              "hidden": true,
+              "name": "pinReady",
+              "width": 20,
+              "height": 22,
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/windows/ordersWindow/pin_01.png",
+                }
+              },
+              "margin": {
+                "left": 92,
+              }
+            },
+            {
+              "hidden": true,
+              "name": "pinReady2",
+              "width": 20,
+              "height": 22,
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/windows/ordersWindow/pin_02.png",
+                }
+              },
+              "margin": {
+                "left": -34,
+              }
+            }]
+          },
+          {
+            "name": "check",
+            "hidden": true,
+            "width": 44,
+            "height": 40,
+            "margin": {
+              "top": 89,
+              "left": 130
+            },
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/sign_ok.png"
+              }
+            }
+          },
+          {
+          "name": "contents",
+          "width": "100%",
+          "height": 10,
+          "hAlignment": "right",
+          "vAlignment": "from_top_to_bottom",
+          "hidden": true,
+          "boxes": [          
+                        {
+              "name": "resContainer",
+              "width": 0,
+              "height": 30,
+              "hAlignment": "from_left_to_right",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "name": "resIcon",
+                  "width": 30,
+                  "height": 30,
+                  "background": {
+                    "images": {
+                      "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                    },
+                    "scale": "contain"
+                  }
+                },
+                {
+                  "name": "count",
+                  "height": 30,
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": 16,
+                    "colour": "#FFFFFFFF",
+                    "outline":[ 
+                        {
+                            "width": 1,
+                            "colour": "#503200FF",
+                            "yoffset":1
+                        },
+                        {
+                            "width": 1,
+                            "colour": "#503200FF" 
+                        }
+                    ]
+                  },
+                  "text": 5,
+                  "margin": {
+                    "left": 15
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

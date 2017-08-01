@@ -1,0 +1,80 @@
+{
+  "name": "askerProgress",
+  "width": "65%",
+  "height": "7.0%sh",
+  "hAlignment": "CENTER",
+  "vAlignment": "BOTTOM",
+  "_backgroundColour": "#00FF0033",
+  "boxes": [
+    {
+      "name": "askerProgressContainer",
+      "width": "90%",
+      "height": "6.0%sh",
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "_backgroundColour": "#0000FF33",
+      "boxes": [
+        {
+          "name": "progressBar",
+          "class": "progressBarGreenClass60",
+          "width": "90%",
+          "height": "3.0%sh"
+        },
+        {
+          "name": "askerLevelContainer",
+          "height": "100%",
+          "width": "100%",
+          "hAlignment": "LEFT",
+          "vAlignment": "CENTER",
+          "boxes": [
+            {
+              "width": "5.809859154929577%SH",
+              "height": "5.809859154929577%SH",
+              "name": "askerLevelIcon",
+              "_backgroundColour": "#00330075",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "background": {
+                "images": {
+                  "normal": "res/images/interface/commonArt/icon_reputation.png"
+                },
+                "scale": "fit",
+                "hAlignment": "CENTER",
+                "vAlignment": "CENTER"
+              },
+              "boxes": [
+                {
+                  "name": "askerLevel",
+                  "width": "6.338028169014084%SH",
+                  "height": "6.338028169014084%SH",
+                  "_backgroundColour": "#33000075",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "textWrap": true,
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "4.0%SH",
+                    "colour": "#FFFFFFFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200FF",
+                        "yoffset": "4%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200FF"
+                      }
+                    ]
+                  },
+                  "text": "6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+     "name": "cover",
+    "width": "100%",
+    "height": "100%",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "name": "alert_window",
+            "width": 375,
+            "height": 230,
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/commonArt/win/win.png"
+                },
+                "scale": "window",
+                "corner": [
+                    111,
+                    111
+                ]
+            },
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "_backgroundColour": "#FF000078",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [
+                { 
+                	"class": "windowTitleClass"
+                },               
+                {
+                    
+                            "name": "descr",
+                            "_hidden": "true",
+                            "hAlignment": "center",
+                    		"vAlignment": "center",
+                    		"textAlign": "center",
+                            "text": "descr_text",
+                            "textWrap": true,
+                            "width": 300,
+                    		"height": 150,
+                            "_backgroundColour": "#FF000078",
+                            "font": {
+                                "file": "res/fonts/FryPro.otf",
+                                "colour": "#503200FF",
+                                "size": 16
+                            }
+                        
+                },
+                {
+					"name":"buttonsContainer_container",
+					"hAlignment": "center",
+					"vAlignment": "bottom",
+					"width": 375,
+					"height": 230,
+					"margin": { "top": -170 },
+					"_backgroundColour": "#FF000078",
+					"boxes": [
+							  {
+							  "name": "buttonsContainer",
+							  "width": 0,
+							  "height": 0,
+							  "vAlignment": "bottom",
+							  "hAlignment": "center",
+							  "margin": {
+								"top": 16,
+								"bottom": 7
+					  
+							  }}
+							  ]
+        		}
+            ]
+        },
+        
+        
+        {
+            "name":"closeButton_container",
+            "hAlignment": "right",
+            "vAlignment": "top",
+            "width": 375,
+            "height": 230,
+            "_backgroundColour": "#FF000078",
+            "boxes": [
+                {
+                    "name": "closeButton",
+                    "class": "buttonClose",
+                    "margin": {
+                        "right": -15
+                    }
+                }
+            ]
+        }
+    ]
+}

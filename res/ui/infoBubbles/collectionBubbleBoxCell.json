@@ -1,0 +1,60 @@
+{
+    "name": "root",
+    "minWidth": 35,
+    "height": 35,
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "_backgroundColour": "#ff000080",
+    "boxes": [
+        {
+            "name": "content",
+            "height": 35,
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "icon",
+                    "width": 55,
+                    "_backgroundColour": "#00ff0080",
+                    "height": 55,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/icons/resourcesIcons/res_apple.png"
+                        },
+                        "scale": "fit"
+                    },
+                    "boxes":[
+                    	{
+							"name": "okImageContainer",
+							"width": 55,
+							"height": 55,
+							"_backgroundColour": "#00ff0080",
+							"hAlignment": "right",
+                    		"vAlignment": "bottom",
+							"boxes":[
+								{
+									"name": "okImage",
+									"width": 31,
+									"height": 26,
+									"_hidden": "true",
+									
+									"_backgroundColour": "#00ff0080",
+									"background": {
+										"images": {
+											"normal": "res/images/interface/commonArt/sign_ok.png"
+										},
+										"scale": "fit"
+									}
+								}
+							]
+							
+						}
+                    ]
+                   
+                }
+            ]
+        }
+    ]
+}

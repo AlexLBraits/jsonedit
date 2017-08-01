@@ -1,0 +1,146 @@
+{
+  "name": "root",
+  "vAlignment": "from_top_to_bottom",
+  "hAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "boxes": [
+    {
+      "height": "7%"
+    },
+    {
+      "name": "achievementTextContainer",
+      "width": "100%",
+      "_height": "12%",
+      "height": "12%SH",
+      "minHeight": "10.65%SW",
+      "vAlignment": "TOP",
+      "hAlignment": "CENTER",
+      "_backgroundColour": "#FF0000AA",
+      "boxes": [
+        {
+          "name": "tabTitle",
+          "vAlignment": "bottom",
+          "hAlignment": "center",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "3.4859154929577465%SH",
+            "minSize": "3.093092717797468%SW",
+            "colour": "#ffffffFF",
+            "outline": [
+              {
+                "width": "4%",
+                "colour": "#503200ff",
+                "yoffset": "5%"
+              },
+              {
+                "width": "4%",
+                "colour": "#503200ff"
+              }
+            ]
+          },
+          "_text": "Очки достижений: 526"
+        }
+      ]
+    },
+    {
+      "name": "window",
+      "class": "windowFullFillingBackgroundClass",
+      "sizeBase": "contentWindow",
+      "width": "100%",
+      "height": "100%",
+      "vAlignment": "center",
+      "hAlignment": "center",
+	  "handlers": {
+		"onControlEventBegan": true
+	  },
+      "boxes": [
+        {
+          "name": "contentWindow",
+          "width": "53%SH",
+          "minWidth": "47.0275%SW",
+          "height": "67%SH",
+          "_minHeight": "64.7737%SW",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "_backgroundColour": "#FF000055",
+          "boxes": [
+            {
+              "name": "tabAlignmentContainer",
+              "height": "100%",
+              "width": "90%",
+              "vAlignment": "top",
+              "hAlignment": "center",
+              "_backgroundColour": "#FF000055",
+              "boxes": [
+                {
+                  "name": "tabContainer",
+                  "height": "0.4225352112676056%SH",
+                  "width": "auto%",
+                  "vAlignment": "bottom",
+                  "hAlignment": "from_left_to_right",
+                  "_backgroundColour": "#FF0000FF",
+                  "_boxes": [
+                    "res/ui/achievements/achievementTab.json",
+                    "res/ui/achievements/achievementTab.json",
+                    "res/ui/achievements/achievementTab.json",
+                    "res/ui/achievements/achievementTab.json",
+                    "res/ui/achievements/achievementTab.json"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "contentBox",
+              "width": "90%",
+              "height": "98%",
+              "vAlignment": "from_bottom_to_top",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#00FF0055",
+              "boxes": [
+                {
+                  "height": "3.5%SH",
+                  "_minHeight": "3.10559%SW",
+                  "width": "90%",
+                  "_backgroundColour": "#FF00FF55"
+                },
+                {
+                  "name": "contentContainer",
+                  "width": "100%",
+                  "height": "auto",
+                  "vAlignment": "from_top_to_buttom",
+                  "hAlignment": "CENTER",
+                  "_backgroundColour": "#0000FF55",
+                  "_boxes": [
+                  	"res/ui/achievements/achievementsPoints.json",
+                    "res/ui/achievements/achievementMainContent.json"
+                  ]
+                },
+                {
+                  "height": "1.0%"
+                }
+              ]
+            },
+            {
+              "name": "closeButtonContainer",
+              "height": "109%",
+              "width": "100%",
+              "vAlignment": "bottom",
+              "hAlignment": "center",
+              "_backgroundColour": "#00FF0055",
+			  "boxes": [
+				{
+				  "name": "closeButton",
+				  "class": "buttonRedScalable",
+				  "width": "20.0%sh",
+				  "height": "6.5%sh"
+				}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

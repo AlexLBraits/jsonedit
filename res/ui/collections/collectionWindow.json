@@ -1,0 +1,293 @@
+{
+  "name": "root",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "class": "cover_layer",
+  "boxes": [
+    {
+      "name": "content",
+      "hAlignment": "CENTER",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "width": "42.15%sh",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "boxes": [
+        {
+          "name": "mainContainer",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "width": "100%",
+          "boxes": [
+            {
+              "name": "bgWithArrows",
+              "height": "65.27%sh",
+              "_backgroundColour": "#007700AA",
+              "hAlignment": "from_left_to_right",
+              "vAlignment": "top",
+              "boxes": [
+                {
+                  "name": "leftArrow",
+                  "width": "7%sh",
+                  "height": "60.52%sh",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#007700AA",
+                  "class": "button_anim_child_class",
+                  "boxes": [
+                    {
+                      "name": "tapAnimatedBox",
+                      "width": "5%sh",
+                      "height": "7.93%sh",
+                      "background": {
+                        "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "windowBg",
+                  "_sizeBase": "panelContent",
+                  "sizeBase": "content",
+                  "width": "42.15%sh",
+                  "height": "100%",
+                  "_backgroundColour": "#000000B2",
+                  "vAlignment": "TOP",
+                  "hAlignment": "center",
+                  "class": "windowBackgroundClass"
+                },
+                {
+                  "name": "rightArrow",
+                  "width": "7%sh",
+                  "height": "60.52%sh",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "class": "button_anim_child_class",
+                  "boxes": [
+                    {
+                      "name": "tapAnimatedBox",
+                      "width": "5%sh",
+                      "height": "7.93%sh",
+                      "background": {
+                        "image": "res/images/interface/buttons/bttn_arrow_right.png",
+                        "scale": "fit"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "titlePanel",
+              "width": "82%",
+              "hAlignment": "bottom",
+              "height": "9.0%sh",
+              "vAlignment": "center",
+              "_backgroundColour": "#0000FF75",
+              "class": "windowTitleClass"
+            },
+            {
+              "name": "closeButtonContainer",
+              "width": "124%",
+              "height": "5.9%sh",
+              "hAlignment": "right",
+              "vAlignment": "bottom",
+              "boxes": [
+                {
+                  "name": "closeButton",
+                  "class": "buttonClose"
+                }
+              ]
+            },
+            {
+              "name": "content",
+              "width": "100%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "_backgroundColour": "#00770033",
+              "boxes": [
+                {
+                  "name": "upperPadding",
+                  "_height": "9.5%sh",
+                  "height": "8%sh"
+                },
+                {
+                  "name": "title",
+                  "maxWidth": "90%",
+                  "height": "5.1%SH",
+                  "vAlignment": "bottom",
+                  "hAlignment": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.17%SH",
+                    "colour": "#ffffffFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff",
+                        "yoffset": "5%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff"
+                      }
+                    ]
+                  },
+                  "text": "Стадия 1: найди шляпу"
+                },
+                {
+                  "height": "1%sh"
+                },
+                {
+                  "width": "90%",
+                  "height": "29%sh",
+                  "vAlignment": "center",
+                  "hAlignment": "from_left_to_right",
+                  "boxes": [
+                    {
+                      "width": "auto"
+                    },
+                    {
+                      "name": "screcrowSymbolContainer",
+                      "width": "60%",
+                      "height": "29%sh",
+                      "vAlignment": "top",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#00770033",
+                      "boxes": [
+                        {
+                          "name": "collectionMainIcon",
+                          "width": "23.7676056%sh",
+                          "height": "26.6197183%sh",
+                          "_backgroundColour": "#007700AA",
+                          "background": {
+                            "image": "res/images/icons/collectionStepIcons/scarecrow_0.png",
+                            "scale": "fit"
+                          },
+                          "boxes": [
+                            {
+                              "name": "collectEffectNode",
+                              "width": "100%",
+                              "height": "100%",
+                              "overflow": "ignore",
+                              "hidden": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "repeatDialogueButtonContainer",
+                      "height": "100%",
+                      "width": "auto",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#77000033",
+                      "boxes": [
+                        {
+                          "height": "2%sh"
+                        },
+                        {
+                          "name": "repeatDialogueButton",
+                          "class": "button_class",
+                          "width": "7.6056338%sh",
+                          "height": "5.91549296%sh",
+                          "hAlignment": "center",
+                          "background": {
+                            "image": "res/images/interface/mainScreen/icons_bttm_chat.png",
+                            "scale": "fit"
+                          }
+                        },
+                        {
+                          "name": "chestContainer",
+                          "width": "11.0%sh",
+                          "height": "11.0%sh",
+                          "vAlignment": "center",
+                          "hAlignment": "center",
+                          "boxes": [
+							{
+							  "name": "bonusIcon",
+							  "class": "button_class",
+							  "width": "8.45%sh",
+							  "height": "8.45%sh",
+							  "hAlignment": "center",
+							  "background": {
+								"image": "res/images/interface/mainScreen/chest/chest3.png",
+								"scale": "fit"
+							  }
+                         	}
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "width": "80%",
+                  "minHeight": "7.5%sh",
+                  "maxHeight": "7.5%sh",
+                  "textWrap": true,
+                  "_backgroundColour": "#00770077",
+                  "text": "Найдите эти предметы, чтобы помочь пугалу! Найдите эти предметы, чтобы помочь пугалу!",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#503200FF",
+                    "size": "2.65%sh"
+                  }
+                },
+                {
+                  "name": "collectionContainer",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "bottom",
+                  "height": "13.0%sh",
+                  "maxWidth": "40.5%sh",
+                  "overflow": "scroll",
+                  "boxes": [
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json",
+                    "res/ui/collections/collectionItem.json"
+                  ]
+                },
+                {
+                  "name": "collectScrollBar",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "width": "37.68%sh",
+                  "height": "4%sh",
+                  "_backgroundColour": "#00770077",
+                  "boxes": [
+                    {
+                      "class": "scrollSliderHorisontal"
+                    }
+                  ]
+                },
+                {
+                  "name": "buttonsContainer",
+                  "width": "100%",
+                  "height": "5.5%sh",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "boxes": [
+                    {
+                      "name": "bottomButton",
+                      "class": "buttonGreenScalable",
+                      "width": "17.3239436%sh",
+                      "height": "10.4577464%sh"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

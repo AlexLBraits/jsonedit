@@ -1,0 +1,218 @@
+{
+  "name": "progressBarBox",
+  "width": "90%",
+  "height": "11%SH",
+  "minHeight": "8.873%SW",
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "_backgroundColour": "#FF000055",
+  "boxes": [
+    {
+      "name": "progressBar",
+      "width": "100%",
+      "height": "100%",
+      "class": "progressBarPurpleClass44"
+    },
+    {
+      "name": "iconCapContainer",
+      "width": "100%",
+      "height": "50%",
+      "vAlignment": "bottom",
+      "hAlignment": "from_left_to_right",
+      "_backgroundColour": "#FF000055",
+      "boxes": [
+        {
+          "width": "auto",
+          "height": "100%",
+          "_backgroundColour": "#FF000055"
+        },
+        {
+          "width": "1%",
+          "height": "0%",
+          "hAlignment": "center",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "iconCup1",
+              "width": "5.915492957746478%SH",
+              "minWidth": "5.248884612019945%SW",
+              "height": "5.176056338028169%SH",
+              "minHeight": "4.5927740355174524%SW",
+              "vAlignment": "bottom",
+              "_backgroundColour": "#00FF0055",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "background": {
+                "image": "res/images/interface/windows/achievementsWindow/achieve_cup_1.png",
+                "scale": "fit"
+              },
+              "boxes": [
+                {
+                  "width": "auto",
+                  "height": "0.25%SH",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#FF000055",
+                  "boxes": [
+                    {
+                      "name": "countCap1Text",
+                      "font": {
+                        "size": "2.640845070422535%SH",
+                        "minSize": "2.3432%SW",
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "_text": "190"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "auto",
+          "height": "100%",
+          "_backgroundColour": "#FF000055"
+        },
+        {
+          "width": "1%",
+          "height": "0%",
+          "hAlignment": "center",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "iconCup2",
+              "width": "6.866197183098592%SH",
+              "minWidth": "6.092455353237438%SW",
+              "height": "6.76056338028169%SH",
+              "minHeight": "5.9987252708799375%SW",
+              "vAlignment": "bottom",
+              "_backgroundColour": "#00FF0055",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "background": {
+                "image": "res/images/interface/windows/achievementsWindow/achieve_cup_2.png",
+                "scale": "fit"
+              },
+              "boxes": [
+                {
+                  "width": "auto",
+                  "height": "0.25%SH",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#FF000055",
+                  "boxes": [
+                    {
+                      "name": "countCap2Text",
+                      "font": {
+                        "size": "2.640845070422535%SH",
+                        "minSize": "2.3432%SW",
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "_text": "230"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "auto",
+          "height": "100%",
+          "_backgroundColour": "#FF000055"
+        },
+        {
+          "width": "1%",
+          "height": "0%",
+          "hAlignment": "center",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "iconCup3",
+              "width": "8.345070422535212%SH",
+              "minWidth": "7.404676506242424%SW",
+              "height": "7.394366197183099%SH",
+              "minHeight": "6.561105765024933%SW",
+              "vAlignment": "bottom",
+              "_backgroundColour": "#00FF0055",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "background": {
+                "image": "res/images/interface/windows/achievementsWindow/achieve_cup_3.png",
+                "scale": "fit"
+              },
+              "boxes": [
+                {
+                  "width": "auto",
+                  "height": "0.25%SH",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#FF000055",
+                  "boxes": [
+                    {
+                      "name": "countCap3Text",
+                      "font": {
+                        "size": "2.640845070422535%SH",
+                        "minSize": "2.3432%SW",
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "5%"
+                          },
+                          {
+                            "width": "5%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "_text": "350"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "auto",
+          "height": "100%",
+          "_backgroundColour": "#FF000055"
+        }
+      ]
+    }
+  ]
+}

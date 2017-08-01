@@ -1,0 +1,64 @@
+{
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "width": "10%sh",
+  "minWidth": "7.496251874062968%sw",
+  "height": "8.97887323943662%sh",
+  "minHeight": "6.73078953481006%sw", 
+  "_backgroundColour": "#77000033",
+  "boxes": [
+    {
+      "name": "backgroundEffectNode",
+      "overflow": "ignore",
+      "width": "100%h",
+      "height": "100%"
+    },
+    {
+      "name": "iconResCell",
+      "width": "8.97887323943662%sh",
+      "minWidth": "6.73078953481006%sw",
+      "height": "8.97887323943662%sh",
+      "minHeight": "6.73078953481006%sw", 
+      "hAlignment": "right",
+      "vAlignment": "bottom",
+      "_backgroundColour": "#00007755",
+      "background": {
+        "scale": "fit",
+        "images": {
+          "_normal": "res/images/icons/attributeIcons/money1_drop.png"
+        }
+      },
+      "boxes": [
+        {
+          "name": "countLabel",
+          "_minheight": "1.6871414824349824%SW",
+          "maxWidth": "90%",
+          "height": "100%",
+          "vAlignment": "bottom",
+          "hAlignment": "center",
+          "lineSpacing": 0,
+          "textAlign": "right",
+          "_backgroundColour": "#00FF0055",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "3.6971830985915495%sh",
+            "minSize": "2.7715015731570833%sw",
+            "colour": "#ffffffFF",
+            "outline": [
+              {
+                "width": "4%",
+                "colour": "#503200ff",
+                "yoffset": "5%"
+              },
+              {
+                "width": "4%",
+                "colour": "#503200ff"
+              }
+            ]
+          },
+          "_text": "25"
+        }
+      ]
+    }
+  ]
+}

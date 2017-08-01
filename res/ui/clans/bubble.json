@@ -1,0 +1,47 @@
+{
+    "boxes": [
+        {
+            "minWidth": 143,
+            "minHeight": 121,
+            "name": "background",
+            "background": {
+                "image": "res/images/interface/Island2Art/clans_wall/bubble_common.png",
+                "scale": "window",
+                "corner": [
+                    92,
+                    63
+                ]
+            },
+            "margin": {
+                "top": -115,
+                "left": -72
+            },
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true,
+                "onControlEventEnded": true
+            },
+            "boxes": [
+                {
+                    "minWidth": 143,
+                    "hAlignment": "CENTER",
+                    "padding": [
+                        18,
+                        17,
+                        0,
+                        17
+                    ],
+                    "boxes": [
+                        {
+                            "name": "container",
+                            "height": 68,
+                            "_boxes": [
+                                "res/ui/clans/bubble_btn.json"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

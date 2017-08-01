@@ -1,0 +1,44 @@
+
+    {
+      "width": "100%",
+  	  "height": "8%sh",
+      "vAlignment": "CENTER",
+      "hAlignment": "from_left_to_right",
+      "_backgroundColour": "#0000FF33",
+      "boxes": [
+        {
+          "height": "100%",
+          "width": "1%sh"
+        },
+        {
+          "name": "buttonPlane",
+		  "width": "17%SH",
+		  "height": "6%SH",
+          "class": "buttonYellowScalable"
+        },
+        {
+          "height": "100%",
+          "width": "1%sh"
+        },
+        {
+          "name": "textPlane",
+          "maxHeight": "6%sh",
+          "width": "auto",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "lineSpacing": 0.75,
+          "textWrap": true,
+          "_backgroundColour": "#FF000055",
+          "font": {
+            "file": "res/fonts/PTS75F.otf",
+            "colour": "#503200ff",
+            "size": "2.0070422535211265%sh"
+          },
+          "text": "Хотите быть в курсе событий на ферме?"
+        },
+        {
+          "height": "100%",
+          "width": "1%sh"
+        }
+      ]
+    }

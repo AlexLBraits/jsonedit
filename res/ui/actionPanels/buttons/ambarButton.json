@@ -1,0 +1,36 @@
+{
+    "name": "ambarButtonContainer",
+    "height": "100%%",
+    "width": "7.0%sh",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "_backgroundColour": "#77770077",
+    "boxes": [
+    	{
+    		"name": "ambarButton",
+    		"width": "6.97183099%sh",
+    		"height": "6.97183099%sh",
+    		"hAlignment": "center",
+			"vAlignment": "center",
+    		"class": "button_class_no_anim",
+			"background": {
+				"images": {
+					"normal": "res/images/interface/buildingMenu/barnButton/bttn_barn.png",
+					"pressed": "res/images/interface/buildingMenu/barnButton/bttn_barn_over.png"
+				},
+				"scale": "fit"
+			},
+			"boxes": [
+				{
+					"name": "buttonContent",
+					"width": "5.38732394%sh",
+					"height": "5.38732394%sh",
+					"background": {
+						"image": "res/images/interface/buildingMenu/barnButton/barn.png",
+						"scale": "fit",
+					}
+				}
+			]
+    	}
+    ]
+}

@@ -1,0 +1,281 @@
+{
+  "name": "coverrrr",
+  "blockImmuni": 1,
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "backgroundColour": "#bf00a000f",
+  "activeBackgroundColour": "#bf00a000f",
+  "padding": 30,
+  "handlers": {
+    "onTap": "RemoveSelf",
+    "onControlEventBegan": true,
+    "onControlEventEnded": true
+  },
+  "boxes": [
+    {
+      "width": 0,
+      "height": 0,
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "backgroundColour": "#000080FF",
+      "activeBackgroundColour": "#000080FF",
+      "border": 5,
+      "borderColour": "#008080FF",
+      "padding": 3,
+      "width": 600,
+      "handlers": {
+        "onTap": "true"
+      },
+      "boxes": [
+        {
+          "name": "input_box",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "input",
+              "width": "auto",
+              "height": "100%",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "text": "key"
+            },
+            {
+              "name": "change_button",
+              "width": 150,
+              "height": "70%",
+              "backgroundColour": "#550000FF",
+              "activeBackgroundColour": "#660000FF",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "text": "change key"
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "en",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "en",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "overflow": "scroll",
+              "text": "Lorem ipsum dolor sit amet",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "ru",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "ru",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "ru-qweqwe",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "overflow": "scroll",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "de",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "de",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "de-qweqwe",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "overflow": "scroll",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "fr",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "fr",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "fr-qweqwe",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "overflow": "scroll",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "it",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "it",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "it-qweqwe",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "overflow": "scroll",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        },
+        {
+          "name": "out",
+          "width": "100%",
+          "height": 70,
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "border": 1,
+          "borderColour": "#008080FF",
+          "boxes": [
+            {
+              "name": "lang_title",
+              "height": "100%",
+              "width": "100%H",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "es",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER"
+            },
+            {
+              "name": "es",
+              "height": "100%",
+              "width": "auto",
+              "border": 1,
+              "borderColour": "#008080FF",
+              "text": "es-qweqwe",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "overflow": "scroll",
+              "textWrap": true,
+              "font": {
+                "size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

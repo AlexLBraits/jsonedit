@@ -1,0 +1,101 @@
+{
+  "name": "skillCell",
+  "width": "7.2563%SH",
+  "height": "10.25%SH",
+  "hAlignment": "CENTER",
+  "vAlignment": "center",
+  "_backgroundColour": "#DF0000AA",
+  "boxes": [
+    {
+      "name": "iconWithBg",
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "width": "100%",
+      "height": "9.5%SH",
+      "_backgroundColour": "#DF0000AA",
+      "boxes": [
+        {
+          "name": "background",
+          "width": "8.06%SH",
+          "height": "8.06%SH",
+          "background": {
+            "scale": "stretch",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "images": {
+              "normal": "res/images/interface/commonArt/icon_recipe.png"
+            }
+          }
+        },
+        {
+          "name": "iconContainer",
+          "_backgroundColour": "#DF0000AA",
+          "width": "6.2%SH",
+          "height": "6.2%SH",
+          "hAlignment": "CENTER",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "icon",
+              "_backgroundColour": "#DF0000AA",
+              "width": "5.0%SH",
+              "height": "5.0%SH",
+              "background": {
+                "scale": "stretch",
+                "images": {
+                  "normal": "res/images/icons/resourcesIcons/res_corn.png"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "countContainer",
+      "width": "100%",
+      "height": "100%",
+      "hAlignment": "center",
+      "vAlignment": "BOTTOM",
+      "boxes": [
+        {
+          "height": "3.0%SH",
+          "width": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#00ff0055",
+          "boxes": [
+            {
+              "name": "countResize",
+              "text": "Corn",
+              "maxHeight": "3.0%SH",
+              "minHeight": "1.5%SH",
+              "width": "100%",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "_backgroundColour": "#ff000055",
+              "textWrap": true,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#FFFFFFFF",
+                "maxSize": "3.2%SH",
+                "minSize": "1.0%SH",
+                "outline": [
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

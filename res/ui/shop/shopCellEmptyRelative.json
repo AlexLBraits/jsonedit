@@ -1,0 +1,14 @@
+
+{
+	"name":"cellContainer",
+      "width": "18.5%sh",
+      "minWidth": "16.415%SW",
+      "height": "29.0%sh",
+      "minHeight": "25.732%SW",
+      "hAlignment": "center",
+	"_backgroundColour": "#FF00FF45",
+	"class" : "button_anim_child_class",
+	"_boxes" :[
+		"res/ui/shop/shop_cell_new.json"
+	]
+}

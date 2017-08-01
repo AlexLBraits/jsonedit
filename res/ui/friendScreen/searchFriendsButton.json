@@ -1,0 +1,62 @@
+{
+    "width": 108,
+    "height": 116,
+    "hAlignment": "center",
+    "vAlignment": "from_top_to_bottom",
+    "boxes": [
+        {
+            "name": "searchButton",
+            "class": "btn_tap_highlight_anim",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "width": 108,
+            "height": 108,
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/square_button_background.png",
+                    "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/square_button_background.png"
+                },
+                "scale": "contain"
+            },
+            "boxes": [
+                {
+                    "name": "icon_magnifier",
+                    "width": 87,
+                    "height": 87,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/windows/clans/union_create_tabs/icon_magnifier.png"
+                        },
+                        "scale": "contain"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "searchText",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "textAlign": "center",
+            "height":    20 ,
+            "maxHeight": 35,
+            "maxWidth": 108,
+            "margin": {
+                "top": -15
+            },
+            "font": {
+                "file": "res/fonts/PTS75F_W.ttf",
+                "size": 15,
+                "minSize": 15,
+                "colour": "#ffffffFF",
+                "outline": {
+                    "width": 1.5,
+                    "colour": "#553c1eff",
+                    "yoffset": 1
+                }
+            },
+            "text": "FindFriendsBtnText"
+        }
+    ]
+}

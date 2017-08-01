@@ -1,0 +1,217 @@
+{
+	"name": "cellBody",
+	"hAlignment": "center",
+	"vAlignment": "center",
+	"_backgroundColour": "#70000077",
+	"width": 143,
+	"height": 130,
+	"boxes": [
+		{
+			"name": "cellBackground",
+			"width": 140,
+			"height": 130,
+			"_backgroundColour": "#70000077",
+			"hAlignment": "left",
+			"vAlignment": "from_top_to_bottom",
+			"boxes": [
+				{
+					"name": "cellBackground",
+					"width": 140,
+					"height": 115,
+					"_backgroundColour": "#70000077",
+					"hAlignment": "from_left_to_right",
+					"vAlignment": "top",
+					"boxes": [
+						{
+							"name": "placeLabel",
+							"_backgroundColour": "#70000077",
+							"width": 35,
+							"height": 115,
+							"hAlignment": "center",
+							"vAlignment": "top",
+							"textAlignment": "center",
+							"margin": {
+								"top": 35
+							},
+							"text": "1",
+							"font": {
+								"file": "res/fonts/Loyola.otf",
+								"size": 25,
+								"colour": "#FFFFFFFF",
+								"outline":[ 
+								    {
+								        "width": 1,
+								        "colour": "#503200FF",
+								        "yoffset":1
+								    },
+								    {
+								        "width": 1,
+								        "colour": "#503200FF" 
+								    }
+								]
+							}
+						},
+						{
+							"name": "playerAvatarContainer",
+							"width": 131,
+							"height": 115,
+							"hAlignment": "left",
+							"vAlignment": "top",
+							"margin": {
+								"left": -10,
+								"right": 10
+							},
+							"boxes": [
+								{
+									"name": "playerAvatar",
+									"width": 78,
+									"height": 78,
+									"margin": {
+										"left": 9,
+										"top": 13
+									},
+									"background": {
+										"image": "res/images/interface/social/avatars/default_avatar.png",
+										"scale": "fit"
+									}
+								},
+								{
+									"name": "avaFrame",
+									"width": 95,
+									"height": 97,
+									"margin": {
+										"left": 0,
+										"top": 7
+									},
+									"background": {
+										"image": "res/images/interface/commonArt/leaderboards/avaframe_156.png"
+									}
+								},
+								{
+									"width": 131,
+									"height": "100%",
+									"hAlignment": "left",
+									"vAlignment": "bottom",
+									"margin": {
+										"left": -18
+									},
+									"boxes": [
+										{
+											"name": "avaRibbon",
+											"width": 131,
+											"height": 45,
+											
+											"background": {
+												"image": "res/images/interface/commonArt/leaderboards/avaframe_156_ribbon_1.png"
+											}
+										},
+										{
+											"width": "100%",
+											"height": 0,
+											"hAlignment": "center",
+											"vAlignment": "center",
+											"boxes": [
+												{
+													"name": "pointsCountLabel",
+													"width": 0,
+													"height": 0,
+													"hAlignment": "center",
+													"vAlignment": "center",
+													"textAlignment": "center",
+													"padding": {
+														"bottom": 4
+													},
+													"text": "99 999",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 18,
+														"colour": "#FFFFFFFF",
+														"outline":[ 
+														    {
+														        "width": 1,
+														        "colour": "#503200FF",
+														        "yoffset":1
+														    },
+														    {
+														        "width": 1,
+														        "colour": "#503200FF" 
+														    }
+														]
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "expStar",
+									"width": 45,
+									"height": 45,
+									"hAlignment": "center",
+									"vAlignment": "center",
+									"margin": {
+										"left": -7,
+										"top": -1
+									},
+									"background": {
+										"image": "res/images/icons/attributeIcons/exp_drop.png",
+										"scale": "fit"
+									},
+									"boxes": [
+										{
+											"name": "levelText",
+											"text": "50",
+											"padding": {
+												"left": -2,
+												"top": 2
+											},
+											"font": {
+												"file": "res/fonts/Loyola.otf",
+												"size": 18,
+												"colour": "#FFFFFFFF",
+												"outline":[ 
+												    {
+												        "width": 1,
+												        "colour": "#503200FF",
+												        "yoffset":1
+												    },
+												    {
+												        "width": 1,
+												        "colour": "#503200FF" 
+												    }
+												]
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "playerNameContainer",
+					"hAlignment": "center",
+					"vAlignment": "center",
+					"height": 16,
+					"width": 140,
+					"padding": {
+						"left": 6
+					},
+					"boxes": [
+						{
+							"name": "playerName",
+							"text": "Player Name",
+							"maxWidth": 140,
+							"font": {
+								"file": "res/fonts/FryPro.otf",
+								"size": 16,
+								"minSize": 10,
+								"colour": "#503200FF"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

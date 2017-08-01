@@ -1,0 +1,466 @@
+{
+  "name": "root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "boxes": [
+    {
+      "name": "content",
+      "hAlignment": "CENTER",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "width": "49%SH",
+      "height": "78%SH",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true,
+        "onDrag": true,
+        "onScroll": true
+      },
+      "boxes": [
+        {
+          "name": "mainContainer",
+          "hAlignment": "CENTER",
+          "vAlignment": "TOP",
+          "width": "100%",
+          "height": "100%",
+          "boxes": [
+            {
+              "name": "background",
+              "height": "100%",
+              "width": "100%",
+              "_backgroundColour": "#007700AA",
+              "hAlignment": "CENTER",
+              "vAlignment": "top",
+              "boxes": [
+                {
+                  "name": "windowBg",
+                  "sizeBase": "panelContent",
+                  "width": "100%",
+                  "height": "95%",
+                  "_backgroundColour": "#000000B2",
+                  "vAlignment": "TOP",
+                  "hAlignment": "LEFT",
+                  "class": "windowBackgroundClass"
+                },
+                {
+                  "name": "titleContainer",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "TOP",
+                  "_backgroundColour": "#007700AA",
+                  "boxes": [
+                    {
+                      "name": "titlePanel",
+                      "minWidth": "36%SH",
+                      "width": "82%",
+                      "hAlignment": "CENTER",
+                      "height": "7.7%SH",
+                      "vAlignment": "bottom",
+                      "_backgroundColour": "#0000FF75",
+                      "class": "windowFlatTitleClass"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "content",
+              "width": "100%",
+              "height": "100%",
+              "hAlignment": "CENTER",
+              "vAlignment": "FROM_TOP_TO_BOTTOM",
+              "boxes": [
+                {
+                  "name": "spacer",
+                  "width": "100%",
+                  "height": "9.184507042253521%SH"
+                },
+                {
+                  "name": "resInfoContainer",
+                  "width": "100%",
+                  "height": "15.5%SH",
+                  "_backgroundColour": "#AA0000AA",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "vAlignment": "CENTER",
+                  "boxes": [
+                    {
+                      "name": "spacer",
+                      "width": "6.866197183098592%sh"
+                    },
+                    {
+                      "name": "resInfo",
+                      "width": "30%",
+                      "height": "100%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "FROM_TOP_TO_BOTTOM",
+                      "boxes": [
+                        {
+                          "name": "priceContainer",
+                          "width": "100%",
+                          "height": "5.28169014084507%SH",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "boxes": [
+                            {
+                              "name": "icon",
+                              "height": "100%",
+                              "width": "100%h",
+                              "hAlignment": "CENTER",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#000000B2",
+                              "background": {
+                                "scale": "fit",
+                                "images": {
+                                  "normal": "res/images/icons/attributeIcons/money1_drop.png"
+                                }
+                              }
+                            },
+                            {
+                              "name": "spacer",
+                              "width": "1%Sh"
+                            },
+                            {
+                              "name": "price",
+                              "width": "AUTO",
+                              "height": "100%",
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#503200FF",
+                                "size": "3.2%SH"
+                              },
+                              "hAlignment": "LEFT",
+                              "vAlignment": "CENTER",
+                              "text": "150"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "warehouseContainer",
+                          "width": "100%",
+                          "height": "5.28169014084507%SH",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "boxes": [
+                            {
+                              "name": "icon",
+                              "height": "100%",
+                              "width": "100%h",
+                              "_backgroundColour": "#000000B2",
+                              "hAlignment": "CENTER",
+                              "vAlignment": "CENTER",
+                              "background": {
+                                "scale": "fit",
+                                "images": {
+                                  "normal": "res/images/interface/mainScreen/icons_bttm_storage.png"
+                                }
+                              }
+                            },
+                            {
+                              "name": "spacer",
+                              "width": "1%Sh"
+                            },
+                            {
+                              "name": "warehouseCount",
+                              "width": "AUTO",
+                              "height": "100%",
+                              "class": "loyolaRelativeTextWithoutOutline",
+                              "hAlignment": "LEFT",
+                              "vAlignment": "CENTER",
+                              "text": "18"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "timeContainer",
+                          "width": "100%",
+                          "height": "5.28169014084507%SH",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "boxes": [
+                            {
+                              "name": "icon",
+                              "height": "100%",
+                              "width": "100%h",
+                              "hAlignment": "CENTER",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#000000B2",
+                              "background": {
+                                "scale": "fit",
+                                "images": {
+                                  "normal": "res/images/interface/commonArt/icon_time.png"
+                                }
+                              }
+                            },
+                            {
+                              "name": "spacer",
+                              "width": "1%Sh"
+                            },
+                            {
+                              "name": "duration",
+                              "width": "AUTO",
+                              "height": "100%",
+                              "class": "loyolaRelativeTextWithoutOutline",
+                              "hAlignment": "LEFT",
+                              "vAlignment": "CENTER",
+                              "text": "6m20s"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "AUTO"
+                    },
+                    {
+                      "name": "resIconContainer",
+                      "width": "49%",
+                      "height": "100%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "FROM_TOP_TO_BOTTOM",
+                      "_backgroundColour": "#FF0000AA",
+                      "boxes": [
+                        {
+                          "name": "iconWithBg",
+                          "height": "77%",
+                          "width": "77%H",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#F00000AA",
+                          "boxes": [
+                            {
+                              "class": "beigeBackground"
+                            },
+                            {
+                              "name": "resIcon",
+                              "width": "80%",
+                              "height": "80%",
+                              "background": {
+                                "hAlignment": "CENTER",
+                                "vAlignment": "CENTER",
+                                "scale": "fit",
+                                "images": {
+                                  "normal": "res/images/icons/resourcesIcons/res_corn.png"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "progressBarContainer",
+                          "width": "52%",
+                          "height": "20%",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#F00000AA",
+                          "boxes": [
+                            "res/ui/crafts/masteryProgressBar.json"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "spacer",
+                  "height": "1.0563380281690142%SH"
+                },
+                {
+                  "name": "skillsContainer",
+                  "width": "92.653%",
+                  "height": "12.2%SH",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "_backgroundColour": "#AA0000AA",
+                  "boxes": [
+                    {
+                      "name": "skillsContainerBg",
+                      "class": "beigeBackground"
+                    },
+                    {
+                      "name": "skillsContainerContent",
+                      "width": "100%",
+                      "height": "100%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "FROM_TOP_TO_BOTTOM",
+                      "boxes": [
+                        {
+                          "name": "skillsTitle",
+                          "width": "100%",
+                          "height": "3.85%SH",
+                          "_backgroundColour": "#000000B2",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "class": "loyolaRelativeTextWithoutOutline",
+                          "text": "ResourceInfoWindowNeedSkillTitle"
+                        },
+                        {
+                          "name": "skillsItems",
+                          "_width": "100%",
+                          "height": "8%SH",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#DF0000AA",
+                          "_boxes": [
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "spacer",
+                  "height": "1.8%SH"
+                },
+                {
+                  "name": "infoContainer",
+                  "width": "92.653%",
+                  "height": "12.2%SH",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "boxes": [
+                    {
+                      "name": "infoContainerBg",
+                      "class": "beigeBackground"
+                    },
+                    {
+                      "name": "infoContainerContent",
+                      "width": "100%",
+                      "height": "100%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "FROM_TOP_TO_BOTTOM",
+                      "boxes": [
+                        {
+                          "name": "infoTitle",
+                          "width": "100%",
+                          "height": "3.85%SH",
+                          "_backgroundColour": "#000000B2",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "class": "loyolaRelativeTextWithoutOutline",
+                          "text": "ResourceInfoWindowNeedComponentsTitle"
+                        },
+                        {
+                          "name": "infoItems",
+                          "_width": "100%",
+                          "height": "8%SH",
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "_kbackgroundColour": "#DF0000AA",
+                          "_boxes": [
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json",
+                            "res/ui/crafts/skillCell.json"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "spacer",
+                  "height": "1.8%SH"
+                },
+                {
+                  "name": "progressContainer",
+                  "width": "92.653%",
+                  "height": "16.5%SH",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "boxes": [
+                    {
+                      "name": "progressContainerBg",
+                      "class": "beigeBackground"
+                    },
+                    {
+                      "name": "progressContent",
+                      "width": "100%",
+                      "height": "100%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "FROM_TOP_TO_BOTTOM",
+                      "boxes": [
+                        {
+                          "name": "progressTitle",
+                          "width": "100%",
+                          "height": "3.85%SH",
+                          "_backgroundColour": "#000000B2",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "class": "loyolaRelativeTextWithoutOutline",
+                          "text": "ResourceInfoWindowProgressTitle"
+                        },
+                        {
+                          "name": "progressItemsContainer",
+                          "width": "93%",
+                          "height": "10.0%SH",
+                          "hAlignment": "center",
+                          "vAlignment": "CENTER",
+                          "_backgroundColour": "#DF0000AA",
+                          "overflow": "scroll",
+                          "boxes": [
+                            {
+                              "name": "progressItems",
+                              "_width": "100%",
+                              "height": "10.0%SH",
+                              "hAlignment": "FROM_LEFT_TO_RIGHT",
+                              "vAlignment": "CENTER",
+                              "_backgroundColour": "#DF0000AA",
+                              "_boxes": [
+                                "res/ui/crafts/recipeskillCell.json",
+                                "res/ui/crafts/skillCell.json"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "spacer",
+                          "_height": "0.8%SH"
+                        },
+                        {
+                          "name": "skillItemsScrollBar",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "width": "95%",
+                          "height": "3%sh",
+                          "_backgroundColour": "#00770077",
+                          "boxes": [
+                            {
+                              "class": "scrollSliderHorisontal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "spacer",
+                  "height": "1.5%SH"
+                },
+                {
+                  "name": "closeButton",
+                  "width": "18%SH",
+                  "height": "6%SH",
+                  "class": "buttonRedScalable",
+                  "vAlignment": "center",
+                  "hAlignment": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

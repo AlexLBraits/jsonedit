@@ -1,0 +1,318 @@
+{
+  "name": "tapAnimatedBox",
+  "vAlignment": "top",
+  "hAlignment": "center",
+  "height": "18.485915492957744%SH",
+  "minHeight": "16.402764412562327%SW",
+  "width": "22.8%SH",
+  "minWidth": "20.2307%SW",
+  "_backgroundColour": "#0000FF55",
+  "boxes": [
+    {
+      "name": "cell",
+	  "width": "21.85%SH",
+	  "minWidth": "19.38776%SW",
+	  "height": "15.75%SH",
+	  "minHeight": "13.9752%SW",
+      "vAlignment": "center",
+      "hAlignment": "center",
+      "boxes": [
+        {
+          "name": "background",
+          "class":"beigeBackground",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "CENTER",
+          "width": "100%",
+          "height": "95%"
+        },
+        {
+          "name": "contentCell",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "center",
+          "width": "90%",
+		  "height": "15%SH",
+		  "minHeight": "13.3097%SW",
+          "_backgroundColour": "#FFFF0055",
+          "boxes": [
+			{
+			  "height": "0.5%sh",
+			  "minHeight": "0.443656%sw",
+			  "width": "90%",
+			},
+            {
+              "name": "captionTextBox",
+              "height": "2.5%sh",
+			  "minHeight": "2.2182786%sw",
+              "width": "100%",
+              "vAlignment": "center",
+          	  "hAlignment": "center",
+              "_backgroundColour": "#0000FF55",
+              "boxes": [
+				{
+				  "name": "captionCellText",
+				  "height": "95%",
+				  "maxWidth": "100%",
+				  "vAlignment": "center",
+				  "hAlignment": "center",
+				  "_backgroundColour": "#FF000055",
+				  "font": {
+					"file": "res/fonts/Loyola.otf",
+					"colour": "#503200B2",
+					"size": "2.5%sh"
+				  },
+				  "_text": "Про запас"
+				}
+              ]
+            },
+            {
+              "name": "bonusContent",
+              "height": "8%sh",
+              "minHeight": "7.098492%sw",
+              "width": "90%",
+              "hAlignment": "from_left_to_right",
+              "vAlignment": "center",
+              "_backgroundColour": "#FF0000FF",
+              "boxes": [
+                {
+                  "name": "iconBackground",
+                  "width": "8.080985915492956%SH",
+                  "minWidth": "7.170351300348675%SW",
+                  "height": "8.080985915492956%SH",
+                  "minHeight": "7.170351300348675%SW",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF0000FF",
+                  "background": {
+                    "image": "res/images/interface/windows/achievementsWindow/achieve_icon_back.png",
+                    "scale": "fit"
+                  },
+                  "boxes": [
+                    {
+                      "name": "achievementIcon",
+                      "_width": "110%",
+                      "_height": "110%",
+                      "width": "8.080985915492956%SH",
+                      "minWidth": "7.170351300348675%SW",
+                      "height": "8.080985915492956%SH",
+                      "minHeight": "7.170351300348675%SW",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "_scale": [0.9, 0.9],
+                      "_backgroundColour": "#FFFF0055",
+                      "background": {
+                        "image": "res/images/icons/achievementsIcons/icon_achieve_progress.png",
+                        "scale": "fit"
+                      }
+                    },
+                    {
+                    	"name": "levelContent",
+                    	"height": "100%",
+                    	"width": "100%",
+                       "hAlignment": "right",
+                       "vAlignment": "top",
+                       "boxes": [
+							{
+							  "name": "stageText",
+                "width":"35%",
+                "height":"30%",
+                "hAlignment":"center",
+                "vAlignment":"bottom",
+							  "font": {
+								"file": "res/fonts/Loyola.otf",
+								"size": "1.9014084507042253%SH",
+								"minSize": "1.6871414824349824%SW",
+								"colour": "#ffffffFF",
+								"outline": [
+								  {
+									"width": "4%",
+									"colour": "#503200ff",
+									"yoffset": "5%"
+								  },
+								  {
+									"width": "4%",
+									"colour": "#503200ff"
+								  }
+								]
+							  },
+							  "_text": "IV"
+							}
+                       ]
+                    },
+                    {
+                       "name": "stageContent",
+                       "height": "99%",
+                       "width": "80%",
+                       "hAlignment": "center",
+                       "vAlignment": "bottom",
+                       "_backgroundColour": "#00FF0055",
+                       "boxes": [
+							{
+							  "name": "countText",
+							  "minheight": "1.6871414824349824%SW",
+							  "maxWidth": "100%",
+							  "vAlignment": "bottom",
+							  "hAlignment": "center",
+							  "lineSpacing": 0.0,
+							  "_backgroundColour": "#FF000099",
+							  "font": {
+								"file": "res/fonts/Loyola.otf",
+								"maxSize": 16,
+								"colour": "#ffffffFF",
+								"outline": [
+								  {
+									"width": "4%",
+									"colour": "#503200ff",
+									"yoffset": "5%"
+								  },
+								  {
+									"width": "4%",
+									"colour": "#503200ff"
+								  }
+								]
+							  },
+							  "_text": "15000/15000",
+							  "_text": "15/15"
+							}
+                       ]
+                    }
+                  ]
+                },
+                {
+                  "name": "rewardContent",
+                  "height": "80%",
+                  "width": "60%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#FF000055",
+                  "boxes": [
+                    {
+                      "name": "awardAttr",
+                      "height": "50%",
+                      "width": "100%",
+                      "vAlignment": "center",
+                      "hAlignment": "from_left_to_right",
+                      "_backgroundColour": "#00FF0033",
+                      "boxes": [
+                      	{
+                      	  "width": "10%"
+                      	},
+						{
+						  "name": "icon",
+						  "height": "90%",
+						  "width": "90%H",
+						  "background": {
+							"_image": "res/images/interface/windows/achievementsWindow/achieve_cup_0.png",
+							"scale": "fit"
+						  }
+						},
+                      	{
+                      	  "width": "5%"
+                      	},
+						{
+						  "name": "value",
+						  "vAlignment": "center",
+						  "hAlignment": "center",
+						  "_backgroundColour": "#0000FF55",
+						  "font": {
+							"size": "3.169014084507042%SH",
+							"minSize": "2.811902470724971%SW",
+							"file": "res/fonts/Loyola.otf",
+							"colour": "#503200B2"
+						  },
+						  "_text": "1"
+						}
+                      ]
+                    },
+                    {
+                      "name": "awardCup",
+                      "height": "50%",
+                      "width": "100%",
+                      "vAlignment": "center",
+                      "hAlignment": "from_left_to_right",
+                      "_backgroundColour": "#FF000033",
+						"boxes": [
+                      	{
+                      	  "width": "10%"
+                      	},
+						{
+						  "name": "icon",
+						  "height": "90%",
+						  "width": "90%H",
+						  "background": {
+							"_image": "res/images/interface/windows/achievementsWindow/achieve_cup_0.png",
+							"scale": "fit"
+						  }
+						},
+                      	{
+                      	  "width": "5%"
+                      	},
+						{
+						  "name": "value",
+						  "vAlignment": "center",
+						  "hAlignment": "center",
+						  "_backgroundColour": "#0000FF55",
+						  "font": {
+							"size": "3.169014084507042%SH",
+							"minSize": "2.811902470724971%SW",
+							"file": "res/fonts/Loyola.otf",
+							"colour": "#503200B2"
+						  },
+						  "_text": "12"
+						}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bottomContent",
+              "height": "10%",
+              "width": "100%",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#FF00F0FF",
+              "boxes": [
+                {
+                  "hidden": true,
+                  "name": "achievementInfo",
+                  "maxWidth": "100%",
+			  	  "height": "0.5%sh",
+			  	  "minHeight": "0.443656%sw",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF00F0FF",
+                  "font": {
+                    "_size": "2.4295774647887325%SH",
+                    "_minSize": "2.1557918942224776%SW",
+                    "file": "res/fonts/Loyola.otf",
+                    "colour": "#00000077"
+                  },
+                  "_text": "Сегодня"
+                }
+              ]
+            },
+			{
+			  "name": "getButtonAlignment",
+			  "height": "4%sh",
+			  "minHeight": "3.54924578%sw",
+              "width": "100%",
+			  "hAlignment": "center",
+			  "vAlignment": "center",
+			  "_backgroundColour": "#FF0000FF",
+			  "boxes": [
+				{
+				  "hidden": true,
+				  "name": "getRewardButton",
+				  "class": "buttonGreenScalable",
+				  "width": "18.0%sh",
+				  "height": "5.5%sh"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

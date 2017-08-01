@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "minWidth": 35,
+    "height": 35,
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "_backgroundColour": "#ff000080",
+    "boxes": [
+        {
+            "name": "content",
+            "height": 35,
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "icon",
+                    "width": 35,
+                    "_backgroundColour": "#00ff0080",
+                    "height": 35,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/icons/resourcesIcons/res_apple.png"
+                        },
+                        "scale": "fit"
+                    }
+                   
+                },
+                {
+                    "name": "capacityLabel",
+                    "height": 14,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "font": {
+                        "file": "res/fonts/FryPro.otf",
+                        "size": 14,
+                        "colour": "#503200FF"
+                    },
+                    "text": "5/5",
+                    "padding": {
+                        "top": 2,
+                        "right": 3
+                    }
+                }
+            ]
+        }
+    ]
+}

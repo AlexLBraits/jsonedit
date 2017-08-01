@@ -1,0 +1,61 @@
+{
+	"width": "100%",
+	"minHeight": 243,
+	"maxHeight": 486,
+	"hAlignment": "from_left_to_right",
+	"vAlignment": "top",
+	"boxes": [
+		{
+			"name": "scrollContent",
+			"_backgroundColour": "#70000077",
+			"width": "auto",
+			"maxHeight": 486,
+			"type": "Scroller",
+            "overflow": "scroll",
+            "vslider": "scroller",
+			"vAlignment": "from_top_to_bottom",
+			"hAlignment": "left",
+			"_boxes": [
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json",
+				"res/ui/clans/clanLeaderboardsCell.json"
+			]
+		},
+		{
+			"name": "scroller",
+			"hidden": true,
+			"sizeBase": "titleContainer",
+			"height": "100%",
+			"margin": {
+				"left": 11
+			},
+			"type": "Slider",
+            "scroller": "scrollContent",
+            "orientation": "vertical",
+            "thumb": {
+                "width": 6,
+				"height": 88,
+				"background": {
+					"image": "res/images/interface/commonArt/leaderboards/scroll_02.png",
+					"scale": "window",
+					"corner": [
+						5,
+						3
+					]
+				}
+            },
+            "background": {
+				"image": "res/images/interface/commonArt/leaderboards/scroll_01.png",
+				"scale": "window",
+				"corner": [
+					3,
+					2
+				]
+			}
+		}
+	]
+}

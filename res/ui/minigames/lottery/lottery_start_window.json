@@ -1,0 +1,223 @@
+{
+  "name": "root",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "backgroundColour": "#00000055",
+  "activeBackgroundColour": "#00000055",
+  "handlers": {
+    "onControlEventBegan": true,
+    "onTap": true
+  },
+  "boxes": [
+    {
+      "name": "lotteryWindow",
+      "width": 585,
+      "height": 500,
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "handlers": {
+        "onControlEventBegan": true,
+        "onTap": true
+      },
+      "backgroundColour": "#fdf9daFF",
+      "boxes": [
+        {
+          "name": "title",
+          "width": "100%",
+          "height": "50",
+          "hAlignment": "from_right_to_left",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "closeButton",
+              "width": "45",
+              "height": "47",
+              "class": "buttonClose"
+            },
+            {
+              "name": "titleText",
+              "width": "AUTO",
+              "height": "100%",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 16,
+                "colour": "#FFFFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "name": "main_container",
+          "width": "100%",
+          "height": 420,
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "name": "subtitle_container",
+              "width": "100%",
+              "height": "150",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "text": "Lottery! ",
+              "font": {
+                "size": 60,
+                "file": "res/fonts/Loyola.otf",
+                "colour": [
+                  "#ef8a39FF",
+                  "#f5be41FF"
+                ]
+              }
+            },
+            {
+              "name": "fields_and_cover_container",
+              "width": 585,
+              "height": 200,
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "name": "fields_container",
+                  "width": "100%",
+                  "height": 250,
+                  "hAlignment": "by_width",
+                  "vAlignment": "by_width",
+                  "backgroundColour": "#FF00FFFF",
+                  "vAlignment": "CENTER",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "boxes": [
+                    {
+                      "name": "spacer",
+                      "width": "AUTO"
+                    },
+                    {
+                      "name": "one_container",
+                      "width": 200,
+                      "height": "100%",
+                      "boxes": [
+                        "res/ui/lottery/one_play.json"
+                      ]
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "AUTO"
+                    },
+                    {
+                      "name": "many_tickets",
+                      "height": "100%",
+                      "width": 200,
+                      "backgroundColour": "#00FFFFFF",
+                      "vAlignment": "TOP",
+                      "hAlignment": "CENTER",
+                      "boxes": [
+                        {
+                          "name": "caption_m",
+                          "height": 100,
+                          "width": "90%",
+                          "margin": {
+                            "top": 20
+                          },
+                          "backgroundColour": "#FFFF00FF",
+                          "text": "Buy 10 tickets for",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "textAlign": "CENTER",
+                          "textWrap": true,
+                          "font": {
+                            "size": 26,
+                            "file": "res/fonts/Loyola.otf",
+                            "colour": "#000000FF"
+                          }
+                        },
+                        {
+                          "name": "ticket_price_container",
+                          "width": "90%",
+                          "height": 100,
+                          "margin": {
+                            "top": 130
+                          },
+                          "hAlignment": "FROM_LEFT_TO_RIGHT",
+                          "vAlignment": "CENTER",
+                          "boxes": [
+                            {
+                              "name": "price",
+                              "width": "AUTO",
+                              "height": "100%",
+                              "backgroundColour": "#FF0000FF",
+                              "hAlignment": "RIGHT",
+                              "vAlignment": "CENTER",
+                              "text": "30",
+                              "font": {
+                                "size": 26,
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#000000FF"
+                              }
+                            },
+                            {
+                              "name": "price_icon",
+                              "width": "AUTO",
+                              "height": "100%",
+                              "backgroundColour": "#FFF0F0FF",
+                              "background": {
+                                "hAlignment": "LEFT",
+                                "vAlignment": "CENTER",
+                                "images": {
+                                  "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "AUTO"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "debug_box",
+          "width": "100%",
+          "height": 50,
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "boxes": [
+            {
+              "name": "tickets_count",
+              "height": "100%",
+              "width": 100,
+              "backgroundColour": "#651384FF",
+              "text": "15",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "font": {
+                "size": 30,
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#FFFFFFFF",
+                "outline": [
+                  {
+                    "width": 1,
+                    "colour": "#000000FF",
+                    "yoffset": 1
+                  },
+                  {
+                    "width": 1,
+                    "colour": "#000000FF"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

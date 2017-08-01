@@ -1,0 +1,11 @@
+{
+    "name": "container",
+    "width": 0,
+    "maxWidth":450,
+    "height": 90,
+    "hAlignment": "from_left_to_right",
+    "vAlignment": "bottom",
+    "_backgroundColour":"#FF000078",
+    "boxes":[
+    ]
+}

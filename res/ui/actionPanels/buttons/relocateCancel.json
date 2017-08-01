@@ -1,0 +1,61 @@
+{  
+    "name":"cancellButton",
+    "vAlignment":"from_top_to_bottom",
+    "hAlignment":"CENTER",
+    "height":"16.73%sh",
+    "width":"13.21%sh",
+    "class":"button_class",
+    "handlers": {
+    	"onGuiUp": "placeCancel"
+    },
+    "background":{  
+        "image":"res/images/interface/mainScreen/craftSlots/craft_normal.png",
+        "scale":"fit"
+    },
+    "boxes":[  
+    	{
+    		"name": "paddingBox",
+    		"width": "85%",
+			"height": "20%"
+    	},
+        {  
+        	"name": "iconsContainer",
+			"_backgroundColour": "#77000077",
+			"hAlignment":"center",
+			"vAlignment":"center",
+			"width": "85%",
+			"height": "40%",
+			"boxes": [
+				{
+					"name": "buttonIcon",
+					"width": "10.5633802%sh",
+					"height": "10.5633802%sh",
+					"background":{  
+						"image":"res/images/interface/buildingMenu/icon_x.png",
+						"scale":"fit"
+					}
+				}
+			]
+        },
+        {
+        	"name": "textContainer",
+        	"_backgroundColour": "#00770077",
+        	"hAlignment":"center",
+			"vAlignment":"center",
+			"width": "75%",
+			"height": "35%",
+			"boxes": [
+				{
+					"name": "buttonText",
+					"text": "BuildingMovingCancelBtn",
+					"class": "actionPanelButtonsText"
+				}
+			]
+        },
+    	{
+    		"name": "paddingBox",
+    		"width": "85%",
+			"height": "5%"
+    	}
+    ]
+}

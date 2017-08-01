@@ -1,0 +1,56 @@
+{
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "cover_layer",
+    "blockImmuni": true,
+    "boxes": [
+        {
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "boxes": [
+                {
+                    "name": "message",
+                    "text": "exitScreenText1",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": 30,
+                        "colour": "#FFFFFFFF",
+                        "outline":[ 
+                            {
+                                "width": 1,
+                                "colour": "#553c1eFF",
+                                "yoffset":1
+                            },
+                            {
+                                "width": 1,
+                                "colour": "#553c1eFF" 
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "buttonsContainer",
+                    "margin": [
+                        25
+                    ],
+                    "hAlignment": "from_left_to_right",
+                    "boxes": [
+                        {
+                            "name": "quitButton",
+                            "blockImmuni": true,
+                            "class": "buttonYellowScalable"
+                        },
+                        {
+                            "name": "cancelButton",
+                            "blockImmuni": true,
+                            "class": "buttonBlueScalable",
+                            "margin": {
+                                "left": 25
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

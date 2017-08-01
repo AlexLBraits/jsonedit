@@ -1,0 +1,75 @@
+{
+    "name": "root",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "name": "content",
+            "minWidth": 160,
+            "minHeight": 48,
+            "_backgroundColour": "#ff000080",
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "boxes": [
+               {
+               		"name":"description",
+					"width":"100%",
+					"height":0,
+					"_backgroundColour":"#FF000077",
+					"textWrap":true,
+					"vAlignment": "center",
+					"textAlign": "center",
+					"font":{
+						"file": "res/fonts/FryPro.otf",
+						"size": 14,
+						"colour": "#503200FF"
+					},
+					"overflow":"show",
+					"text":"FishingTreasuresWindowHint"
+               },
+                {
+                    "name": "itemsContainer",
+                    "vAlignment": "center",
+                    "minWidth": 160,
+                    "hAlignment": "center",
+                    "margin": {
+                        "top": 5
+                    },
+                    "boxes": [
+                        {
+                            "width": "100%",
+                            "height": 21,
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/commonArt/bubble/bubbleline.png"
+                                },
+                                "scale": "window",
+                                "corner": [
+                                    12,
+                                    21
+                                ]
+                            }
+                        },
+                        
+                        {
+                        	"name": "itemsBox",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "height": 50,
+                            "boxes":[
+                            	{
+									"name": "items",
+									"vAlignment": "center",
+									"hAlignment": "from_left_to_right"
+								}
+                            ]
+                        }
+                        	
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+  "name": "skillCell",
+  "width": "7.2563%SH",
+  "height": "10.25%SH",
+  "hAlignment": "CENTER",
+  "vAlignment": "center",
+  "_backgroundColour": "#DF0000AA",
+  "boxes": [
+    {
+      "name": "iconWithBg",
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "width": "100%",
+      "height": "9.5%SH",
+      "_backgroundColour": "#DF0000AA",
+      "boxes": [
+        {
+          "name": "circleBackground",
+          "width": "6.2%SH",
+          "height": "6.2%SH",
+          "_backgroundColour": "#0000FF55",
+          "background": {
+            "scale": "stretch",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "images": {
+              "normal": "res/images/interface/commonArt/circle.png"
+            }
+          }
+        },
+        {
+          "name": "icon",
+          "width": "6.338028169014084%SH",
+          "height": "6.338028169014084%SH",
+          "background": {
+            "scale": "stretch",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "images": {
+              "normal": "res/images/icons/resourcesIcons/res_corn.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "countContainerRight",
+      "width": "85%",
+      "height": "85%",
+      "_backgroundColour": "#DF0000AA",
+      "hAlignment": "RIGHT",
+      "vAlignment": "BOTTOM",
+      "boxes": [
+        {
+          "name": "count",
+          "class": "loyolaRelativeText60",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "countContainer",
+      "width": "100%",
+      "height": "100%",
+      "hAlignment": "center",
+      "vAlignment": "BOTTOM",
+      "boxes": [
+        {
+          "height": "3.0%SH",
+          "width": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#00ff0055",
+          "boxes": [
+            {
+              "name": "countResize",
+              "_text": "Pomme de terre au four",
+              "maxHeight": "3.0%SH",
+              "minHeight": "1.5%SH",
+              "width": "100%",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "_backgroundColour": "#ff000055",
+              "textWrap": true,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#FFFFFFFF",
+                "maxSize": "3.2%SH",
+                "minSize": "1.0%SH",
+                "outline": [
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "5%",
+                    "colour": "#503200FF"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

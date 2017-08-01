@@ -1,0 +1,368 @@
+{
+  "name": "cover",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true,
+    "onGuiFirstEnter": true,
+    "onDrag": true,
+    "onScroll": true
+  },
+  "boxes": [{
+    "name": "win_container",
+    "width": "50%SH",
+    "height": "55%SH",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "_backgroundColour": "#00FF00AA",
+    "handlers": {
+      "onTap": true
+    },
+    "boxes": [{
+      "width": "100%",
+      "_backgroundColour": "#786800FF",
+      "hAlignment": "CENTER",
+      "vAlignment": "from_top_to_bottom",
+      "name": "mainContent",
+      "boxes": [{
+          "name": "topChicken",
+          "_backgroundColour": "#786800FF",
+          "width": "80%",
+          "height": "23%sh",
+          "vAlignment": "BOTTOM",
+          "hAlignment": "CENTER",
+          "boxes": [{
+            "name": "chickenContainer",
+            "width": "100%",
+            "height": "23%SH",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "_backgroundColour": "#FF0000AA",
+            "handlers": {
+              "onTap": true
+            },
+            "boxes": [{
+              "name": "avatarImage",
+              "width": "23%sh",
+              "height": "23%sh",
+              "background": {
+                "scale": "fit",
+                "_image": "res/images/interface/windows/alertWindow/alert_chicken1.png"
+              }
+            }]
+          }]
+        },
+        {
+          "name": "bubbleContainer",
+          "_backgroundColour": "#108800FF",
+          "width": "100%",
+          "height": "41.0%SH",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "boxes": [{
+              "name": "bubble",
+              "height": "51.60%sh",
+              "_backgroundColour": "#007700AA",
+              "hAlignment": "center",
+              "vAlignment": "top",
+              "boxes": [{
+                  "name": "windowBg",
+                  "sizeBase": "panelContent",
+                  "width": "42.15%sh",
+                  "height": "90.5%",
+                  "_backgroundColour": "#000000B2",
+                  "vAlignment": "top",
+                  "hAlignment": "center",
+                  "class": "windowBackgroundClass"
+                },
+                {
+                  "name": "bgTail",
+                  "width": "21%sh",
+                  "hAlignment": "right",
+                  "_backgroundColour": "#000000B2",
+                  "boxes": [{
+                    "width": "5.6%sh",
+                    "height": "4.860%sh",
+                    "background": {
+                      "image": "res/images/interface/windows/askerWindow/deal_bg_tail.png",
+                      "scale": "fit",
+                      "vAlignment": "bottom"
+                    }
+                  }]
+                },
+                {
+                  "name": "titlePanel",
+                  "hidden": "true",
+                  "minWidth": "36%sh",
+                  "width": "82%",
+                  "hAlignment": "center",
+                  "height": "8.7%sh",
+                  "vAlignment": "bottom",
+                  "_backgroundColour": "#0000FF75",
+                  "class": "windowFlatTitleClass"
+                }
+              ]
+            },
+            {
+              "name": "closeButtonContainer",
+              "width": "48.5%sh",
+              "height": "52.6%sh",
+              "hAlignment": "right",
+              "vAlignment": "tops",
+              "boxes": [{
+                "name": "closeButton",
+                "class": "buttonClose"
+              }]
+            },
+            {
+              "name": "alertContentContainer",
+              "height": "155%",
+              "width": "85%",
+              "vAlignment": "from_top_to_bottom",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#FF0000AA",
+              "boxes": [{
+                  "name": "spacer",
+                  "height": "12.2%sh"
+                },
+                {
+                  "name": "titleContentContiner",
+                  "vAlignment": "CENTER",
+                  "hAlignment": "CENTER",
+                  "_backgroundColour": "#FF0000AA",
+                  "width": "90%",
+                  "boxes": [{
+                    "name": "windowTitleNoBG",
+                    "width":"auto",
+                    "textWrap": "true",
+                    "textAlign": "center",
+                    "_backgroundColour": "#FF0000AA",
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "font": {
+                      "file": "res/fonts/Loyola.otf",
+                      "colour": "#FF8467FF",
+                      "size": "3.6%sh",
+                      "outline": [{
+                          "width": "5%",
+                          "colour": "#503200FF",
+                          "yoffset": "5%"
+                        },
+                        {
+                          "width": "5%",
+                          "colour": "#503200FF"
+                        }
+                      ]
+                    },
+                    "text": "Не хватает монет!"
+                  }]
+                },
+                {
+                  "name": "alertTextContainer",
+                  "width": "85%",
+                  "height": "auto",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#00FF00FF",
+                  "boxes": [{
+                      "name": "alertText",
+                      "width": "100%",
+                      "maxHeight": "60%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "top",
+                      "_backgroundColour": "#FF0000AA",
+                      "textWrap": true,
+                      "textAlign": "left",
+                      "font": {
+                        "file": "res/fonts/PTS75F.ttf",
+                        "colour": "#503200FF",
+                        "minSize": "1.5%sh",
+                        "size": "2.4%sh"
+                      },
+                      "lineSpacing": 0.8,
+                      "text": "Außerirdische haben deine Farm besucht. Wir hegen Zweifel an ihren freundlichen Absichten und brauchen Zeit, um herauszufinden, was sie vorhaben. Verfolge die Entwicklung bei unserer Facebook-Gruppe.",
+                      "_text": "Nicht genug Erfahrung"
+                    },
+                    {
+                      "height": "auto",
+                      "minHeight": "0.8%SH"
+                    },
+                    {
+                      "name": "timeAndHyperContainer",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#FFFF00AA",
+                      "width": "100%",
+                      "height": "4%SH",
+                      "boxes": [{
+                          "name": "timerContainer",
+                          "width": "100%",
+                          "height": "4%SH",
+                          "_backgroundColour": "#FF00FFAA",
+                          "hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "boxes": [{
+                            "name": "timerBox",
+                            "height": "100%",
+                            "width": "0",
+                            "_backgroundColour": "#FFFFFFAA",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "CENTER",
+                            "boxes": [{
+                                "name": "timerIcon",
+                                "width": "4%SH",
+                                "height": "4%SH",
+                                "background": {
+                                  "hAlignment": "CENTER",
+                                  "vAlignment": "TOP",
+                                  "scale": "fit",
+                                  "images": {
+                                    "normal": "res/images/interface/commonArt/icon_time.png"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "timeTextContainer",
+                                "height": "4%SH",
+                                "hAlignment": "left",
+                                "vAlignment": "CENTER",
+                                "boxes": [{
+                                  "name": "timeText",
+                                  "height": "100%",
+                                  "textAlign": "left",
+                                  "hAlignment": "left",
+                                  "vAlignment": "CENTER",
+                                  "font": {
+                                    "file": "res/fonts/Loyola.otf",
+                                    "size": "3.2%SH",
+                                    "colour": "#91E600FF",
+                                    "outline": [{
+                                        "width": "5%",
+                                        "colour": "#503200FF",
+                                        "yoffset": "5%"
+                                      },
+                                      {
+                                        "width": "5%",
+                                        "colour": "#503200FF"
+                                      }
+                                    ]
+                                  },
+                                  "text": "1 h 2 min 13 sec"
+                                }]
+                              }
+                            ]
+                          }]
+                        },
+                        {
+                          "name": "hyperTextContainer",
+                          "width": "80%",
+                          "height": "3%SH",
+                          "hAlignment": "left",
+                          "vAlignment": "center",
+                          "boxes": [{
+                            "name": "hyperText",
+                            "maxWidth": "100%",
+                            "height": "3.0%sh",
+                            "hAlignment": "left",
+                            "vAlignment": "top",
+                            "_backgroundColour": "#FF0000AA",
+                            "textAlign": "left",
+                            "class": "button_class",
+                            "font": {
+                              "file": "res/fonts/Loyola.otf",
+                              "size": "2.9%sh",
+                              "colour": "#0095b2FF",
+                              "decoration": {
+                                "type": "underline",
+                                "colour": "#0095b2FF",
+                                "thickness": 1
+                              }
+                            },
+                            "text": "Нажмите, чтобы перейти"
+                          }]
+                        }
+                      ]
+                    }
+
+                  ]
+                },
+                {
+                  "height": "0.7%sh"
+                },
+                {
+                  "_backgroundColour": "#00aaFFAA",
+                  "name": "figureContainer",
+                  "width": "90%",
+                  "height": "31%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "TOP",
+                  "boxes": [{
+                      "name": "figureParticles",
+                      "height": "18.7%sh",
+                      "width": "37.5%sh"
+                    },
+                    {
+                      "name": "figure",
+                      "height": "18.7%sh",
+                      "width": "37.5%sh",
+                      "_backgroundColour": "#FF00FF44",
+                      "background": {
+                        "scale": "fit",
+                        "_image": "res/images/interface/windows/alertWindow/icons/noMoney1.png",
+                        "hAlignment": "center"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "buttonsContainerMain",
+                  "width": "100%",
+                  "height": "24%",
+                  "_backgroundColour": "#FF0000AA",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "boxes": [{
+                    "name": "buttonsContainer",
+                    "_backgroundColour": "#FF0000AA",
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "CENTER",
+                    "boxes": [{
+                        "name": "leftButton",
+                        "width": "18.1%SH",
+                        "height": "8.4%SH",
+                        "hAlignment": "center",
+                        "vAlignment": "CENTER",
+                        "class": "buttonGreenScalable"
+                      },
+                      {
+                        "name": "buttonSpacer",
+                        "width": "3.5%"
+                      },
+                      {
+                        "name": "rightButton",
+                        "_backgroundColour": "#FF0000AA",
+                        "width": "18.1%SH",
+                        "height": "8.4%SH",
+                        "hAlignment": "center",
+                        "vAlignment": "CENTER",
+                        "class": "buttonVioletScalable"
+                      }
+                    ]
+                  }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "spacer",
+          "height": "12%SH"
+        }
+      ]
+    }]
+  }]
+}

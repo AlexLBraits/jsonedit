@@ -1,0 +1,247 @@
+{
+    "name": "cover",
+    "class": "cover_layer",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "class": {
+                "windowSize": {
+                    "width": 600,
+                    "height": 600
+                }
+            }
+        },  
+        {
+            "name": "alert_window",
+            "class":"windowSize",
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/commonArt/win/win.png"
+                },
+                "scale": "window",
+                "corner": [
+                    111,
+                    111
+                ]
+            },
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "_backgroundColour": "#FF000078",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [     
+                {
+                    "name":"info",
+                    "height":"40%",
+                    "width":"100%",
+                    "_backgroundColour":"#65295456",
+                    "vAlignment":"CENTER",
+                    "hAlignment":"FROM_LEFT_TO_RIGHT",
+                    "boxes":[
+                        {
+                            "name":"avatar_container",
+                            "width":"50%",
+                            "height":"100%",
+                            "hAlignment":"CENTER",
+                            "vAlignment":"CENTER",
+                            "boxes":[
+                                {
+                                    "name":"avatar",
+                                    "width":102,
+                                    "height":133,
+                                    "background":{
+                                        "images":{
+                                            "normal":"res/images/minigames/match3/png/chars/Niece.png"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name":"name_container",
+                            "width":"50%",
+                            "height":"100%",
+                            "hAlignment":"CENTER",
+                            "vAlignment":"CENTER",
+                            "boxes":[
+                                {
+                                    "name":"user_id",
+                                    "class":"titleText",
+                                    "maxWidth":"100%",
+                                    "height":"100%",
+                                    "hAlignment":"LEFT",
+                                    "vAlignment":"CENTER",
+                                    "textAlign":"LEFT",
+                                    "text":"Name"
+                                }
+                            ]
+
+                        }
+                    ]
+                },           
+                {
+                    "name": "main_container",                    
+                    "hAlignment": "FROM_LEFT_TO_RIGHT",
+                    "vAlignment": "TOP",                          
+                    "width":"100%",              
+                    "boxes":[
+                        {
+                            "name":"info",
+                            "width":"AUTO"
+                        },
+                        {
+                            "name":"total",
+                            "width":250,
+                            "height":320,
+                            "background":{
+                                "images":{
+                                    "normal":"res/images/interface/commonArt/bubble/bubble.png"
+                                },
+                                "scale":"window",
+                                "corner":[23, 23]
+                            },
+                            "hAlignment":"CENTER",
+                            "vAlignment":"FROM_TOP_TO_BOTTOM",
+                            "boxes":[
+                                {
+                                    "margin":{
+                                        "top":15
+                                    },
+                                    "height":60,
+                                    "width":"90%",
+                                    "class": "whitePanelBackgroundClass",
+                                     "hAlignment":"CENTER",
+                                     "boxes": [
+                                               {
+                                               "name":"title",
+                                               "height":"100%",
+                                               "width":"100%",
+                                               "class":"titleText",
+                                               "text":"test_total"
+                                               }
+                                               ]
+                                },
+                                {
+                                    "name":"counters_container",
+                                    "width":"100%",
+                                    "height":"AUTO",
+                                    "_backgroundColour":"#58486875",
+                                    "overflow":"scroll",
+                                    "hAlignment":"CENTER",
+                                    "vAlignment":"FROM_TOP_TO_BOTTOM",                                
+                                    "boxes":[
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json"                              
+                                    ]
+                                },
+                                {
+                                    "name":"spacer",
+                                    "height":15
+                                }
+                            ]
+                        },
+                        {
+                            "name":"spacer",
+                            "width":20
+                        },
+                        {
+                            "name":"daily",
+                            "width":250,
+                            "height":320,
+                            "background":{
+                                "images":{
+                                    "normal":"res/images/interface/commonArt/bubble/bubble.png"
+                                },
+                                "scale":"window",
+                                "corner":[23, 23]
+                            },
+                            "hAlignment":"CENTER",
+                            "vAlignment":"FROM_TOP_TO_BOTTOM",
+                            "boxes":[
+                                {
+                                    "margin":{
+                                        "top":15
+                                    },
+                                    "height":60,
+                                    "width":"90%",
+                                    "class": "whitePanelBackgroundClass",
+                                     "hAlignment":"CENTER",
+                                     "boxes": [
+                                               {
+                                               "name":"title",
+                                               "height":"100%",
+                                               "width":"100%",
+                                               "class":"titleText",
+                                               "text":"test_daily"
+                                               }
+                                               ]
+                                },
+                                {
+                                    "name":"counters_container",
+                                    "width":"100%",
+                                    "height":"AUTO",
+                                    "_backgroundColour":"#58486875",
+                                    "overflow":"scroll",
+                                    "hAlignment":"CENTER",
+                                    "vAlignment":"FROM_TOP_TO_BOTTOM",                                
+                                    "boxes":[
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json",
+                                        "res/ui/statisticsCounterCell.json" 
+                                    ]
+                                },
+                                {
+                                    "name":"spacer",
+                                    "height":15
+                                }
+                            ]
+                        },
+                        {
+                            "name":"spacer",
+                            "width":"AUTO"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "closeButton_container",
+            "class":"windowSize",
+            "hAlignment": "right",
+            "vAlignment": "top",            
+            "_backgroundColour": "#FF000078",
+            "boxes": [
+                {
+                    "name": "closeButton",
+                    "class": "buttonClose",
+                    "margin": {
+                        "right": -15
+                    }
+                }
+            ]
+        }
+    ]
+}

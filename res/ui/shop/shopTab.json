@@ -1,0 +1,55 @@
+{
+	"height": "8.05%SH",
+	"width": "11.27%SH",
+	"minWidth":"10%SW",
+	"minHeight":"7.098%SW",
+	"hAlignment": "center",
+	"enableGuiEvents": true,
+	"handlers": {
+		"onGuiFirstEnter": "onEnterTappableBox"
+	},
+	"boxes": [
+		{
+			"name": "tab_bg",
+			"height": "90%",
+			"width": "9.8%SH",
+			"minWidth":"9.05%SW",
+			"background": {
+				"images": {
+					"normal": "res/images/interface/bottomMenu/craft_bttn.png",
+					"checked":  "res/images/interface/bottomMenu/craft_bttn_on.png"
+				},
+				"scale": "stretch"
+			},
+			"hAlignment": "center",
+			"vAlignment": "center",
+			"boxes": [
+				{
+					"name": "ico",
+					"width": "7.22%sh",
+					"minWidth":"6.4%SW",
+					"height": "5.8%sh",
+					"minHeight": "5.16%sw",
+					"_backgroundColour": "#00FF0078",
+					"background": {
+						"hAlignment": "CENTER",
+						"vAlignment": "CENTER",
+						"_image": "res/images/icons/shopIcons/tabicon_decor.png",
+						"scale": "fit"
+					}
+				},
+				{
+					"name": "notifier",
+					"width": "116%",
+					"_backgroundColour": "#00FF0078",
+					"height": "120%",
+					"vAlignment": "top",
+					"hAlignment": "right",
+					"_boxes":[
+						"res/ui/shop/shopNotifier.json"
+					]
+				}
+			]
+		}
+	]
+}

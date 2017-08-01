@@ -1,0 +1,428 @@
+{
+	"name": "root",
+    "width": "100%",
+    "height": "100%",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "name": "windowRootBoxContentSized",
+            "sizeBase": "window_contents",
+			"width": "100%",
+			"height": "100%",
+			"minHeight": 420,
+            "hAlignment": "center",
+            "vAlignment": "top",
+            "_backgroundColour": "#FF000078",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [
+            	{
+            		"width": "100%",
+            		"height": "100%",
+            		"name": "windowBg",
+            		"hAlignment": "from_left_to_right",
+            		"vAlignment": "center",
+            		"padding": {
+            			"left": -30,
+						"right": -30
+					},
+            		"boxes": [
+            			{
+							"name": "leftPart",
+							"width": "auto",
+							"height": "100%",
+							"background": {
+								"images": {
+									"normal": "res/images/interface/windows/clans/clanInfo/win_beige_left.png"
+								},
+								"scale": "window",
+								"corner": [
+									110,
+									110
+								]
+							}
+						},
+						{
+							"name": "rightPart",
+							"width": 475,
+							"height": "100%",
+							
+							"background": {
+								"images": {
+									"normal": "res/images/interface/windows/clans/clanLeaderboards/win_right.png"
+								},
+								"scale": "window",
+								"corner": [
+									1,
+									110
+								]
+							}
+						}
+            		]
+            	},
+            	{
+            		"name": "window_contents",
+            		"hAlignment": "from_left_to_right",
+            		"vAlignment": "top",
+            		"margin": {
+						"top": 40
+					},
+            		"boxes": [
+						{
+							"name": "leftPanel",
+							"_backgroundColour": "#00007777",
+							"hAlignment": "left",
+							"sizeBase": "scrollPanel",
+							"height": 0,
+							"width": 268,
+							"padding": {
+								"bottom": 80
+							},
+							"vAlignment": "from_top_to_bottom",
+							"boxes": [
+								{
+									"name": "clanAvatar",
+									"width": 268,
+									"height": 150,
+									"vAlignment": "center",
+								    "hAlignment": "center",
+									"_backgroundColour": "#00007777",
+									"boxes": [
+										{
+								            "name": "logo",
+								            "vAlignment": "STACK",
+								            "hAlignment": "STACK",
+								            "width": 137,
+								            "height": 137,
+								            "boxes": [
+								                {
+								                    "name": "background",
+								                    "background": {
+								                        "_image": "res/images/icons/clans/bg1.png",
+								                        "scale": "fit"
+								                    }
+								                },
+								                {
+								                    "name": "frame",
+								                    "background": {
+								                        "_image": "res/images/icons/clans/frame1.png",
+								                        "scale": "fit"
+								                    }
+								                },
+								                {
+								                    "name": "image",
+								                    "vAlignment": "top",
+								                    "hAlignment": "center",
+								                    "background": {
+								                        "_image": "res/images/icons/clans/pic_anchor.png",
+								                        "scale": "fit"
+								                    }
+								                }
+								            ]
+								        }
+									]
+								},
+								{
+									"name": "clanDescription",
+									"width": 268,
+									"height": 110,
+									"padding": {
+										"top": 10,
+										"left": 10,
+										"right": 15,
+										"bottom": 10
+									},
+									"textWrap": true,
+									"font": {
+										"file": "res/fonts/FryPro.otf",
+										"size": 14,
+										"colour": "#503200FF"
+									}
+								},
+								{
+									"type": "spacer"
+								},
+								{
+									"name": "statistics",
+									"width": 268,
+									"padding": {
+										"top": 0,
+										"left": 0,
+										"right": 15,
+										"bottom": 15
+									},
+									"vAlignment": "from_top_to_bottom",
+									"hAlignment": "left",
+									"boxes": [
+										{
+											"name": "typeLine",
+											"hAlignment": "from_left_to_right",
+											"vAlignment": "center",
+											"margin": {
+												"bottom": -3
+											},
+											"width": "100%",
+											"boxes": [
+												{
+													"name": "typeIcon",
+													"width": 34,
+													"height": 34,
+													"margin": {
+														"right": 5
+													},
+													"background": {
+														"image": "res/images/interface/windows/clans/clanInfo/icn_type_open.png"
+													}
+												},
+												{
+													"name": "typeDesc",
+													"maxWidth": 145,
+													"text": "clanOpenMainWindowType",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"minSize": 16,
+														"colour": "#503200FF"
+													}
+												},
+												{
+													"type": "spacer"
+												},
+												{
+													"name": "typeLabel",
+													"textWrap": true,
+													"width": 70,
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"colour": "#503200FF"
+													}
+												}
+											]
+										},
+										{
+											"name": "levelLine",
+											"hAlignment": "from_left_to_right",
+											"vAlignment": "center",
+											"margin": {
+												"bottom": -3
+											},
+											"width": "100%",
+											"boxes": [
+												{
+													"name": "levelIcon",
+													"width": 34,
+													"height": 34,
+													"margin": {
+														"right": 5
+													},
+													"background": {
+														"image": "res/images/interface/windows/clans/clanInfo/icn_level.png"
+													}
+												},
+												{
+													"name": "levelDesc",
+													"maxWidth": 145,
+													"text": "clanOpenMainWindowNeedLvl",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"minSize": 16,
+														"colour": "#503200FF"
+													}
+												},
+												{
+													"type": "spacer"
+												},
+												{
+													"name": "levelLabel",
+													"width": 70,
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"colour": "#503200FF"
+													}
+												}
+											]
+										},
+										{
+											"name": "unityLine",
+											"hAlignment": "from_left_to_right",
+											"vAlignment": "center",
+											"margin": {
+												"bottom": -3
+											},
+											"width": "100%",
+											"boxes": [
+												{
+													"name": "unityIcon",
+													"width": 34,
+													"height": 34,
+													"margin": {
+														"right": 5
+													},
+													"background": {
+														"image": "res/images/interface/windows/clans/clanInfo/icn_unity.png"
+													}
+												},
+												{
+													"name": "unityDesc",
+													"maxWidth": 145,
+													"text": "clanOpenMainWindowIndex",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"minSize": 16,
+														"colour": "#503200FF"
+													}
+												},
+												{
+													"type": "spacer"
+												},
+												{
+													"name": "unityLabel",
+													"width": 70,
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"colour": "#503200FF"
+													}
+												}
+											]
+										},
+										{
+											"name": "scoreLine",
+											"hAlignment": "from_left_to_right",
+											"vAlignment": "center",
+											"margin": {
+												"bottom": -4
+											},
+											"width": "100%",
+											"boxes": [
+												{
+													"name": "scoreIcon",
+													"width": 34,
+													"height": 34,
+													"margin": {
+														"right": 5
+													},
+													"background": {
+														"image": "res/images/interface/windows/clans/clanInfo/icn_score.png"
+													}
+												},
+												{
+													"name": "scoreDesc",
+													"maxWidth": 145,
+													"text": "clanOpenMainWindowPoints",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"minSize": 16,
+														"colour": "#503200FF"
+													}
+												},
+												{
+													"type": "spacer"
+												},
+												{
+													"name": "scoreLabel",
+													"width": 70,
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"colour": "#503200FF"
+													}
+												}
+											]
+										},
+										{
+											"name": "membersLine",
+											"hAlignment": "from_left_to_right",
+											"vAlignment": "center",
+											"width": "100%",
+											"boxes": [
+												{
+													"name": "membersIcon",
+													"width": 34,
+													"height": 34,
+													"margin": {
+														"right": 5
+													},
+													"background": {
+														"image": "res/images/interface/windows/clans/clanInfo/icn_members.png"
+													}
+												},
+												{
+													"name": "membersDesc",
+													"maxWidth": 145,
+													"text": "clanOpenMainWindowMembers",
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"minSize": 16,
+														"colour": "#503200FF"
+													}
+												},
+												{
+													"type": "spacer"
+												},
+												{
+													"name": "membersLabel",
+													"width": 70,
+													"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 16,
+														"colour": "#503200FF"
+													}
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "buttonsContainer",
+									"hAlignment": "from_left_to_right",
+									"vAlignment": "center",
+									"boxes": [
+										{
+											"name": "statisticsButton",
+											"minWidth": 120,
+											"class": "buttonGreenScalable",
+											"margin": {
+												"left":5,
+												"right": 8
+											}
+										},
+										{
+											"name": "leaveButton",
+											"minWidth": 120,
+											"class": "buttonRedScalable"
+										}
+									]
+								}
+							]
+						},
+            			{
+							"name": "scrollPanel",
+							"width": 444,
+							"padding": {
+								"bottom": 80
+							},
+							"_backgroundColour": "#00770077",
+							"boxes":[
+								"res/ui/clans/clanScrollPanel.json"
+							]
+						}
+            		]
+            	},
+                {
+                    "name": "title",
+                    "class": "windowTitleClass"
+                }
+			]
+		}
+	]
+}

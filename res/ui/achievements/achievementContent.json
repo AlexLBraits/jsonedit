@@ -1,0 +1,134 @@
+{
+  "name": "achievementContent",
+  "vAlignment": "from_top_to_bottom",
+  "hAlignment": "center",
+  "width": "100%",
+  "height": "100%",
+  "_backgroundColour": "#FFFFFFAA",
+  "boxes": [
+    {
+      "name": "titleContent",
+      "maxHeight": "50%sh",
+      "width": "90%",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "_backgroundColour": "#FFFFFFAA",
+      "boxes": [
+        {
+          "height": "1%sh"
+        },
+        {
+          "name": "ribbonContent",
+          "_height": "50%",
+          "maxWidth": "100%",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "center",
+          "_backgroundColour": "#FF0000FF",
+          "boxes": [
+            {
+              "width": "auto"
+            },
+            {
+              "name": "buildingImage",
+              "width": "5.704225352112676%sh",
+              "height": "2.957746478873239%sh",
+              "background": {
+                "image": "res/images/interface/windows/achievementsWindow/hd/achievement_stars_left.png",
+                "scale": "fit"
+              }
+            },
+            "res/ui/achievements/achievementRibbon.json",
+            {
+              "name": "buildingImage",
+              "width": "5.704225352112676%sh",
+              "height": "2.957746478873239%sh",
+              "background": {
+                "image": "res/images/interface/windows/achievementsWindow/hd/achievement_stars_right.png",
+                "scale": "fit"
+              }
+            },
+            {
+              "width": "auto"
+            }
+          ]
+        },
+        {
+          "height": "1%sh"
+        },
+        {
+          "name": "titleText",
+          "width": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "textWrap": true,
+          "textAlign": "center",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "2.1126760563380285%SH",
+            "colour": "#000000B3"
+          },
+          "_text": "Hurry! Some achievements may not be available with the qnd of the event!"
+        }
+      ]
+    },
+    {
+      "name": "timer",
+      "height": "14%",
+      "maxWidth": "100%",
+      "vAlignment": "center",
+      "hAlignment": "center",
+      "_backgroundColour": "#0000FF55",
+      "font": {
+        "file": "res/fonts/Loyola.otf",
+        "colour": "#503200ff",
+        "size": "3.169014084507042%sh"
+      },
+      "_text": "Time left: 2h 30m"
+    },
+    {
+      "name": "scrollContent",
+      "height": "auto",
+      "width": "100%",
+      "hAlignment": "from_left_to_right",
+      "vAlignment": "center",
+      "_backgroundColour": "#FF000055",
+      "boxes": [
+        {
+          "name": "scroll",
+          "width": "auto",
+          "height": "100%",
+          "_backgroundColour": "#00FF0055",
+          "vAlignment": "by_width",
+          "hAlignment": "by_width",
+          "type": "Scroller",
+          "overflow": "scroll",
+          "vslider": "scroller",
+          "_boxes": [
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json",
+            "res/ui/achievements/achievementCell.json"
+          ]
+        },
+        {
+          "name": "scrollBar",
+          "height": "100%",
+          "width": "1%SH",
+          "class": "scrollSliderVertical"
+        }
+      ]
+    }
+  ]
+}

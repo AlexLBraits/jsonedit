@@ -1,0 +1,45 @@
+{
+  "name": "pointsBox",
+  "maxWidth": "90%",
+  "height": "7.922535211267605%SH",
+  "minHeight": "7.029756176812427%SW",
+  "vAlignment": "center",
+  "hAlignment": "from_left_to_right",
+  "_backgroundColour": "#FF000055",
+  "boxes": [
+    {
+	  "name": "points",
+	  "vAlignment": "bottom",
+	  "hAlignment": "center",
+	  "font": {
+		"file": "res/fonts/Loyola.otf",
+		"size": "3.4859154929577465%SH",
+		"minSize": "3.093092717797468%SW",
+		"colour": "#ffffffFF",
+		"outline": [
+		  {
+			"width": "4%",
+			"colour": "#503200ff",
+			"yoffset": "5%"
+		  },
+		  {
+			"width": "4%",
+			"colour": "#503200ff"
+		  }
+		]
+	  },
+	  "_text": "Очки достижений: 526"
+	},
+	{
+	  "name": "cupImage",
+	  "width": "4.753521126760564%sh",
+	  "minWidth": "4.217853706087457%sw",
+	  "height": "3.4859154929577465%sh",
+	  "minHeight": "3.093092717797468%sw",
+	  "background": {
+		"image": "res/images/interface/windows/achievementsWindow/achieve_cup_0.png",
+		"scale": "fit"
+	  }
+	}
+  ]
+}

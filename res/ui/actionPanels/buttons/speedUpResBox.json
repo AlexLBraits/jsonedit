@@ -1,0 +1,42 @@
+{
+    "name": "speedupResBoxContainer",
+    "height": "79%",
+    "width": "5.0%sh",
+    "hAlignment": "center",
+    "vAlignment": "bottom",
+    "_backgroundColour": "#00770077",
+    "boxes": [
+        {
+            "name": "speedupResBox",
+            "class": "button_class",
+            "width": "12.3%sh",
+            "height": "4.8592%sh",
+            "vAlignment": "bottom",
+            "hAlignment": "center",
+            "_backgroundColour": "#77000077",
+            "background": {
+                "image": "res/images/interface/buttons/speed_up_arrow.png",
+                "scale": "fit"
+            },
+            "boxes": [
+                {
+                    "name": "speedupResBoxTextAndIconContainer",
+                    "height": "4.8%sh",
+                    "width": "3.5%sh",
+                    "vAlignment": "center",
+                    "hAlignment": "right",
+                    "_backgroundColour": "#00777777",
+                    "boxes": [
+                        {
+                            "name": "speedupResBoxText",
+                            "maxWidth": "100%",
+                            "maxHeidth": "100%",
+                            "text": "120",
+                            "class": "loyolaRelativeText44"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

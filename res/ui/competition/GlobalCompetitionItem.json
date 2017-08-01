@@ -1,0 +1,284 @@
+{
+  "name": "cell",
+  "sizeBase": "cellContent",
+  "width": "100%",
+  "height": "110%",
+  "hAlignment": "CENTER",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "_sizeBase": "cellContent",
+      "_width": "100%",
+      "_height": "100%",
+      "width": "45%sh",
+      "minWidth": "33.733133433283356%sw",
+      "height": "28.5%sh",
+      "minHeight": "21.36431784107946%sw",
+      "class": "beigeBackground"
+    },
+    {
+      "name": "cellContent",
+      "width": "45%sh",
+      "minWidth": "33.733133433283356%sw",
+      "height": "28.5%sh",
+      "minHeight": "21.36431784107946%sw",
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+      {
+      	"height": "5%"
+      },
+        {
+          "width": "100%",
+          "_height": "25%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF33",
+          "boxes": [
+            {
+              "name": "stage",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "textAlign": "center",
+              "_backgroundColour": "#00FF0033",
+              "lineSpacing": 1,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": "3.6971830985915495%sh",
+                "minSize": "2.7715015731570833%sw",
+                "colour": "#503200FF"
+              },
+              "_text": "1 этап"
+            }
+          ]
+        },          
+                  {
+          "width": "100%",
+          "height": "25%",
+          "name":"progressBarContainer",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#00FF0033",
+          "boxes": [  
+                  {
+			  "width": "100%",
+			  "height": "50%",
+			  "vAlignment": "center",
+			  "hAlignment": "center",
+			  "_backgroundColour": "#00FF0033",
+			  "boxes": [        
+			  	{
+				  "name": "progressBar",
+				  "class": "progressBarGreenClass44",
+				  "width": "75%",
+				  "height": "2.0%sh",
+				  "minHeight": "1.4992503748125936%sw"
+				},
+				{
+				  "name": "value",
+				  "_width": "auto",
+				  "textWrap": false,
+				  "_backgroundColour": "#0000FF33",
+				  "textAlign": "center",
+				  "hAlignment": "center",
+				  "_vAlignment": "center",
+				  "font": {
+					"file": "res/fonts/Loyola.otf",
+					"size": "4.753521126760564%sh",
+					"minSize": "3.563359165487679%sw",
+					"colour": "#ffffffFF",
+					"outline": [
+					  {
+						"width": "4%",
+						"colour": "#503200ff",
+						"yoffset": "4%"
+					  },
+					  {
+						"width": "4%",
+						"colour": "#503200ff"
+					  }
+					]
+				  },
+				  "_text": "1000/1000"
+				}
+				]
+        	},
+           	{
+				"width": "85%",
+				"height": "70%",
+				"vAlignment": "bottom",
+				"hAlignment": "from_left_to_right",
+				"_backgroundColour": "#0000FF33",
+				"boxes": [
+                {
+                  "name": "icon",
+                  "width": "5.28169014084507%sh",
+                  "minWidth": "3.9592879616529757%sw",
+                  "height": "6.443661971830986%sh",
+                  "minHeight": "4.830331313216631%sw",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#00FF00AA",
+                  "background": {
+                    "image": "res/images/interface/windows/competitions/flag.png",
+                    "scale": "fit"
+                  }
+                },
+                {
+                	"width": "auto"
+                },
+                {
+                  "hidden": true,
+                  "name": "iconComplete",
+                  "width": "7.3714%sh",
+                  "minWidth": "5.525787106446777%sw",
+                  "height": "6%sh",
+                  "minHeight": "4.497751124437781%sw",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#00FF00AA",
+                  "background": {
+                    "image": "res/images/interface/commonArt/sign_ok.png",
+                    "scale": "fit"
+                  }
+                }
+			]
+          }
+          ]
+          },
+        {
+          "width": "100%",
+          "_height": "25%",
+          "name": "iconInfoContainer",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF33",
+          "boxes": [
+            {
+              "_width": "100%",
+              "_height": "25%",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "name": "iconInfo",
+                  "width": "5%sh",
+                  "minWidth": "3.748125937031484%sw",
+                  "height": "5%sh",
+                  "minHeight": "3.748125937031484%sw",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#00FF00AA",
+                  "background": {
+                    "image": "res/images/interface/buttons/bttn_i.png",
+                    "scale": "fit"
+                  }
+                },
+                {
+                  "name": "textCompleted",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "textWrap": false,
+                  "textAlign": "center",
+                  "_backgroundColour": "#FF0000AA",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.169014084507042%SH",
+                    "minSize": "2.3755727769917856%SW",
+                    "colour": "#503200FF"
+                  },
+                  "_text": "Достигнуто"
+                }
+              ]
+            }
+          ]
+        },
+        {
+	        "name": "rewardContainer",
+	        "_width": "90%",
+	        "width": "30%sh",
+	        "minWidth": "22.488755622188904%sw",
+	        "height": "auto",
+	        "vAlignment": "center",
+	        "hAlignment": "center",
+	        "_backgroundColour": "#00007733",
+	        "boxes": [
+				{
+				  "name": "rewardList",
+				  "hAlignment": "from_left_to_right",
+				  "vAlignment": "center",
+				  "maxWidth": "100%",
+				  "height": "auto",
+				  "overflow": "scroll",
+				  "_backgroundColour": "#00007733",
+				  "_boxes": [
+					"res/ui/competition/BonusGlobalCompetitionCell.json",
+					"res/ui/competition/BonusGlobalCompetitionCell.json",
+					"res/ui/competition/BonusGlobalCompetitionCell.json",
+					"res/ui/competition/BonusGlobalCompetitionCell.json",
+					"res/ui/competition/BonusGlobalCompetitionCell.json",
+					"res/ui/competition/BonusGlobalCompetitionCell.json"
+				  ]
+				},
+				{
+			        "vAlignment": "center",
+					"hAlighnment": "from_left_to_right",
+					"width": "40%sh",
+			        "minWidth": "29.98500749625187%sw",
+			        "height": "0%",
+					"boxes": [
+						{
+						  "name": "arrowFirst",
+						  "width": "5.0%sh",
+						  "height": "5.0%sh",
+						  "vAlignment": "center",
+						  "hAlignment": "center",
+						  "_rotate": "90",
+						  "_hidden": true,
+						  "class": "button_anim_child_class",
+						  "boxes": [
+							{
+							  "name": "tapAnimatedBox",
+							  "width": "5%sh",
+							  "height": "5%sh",
+							  "background": {
+								"image": "res/images/interface/buttons/bttn_arrow_left.png",
+								"scale": "fit"
+							  }
+							}
+						  ]
+						},
+						{
+						  "width": "auto"
+						},
+						{
+						  "name": "arrowSecond",
+						  "width": "5.0%sh",
+						  "height": "5.0%sh",
+						  "vAlignment": "center",
+						  "hAlignment": "center",
+						  "rotate": "180",
+						  "_hidden": true,
+						  "class": "button_anim_child_class",
+						  "boxes": [
+							{
+							  "name": "tapAnimatedBox",
+							  "width": "5.0%sh",
+							  "height": "5.0%sh",
+							  "background": {
+								"image": "res/images/interface/buttons/bttn_arrow_left.png",
+								"scale": "fit"
+							  }
+							}
+						  ]
+						}
+					]
+				}
+	        ]
+        }
+      ]
+    }
+  ]
+}

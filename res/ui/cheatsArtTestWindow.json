@@ -1,0 +1,55 @@
+{
+	"name": "root",
+	"vAlignment": "center",
+	"hAlignment": "from_left_to_right",
+	"boxes": [
+		{
+		  "name": "leftArrow",
+		  "width": "10%sh",
+		  "height": "100.0%",
+		  "vAlignment": "center",
+		  "hAlignment": "right",
+		  "_backgroundColour": "#007700AA",
+		  "class": "button_anim_child_class",
+		  "boxes": [
+			{
+			  "name": "tapAnimatedBox",
+			  "width": "5%sh",
+			  "height": "7.93%sh",
+			  "background": {
+				"image": "res/images/interface/buttons/bttn_arrow_left.png",
+				"scale": "fit"
+			  }
+			}
+		  ]
+		},
+		{
+		  "name": "testContent",
+		  "width": "auto",
+		  "height": "100%",
+		  "vAlignment": "center",
+		  "hAlignment": "center",
+		  "backgroundColour": "#000000B2",
+		  "_class": "windowFullFillingBackgroundClass"
+		},
+		{
+		  "name": "rightArrow",
+		  "width": "10%sh",
+		  "height": "100.0%",
+		  "vAlignment": "center",
+		  "hAlignment": "left",
+		  "class": "button_anim_child_class",
+		  "boxes": [
+			{
+			  "name": "tapAnimatedBox",
+			  "width": "5%sh",
+			  "height": "7.93%sh",
+			  "background": {
+				"image": "res/images/interface/buttons/bttn_arrow_right.png",
+				"scale": "fit"
+			  }
+			}
+		  ]
+		}
+	]
+}

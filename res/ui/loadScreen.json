@@ -1,0 +1,166 @@
+{
+	"vAlignment": "CENTER",
+	"hAlignment": "CENTER",
+	"width": "100%",
+	"height": "100%",
+	"handlers": {
+		"onControlEventBegan": true,
+		"onControlEventEnded": true,
+		"onTap": true,
+		"onSwipe": true,
+		"onWheel": true,
+		"onMove": true,
+		"onDrag": true,
+		"onHover": true,
+		"onGuiUp": true
+	},
+	"boxes": [
+    {
+		"name": "backgroundContainer",
+		"width": "100%",
+		"height": "100%",
+        "background":{
+            "image":"res/images/interface/loadscreen/farm_loadscreen.png",
+            "scale":"cover",
+            "hAlignment":"center",
+            "vAlignment":"center"
+        },
+        "hAlignment":"center",
+        "vAlignment":"from_top_to_bottom",
+        "boxes":[
+            {
+                "name":"spacer",
+                "maxHeight":"3.8%SH",
+                "height":"7%SW"
+            },
+            {
+                "name":"logo",
+                "width":"56%SH",
+                "minWidth":"56%Sw",
+                "height":"31%SH",
+                "minHeight":"22%SW",
+                "_backgroundColour": "#007878AA",
+                "background":{
+                    "image":"res/images/interface/loadscreen/logo.png",
+                    "scale":"fit",
+                    "hAlignment":"center",
+                    "vAlignment":"top"
+                }      
+            }
+        ]
+	},
+    {
+		"name": "progressPanelContainer",
+		"width": "100%",
+		"height": "100%",
+		"vAlignment": "from_bottom_to_top",
+        "hAlignment": "center",
+        "_backgroundColour": "#00787833",
+		"boxes": [
+                {
+                    "name": "versionText",
+                    "width": "100%",
+                    "minHeight":"3%SW",
+                    "height": "2%SH",
+                    "hAlignment": "right",
+                    "vAlignment": "center",
+                    "_backgroundColour": "#00007833",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2%SH",
+                        "minSize":"1.5%SW",
+                        "colour": "#000000AA"
+                    },
+                    "text":"version 5.2.0",
+                    "margin":{
+                        "right":20
+                    }
+                },
+				{
+					"height": "3.5%sh",
+				},
+                {
+                    "name": "123",
+                    "width": "50%SW",
+                    "minWidth":"50%SH",
+                    "height": "4%sh",
+                    "minHeight":"3%SW",
+                    "vAlignment": "bottom",
+                    "hAlignment": "right",
+                    "_backgroundColour": "#FF0000aa",
+                    "boxes": [
+						{
+							"name": "progressPanelContainer",
+							"width": "100%",
+							"height": "100%",
+							"class": "progressBarPurpleClass60"
+						},
+                        {
+                            "height": "100%",
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "name": "closeBtn1",
+                                    "class": "btn_tap_anim",
+                                    "width": "3%SH",
+                                    "height": "3%SH",
+                                    "minHeight":"2.5%SW",
+                                    "minWidth":"2.5%SW",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/buttons/button_close.png",
+                                            "pressed": "res/images/interface/buttons/button_close.png"
+                                        },
+                                        "hAlignment": "center",
+                                        "vAlignment": "center",
+                                        "scale":"fit"
+                                    }
+                                }
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "height": "6.6%SH",
+                    "minHeight":"4%SW",
+                    "width": "100%",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "_backgroundColour": "#007800AA",
+                    "boxes":[
+                        {
+                            "_backgroundColour": "#00787878",
+                            "name": "texttext",
+                            "maxHeight": "100%",
+                            "width": "90%",
+                            "textWrap": true,
+                            "textAlign": "center",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "3.2%SH",
+                                "minSize":"2%SW",
+                                "colour": "#FFFFFFFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#553c1eff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#553c1eff"
+                                    }
+                                ]
+                            },
+                            "_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+                        }
+                    ]
+                }
+            ]
+	}
+	]
+}

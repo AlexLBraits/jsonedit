@@ -1,0 +1,263 @@
+{
+            	"name" : "rewardContainer",
+            	"hAlignment": "from_left_to_right",
+              	"vAlignment": "center",
+              	"_backgroundColour": "#fdf900FF",
+              	"boxes":[
+              		{
+              			"name" : "jackPotStarsContainer",
+            			"hAlignment": "center",
+              			"vAlignment": "from_top_to_bottom",
+              			"boxes":[
+              				{
+								"name" : "jackPotStars",
+								"hAlignment": "from_left_to_right",
+								"vAlignment": "center",
+								"boxes":[
+									{
+										"name" : "star_1",
+										"hAlignment": "center",
+										"vAlignment": "center",
+										"width": 50,
+										  "height": 50,
+										  "background": {
+											"images": {
+											  "normal": "res/images/minigames/lottery/star_bg.png"
+											},
+											"scale": "fit"
+										}
+									},
+									{
+										"name" : "star_2",
+										"hAlignment": "center",
+										"vAlignment": "center",
+										"width": 50,
+										  "height": 50,
+										  "background": {
+											"images": {
+											  "normal": "res/images/minigames/lottery/star_bg.png"
+											},
+											"scale": "fit"
+										}
+									},
+									{
+										"name" : "star_3",
+										"hAlignment": "center",
+										"vAlignment": "center",
+										"width": 50,
+										  "height": 50,
+										  "background": {
+											"images": {
+											  "normal": "res/images/minigames/lottery/star_bg.png"
+											},
+											"scale": "fit"
+										}
+									}
+								]
+              				},
+              				{
+              					"name": "textJackPot",
+              					"hAlignment": "center",
+								"vAlignment": "center",
+								"text" : "LotteryWindowJackpotText",
+								"font": {
+									"file": "res/fonts/Loyola.otf",
+									"size": 15,
+									"outline": [
+									  {
+										"width": 2,
+										"colour": "#503200FF"
+									  },
+									  {
+										"width": 2,
+										"colour": "#503200FF",
+										"yoffset": 1
+									  } 
+									]
+								  }
+              				}
+              			]
+              		},
+              		{
+              			"name": "rewardListContainer",
+              			"hAlignment": "center",
+              			"vAlignment": "center",
+              			"boxes":[
+              				{
+              					"name" : "rewardStarsContiner",
+              					"hAlignment": "from_left_to_right",
+              					"vAlignment": "center",
+              					"boxes":[
+              						{
+              							"name": "starsList",
+              							"hAlignment": "left",
+              							"vAlignment": "from_top_to_bottom",
+              							"boxes":[
+              								{
+              									"name": "starOne",
+              									"hAlignment": "left",
+              									"vAlignment": "center",
+              									"width": 25,
+												  "height": 25,
+												  "background": {
+													"images": {
+													  "normal": "res/images/minigames/lottery/star.png"
+													},
+													"scale": "fit"
+												}
+              								},
+              								{
+              									"name": "starTwoConatainer",
+              									"hAlignment": "from_left_to_right",
+              									"vAlignment": "center",
+              									"boxes":[
+              										{
+              											"name": "starTwo1",
+              											"hAlignment": "left",
+														"vAlignment": "center",
+														"width": 25,
+														  "height": 25,
+														  "background": {
+															"images": {
+															  "normal": "res/images/minigames/lottery/star.png"
+															},
+															"scale": "fit"
+														}
+              										},
+              										{
+              											"name": "starTwo2",
+              											"hAlignment": "left",
+														"vAlignment": "center",
+														"width": 25,
+														  "height": 25,
+														  "background": {
+															"images": {
+															  "normal": "res/images/minigames/lottery/star.png"
+															},
+															"scale": "fit"
+														}
+              										}
+              									]
+              								},
+              								{
+              									"name": "starThreeConatainer",
+              									"hAlignment": "from_left_to_right",
+              									"vAlignment": "center",
+              									"boxes":[
+              										{
+              											"name": "starThree1",
+              											"hAlignment": "left",
+														"vAlignment": "center",
+														"width": 25,
+														  "height": 25,
+														  "background": {
+															"images": {
+															  "normal": "res/images/minigames/lottery/star.png"
+															},
+															"scale": "fit"
+														}
+              										},
+              										{
+              											"name": "starThree2",
+              											"hAlignment": "left",
+														"vAlignment": "center",
+														"width": 25,
+														  "height": 25,
+														  "background": {
+															"images": {
+															  "normal": "res/images/minigames/lottery/star.png"
+															},
+															"scale": "fit"
+														}
+              										},
+              										{
+              											"name": "starThree3",
+              											"hAlignment": "left",
+														"vAlignment": "center",
+														"width": 25,
+														  "height": 25,
+														  "background": {
+															"images": {
+															  "normal": "res/images/minigames/lottery/star.png"
+															},
+															"scale": "fit"
+														}
+              										}
+              									]
+              								}
+              							]
+              						},
+              						{
+              							"name": "scoreList",
+              							"hAlignment": "left",
+              							"vAlignment": "from_top_to_bottom",
+              							"boxes":[
+              								{
+              									"name": "score1",
+              									"hAlignment": "left",
+              									"text": "500 m1",
+												  "font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 20,
+														"outline": [
+														  {
+															"width": 2,
+															"colour": "#503200FF"
+														  },
+														  {
+															"width": 2,
+															"colour": "#503200FF",
+															"yoffset": 1
+														  } 
+														]
+													  }
+              								},
+              								{
+              									"name": "score2",
+              									"hAlignment": "left",
+              									"text": "1000 m1",
+												  "font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 20,
+														"outline": [
+														  {
+															"width": 2,
+															"colour": "#503200FF"
+														  },
+														  {
+															"width": 2,
+															"colour": "#503200FF",
+															"yoffset": 1
+														  } 
+														]
+													  }
+              								},
+              								{
+              									"name": "score3",
+              									"hAlignment": "left",
+              									"text": "3000 m1",
+												  "font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 20,
+														"outline": [
+														  {
+															"width": 2,
+															"colour": "#503200FF"
+														  },
+														  {
+															"width": 2,
+															"colour": "#503200FF",
+															"yoffset": 1
+														  } 
+														]
+													  }
+              								}
+              							]
+              						}
+              					]
+              				}
+              				
+              			]
+              		}
+              	]
+            }

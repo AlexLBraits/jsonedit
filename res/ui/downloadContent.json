@@ -1,0 +1,232 @@
+{
+    "name": "cover",
+    "hAlignment": "CENTER",
+    "vAlignment": "center",
+    "backgroundColour": "#000000B2",
+    "activeBackgroundColour": "#000000B2",
+    "padding": 0,
+    "boxes": [
+        {
+            "hAlignment": "CENTER",
+            "vAlignment": "from_top_to_bottom",
+            "background": {
+              "scale": "window",
+              "corner": [
+                111,
+                111
+              ],
+              "images": {
+                "normal": "res/images/interface/commonArt/win/win.png"
+              }
+            },
+            "boxes": [
+                {
+                    "name": "topPartWindow",
+                    "hAlignment": "stack",
+                    "vAlignment": "stack",
+                    "width": 608,
+                    "height": 256,
+                    "handlers": {
+                        "onTap": true
+                    },
+                    
+                    "boxes": [
+                        {
+                            "vAlignment": "TOP",
+                            "hAlignment": "RIGHT",
+                            "boxes": [
+                                {
+                                    "name": "closeButton",
+                                    "class": "buttonClose",
+                                    "margin": {
+                                        "right": 2,
+                                        "top": -8
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": 608,
+                    "height": 0,
+                    "hAlignment": "center",
+                    "vAlignment": "from_top_to_bottom",
+                    "boxes": [
+                        {
+                            "name": "bottomPartWindow",
+                            "hAlignment": "center",
+                            "vAlignment": "from_top_to_bottom",
+                            "width": 608,
+                            "maxHeight": 315,
+                            "height": 0,
+                            "handlers": {
+                                "onTap": true
+                            },
+                            "padding": {
+                                "top": -15,
+                                "bottom": 27
+                            },
+                            "boxes": [
+                                {
+                                    "name": "progressBack",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/greenProgressBar/bar_win.png",
+                                        "scale": "window",
+                                        "corner": [
+                                            21,
+                                            43
+                                        ]
+                                    },
+                                    "margin": {
+                                        "left": 0,
+                                        "top": 0
+                                    },
+                                    "width": 550,
+                                    "height": 43,
+                                    "boxes": [
+                                        {
+                                            "width": "100%",
+                                            "height": "100%",
+                                            "vAlignment": "top",
+                                            "hAlignment": "left",
+                                            "boxes": [
+                                                {
+                                                    "name": "progress",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/commonArt/greenProgressBar/bar_win_fill_green.png"
+                                                        },
+                                                        "scale": "window",
+                                                        "corner": [
+                                                            16,
+                                                            25
+                                                        ]
+                                                    },                                                  
+                                                    "margin": {
+                                                        "left": 7,
+                                                        "top": 5
+                                                    },
+                                                    "width": 536,
+                                                    "height": 26
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "progressLabel",
+                                            "width": 0,
+                                            "height": 0,
+                                            "text": "0%",
+                                            "font": {
+                                                "file": "res/fonts/Loyola.otf",
+                                                "size": 20,
+                                                "colour": "#FFFFFFFF",
+                                                "outline":[ 
+                                                    {
+                                                        "width": 1,
+                                                        "colour": "#6A0F11FF",
+                                                        "yoffset":1
+                                                    },
+                                                    {
+                                                        "width": 1,
+                                                        "colour": "#6A0F11FF"
+                                                    }
+                                                ]
+                                            },
+                                            "padding": {
+                                                "left": 0,
+                                                "top": 1
+                                            },
+                                            "textAlign": "center"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "width": 560,
+                                    "height": 66,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "margin": {
+                                        "top": 3
+                                    },
+                                    "boxes": [
+                                        {
+                                            "name": "awardsContainer",
+                                            "width": 0,
+                                            "height": 0,
+                                            "vAlignment": "center",
+                                            "hAlignment": "center",
+                                            "text": "downloadContentWindowDesc",
+                                            "textAlign": "CENTER",
+                                            "textWrap": true,
+                                            "font": {
+                                                "vAlignment": "center",
+                                                "hAlignment": "center",
+                                                "file": "res/fonts/Loyola.otf",
+                                                "colour": "#713704FF",
+                                                "size": 14
+                                            },
+                                            "maxWidth": 540,
+                                            "overflow": "scroll"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "buttonsContainer",
+                            "width": 0,
+                            "height": 0,
+                            "vAlignment": "CENTER",
+                            "hAlignment": "FROM_LEFT_TO_RIGHT",
+                            "margin": {
+                                "top": -40
+                            },
+                            "boxes": [
+                                {
+                                    "name": "acceptButton",
+                                    "width": 210,
+                                    "height": 60,
+                                    "hAlignment": "CENTER",
+                                    "vAlignment": "CENTER",
+                                    "backgroundColour": "#00ff0066",
+                                    "boxes": [
+                                        {
+                                            "name": "acceptButtonText",
+                                            "text": "buttonDownloadText",
+                                            "width": "100%",
+                                            "height": "100%",
+                                            "hAlignment": "CENTER",
+                                            "vAlignment": "CENTER",
+                                            "font": {
+                                                "file": "res/fonts/Loyola.otf",
+                                                "size": 14,
+                                                "colour": "#FFFFFFFF",
+                                                "outline":[ 
+                                                    {
+                                                        "width": 1,
+                                                        "colour": "#405615FF",
+                                                        "yoffset":1,
+                                                        "blur": false
+
+                                                    },
+                                                    {
+                                                        "width": 1,
+                                                        "colour": "#405615FF",
+                                                        "blur": false
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

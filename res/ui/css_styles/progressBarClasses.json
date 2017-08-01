@@ -1,0 +1,1030 @@
+{
+    "progressBarPurpleClass44": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_violet_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_violet_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_violet_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarBlueClass44": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_blue_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_blue_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_blue_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarGreenClass44": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_green_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_green_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_green_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarOrangeClass44": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_orange_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_orange_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_orange_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarYellowClass44": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_yellow_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_yellow_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "31.82%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h44/bar_h44_yellow_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+
+    "progressBarPurpleClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_violet_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_violet_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_violet_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarBlueClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarGreenClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_green_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_green_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_green_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarOrangeClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_orange_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_orange_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_orange_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    "progressBarYellowClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progress",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+
+    "progressBarGreenSmallClass": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "105%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "50%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/craftBar/craft_bar_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/craftBar/craft_bar_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "50%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/craftBar/craft_bar_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+            	"name": "progressContainer",
+            	"width": "100%",
+            	"height": "100%",
+            	"hAlignment": "left",
+				"vAlignment": "center",
+				"boxes": [
+					{
+						"name": "progress",
+						"width": "70%",
+						"height": "65%",
+						"hAlignment": "from_left_to_right",
+						"vAlignment": "center",
+						"boxes": [{
+								"width": "50%H",
+								"height": "100%",
+								"background": {
+									"image": "res/images/interface/bars/craftBar/craft_bar_fill_1.png",
+									"scale": "stretch"
+								}
+							},
+							{
+								"width": "auto",
+								"height": "100%",
+								"background": {
+									"image": "res/images/interface/bars/craftBar/craft_bar_fill_2.png",
+									"scale": "stretch"
+								}
+							},
+							{
+								"width": "50%H",
+								"height": "100%",
+								"background": {
+									"image": "res/images/interface/bars/craftBar/craft_bar_fill_3.png",
+									"scale": "stretch"
+								}
+							}
+						]
+					}
+				]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "_text": "Загрузка 32%"
+                }]
+            }
+        ]
+    },
+    
+    "progressBarYellowBlueClass60": {
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "100%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progressYellow",
+                "width": "70%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_yellow_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "progressBlue",
+                "width": "40%",
+                "height": "100%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_1.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_2.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "26.66%H",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/bars/bar_h60/bar_h60_blue_3.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "center",
+                "boxes": [{
+                    "name": "text",
+                    "class": "loyolaProgressBarText",
+                    "text": "Загрузка 32%"
+                }]
+            }
+        ]
+    }
+}

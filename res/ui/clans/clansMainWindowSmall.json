@@ -1,0 +1,108 @@
+{
+  "name": "clan_main",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "vAlignment": "TOP",
+  "hAlignment": "CENTER",
+  "class": "cover_layer",
+  "boxes": [
+	{
+		"name":"map_container",
+		"height":"100%",
+		"width":"100%",
+		"hAlignment":"CENTER",
+		"vAlignment":"CENTER",
+		"_overflow":"scroll",
+		"scale": 0.715,
+		"boxes":[
+			"res/ui/clans/clansMainWindowMap.json",
+		]
+	},	
+	{
+		"name":"panels_container",
+		"hAlignment":"CENTER",
+		"vAlignment":"FROM_TOP_TO_BOTTOM",
+		"width":"100%",
+		"height":"100%",
+		"boxes":[
+			{
+				"name":"top_panel",
+				"width":"100%",
+				"height":"50",
+				"backgroundColour":"#12231355",
+				"boxes":[
+					{
+						"name":"top_left_button",
+						"height":"100%",
+						"width":"100%H",
+						"backgroundColour":"#994141FF",
+						"background":{
+							"images":{
+								"normal":"res/images/interface/windows/clans/clanMap/chat.jpg"
+							},
+							"scale":"fit"
+						}
+					},
+					{
+						"name":"spacer",
+						"width":"AUTO"
+					},
+					{
+						"boxes": [
+							"res/ui/clans/tradeIndexBar.json"
+						]
+					},
+					{
+						"name":"spacer",
+						"width":"AUTO"
+					},
+					{
+						"name":"top_right_button",
+						"height":"100%",
+						"width":"100%H",
+						"backgroundColour":"#994141FF",
+						"background":{
+							"images":{
+								"normal":"res/images/interface/windows/clans/clanMap/admin_home_lvl10.png"
+							},
+							"scale":"contain"
+						}
+					}
+				]	
+			},
+			{
+				"name":"spacer",
+				"height":"AUTO"
+			}		
+			{
+				"name":"bottom_panel",
+				"width":"100%",
+				"height":"50",
+				"backgroundColour":"#12231355",
+				"boxes":[
+					{
+						"name":"bottom_left_button",
+						"height":"100%",
+						"width":"100%H",
+						"backgroundColour":"#994141FF",
+						"text":"Клан-меню"
+					},
+					{
+						"name":"spacer",
+						"width":"AUTO"
+					},
+					{
+						"name":"bottom_right_button",
+						"height":"100%",
+						"width":"100%H",
+						"backgroundColour":"#994141FF",
+						"textWrap":true,
+						"text":"Отправить паром"
+					}
+				]		
+			}
+		]
+	}
+	
+]
+}

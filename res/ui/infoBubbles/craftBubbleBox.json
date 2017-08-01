@@ -1,0 +1,187 @@
+{
+    "name": "root",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "boxes": [
+        {
+            "name": "content",
+            "minWidth": 160,
+            "minHeight": 48,
+            "_backgroundColour": "#ff000080",
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "boxes": [
+                {
+                    "name": "description",
+                    "_backgroundColour": "#ff000080",
+                    "width": "100%",
+                    "height": 0,
+                    "textAlign": "center",
+                    "hAlignment": "left",
+                    "textWrap": true,
+                    "lineSpacing": 1.2,
+                    "vAlignment": "center",
+                    "font": {
+                        "file": "res/fonts/FryPro.otf",
+                        "size": 14,
+                        "colour": "#503200FF"
+                    },
+                    "text": "produces in Pie Factory dfgdf thhythfg dgsretf",
+                    "padding": {
+                        "left": 5,
+                        "right": 5
+                    }
+                },
+                {
+                    "name": "infoContainer",
+                    "width": "100%",
+                    "height": 32,
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "_backgroundColour": "#00000000",
+                    "margin": {
+                        "top": 7
+                    },
+                    "boxes": [
+                        {
+                            "width": "100%",
+                            "height": 32,
+                            "vAlignment": "center",
+                            "hAlignment": "from_left_to_right",
+                            "boxes": [
+                                {
+                                    "name": "capacityInfo",
+                                    "height": "100%",
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "backgroundColour": "#00000000",
+                                    "margin": {
+                                        "left": 10
+                                    },
+                                    "boxes": [
+                                        {
+                                            "name": "iconWarehouse",
+                                            "width": 32,
+                                            "height": 32,
+                                            "_backgroundColour": "#00000000",
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/mainScreen/icons_bttm_storage.png"
+                                                },
+                                                "scale": "fit"
+                                            },
+                                            "margin": {
+                                                "left": 5,
+                                                "right": 5
+                                            }
+                                        },
+                                        {
+                                            "name": "count",
+                                            "height": 14,
+                                            "_backgroundColour": "#00000000",
+                                            "hAlignment": "left",
+                                            "vAlignment": "center",
+                                            "textAlign": "center",
+                                            "font": {
+                                                "file": "res/fonts/FryPro.otf",
+                                                "colour": "#503200FF",
+                                                "size": 14
+                                            },
+                                            "text": "125",
+                                            "padding": {
+                                                "top": 3
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "spacer",
+                                    "width": "auto"
+                                },
+                                {
+                                    "name": "timeInfo",
+                                    "height": 32,
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "backgroundColour": "#00000000",
+                                    "margin": {
+                                        "right": 10
+                                    },
+                                    "boxes": [
+                                        {
+                                            "name": "iconTimer",
+                                            "width": 25,
+                                            "height": 30,
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "_backgroundColour": "#00000000",
+                                            "margin": {
+                                            	"right": 5,
+                                            	"left": 5
+                                            },
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/commonArt/icon_time.png"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "name": "time",
+                                            "height": 14,
+                                            "backgroundColour": "#00000000",
+                                            "hAlignment": "left",
+                                            "vAlignment": "center",
+                                            "textAlign": "center",
+                                            "font": {
+                                                "file": "res/fonts/FryPro.otf",
+                                                "colour": "#503200FF",
+                                                "size": 14
+                                            },
+                                            "text": "2h 30m",
+                                            "padding": {
+                                                "top": 3
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "itemsContainer",
+                    "vAlignment": "center",
+                    "minWidth": 160,
+                    "hAlignment": "center",
+                    "margin": {
+                        "top": 7
+                    },
+                    "boxes": [
+                        {
+                            "width": "100%",
+                            "height": 21,
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/commonArt/bubble/bubbleline.png"
+                                },
+                                "scale": "window",
+                                "corner": [
+                                    12,
+                                    21
+                                ]
+                            }
+                        },
+                        {
+                            "name": "items",
+                            "height": "100%",
+                            "vAlignment": "center",
+                            "hAlignment": "from_left_to_right"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

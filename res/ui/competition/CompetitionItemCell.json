@@ -1,0 +1,59 @@
+{
+  "name": "cell",
+  "width": "11%sh",
+  "minWidth": "8.245877061469265%sw",
+  "height": "11%sh",
+  "minHeight": "8.245877061469265%sw",
+  "hAlignment": "CENTER",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "width": "95%",
+      "height": "95%",
+      "class": "beigeBackground"
+    },
+    {
+      "name": "iconResCell",
+      "width": "9%sh",
+      "minWidth": "6.746626686656671%sw",
+      "height": "9%sh",
+      "minHeight": "6.746626686656671%sw",
+      "vAlignment": "center",
+      "hAlignment": "center",
+      "_backgroundColour": "#FF0000FF",
+      "background": {
+        "image": "res/images/icons/resourcesIcons/res_wheat.png",
+        "_image": "res/images/interface/commonArt/icon_coin.png",
+        "scale": "stretch"
+      }
+    },
+    {
+	  "name": "resCountLabel",
+	  "width": "99%",
+	  "height": "99%",
+	  "textAlign": "right",
+	  "hAlignment": "right",
+	  "vAlignment": "bottom",
+	  "textWrap": false,
+	  "_backgroundColour": "#0000FF33",
+	  "font": {
+		"file": "res/fonts/Loyola.otf",
+		"size": "3.6971830985915495%sh",
+		"minSize": "2.7715015731570833%sw",
+		"colour": "#ffffffFF",
+		"outline": [
+		  {
+			"width": "4%",
+			"colour": "#503200ff",
+			"yoffset": "4%"
+		  },
+		  {
+			"width": "4%",
+			"colour": "#503200ff"
+		  }
+		]
+	  },
+	  "text": "680"
+	}
+  ]
+}

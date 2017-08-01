@@ -1,0 +1,769 @@
+{
+    "name": "settingsMenu",
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true,
+        "onHover": true
+    },
+    "class": {
+        "disappearSettingsMenu": {
+            "applyTo": {
+                "createUnionBttn": {
+                    "scale": 1,
+                    "alpha": 1,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                1,
+                                0,
+                                0.5
+                            ],
+                            "alpha": [
+                                1,
+                                0,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    -48
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "invitationsBttn": {
+                    "scale": 1,
+                    "alpha": 1,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                1,
+                                0,
+                                0.5
+                            ],
+                            "alpha": [
+                                1,
+                                0,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    -96
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "unionControlBttn": {
+                    "scale": 1,
+                    "alpha": 1,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                1,
+                                0,
+                                0.5
+                            ],
+                            "alpha": [
+                                1,
+                                0,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    -144
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "unionSettingsBttn": {
+                    "scale": 1,
+                    "alpha": 1,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                1,
+                                0,
+                                0.5
+                            ],
+                            "alpha": [
+                                1,
+                                0,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    -192
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "leaveUnionBttn": {
+                    "scale": 1,
+                    "alpha": 1,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                1,
+                                0,
+                                0.5
+                            ],
+                            "alpha": [
+                                1,
+                                0,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    0
+                                ],
+                                [
+                                    0,
+                                    -240
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "appearSettingsMenu": {
+            "applyTo": {
+                "createUnionBttn": {
+                    "scale": 0.5,
+                    "alpha": 0,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                null,
+                                1,
+                                0.5
+                            ],
+                            "alpha": [
+                                null,
+                                1,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    -48
+                                ],
+                                [
+                                    0,
+                                    0
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "invitationsBttn": {
+                    "scale": 0.5,
+                    "alpha": 0,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                null,
+                                1,
+                                0.5
+                            ],
+                            "alpha": [
+                                null,
+                                1,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    -96
+                                ],
+                                [
+                                    0,
+                                    0
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "unionControlBttn": {
+                    "scale": 0.5,
+                    "alpha": 0,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                null,
+                                1,
+                                0.5
+                            ],
+                            "alpha": [
+                                null,
+                                1,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    -144
+                                ],
+                                [
+                                    0,
+                                    0
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "unionSettingsBttn": {
+                    "scale": 0.5,
+                    "alpha": 0,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                null,
+                                1,
+                                0.5
+                            ],
+                            "alpha": [
+                                null,
+                                1,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    -192
+                                ],
+                                [
+                                    0,
+                                    0
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                },
+                "leaveUnionBttn": {
+                    "scale": 0.5,
+                    "alpha": 0,
+                    "animation": [
+                        {
+                            "wait": {
+                                "delay": 0.1
+                            }
+                        },
+                        {
+                            "scale": [
+                                null,
+                                1,
+                                0.5
+                            ],
+                            "alpha": [
+                                null,
+                                1,
+                                0.3
+                            ],
+                            "offset": [
+                                [
+                                    0,
+                                    -240
+                                ],
+                                [
+                                    0,
+                                    0
+                                ],
+                                0.3
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "boxes": [
+        {
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "center",
+            "vAlignment": "top",
+            "margin": {
+                "top": 15
+            },
+            "handlers": {
+                "onControlEventBegan": true,
+                "onControlEventEnded": true,
+                "onTap": true,
+                "onHover": true,
+                "onMove": true,
+                "onEnter": true
+            },
+            "boxes": [
+                {
+                    "hAlignment": "center",
+                    "vAlignment": "from_top_to_bottom",
+                    "width": 180,
+                    "padding": {
+                        "bottom": -20
+                    },
+                    "handlers": {
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true,
+                        "onTap": true,
+                        "onHover": true,
+                        "onMove": true,
+                        "onEnter": true
+                    },
+                    "boxes": [
+                        {
+                            "name": "createUnionBttn",
+                            "display": "block",
+                            "width": 193,
+                            "height": 63,
+                            "tapArea": [
+                                -15,
+                                0,
+                                -15,
+                                0
+                            ],
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_white.png"
+                                }
+                            },
+                            "margin": {
+                                "top": -15
+                            },
+                            "class": "btn_tap_highlight_anim",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "width": 64,
+                                    "height": 64,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "icon",
+                                            "width": 42,
+                                            "height": 42,
+                                            "background": {
+                                                "image": "res/images/interface/Island2Art/clansMainWindow/button_createunion.png",
+                                                "scale": "contain"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "btnText",
+                                    "width": "auto",
+                                    "maxWidth": 127,
+                                    "vAlignment": "TOP",
+                                    "hAlignment": "left",
+                                    "font": {
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "text": "unionCreateBtn",
+                                    "textAlign": "left",
+                                    "margin": {
+                                        "left": -10
+                                    },
+                                    "padding": [
+                                        -5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "invitationsBttn",
+                            "width": 193,
+                            "height": 63,
+                            "tapArea": [
+                                -15,
+                                0,
+                                -15,
+                                0
+                            ],
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_white.png"
+                                }
+                            },
+                            "margin": {
+                                "top": -15
+                            },
+                            "class": "btn_tap_highlight_anim",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "width": 64,
+                                    "height": 64,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "icon",
+                                            "width": 42,
+                                            "height": 42,
+                                            "background": {
+                                                "image": "res/images/interface/Island2Art/clansMainWindow/button_invitations.png",
+                                                "scale": "contain"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "btnText",
+                                    "width": "auto",
+                                    "maxWidth": 127,
+                                    "vAlignment": "TOP",
+                                    "hAlignment": "left",
+                                    "font": {
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "text": "unionInvitationsBtn",
+                                    "textAlign": "left",
+                                    "margin": {
+                                        "left": -10
+                                    },
+                                    "padding": [
+                                        -5
+                                    ]
+                                },
+                                {
+                                    "width": 100,
+                                    "height": 63,
+                                    "hAlignment": "right",
+                                    "vAlignmnet": "top",
+                                    "boxes": [
+                                        {
+                                            "name": "countIcon",
+                                            "height": 32,
+                                            "width": 32,
+                                            "maxWidth": 32,
+                                            "hidden": true,
+                                            "hAlignment": "center",
+                                            "vAlignment": "center",
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/clans_wall/levelup_numb_icon_bg.png"
+                                                }
+                                            },
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 18,
+                                                "colour": "#ffffffff",
+                                                "outline": {
+                                                    "width": 1.5,
+                                                    "colour": "#910005ff",
+                                                    "yoffset": 0.5
+                                                },
+                                                "textWrap": true
+                                            },
+                                            "text": "42"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "unionControlBttn",
+                            "width": 193,
+                            "height": 63,
+                            "tapArea": [
+                                -15,
+                                0,
+                                -15,
+                                0
+                            ],
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_white.png"
+                                }
+                            },
+                            "margin": {
+                                "top": -15
+                            },
+                            "class": "btn_tap_highlight_anim",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "width": 64,
+                                    "height": 64,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "icon",
+                                            "width": 42,
+                                            "height": 42,
+                                            "background": {
+                                                "image": "res/images/interface/Island2Art/clansMainWindow/button_unioncontrol.png",
+                                                "scale": "contain"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "btnText",
+                                    "width": "auto",
+                                    "maxWidth": 127,
+                                    "vAlignment": "TOP",
+                                    "hAlignment": "left",
+                                    "font": {
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "text": "unionControlBtn",
+                                    "textAlign": "left",
+                                    "margin": {
+                                        "left": -10
+                                    },
+                                    "padding": [
+                                        -5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "unionSettingsBttn",
+                            "width": 193,
+                            "height": 63,
+                            "tapArea": [
+                                -15,
+                                0,
+                                -15,
+                                0
+                            ],
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_white.png"
+                                }
+                            },
+                            "margin": {
+                                "top": -15
+                            },
+                            "class": "btn_tap_highlight_anim",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "width": 64,
+                                    "height": 64,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "icon",
+                                            "width": 42,
+                                            "height": 42,
+                                            "background": {
+                                                "image": "res/images/interface/Island2Art/clansMainWindow/button_unionsettings.png",
+                                                "scale": "contain"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "btnText",
+                                    "width": "auto",
+                                    "maxWidth": 127,
+                                    "vAlignment": "TOP",
+                                    "hAlignment": "left",
+                                    "font": {
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "text": "unionSettingsBtn",
+                                    "textAlign": "left",
+                                    "margin": {
+                                        "left": -10
+                                    },
+                                    "padding": [
+                                        -5
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "leaveUnionBttn",
+                            "width": 193,
+                            "height": 63,
+                            "tapArea": [
+                                -15,
+                                0,
+                                -15,
+                                0
+                            ],
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/buttons/bttn_white.png"
+                                }
+                            },
+                            "margin": {
+                                "top": -15
+                            },
+                            "class": "btn_tap_highlight_anim",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "width": 64,
+                                    "height": 64,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "icon",
+                                            "width": 42,
+                                            "height": 42,
+                                            "background": {
+                                                "image": "res/images/interface/Island2Art/clansMainWindow/icon_magnifier.png",
+                                                "scale": "contain"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "btnText",
+                                    "width": "auto",
+                                    "maxWidth": 127,
+                                    "vAlignment": "TOP",
+                                    "hAlignment": "left",
+                                    "font": {
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528ff",
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "text": "unionLeaveBtn",
+                                    "textAlign": "left",
+                                    "margin": {
+                                        "left": -10
+                                    },
+                                    "padding": [
+                                        -5
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "name": "icon_booklet",
+    "width": 65,
+    "height": 72,
+    "background": {
+        "scale": "fit",
+        "images": {
+            "normal": "res/images/interface/Island2Art/mainScreen/infoPanel/icon_booklet.png"
+        }
+    },
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true
+    },
+    "boxes": [
+        {
+            "width": 65,
+            "height": 72,
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "normal": "res/images/interface/Island2Art/mainScreen/infoPanel/icon_booklet_star.png"
+                }
+            },
+            "vAlignment": "CENTER",
+            "hAlignment": "CENTER",
+            "boxes": [
+                {
+                    "padding": {
+                        "bottom": 7
+                    },
+                    "maxWidth": "45%",
+                    "name": "icon_booklet_text",
+                    "text": "12",
+                    "font": {
+                        "size": 22,
+                        "colour": "#FFFFFFFF",
+                        "outline": {
+                            "width": 1.5,
+                            "colour": "#553C1EFF",
+                            "yoffset": 0.5
+                        },
+                        "file": "res/fonts/loyola.otf"
+                    }
+                }
+            ]
+        }
+    ]
+}

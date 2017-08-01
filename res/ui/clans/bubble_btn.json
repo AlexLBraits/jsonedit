@@ -1,0 +1,14 @@
+{
+    "name": "bubble_btn",
+    "width": 68,
+    "height": 68,
+    "class": "btn_tap_anim",
+    "background": {
+        "scale": "contain"
+    },
+    "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true,
+        "onControlEventEnded": true
+    }
+}

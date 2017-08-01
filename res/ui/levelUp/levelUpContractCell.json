@@ -1,0 +1,55 @@
+{
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "width": "14%SH",
+    "height": "14%SH",
+    "_backgroundColour": "#ff000077",
+    "boxes": [
+        {
+            "name": "cellIcon",
+            "enableGuiEvents": true,
+            "width": "10.56338028169014%SH",
+            "height": "10.56338028169014%SH",
+            "vAlignment": "bottom",
+            "hAlignment": "right",
+            "_backgroundColour": "#00ff0077",
+            "background": {
+                "image": "res/images/icons/attributeIcons/money1_drop.png",
+                "scale": "fit"
+            }
+        },
+        {
+            "width": "10.56338028169014%SH",
+            "height": "10.56338028169014%SH",
+            "hAlignment": "RIGHT",
+            "vAlignment": "BOTTOM",
+            "boxes": [
+                {
+                    "name": "countItem",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "height": "20%",
+                    "_backgroundColour": "#ff000077",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "3.6971830985915495%SH",
+                        "colour": "#ffffffFF",
+                        "outline": [
+                            {
+                                "width": "5%",
+                                "colour": "#503200ff",
+                                "yoffset": "5%"
+                            },
+                            {
+                                "width": "5%",
+                                "colour": "#503200ff"
+                            }
+                        ]
+                    },
+                    "text": "200",
+                    "_text": "5"
+                }
+            ]
+        }
+    ]
+}

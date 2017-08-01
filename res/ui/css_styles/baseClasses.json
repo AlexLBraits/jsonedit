@@ -1,0 +1,855 @@
+{
+  "cover_layer": {
+    "width": "100%",
+    "height": "100%",
+    "handlers": {
+      "onControlEventBegan": true,
+      "onGuiFirstEnter": true,
+      "onTap": true,
+      "onSwipe": true,
+      "onWheel": true,
+      "onHover": true,
+      "onGuiUp": true
+    }
+  },
+  "spicerClass": {
+    "width": "auto"
+  },
+  "scrollSliderHorisontal": {
+    "height": "100%",
+    "width": "100%",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "call": "clearboxes",
+    "name": "horisontalScrollBar",
+    "boxes": [
+      {
+        "name": "scrollBarBg",
+        "hAlignment": "from_left_to_right",
+        "vAlignment": "center",
+        "width": "100%",
+        "height": "0.64%sh",
+        "boxes": [
+          {
+            "width": "0.32%sh",
+            "height": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_horiz/scroll_bg_1.png"
+              },
+              "scale": "fit",
+              "hAlignment": "right"
+            }
+          },
+          {
+            "width": "auto",
+            "height": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_horiz/scroll_bg_2.png"
+              },
+              "scale": "stretch"
+            }
+          },
+          {
+            "width": "0.32%sh",
+            "height": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_horiz/scroll_bg_3.png"
+              },
+              "scale": "fit",
+              "hAlignment": "left"
+            }
+          }
+        ]
+      },
+      {
+        "hAlignment": "from_left_to_right",
+        "vAlignment": "center",
+        "width": "100%",
+        "height": "100%",
+        "boxes": [
+          {
+            "name": "thumbOffsetBox",
+            "width": "10%",
+            "height": "100%"
+          },
+          {
+            "name": "scrollBarThumb",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "width": "30%",
+            "height": "100%",
+            "boxes": [
+              {
+                "_name": "scrollBarThumb",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "width": "100%",
+                "height": "0.64%sh",
+                "boxes": [
+                  {
+                    "width": "0.32%sh",
+                    "height": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_horiz/scroll_thumb_1.png"
+                      },
+                      "scale": "fit",
+                      "hAlignment": "right"
+                    }
+                  },
+                  {
+                    "width": "auto",
+                    "height": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_horiz/scroll_thumb_2.png"
+                      },
+                      "scale": "stretch"
+                    }
+                  },
+                  {
+                    "width": "0.32%sh",
+                    "height": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_horiz/scroll_thumb_3.png"
+                      },
+                      "scale": "fit",
+                      "hAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windowBackgroundClass": {
+    "boxes": [
+      {
+        "name": "background",
+        "vAlignment": "from_top_to_bottom",
+        "hAlignment": "CENTER",
+        "width": "100%",
+        "height": "100%",
+        "boxes": [
+          {
+            "name": "topRow",
+            "width": "100%",
+            "height": "7.55%sh",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "topLeft",
+                "width": "2.9%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_1.png",
+                  "scale": "fit",
+                  "vAlignment": "bottom",
+                  "hAlignment": "right"
+                }
+              },
+              {
+                "name": "topCenter",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_2.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "topRight",
+                "width": "2.9%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_3.png",
+                  "scale": "fit",
+                  "vAlignment": "bottom",
+                  "hAlignment": "left"
+                }
+              }
+            ]
+          },
+          {
+            "name": "middleRow",
+            "width": "100%",
+            "height": "auto",
+            "vAlignment": "center",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "middleLeft",
+                "width": "2.9%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_1.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "center",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_2.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "middleRight",
+                "width": "2.9%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_3.png",
+                  "scale": "stretch"
+                }
+              }
+            ]
+          },
+          {
+            "name": "bottomRow",
+            "width": "100%",
+            "height": "2.9%sh",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "bottomLeft",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_1.png",
+                  "scale": "fit"
+                }
+              },
+              {
+                "name": "bottomCenter",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_2.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "bottomRight",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_3.png",
+                  "scale": "fit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windowTitleClass": {
+    "boxes": [
+      {
+        "minWidth": "36%sh",
+        "width": "100%",
+        "hAlignment": "center",
+        "height": "6.5%sh",
+        "vAlignment": "bottom",
+        "_backgroundColour": "#0000FF75",
+        "boxes": [
+          {
+            "name": "bg",
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "bottom",
+            "boxes": [
+              {
+                "name": "left_part",
+                "width": "6.8%sh",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_1.png",
+                  "scale": "fit",
+                  "hAlignment": "right"
+                }
+              },
+              {
+                "name": "left_middle_part",
+                "width": "auto",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "middle_part",
+                "width": "17.3983602%sh",
+                "height": "11.15492957746479%sh",
+                "_backgroundColour": "#00FF0075",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_2.png",
+                  "scale": "cover",
+                  "vAlignment": "bottom"
+                }
+              },
+              {
+                "name": "left_middle2_part",
+                "width": "auto",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4_r.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "left_right_part",
+                "width": "6.8%sh",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_3.png",
+                  "scale": "fit"
+                }
+              }
+            ]
+          },
+          {
+            "height": "7.5%sh",
+            "width": "100%",
+            "vAlignment": "from_top_to_bottom",
+            "hAlignment": "center",
+            "_backgroundColour": "#0000FF75",
+            "boxes": [
+              {
+                "name": "paddingBox",
+                "height": "5%"
+              },
+              {
+                "name": "windowTitle",
+                "height": "90%",
+                "maxWidth": "80%",
+                "textAlign": "center",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#0000FF75",
+                "text": "warningTitleText",
+                "font": {
+                  "file": "res/fonts/Loyola.otf",
+                  "colour": "#FFFFFFFF",
+                  "size": "4.753521126760564%sh",
+                  "outline": [
+                    {
+                      "width": "5%",
+                      "colour": "#503200FF",
+                      "yoffset": "5%"
+                    },
+                    {
+                      "width": "5%",
+                      "colour": "#503200FF"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windowCompetitionTitleClass": {
+    "boxes": [
+      {
+        "width": "50.387323943661976%sh",
+        "minWidth": "37.771607154169395%sw",
+        "height": "12.095070422535212%sh",
+        "minHeight": "9.066769432185316%sw",
+        "hAlignment": "center",
+        "vAlignment": "top",
+        "background": {
+          "image": "res/images/interface/windows/competitions/competition_title.png",
+          "scale": "stretch"
+        },
+        "boxes": [
+          {
+            "name": "titleText",
+            "width": "90%",
+            "height": "65%",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "font": {
+              "file": "res/fonts/Loyola.otf",
+              "size": "4.22535%SH",
+              "minSize": "3.167428785607196%SW",
+              "colour": "#ffffffFF",
+              "outline": [
+                {
+                  "width": "4%",
+                  "colour": "#503200ff",
+                  "yoffset": "4%"
+                },
+                {
+                  "width": "4%",
+                  "colour": "#503200ff"
+                }
+              ]
+            },
+            "text": "CompetitionsGlobalWindowTitleText"
+          }
+        ]
+      }
+    ]
+  },
+  "windowFlatTitleClass": {
+    "boxes": [
+      {
+        "minWidth": "36%sh",
+        "width": "100%",
+        "hAlignment": "center",
+        "height": "6.5%sh",
+        "vAlignment": "bottom",
+        "_backgroundColour": "#0000FF75",
+        "boxes": [
+          {
+            "name": "bg",
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "bottom",
+            "boxes": [
+              {
+                "name": "left_part",
+                "width": "6.8%sh",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_1.png",
+                  "scale": "fit",
+                  "hAlignment": "right"
+                }
+              },
+              {
+                "name": "left_middle2_part",
+                "width": "auto",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4_r.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "left_right_part",
+                "width": "6.8%sh",
+                "height": "11.15492957746479%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_3.png",
+                  "scale": "fit"
+                }
+              }
+            ]
+          },
+          {
+            "height": "7.5%sh",
+            "width": "100%",
+            "vAlignment": "from_top_to_bottom",
+            "hAlignment": "center",
+            "_backgroundColour": "#0000FF75",
+            "boxes": [
+              {
+                "name": "paddingBox",
+                "height": "5%"
+              },
+              {
+                "name": "windowTitle",
+                "height": "90%",
+                "maxWidth": "80%",
+                "textAlign": "center",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "_backgroundColour": "#0000FF75",
+                "text": "warningTitleText",
+                "font": {
+                  "file": "res/fonts/Loyola.otf",
+                  "colour": "#FFFFFFFF",
+                  "size": "3.8%sh",
+                  "outline": [
+                    {
+                      "width": "5%",
+                      "colour": "#503200FF",
+                      "yoffset": "5%"
+                    },
+                    {
+                      "width": "5%",
+                      "colour": "#503200FF"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "whitePanelBackgroundClass": {
+    "boxes": [
+      {
+        "name": "background",
+        "vAlignment": "from_top_to_bottom",
+        "hAlignment": "CENTER",
+        "width": "100%",
+        "height": "100%",
+        "boxes": [
+          {
+            "name": "topRow",
+            "width": "100%",
+            "height": "2.323943661971831%sh",
+            "vAlignment": "center",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "topLeft",
+                "width": "2.323943661971831%sh",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_top_left.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "topCenter",
+                "width": "auto",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_top_center.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "topRight",
+                "width": "2.323943661971831%sh",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_top_right.png",
+                  "scale": "stretch"
+                }
+              }
+            ]
+          },
+          {
+            "name": "middleRow",
+            "width": "100%",
+            "height": "auto",
+            "vAlignment": "bottom",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "middleLeft",
+                "width": "2.323943661971831%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_mid_left.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "center",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_mid_center.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "middleRight",
+                "width": "2.323943661971831%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_mid_right.png",
+                  "scale": "stretch"
+                }
+              }
+            ]
+          },
+          {
+            "name": "bottomRow",
+            "width": "100%",
+            "height": "2.323943661971831%sh",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "bottomLeft",
+                "width": "2.323943661971831%sh",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_bottom_left.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "bottomCenter",
+                "width": "auto",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_bottom_center.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "bottomRight",
+                "width": "2.323943661971831%sh",
+                "height": "2.323943661971831%sh",
+                "background": {
+                  "image": "res/images/interface/commonArt/panelComposite/panel_bg_bottom_right.png",
+                  "scale": "stretch"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "windowFullFillingBackgroundClass": {
+    "boxes": [
+      {
+        "name": "background",
+        "vAlignment": "from_top_to_bottom",
+        "hAlignment": "CENTER",
+        "width": "100%",
+        "height": "100%",
+        "boxes": [
+          {
+            "name": "topRow",
+            "width": "100%",
+            "height": "3.4859154929577465%sh",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "topLeft",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_4.png",
+                  "scale": "fit",
+                  "vAlignment": "bottom",
+                  "hAlignment": "right"
+                }
+              },
+              {
+                "name": "topCenter",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_5.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "topRight",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_top_6.png",
+                  "scale": "fit",
+                  "vAlignment": "bottom",
+                  "hAlignment": "left"
+                }
+              }
+            ]
+          },
+          {
+            "name": "middleRow",
+            "width": "100%",
+            "height": "auto",
+            "vAlignment": "center",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "middleLeft",
+                "width": "3.4859154929577465%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_1.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "center",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_2.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "middleRight",
+                "width": "3.4859154929577465%sh",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_mid_3.png",
+                  "scale": "stretch"
+                }
+              }
+            ]
+          },
+          {
+            "name": "bottomRow",
+            "width": "100%",
+            "height": "3.4859154929577465%sh",
+            "hAlignment": "from_left_to_right",
+            "boxes": [
+              {
+                "name": "bottomLeft",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_1.png",
+                  "scale": "fit"
+                }
+              },
+              {
+                "name": "bottomCenter",
+                "width": "auto",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_2.png",
+                  "scale": "stretch"
+                }
+              },
+              {
+                "name": "bottomRight",
+                "width": "100%h",
+                "height": "100%",
+                "background": {
+                  "image": "res/images/interface/commonArt/win/backgroundComposite/bg_bottom_3.png",
+                  "scale": "fit"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "scrollSliderVertical": {
+    "name": "verticalScrollBar",
+    "height": "100%",
+    "width": "100%",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "call": "clearboxes",
+    "boxes": [
+      {
+        "name": "scrollBarBg",
+        "hAlignment": "center",
+        "vAlignment": "from_top_to_bottom",
+        "height": "100%",
+        "width": "0.6338028169014085%sh",
+        "boxes": [
+          {
+            "height": "0.31690140845070425%sh",
+            "width": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_vert/scroll_bg_1.png"
+              },
+              "scale": "fit",
+              "hAlignment": "right"
+            }
+          },
+          {
+            "height": "auto",
+            "width": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_vert/scroll_bg_2.png"
+              },
+              "scale": "stretch"
+            }
+          },
+          {
+            "height": "0.31690140845070425%sh",
+            "width": "100%",
+            "background": {
+              "images": {
+                "normal": "res/images/interface/commonArt/scroll_vert/scroll_bg_3.png"
+              },
+              "scale": "fit",
+              "hAlignment": "left"
+            }
+          }
+        ]
+      },
+      {
+        "hAlignment": "center",
+        "vAlignment": "from_top_to_bottom",
+        "width": "100%",
+        "height": "100%",
+        "boxes": [
+          {
+            "name": "thumbOffsetBox",
+            "height": "10%",
+            "width": "100%"
+          },
+          {
+            "name": "scrollBarThumb",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "width": "100%",
+            "height": "25%",
+            "boxes": [
+              {
+                "_name": "scrollBarThumb",
+                "hAlignment": "center",
+                "vAlignment": "from_top_to_bottom",
+                "height": "100%",
+                "width": "0.6338028169014085%sh",
+                "boxes": [
+                  {
+                    "height": "0.31690140845070425%sh",
+                    "width": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_vert/scroll_thumb_1.png"
+                      },
+                      "scale": "fit",
+                      "hAlignment": "right"
+                    }
+                  },
+                  {
+                    "height": "auto",
+                    "width": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_vert/scroll_thumb_2.png"
+                      },
+                      "scale": "stretch"
+                    }
+                  },
+                  {
+                    "height": "0.31690140845070425%sh",
+                    "width": "100%",
+                    "background": {
+                      "images": {
+                        "normal": "res/images/interface/commonArt/scroll_vert/scroll_thumb_3.png"
+                      },
+                      "scale": "fit",
+                      "hAlignment": "left"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

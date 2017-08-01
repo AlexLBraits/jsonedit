@@ -1,0 +1,240 @@
+{
+  "name": "root",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "hAlignment": "center",
+  "vAlignment": "from_top_to_bottom",
+  "class": "cover_layer",
+  "boxes": [
+    {
+      "name": "topPanelSpace",
+      "height": "9.0%sh",
+      "width": "100%",
+      "_backgroundColour": "#0000FF33"
+    },
+    {
+      "name": "windowSpace",
+      "width": "100%",
+      "height": "auto",
+      "hAlignment": "center",
+      "vAlignment": "center",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+        {
+          "width": "100%",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "height": "4.2%sh",
+              "minHeight": "3.1484257871064467%sw"
+            },
+            {
+              "width": "48.5%sh",
+              "minWidth": "36.356821589205396%sw",
+              "height": "auto",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "class": "windowFullFillingBackgroundClass"
+            },
+            {
+              "height": "5%"
+            }
+          ]
+        },
+        {
+          "name": "windowContent",
+          "width": "96%",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "_backgroundColour": "#00FF0033",
+          "boxes": [
+            {
+              "width": "100%",
+              "height": "9%sh",
+              "minHeight": "6.746626686656671%sw",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "handlers": {
+                    "onTap": true,
+                    "onControlEventBegan": true
+                  },
+                  "class": "windowCompetitionTitleClass"
+                },
+                {
+                  "name": "closeButtonContainer",
+                  "width": "52%sh",
+                  "minWidth": "38.980509745127435%sw",
+                  "height": "13%sh",
+                  "minHeight": "8.995502248875562%sw",
+                  "hAlignment": "right",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#0000FF33",
+                  "boxes": [
+                    {
+                      "name": "closeButton",
+                      "class": "buttonClose"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": "43.65%sh",
+              "minWidth": "32.722038980509744%sw",
+              "height": "9%sh",
+              "minHeight": "6.746626686656671%sw",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#00FF0033",
+              "boxes": [
+                {
+                  "name": "descriptionText",
+                  "width": "100%",
+                  "height": "25%sh",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "textWrap": true,
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.957746478873239%SH",
+                    "minSize": "2.2172012585256664%SW",
+                    "colour": "#503200FF"
+                  },
+                  "_text": "Выбери соревнование в котором собираешся учавствовать.\nВремя ждет!"
+                }
+              ]
+            },
+            {
+              "name": "content",
+              "width": "48.5%sh",
+              "minWidth": "36.356821589205396%sw",
+              "height": "auto",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "name": "content",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "_backgroundColour": "#0000FF33",
+                  "boxes": [
+                    {
+                      "name": "containerItems",
+                      "height": "auto",
+                      "width": "100%",
+                      "hAlignment": "center",
+                      "vAlignment": "from_top_to_bottom",
+                      "type": "Scroller",
+                      "overflow": "scroll",
+                      "vslider": "scroller",
+                      "_backgroundColour": "#0000FF33",
+                      "_boxes": [
+                        "res/ui/competition/CompetitionCell.json",
+                        "res/ui/competition/CompetitionCell.json",
+                        "res/ui/competition/CompetitionCell.json"
+                      ]
+                    },
+                    {
+                      "height": "5%sh",
+                      "_minHeight": "3.748125937031484%sw"
+                    }
+                  ]
+                },
+                {
+                  "name": "arrowContainer",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "boxes": [
+                    {
+                      "name": "topArrow",
+                      "width": "5.0%sh",
+                      "height": "5.0%sh",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "rotate": "90",
+                      "hidden": true,
+                      "class": "button_anim_child_class",
+                      "boxes": [
+                        {
+                          "name": "tapAnimatedBox",
+                          "width": "5%sh",
+                          "height": "5%sh",
+                          "background": {
+                            "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "height": "auto"
+                    },
+                    {
+                      "name": "bottomArrow",
+                      "width": "5.0%sh",
+                      "height": "5.0%sh",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "rotate": "-90",
+                      "hidden": true,
+                      "class": "button_anim_child_class",
+                      "boxes": [
+                        {
+                          "name": "tapAnimatedBox",
+                          "width": "5.0%sh",
+                          "height": "5.0%sh",
+                          "background": {
+                            "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                            "scale": "fit"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "height": "5%sh"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": "100%",
+              "height": "0%",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "name": "button",
+                  "width": "20%SH",
+                  "height": "8%SH",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "class": "buttonRedScalable"
+                }
+              ]
+            },
+            {
+              "height": "6%",
+              "width": "100%",
+              "_backgroundColour": "#0000FF33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

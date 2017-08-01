@@ -1,0 +1,230 @@
+{
+  "name": "root",
+  "height": "100%",
+  "width": "100%",
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "name": "parent",
+      "width": "56%SH",
+      "maxHeight": "80%",
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "_backgroundColour": "#FF000078",
+      "boxes": [
+        {
+          "name": "titleContainer",
+          "height": "5.5%",
+          "width": "100%",
+          "_backgroundColour": "#00330050",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "boxes": [
+            {
+              "width": "54.401408450704224%sh",
+              "minWidth": "41.84723726977248%sw",
+              "height": "16.056338028169012%sh",
+              "minHeight": "12.351029252437701%sw",
+              "class": "titleRibbonOrangeText70"
+            }
+          ]
+        },
+        {
+          "width": "100%",
+          "height": "46.75%SH",
+          "minHeight": "35.96153846153846%SW",
+          "hAlignment": "center",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "name": "particle",
+              "width": "35.0%SH",
+              "minWidth": "26.923076923076923%Sw",
+              "height": "35.0%SH",
+              "minHeight": "26.923076923076923%Sw",
+              "_backgroundColour": "#FF000033"
+            },
+            {
+              "width": "100%",
+              "height": "100%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "boxes": [
+                {
+                  "height": "4.75%sh",
+                  "minHeight": "3.6538461538461537%sw"
+                },
+                {
+                  "maxWidth": 0,
+                  "height": "5%SH",
+                  "minHeight": "3.846153846153846%Sw",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF000078",
+                  "boxes": [
+                    {
+                      "name": "askerText",
+                      "maxWidth": "75%sw",
+                      "height": "3.6971830985915495%SH",
+                      "minHeight": "2.8439869989165762%Sw",
+                      "_backgroundColour": "#33000075",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textWrap": false,
+                      "textAlign": "center",
+                      "class": "loyolaWhiteWithoutSizeText",
+                      "text": "RelationshipLvlUpWindowText1"
+                    },
+                    {
+                      "width": "1%sh",
+                      "minWidth": "0.7692307692307692%sw"
+                    },
+                    {
+                      "width": "9.765625%SH",
+                      "minWidth": "7.512019230769231%sw",
+                      "height": "9.765625%SH",
+                      "minHeight": "7.512019230769231%sw",
+                      "name": "askerLevelIcon",
+                      "_backgroundColour": "#00330075",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "background": {
+                        "images": {
+                          "normal": "res/images/interface/commonArt/icon_reputation.png"
+                        },
+                        "scale": "fit",
+                        "hAlignment": "CENTER",
+                        "vAlignment": "CENTER"
+                      },
+                      "boxes": [
+                        {
+                          "name": "askerLevel",
+                          "maxWidth": "100%",
+                          "height": "4.753521126760564%SH",
+                          "minHeight": "3.656554712892741%Sw",
+                          "_backgroundColour": "#33000075",
+                          "hAlignment": "center",
+                          "vAlignment": "center",
+                          "textWrap": false,
+                          "textAlign": "center",
+                          "class": "loyolaWhiteWithoutSizeText",
+                          "text": "6"
+                        }
+                      ]
+                    },
+                    {
+                      "width": "auto"
+                    }
+                  ]
+                },
+                {
+                  "height": "2%sh",
+                  "minHeight": "1.5384615384615383%sw"
+                },
+                {
+                  "name": "askerIcon",
+                  "width": "35.0%SH",
+                  "minWidth": "26.923076923076923%Sw",
+                  "height": "35.0%SH",
+                  "minHeight": "26.923076923076923%Sw",
+                  "_backgroundColour": "#00330055",
+                  "vAlignment": "center",
+                  "hAlignment": "center"
+                },
+                {
+                  "height": "0%",
+                  "width": "100%",
+                  "hAlignment": "center",
+                  "vAlignment": "bottom",
+                  "_backgroundColour": "#0000FF33",
+                  "boxes": [
+                    {
+                      "name": "askerNameText",
+                      "maxWidth": "100%",
+                      "height": "3.6971830985915495%SH",
+                      "minHeight": "2.8439869989165762%Sw",
+                      "_backgroundColour": "#33000075",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textWrap": false,
+                      "textAlign": "center",
+                      "class": "loyolaOrangeWithoutSizeText",
+                      "text": "Emma"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "height": "8%sh",
+          "minHeight": "6.153846153846153%sw",
+          "width": "100%"
+        },
+        {
+          "width": "100%",
+          "height": "7.922535211267605%SH",
+          "minHeight": "6.094257854821234%sw",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "_backgroundColour": "#0000FF33",
+          "boxes": [
+            {
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "width": "58.098591549295776%sh",
+              "minWidth": "44.691224268689055%sw",
+              "height": "8.873239436619718%sh",
+              "minHeight": "6.825568797399783%sw",
+              "background": {
+                "image": "res/images/interface/commonArt/green_panel_bg.png",
+                "scale": "stretch"
+              }
+            },
+            {
+              "name": "bonusScroll",
+              "hAlignment": "FROM_LEFT_TO_RIGHT",
+              "vAlignment": "CENTER",
+              "height": "7.922535211267605%SH",
+              "minHeight": "6.094257854821234%sw",
+              "_backgroundColour": "#00FF0055",
+              "_boxes": [
+                "res/ui/askerWindow/askerLevelupCell.json",
+                "res/ui/askerWindow/askerLevelupCell.json",
+                "res/ui/askerWindow/askerLevelupCell.json"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "buttonContainer",
+          "height": "13%sh",
+          "minHeight": "7.692307692307692%sw",
+          "width": "100%",
+          "_backgroundColour": "#33000075",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "boxes": [
+            {
+              "name": "buttonOk",
+              "width": "20%sh",
+              "minWidth": "15.384615384615383%sw",
+              "height": "8%sh",
+              "minHeight": "6.153846153846153%sw",
+              "_backgroundColour": "#33000075",
+              "class": "buttonGreenScalable",
+              "vAlignment": "center",
+              "hAlignment": "center"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

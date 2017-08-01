@@ -1,0 +1,126 @@
+{
+    "name": "figure_cell_container",
+    "width": "12.6%sh",
+   	"minWidth": "9.44527736%sw",
+    "height": "18%sh",
+  	"minHeight":"13.493253373313342%sw",
+    "_backgroundColour": "#00ff00ff",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "boxes": [
+        
+                {
+                    "name": "figure_cell",
+                    "_backgroundColour": "#00ff00ff",
+                    "width": "100%",
+                    "height": "90%",
+                    "hAlignment": "CENTER",
+                    "vAlignment": "center",
+                    "_class": "whitePanelBackgroundClass",
+                    "boxes": [
+
+                        {
+                            "name": "innerContainer",
+                            "hAlignment": "CENTER",
+                            "vAlignment": "from_top_to_bottom",
+                            "width": "80%",
+                            "height": "80%",
+                            "_backgroundColour": "#00ff0010",
+                            "boxes":[                                
+                   
+                   				{
+                   					"name":"containerIcon",
+                   					"width": "12%sh",
+                                    "minWidth":"8.995502248875562%sw",
+                                    "height": "12%sh",
+                                    "minHeight":"8.995502248875562%sw",
+                                    "hAlignment": "CENTER",
+                            		"vAlignment": "center",
+                                    "boxes":[
+                                    	{
+											"name":"underParticle",
+											"width": "8%sh",
+                                    "minWidth":"5.997%sw",
+                                    "height": "8%sh",
+                                    "minHeight":"5.997%sw"
+										},
+                   
+                                {
+                                    "name": "chestIcon",
+                                    "width": "12%sh",
+                                    "minWidth":"8.995502248875562%sw",
+                                    "height": "12%sh",
+                                    "minHeight":"8.995502248875562%sw",
+                                    "background": {
+                                        "images": {
+                                                    "normal": "res/images/interface/mainScreen/chest/chest1_open.png",                                            
+                                            
+                                        },
+                                        "scale": "fit"
+                                    }   
+                                }
+                                ]
+                                },
+                                {  
+                                    "name":"countLabel",
+                                    "height":"30%",
+                                    "textWrap":false,
+                                    "width":"100%",
+                                    "_backgroundColour":"#00007878",
+                                    "textAlign":"center",
+                                    "text":"40",
+                                    "hAlignment":"center",
+                                    "vAlignment":"bottom",
+                                    "font":{  
+                                        "file":"res/fonts/Loyola.otf",
+                                        "size":"3.6971830985915495%sh",
+                                        "minSize":"2.7715015731570833%sw",
+                                        "colour":"#ffffffFF",
+                                        "outline":[  
+                                            {  
+                                                "width":"4%",
+                                                "colour":"#503200ff",
+                                                "yoffset":"4%"
+                                            },
+                                            {  
+                                                "width":"4%",
+                                                "colour":"#503200ff"
+                                            }
+                                        ]
+                                    }
+                                }
+                                
+                        
+                                 ]
+                         },   
+                                                         {
+                                    "name": "mark",
+                                    "vAlignment": "top",
+                                    "hAlignment": "right",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "_boxes": [ 
+                                        {        
+                                            "_vAlignment": "top",
+                                            "height": "4.55%SH",
+                                    		"minHeight":"3.41079460269865%sw",
+                                            "width": "2.75%SH",
+                                    		"minWidth":"2.0614692653673163%sw",
+                                            "name":"markIcon",
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/commonArt/sign_attention.png",
+                                                    },
+                                                "scale": "fit",
+                                            },
+                                        } 
+                                    ],
+                                    "margin": { "bottom": "20%sh", "right": "-25%sh"},
+                                    "_hidden":"true",
+                                }
+
+                        
+                    ]
+                }
+    ]
+}

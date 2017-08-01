@@ -1,0 +1,53 @@
+{
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "_backgroundColour": "#00ff0077",
+  "width": 75,
+  "height": 65,
+  "boxes": [
+    {
+      "name": "icon",
+      "enableGuiEvents": true,
+      "_backgroundColour": "#00ff0077",
+      "width": 65,
+      "vAlignment": "bottom",
+      "hAlignment": "right",
+      "height": 65,
+      "background": {
+        "images": {
+          "normal": "res/images/icons/attributeIcons/exp_drop.png"
+        },
+        "scale": "fit"
+      },
+      "boxes": [
+        {
+          "name": "item_count",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "margin": {
+            "left": 8,
+            "bottom": 3,
+            "right": 1
+          },
+          "text": "12",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": 18,
+            "colour": "#ffffffFF",
+            "outline": [
+              {
+                "width": 1,
+                "colour": "#503200ff",
+                "yoffset": 1
+              },
+              {
+                "width": 1,
+                "colour": "#503200ff"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

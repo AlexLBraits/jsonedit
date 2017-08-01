@@ -1,0 +1,42 @@
+{
+    "name": "price_cell",
+    "hAlignment": "FROM_LEFT_TO_RIGHT",
+    "vAlignment": "CENTER",
+    "width": "50%",
+    "height": "3.5%SH",
+    "minHeight": "3.1%sw",
+    "_backgroundColour": "#00000050",
+    "boxes": [
+        {
+            "name": "icon",
+            "width": "3.7%SH",
+            "height": "3.7%SH",
+            "minHeight": "3.28%sw",
+            "minWidth": "3.28%sw",
+            "_backgroundColour": "#00ff0050",
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "normal": "res/images/icons/attributeIcons/production_water.png"
+                },
+                "vAlignment": "CENTER"
+            }
+        },
+        {
+            "name": "count",
+            "maxWidth": "auto",
+            "height": "100%",
+            "_minHeight": "3.28%sw",
+            "vAlignment": "center",
+            "_backgroundColour": "#ff000050",
+            "lineSpacing": 0.7,
+            "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": "2.9%SH",
+                "minSize": "2.5182786%sw",
+                "colour": "#503200FF"
+            },
+            "text": "3"
+        }
+    ]
+}

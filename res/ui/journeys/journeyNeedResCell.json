@@ -1,0 +1,71 @@
+{
+  "name": "iconWithBg",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "width": "8.5%SH",
+  "height": "6.5%SH",
+  "_backgroundColour": "#00FF0033",
+  "boxes": [
+    {
+      "name": "circleBackground",
+      "width": "6.0%SH",
+      "height": "6.0%SH",
+      "background": {
+        "scale": "stretch",
+        "hAlignment": "CENTER",
+        "vAlignment": "CENTER",
+        "images": {
+          "normal": "res/images/interface/mainScreen/journey/journey_res_bg.png"
+        }
+      }
+    },
+    {
+      "name": "icon",
+      "width": "5.28%SH",
+      "height": "5.28%SH",
+      "background": {
+        "scale": "stretch",
+        "hAlignment": "CENTER",
+        "vAlignment": "CENTER",
+        "images": {
+          "_normal": "res/images/icons/resourcesIcons/res_corn.png"
+        }
+      }
+    },
+    {
+      "width": "100%",
+      "height": "100%",
+      "hAlignment": "center",
+      "vAlignment": "BOTTOM",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+        {
+          "name": "count",
+          "height": "4.0%SH",
+          "width": "95%",
+          "vAlignment": "center",
+          "hAlignment": "RIGHT",
+          "_textAlign": "center",
+          "_backgroundColour": "#00FF0055",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "3.169%sh",
+            "colour": "#FFFFFFFF",
+            "outline": [
+              {
+                "width": "4%",
+                "colour": "#503200FF",
+                "yoffset": "4%"
+              },
+              {
+                "width": "4%",
+                "colour": "#503200FF"
+              }
+            ]
+          },
+          "_text": "4"
+        }
+      ]
+    }
+  ]
+}

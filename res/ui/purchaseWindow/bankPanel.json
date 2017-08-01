@@ -1,0 +1,387 @@
+{
+  "name": "panelBox",
+  "vAlignment": "CENTER",
+  "hAlignment": "CENTER",
+  "_backgroundColour": "#0000FF75",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "name": "panelContent",
+      "width": "45.01%SH",
+      "minWidth": "39.937882%SW",
+      "_backgroundColour": "#FF000075",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "hAlignment": "CENTER",
+      "boxes": [
+        {
+          "name": "shopHeaderPanel",
+          "width": "130%",
+          "height": "11.0%sh",
+          "hAlignment": "CENTER",
+          "vAlignment": "CENTER",
+          "_backgroundColour": "#00FF0075",
+          "boxes": [
+            {
+              "name": "panel_background_continer",
+              "width": "100%",
+              "scale": 0.75,
+              "hAlignment": "from_left_to_right",
+              "_backgroundColour": "#0000FF75",
+              "boxes": [
+                {
+                  "name": "left_part",
+                  "width": "6.8%sh",
+                  "height": "14.15492957746479%sh",
+                  "hAlignment": "right",
+                  "vAlignment": "bottom",
+                  "background": {
+                    "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_1.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "left_middle2_part",
+                  "width": "auto",
+                  "height": "14.15492957746479%sh",
+                  "hAlignment": "center",
+                  "vAlignment": "bottom",
+                  "background": {
+                    "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4_r.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "left_right_part",
+                  "width": "6.8%sh",
+                  "height": "14.15492957746479%sh",
+                  "hAlignment": "left",
+                  "vAlignment": "bottom",
+                  "background": {
+                    "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_3.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "spacer",
+                  "width": "0.75%SH"
+                }
+              ]
+            },
+            {
+              "name": "box",
+              "width": "100%",
+              "height": "10%SH",
+              "vAlignment": "BOTTOM",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#FF000075",
+              "boxes": [
+                {
+                  "width": "65%",
+                  "height": "7%SH",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "vAlignment": "CENTER",
+                  "_backgroundColour": "#FF000075",
+                  "boxes": [
+                    {
+                      "type": "spacer"
+                    },
+                    {
+                      "name": "iconCoin",
+                      "width": "5.282%SH",
+                      "height": "5.282%SH",
+                      "_backgroundColour": "#00FF0099",
+                      "background": {
+                        "image": "res/images/icons/attributeIcons/money1_drop.png",
+                        "scale": "fit"
+                      }
+                    },
+                    {
+                      "name": "spacer",
+                      "width": "1%SH"
+                    },
+                    {
+                      "name": "inapValue",
+                      "width": 0,
+                      "maxWidth": "50%",
+                      "_textWrap": false,
+                      "_backgroundColour": "#0000FF78",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "textAlign": "left",
+                      "lineSpacing": 0.5,
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "5.28169014084507%SH",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                          {
+                            "width": "4%",
+                            "colour": "#503200FF",
+                            "yoffset": "4%"
+                          },
+                          {
+                            "width": "4%",
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "_text": "Coins",
+                      "text": "testDescriptiontestDescription"
+                    },
+                    {
+                      "type": "spacer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "chickenContainer",
+              "width": "100%",
+              "height": "42.75%SH",
+              "vAlignment": "TOP",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#FF000075",
+              "boxes": [
+                {
+                  "width": "50.0%SH",
+                  "height": "16.12%SH",
+                  "vAlignment": "TOP",
+                  "hAlignment": "FROM_LEFT_TO_RIGHT",
+                  "_backgroundColour": "#0000FF75",
+                  "boxes": [
+                    {
+                      "name": "chickenImage",
+                      "width": "16.25%SH",
+                      "height": "22.5%SH",
+                      "vAlignment": "BOTTOM",
+                      "_backgroundColour": "#00FF0075",
+                      "background": {
+                        "image": "res/images/interface/windows/bankWindow/chicken_bank.png",
+                        "scale": "fit"
+                      }
+                    },
+                    {
+                      "name": "alignTextBox",
+                      "height": "20%SH",
+                      "vAlignment": "BOTTOM",
+                      "_backgroundColour": "#FF00FF75",
+                      "boxes": [
+                        {
+                          "name": "textImage",
+                          "width": "25%SH",
+                          "height": "10%SH",
+                          "vAlignment": "center",
+                          "hAlignment": "center",
+                          "_backgroundColour": "#FF00FF75",
+                          "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "9.5%SH",
+                        "colour": "#F1E8DAFF",
+                        "outline": [
+                          {
+                          	"width": "5%",
+                            "colour": "#503200FF",
+                            "yoffset": "4%"
+                          },
+                          
+                          {
+                            "width": "2%",
+                            "colour": "#B2966BFF",
+                            "yoffset": "5%"
+                          }
+                          
+                        ]
+                      },
+                      "text": "Bank"
+                    }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+        	 "name": "timerContainer",
+             "width": "32.75%SH",
+             "minWidth":"29.059449866903282%sw",
+             "height": "4.5%SH",
+             "minHeight":"3.992901508429459%sw",
+             "hAlignment": "center",
+             "vAlignment": "center",
+             "_backgroundColour": "#FF000078",
+             "boxes":[
+             {
+             	"name": "timerContainerBounder",
+             "width": "32.75%SH",
+             "minWidth":"29.059449866903282%sw",
+             "height": "6.5%SH",
+             "minHeight":"5.767524401064774%sw",
+             "boxes":[
+             	{
+             	"name": "timerInnerContainer",
+             	 "width": "32.75%SH",
+             "minWidth":"29.059449866903282%sw",
+             "height": "4.5%SH",
+             "minHeight":"3.992901508429459%sw",
+             	 "hAlignment": "left",
+             "vAlignment": "center",
+	             "boxes":[
+	             	{
+             	"name":"containerBar",
+             	"vAlignment": "center",
+             	"width": "50%",
+        		"height": "100%",
+        		"hAlignment": "from_left_to_right",
+        		"boxes":[
+        		{
+        			"name":"spacer",
+        			"width": "20%"
+        		},
+        			        	{
+        "name": "timerContainerBar",
+        "width": "100%",
+        "height": "100%",
+        "vAlignment": "center",
+        "hAlignment": "left",
+        "boxes": [{
+                "name": "bar",
+                "width": "180%",
+                "height": "60%",
+                "hAlignment": "from_left_to_right",
+                "vAlignment": "center",
+                "boxes": [{
+                        "width": "1.7957746478873238%sh",
+                        "minWidth": "1.5934114000774833%sw",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/windows/askerWindow/time_bg_left.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "auto",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/windows/askerWindow/time_bg_middle.png",
+                            "scale": "stretch"
+                        }
+                    },
+                    {
+                        "width": "1.7957746478873238%sH",
+                        "minWidth": "1.5934114000774833%sw",
+                        "height": "100%",
+                        "background": {
+                            "image": "res/images/interface/windows/askerWindow/time_bg_right.png",
+                            "scale": "stretch"
+                        }
+                    }
+                ]
+            },
+            {
+                "height": "100%",
+                "width": "100%",
+                "vAlignment": "center",
+                "hAlignment": "from_left_to_right",
+                "_backgroundColour": "#00FF0099",
+                "boxes": [
+                	{
+                		"name":"spacer",
+                		"width":"20%"
+                	},
+             		{
+                      "name": "timerText",
+                      "width": 0,
+                      "maxWidth": "70%",
+                      "_textWrap": false,
+                      "_backgroundColour": "#0000FF78",
+                      "hAlignment": "left",
+                      "vAlignment": "center",
+                      "textAlign": "left",
+                      "lineSpacing": 0.5,
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "5.28169014084507%SH",
+                        "colour": "#503200FF"
+                        
+                      },
+                      "text": "Time Left :"
+                      
+                    },
+                    {
+                		"name":"spacer",
+                		"width":"10%"
+                	},
+                    {
+                      "name": "valueTimerText",
+                      "width": 0,
+                      "maxWidth": "70%",
+                      "_textWrap": false,
+                      "_backgroundColour": "#0000FF78",
+                      "hAlignment": "left",
+                      "vAlignment": "center",
+                      "textAlign": "left",
+                      "lineSpacing": 0.5,
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "5.28169014084507%SH",
+                        "colour": "#503200FF"
+                        
+                      },
+                      "text": "6d 15h 14m"
+                      
+                    }
+                ]
+            }
+        ]
+    }
+        		]
+             },
+     
+             
+             	{
+             		"name": "timerContainer",
+             		"width": "6.336%SH",
+             		"minWidth": "5.622005323868678%sw",
+             		"height": "6.336%SH",
+             		"minHeight": "5.622005323868678%sw",
+             		"background": {
+                        "image": "res/images/interface/commonArt/icon_time.png",
+                        "scale": "fit"
+                      }
+             	}
+	             ]
+             }
+             ]
+             }
+             
+             
+             	
+             	
+             ]
+        },
+        {
+          "name": "shopContent",
+          "width": "45.01%SH",
+          "minWidth": "39.937882%SW",
+          "vAlignment": "by_width",
+          "hAlignment": "by_width",
+          "_backgroundColour": "#0000FF55",
+          "_boxes": [
+            "res/ui/purchaseWindow/bankCell.json",
+            "res/ui/purchaseWindow/bankCell.json",
+            "res/ui/purchaseWindow/bankCell.json",
+            "res/ui/purchaseWindow/bankCell.json",
+            "res/ui/purchaseWindow/bankCell.json",
+            "res/ui/purchaseWindow/bankCell.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

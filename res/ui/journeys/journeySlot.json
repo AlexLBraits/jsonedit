@@ -1,0 +1,147 @@
+{
+	"vAlignment": "TOP",
+	"hAlignment": "center",
+	"width":"12.42%sh",
+	"height":"16.73%sh",
+	"boxes": [{
+			"name": "tapAnimatedBox",
+			"width": "13.21%sh",
+			"height": "16.73%sh",
+			"vAlignment": "center",
+			"hAlignment": "center",
+			"class": "button_anim_child_class",
+			"_backgroundColour": "#77000077",
+			"boxes": [{
+					"name": "itemBackground",
+					"width": "13.21%sh",
+					"height": "16.73%sh",
+					"vAlignment": "center",
+					"hAlignment": "center",
+					"background": {
+						"+image": "res/images/interface/mainScreen/craftSlots/craft_ready.png",
+						"image": "res/images/interface/mainScreen/craftSlots/craft_process.png",
+						"scale": "fit"
+					}
+				},
+				{
+					"name": "itemContent",
+					"width": "12.42%sh",
+					"height": "16.73%sh",
+					"_backgroundColour": "#77000077",
+					"vAlignment": "center",
+					"hAlignment": "center",
+					"boxes": [{
+						"name": "loadedView",
+						"vAlignment": "from_top_to_bottom",
+						"hAlignment": "center",
+						"boxes": [{
+								"width": "9.69%sh",
+								"height": "9.69%sh",
+								"vAlignment": "center",
+								"hAlignment": "center",
+								"boxes": [{
+										"name": "underParticle",
+										"_backgroundColour": "#77000077",
+										"width": "100%",
+										"height": "100%",
+										"overflow": "ignore"
+									},
+									{
+										"name": "icon",
+										"width": "100%",
+										"height": "100%",
+										"background": {
+											"image": "res/images/icons/resourcesIcons/res_green_root.png",
+											"scale": "fit"
+										}
+									},
+									{
+										"hidden": true,
+										"name": "cooldownIcon",
+										"width": "8.45%sh",
+										"height": "6.44%sh",
+										"background": {
+											"image": "res/images/interface/mainScreen/journey/journeyCooldown.png",
+											"scale": "fit"
+										}
+									}
+								]
+							},
+							{
+								"name": "text",
+								"_backgroundColour": "#77000077",
+								"maxWidth": "9.69%sh",
+								"height": "3%sh",
+								"vAlignment": "center",
+								"hAlignment": "center",
+								"font": {
+									"file": "res/fonts/Loyola.otf",
+									"size": "2.535%sh",
+									"minSize": "1%sh",
+									"colour": "#ffffffFF",
+									"outline": [{
+											"width": "4%",
+											"colour": "#503200ff",
+											"yoffset": "5%"
+										},
+										{
+											"width": "4%",
+											"colour": "#503200ff"
+										}
+									]
+								},
+								"_text": "Недоступно"
+							}
+						]
+					}]
+				}
+			]
+		},
+		{
+			"name": "speedupResBoxContainer",
+			"height": "105.0%",
+			"width": "12.0%sh",
+			"hAlignment": "center",
+			"vAlignment": "from_top_to_bottom",
+			"_backgroundColour": "#00770077",
+			"boxes": [
+				{
+					"height": "14.0%sh"
+				},
+				{
+					"_hidden": true,
+					"name": "speedupBox",
+					"class": "button_class",
+					"handlers": {
+						"onControlEventBegan": true,
+						"onControlEventEnded": true
+					},
+					"width": "10.7746478%sh",
+					"height": "4.85915493%sh",
+					"vAlignment": "bottom",
+					"hAlignment": "center",
+					"_backgroundColour": "#77000077",
+					"background": {
+						"image": "res/images/interface/buttons/speed_up_arrow.png",
+						"scale": "fit"
+					},
+					"boxes": [{
+						"name": "speedupResBoxTextAndIconContainer",
+						"height": "4.7%sh",
+						"width": "3.5%sh",
+						"vAlignment": "center",
+						"hAlignment": "right",
+						"_backgroundColour": "#00777777",
+						"boxes": [{
+							"name": "speedupBoxText",
+							"maxWidth": "100%",
+							"maxHeidth": "100%",
+							"text": "120",
+							"class": "loyolaRelativeText44"
+						}]
+					}]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "needCraftContainerRoot",
+	"hAlignment": "center",
+	"vAlignment": "center",
+	"_backgroundColour": "#0000FF55",
+	"width": "50%",
+    "height":"50%",
+	"boxes":[
+		{
+		  "name": "slillIcon",
+		  "width": "6.338028169014084%SH",
+		  "height": "6.338028169014084%SH",
+		  "minHeight": "5.623804941449942%sw",
+		  "minWidth": "5.623804941449942%sw",
+		  "background": {
+			"images": {
+			  "normal": "res/images/icons/resourcesIcons/res_corn.png"
+			},
+			"scale": "fit"
+		  }
+		}
+	]
+}

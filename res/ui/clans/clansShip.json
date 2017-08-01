@@ -1,0 +1,290 @@
+{
+  	"hAlignment":"LEFT",
+	"vAlignment":"TOP",
+	"boxes":[
+		{
+			"name":"background",
+        	"width": 256,
+            "height": 0,
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/commonArt/popup/popup.png"
+                },
+                "scale": "window",
+                "corner": [
+                    29,
+                    29
+                ]
+            },
+			"hAlignment":"center",
+			"vAlignment":"center",
+			"boxes":[
+				{
+					"name": "ship",
+					"width": 256,
+		            "height": 0,
+					"hidden": true,
+					"hAlignment":"center",
+					"vAlignment":"center",
+					"padding": {
+						"top": 18,
+						"left": 18,
+						"bottom": 18,
+						"right": 18
+					},
+					"boxes": [
+						{
+							"name": "shipOnDockContainer",
+							"width": "100%",
+							"height": 0,
+							"_hidden": true,
+							"hAlignment":"LEFT",
+							"vAlignment":"from_top_to_bottom",
+							"boxes": [
+								{
+									"name": "orderContainer",
+									"width": 165,
+									"maxHeight": 110,
+									"hAlignment": "BY_WIDTH",
+									"vAlignment": "by_height",
+									"_boxes": [
+										"res/ui/clans/clansShipCell.json",
+										"res/ui/clans/clansShipCell.json",
+										"res/ui/clans/clansShipCell.json",
+										"res/ui/clans/clansShipCell.json",
+										"res/ui/clans/clansShipCell.json"
+									]
+								},
+								{
+									"name": "capacityContainer",
+									"hAlignment": "from_left_to_right",
+									"vAlignment": "center",
+									"width": "90%",
+									"height": 25,
+									"boxes": [
+										{
+											"textAlign": "center",
+						                    "font": {
+						                        "file": "res/fonts/Loyola.otf",
+						                        "size": 18,
+						                        "minSize": 10,
+						                        "colour": "#FFFFFFFF",
+						                        "outline":[ 
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF",
+						                                "yoffset":1
+						                            },
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF" 
+						                            }
+						                        ]
+						                    },
+						                    "text": "test_capacity",
+										},
+										{
+											"name": "capacityText",
+											"margin": {
+												"left": 10
+											},
+											"textAlign": "center",
+						                    "font": {
+						                        "file": "res/fonts/Loyola.otf",
+						                        "size": 18,
+						                        "minSize": 10,
+						                        "colour": "#FFFFFFFF",
+						                        "outline":[ 
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF",
+						                                "yoffset":1
+						                            },
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF" 
+						                            }
+						                        ]
+						                    },
+						                    "text": "1/3",
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "shipLeftContainer",
+							"width": "100%",
+							"height": 0,
+							"_hidden": true,
+							"hAlignment":"center",
+							"vAlignment":"center",
+							"boxes": [
+								{
+									"name": "returnTimerConatainer",
+									"width": 0,
+									"minHeight": 80,
+									"hAlignment":"from_left_to_right",
+									"vAlignment":"center",
+									"boxes": [
+										{
+											"textAlign": "center",
+						                    "font": {
+						                        "file": "res/fonts/Loyola.otf",
+						                        "size": 18,
+						                        "minSize": 10,
+						                        "colour": "#FFFFFFFF",
+						                        "outline":[ 
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF",
+						                                "yoffset":1
+						                            },
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF" 
+						                            }
+						                        ]
+						                    },
+						                    "text": "test_time_return",
+										},
+										{
+											"name": "returnTimeText",
+											"margin": {
+												"left": 10
+											},
+											"textAlign": "center",
+						                    "font": {
+						                        "file": "res/fonts/Loyola.otf",
+						                        "size": 18,
+						                        "minSize": 10,
+						                        "colour": "#FFFFFFFF",
+						                        "outline":[ 
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF",
+						                                "yoffset":1
+						                            },
+						                            {
+						                                "width": 1,
+						                                "colour": "#503200FF" 
+						                            }
+						                        ]
+						                    },
+						                    "text": "",
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "shipWithBonusContainer",
+							"width": "100%",
+							"height": 0,
+							"_hidden": true,
+							"hAlignment":"center",
+							"vAlignment":"from_top_to_bottom",
+							"boxes": [
+								{
+									"textAlign": "center",
+				                    "font": {
+				                        "file": "res/fonts/Loyola.otf",
+				                        "size": 18,
+				                        "minSize": 10,
+				                        "colour": "#FFFFFFFF",
+				                        "outline":[ 
+				                            {
+				                                "width": 1,
+				                                "colour": "#503200FF",
+				                                "yoffset":1
+				                            },
+				                            {
+				                                "width": 1,
+				                                "colour": "#503200FF" 
+				                            }
+				                        ]
+				                    },
+				                    "text": "test_you_reward",
+								},
+								{
+		                            "name": "bonusesPanel",
+		                            "hAlignment": "center",
+		                            "height": 65,
+		                            "width": 210,
+		                            "vAlignment": "center",
+		                            "boxes": [
+		                                {
+		                                    "hAlignment": "from_left_to_right",
+		                                    "height": 65,
+		                                    "width": "100%",
+		                                    "vAlignment": "center",
+		                                    "boxes": [
+		                                        {
+		                                        "name": "leftArrow",
+		                                        "width": 19,
+		                                        "height": 29,
+		                                        "class": "button_class",
+		                                        "background": {
+		                                            "images": {
+		                                                "normal": "res/images/interface/buttons/bttn_arrow_left.png"
+		                                            }
+		                                        }
+		                                    },
+		                                    {
+		                                        "name": "spacer",
+		                                        "width": "auto"
+		                                    },
+		                                    {
+		                                        "name": "rightArrow",
+		                                        "width": 19,
+		                                        "height": 29,
+		                                        "class": "button_class",
+		                                        "background": {
+		                                            "images": {
+		                                                "normal": "res/images/interface/buttons/bttn_arrow_right.png"
+		                                            }
+		                                        }
+		                                    }
+		                                    ]
+		                                },
+		                                {
+		                                    "width": "100%",
+		                                    "hAlignment": "center",
+		                                    "padding":{
+		                                        "left": 25,
+		                                        "right": 25
+		                                    },
+		                                    "boxes": [
+		                                        {
+		                                            "_backgroundColour": "#ff000077",
+		                                            "width": 150,
+		                                            "height": 65,
+		                                            "hAlignment": "center",
+		                                            "boxes":[
+		                                                 {
+		                                                    "name": "items_container",
+		                                                    "overflow": "scroll",
+		                                                    "_backgroundColour": "#00ff0077",
+		                                                    "height": 65,
+		                                                    "maxWidth":150,
+		                                                    "boxes": [
+		                                                        "res/ui/mainScreen/nextLevelCell.json",
+		                                                        "res/ui/mainScreen/nextLevelCell.json",
+		                                                        "res/ui/mainScreen/nextLevelCell.json",
+		                                                        "res/ui/mainScreen/nextLevelCell.json"
+		                                                    ]
+		                                                }
+		                                            ]
+		                                        }
+		                                    ]
+		                                }
+		                            ]
+		                        }
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

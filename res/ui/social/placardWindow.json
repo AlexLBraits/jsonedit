@@ -1,0 +1,336 @@
+{
+  "name": "cover",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "width": "100%",
+  "height": "100%",
+  "class": "cover_layer",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true,
+    "onGuiFirstEnter": true,
+    "onDrag": true,
+    "onScroll": true
+  },
+  "boxes": [{
+    "name": "win_container",
+    "width": "50%SH",
+    "height": "50%SH",
+    "hAlignment": "CENTER",
+    "vAlignment": "CENTER",
+    "_backgroundColour": "#00FF00AA",
+    "boxes": [{
+      "width": "100%",
+      "_backgroundColour": "#786800FF",
+      "hAlignment": "CENTER",
+      "vAlignment": "from_top_to_bottom",
+      "boxes": [{
+          "name": "topChicken",
+          "_backgroundColour": "#786800FF",
+          "width": "80%",
+          "vAlignment": "FROM_TOP_TO_BOTTOM",
+          "hAlignment": "CENTER",
+          "boxes": [{
+            "name": "chickenContainer",
+            "width": "100%",
+            "height": "23%SH",
+            "hAlignment": "CENTER",
+            "vAlignment": "CENTER",
+            "_backgroundColour": "#FF0000AA",
+            "boxes": [{
+              "name": "avatarImage",
+              "width": "23%sh",
+              "height": "23%sh",
+              "background": {
+                "scale": "fit",
+                "image": "res/images/interface/windows/alertWindow/alert_chicken1.png"
+              }
+            }]
+          }]
+        },
+        {
+          "name": "bubbleContainer",
+          "_backgroundColour": "#108800FF",
+          "width": "100%",
+          "height": "41.0%SH",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "boxes": [{
+              "name": "bubble",
+              "height": "50.60%sh",
+              "_backgroundColour": "#007700AA",
+              "hAlignment": "center",
+              "vAlignment": "top",
+              "boxes": [{
+                  "name": "windowBg",
+                  "sizeBase": "panelContent",
+                  "width": "42.15%sh",
+                  "height": "93.5%",
+                  "_backgroundColour": "#000000B2",
+                  "vAlignment": "top",
+                  "hAlignment": "center",
+                  "class": "windowBackgroundClass"
+                },
+                {
+                  "name": "bgTail",
+                  "width": "21%sh",
+                  "hAlignment": "right",
+                  "_backgroundColour": "#000000B2",
+                  "boxes": [{
+                    "width": "5.6%sh",
+                    "height": "4.860%sh",
+                    "background": {
+                      "image": "res/images/interface/windows/askerWindow/deal_bg_tail.png",
+                      "scale": "fit",
+                      "vAlignment": "bottom"
+                    }
+                  }]
+                },
+                {
+                  "name": "closeButtonContainer",
+                  "width": "48.5%sh",
+                  "height": "5.7%sh",
+                  "hAlignment": "right",
+                  "vAlignment": "bottom",
+                  "boxes": [{
+                    "name": "closeButton",
+                    "class": "buttonClose"
+                  }]
+                }
+              ]
+            },
+            {
+              "name": "alertContentContainer",
+              "height": "155%",
+              "width": "80%",
+              "vAlignment": "from_top_to_bottom",
+              "hAlignment": "CENTER",
+              "_backgroundColour": "#FF0000AA",
+              "boxes": [{
+                  "name": "spacer",
+                  "height": "12.5%sh"
+                },
+                {
+                  "name": "titleContentContiner",
+                  "vAlignment": "center",
+                  "hAlignment": "CENTER",
+                  "maxHeight": "8%SH",
+                  "width": "90%",
+                  "_backgroundColour": "#FF0000AA",
+                  "boxes": [{
+                    "name": "windowTitle",
+                    "width": "100%",
+                    "textAlign": "center",
+                    "textWrap": true,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "font": {
+                      "file": "res/fonts/Loyola.otf",
+                      "colour": "#FF8467FF",
+                      "size": "3.8%sh",
+                      "minSize": "3.6%SH",
+                      "outline": [{
+                          "width": "5%",
+                          "colour": "#503200FF",
+                          "yoffset": "5%"
+                        },
+                        {
+                          "width": "5%",
+                          "colour": "#503200FF"
+                        }
+                      ]
+                    },
+                    "text": "changeNameTitle"
+                  }]
+                },
+                {
+                  "name": "alertTextContainer",
+                  "width": "90%",
+                  "height": "auto",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#00FF00FF",
+                  "boxes": [{
+                    "name": "alertText",
+                    "width": "100%",
+                    "maxHeight": "100%",
+                    "hAlignment": "CENTER",
+                    "vAlignment": "center",
+                    "_backgroundColour": "#FF0000AA",
+                    "textWrap": true,
+                    "textAlign": "left",
+                    "lineSpacing": 0.8,
+                    "font": {
+                      "file": "res/fonts/PTS75F.ttf",
+                      "colour": "#503200FF",
+                      "minSize": "1.5%sh",
+                      "size": "2.4%sh"
+                    },
+                    "text": "changeNameText"
+                  }]
+                },
+                {
+                  "name": "enterTextContainer",
+                  "_backgroundColour": "#789800FF",
+                  "height": "8%sh",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "width": "90%",
+                  "background": {
+                    "vAlignment": "CENTER",
+                    "scale": "fit",
+                    "image": "res/images/interface/commonArt/name_field.png",
+                    "hAlignment": "center"
+                  },
+                  "boxes": [{
+                    "name": "nameText",
+                    "_backgroundColour": "#788800FF",
+                    "height": "8%sh",
+                    "width": "100%",
+                    "textWrap": true,
+                    "textAlign": "center",
+                    "font": {
+                      "file": "res/fonts/Loyola.otf",
+                      "size": "3%sh",
+                      "colour": "#7D5528FF"
+                    },
+                    "vAlignment": "center",
+                    "text": "name Player"
+                  }]
+                },
+
+                {
+                  "name": "hyperTextContainer",
+                  "width": "95%",
+                  "height": "0%",
+                  "hAlignment": "center",
+                  "vAlignment": "from_top_to_bottom",
+                  "boxes": [{
+                      "name": "hyperPrivacyPolicyText",
+                      "maxWidth": "100%",
+                      "height": "3.0%sh",
+                      "hAlignment": "left",
+                      "vAlignment": "top",
+                      "_backgroundColour": "#FF0000AA",
+                      "textAlign": "left",
+                      "class": "button_class",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.9%sh",
+                        "colour": "#0095b2FF",
+                        "decoration": {
+                          "type": "underline",
+                          "colour": "#0095b2FF",
+                          "thickness": 1
+                        }
+                      },
+                      "text": "privacyPolicyText"
+                    },
+                    {
+                      "name": "hyperSpacer",
+                      "width": "10%",
+                      "height": "0.5%sh",
+                      "_backgroundColour": "#FF0000AA"
+                    },
+                    {
+                      "name": "hyperPreferencesTermsText",
+                      "maxWidth": "100%",
+                      "height": "3.0%sh",
+                      "hAlignment": "left",
+                      "vAlignment": "top",
+                      "_backgroundColour": "#FF0000AA",
+                      "textAlign": "left",
+                      "class": "button_class",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.9%sh",
+                        "colour": "#0095b2FF",
+                        "decoration": {
+                          "type": "underline",
+                          "colour": "#0095b2FF",
+                          "thickness": 1
+                        }
+                      },
+                      "text": "PreferencesTermsText"
+                    }
+                  ]
+                },
+                {
+                  "name": "spacer",
+                  "height": "9%"
+                },
+                {
+                  "name": "fbContainer",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#789800FF",
+                  "hidden": false,
+                  "height": "10%sh",
+                  "width": "80%",
+                  "boxes": [{
+                      "name": "enterTextContainer",
+                      "_backgroundColour": "#789800FF",
+                      "height": "10%sh",
+                      "width": "10%sh",
+                      "background": {
+                        "scale": "fit",
+                        "image": "res/images/interface/buttons/composite/btn_nobg_fb.png"
+                      }
+                    },
+                    {
+                      "width": "0.5%sh"
+                    },
+                    {
+                      "name": "fbText",
+                      "_backgroundColour": "#788800FF",
+                      "maxHeight": "99%",
+                      "width": "70%",
+                      "vAlignment": "center",
+                      "textWrap": true,
+                      "textAlign": "left",
+                      "lineSpacing": 0.8,
+                      "font": {
+                        "file": "res/fonts/PTS75F.ttf",
+                        "colour": "#503200FF",
+                        "minSize": "1.5%sh",
+                        "size": "2.4%sh"
+                      },
+
+                      "text": "changeNameHint"
+                    }
+                  ]
+                },
+                {
+                  "name": "buttonsContainerMain",
+                  "width": "100%",
+                  "height": "22%",
+                  "_backgroundColour": "#FF0000AA",
+                  "hAlignment": "center",
+                  "vAlignment": "top",
+                  "boxes": [{
+                    "name": "buttonsContainer",
+                    "_backgroundColour": "#FF0000AA",
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "CENTER",
+                    "boxes": [{
+                      "name": "leftButton",
+                      "width": "18.1%SH",
+                      "height": "8.4%SH",
+                      "hAlignment": "center",
+                      "vAlignment": "CENTER",
+                      "class": "buttonGreenScalable"
+                    }]
+                  }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "spacer",
+          "height": "12%SH"
+        }
+      ]
+    }]
+  }]
+}

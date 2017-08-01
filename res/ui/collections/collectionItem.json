@@ -1,0 +1,105 @@
+{
+  "_vAlignment": "bottom",
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "width": "13.5%sh",
+  "height": "13.0%sh",
+  "_backgroundColour": "#77000077",
+  "boxes": [
+    {
+      "class": "beigeBackground",
+      "height": "11.5%sh",
+      "width": "11.5%sh"
+    },
+    {
+      "name": "backgroundEffectNode",
+      "overflow": "ignore",
+      "width": "100%h",
+      "height": "100%"
+    },
+    {
+      "name": "icon",
+      "height": "10.5633802%sh",
+      "width": "10.5633802%sh",
+      "hAlignment": "right",
+      "vAlignment": "bottom",
+      "_backgroundColour": "#00770033",
+      "background": {
+        "scale": "fit",
+        "images": {
+          "normal": "res/images/icons/resourcesIcons/res_wheat.png"
+        }
+      },
+      "boxes": [
+        {
+          "name": "checkMark",
+          "width": "4.55%sh",
+          "height": "3.7%sh",
+          "hidden": "true",
+          "background": {
+            "scale": "fit",
+            "images": {
+              "normal": "res/images/interface/commonArt/sign_ok.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "vAlignment": "TOP",
+      "hAlignment": "LEFT",
+      "width": "13.5%sh",
+      "height": "12.0%sh",
+      "_backgroundColour": "#77000077",
+      "boxes": [
+        {
+          "name": "searchButton",
+          "class": "button_class",
+          "height": "5.070422535211268%sh",
+          "width": "5.492957746478873%sh",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "hidden": true,
+          "background": {
+            "image": "res/images/interface/mainScreen/search_blue.png",
+            "scale": "fit"
+          }
+        }
+      ]
+    },
+    {
+      "width": "13.0%sh",
+      "height": "13.0%sh",
+      "vAlignment": "BOTTOM",
+      "hAlignment": "right",
+      "_backgroundColour": "#77000077",
+      "boxes": [
+        {
+          "name": "count",
+          "maxWidth": "90%",
+          "height": "5%sh",
+          "vAlignment": "bottom",
+          "hAlignment": "center",
+          "_backgroundColour": "#77000077",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "3.17%SH",
+            "colour": "#ffffffFF",
+            "outline": [
+              {
+                "width": "4%",
+                "colour": "#503200ff",
+                "yoffset": "5%"
+              },
+              {
+                "width": "4%",
+                "colour": "#503200ff"
+              }
+            ]
+          },
+          "_text": "0/10"
+        }
+      ]
+    }
+  ]
+}

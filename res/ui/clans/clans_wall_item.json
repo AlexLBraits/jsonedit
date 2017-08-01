@@ -1,0 +1,220 @@
+{
+    "name": "clanWallMessageContainer",
+    "hAlignment": "left",
+    "vAlignment": "from_top_to_bottom",
+    "width": 350,
+    "margin": {
+        "top": -12
+    },
+    "boxes": [
+        {
+            "name": "lineTop",
+            "width": 350,
+            "height": 40,
+            "margin": {
+                "left": 10
+            },
+            "background": {
+                "scale": "fit",
+                "image": "res/images/interface/windows/leaderboardWindow/line.png"
+            }
+        },
+        {
+            "name": "text_block",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "margin": {
+                "top": -25
+            },
+            "handlers": {
+                "onControlEventBegan": true,
+                "onControlEventEnded": true,
+                "onTap": true
+            },
+            "boxes": [
+                {
+                    "name": "message_block",
+                    "display": "none",
+                    "boxes": [
+                        {
+                            "width": 55,
+                            "height": 55,
+                            "vAlignment": "top",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "level",
+                                    "width": 55,
+                                    "height": 55,
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "textAlign": "center",
+                                    "text": "45",
+                                    "background": {
+                                        "image": "res/images/interface/windows/leaderboardWindow/lvl_friend.png"
+                                    },
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 20,
+                                        "colour": "#ffffffff",
+                                        "outline": {
+                                            "colour": "#6e2300ff",
+                                            "width": 1.5,
+                                            "yoffset": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "time",
+                                    "width": 290,
+                                    "text": "12:40",
+                                    "hAlignment": "right",
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 13,
+                                        "colour": "#7d5528ff"
+                                    }
+                                },
+                                {
+                                    "name": "nickname",
+                                    "maxWidth": 280,
+                                    "height": 20,
+                                    "margin": {
+                                        "top": -2
+                                    },
+                                    "width": 280,
+                                    "text": "Суууууррка",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 18,
+                                        "minSize": 18,
+                                        "colour": "#7d5528ff"
+                                    }
+                                },
+                                {
+                                    "name": "description",
+                                    "maxWidth": 280,
+                                    "width": 280,
+                                    "margin": {
+                                        "top": -5
+                                    },
+                                    "textWrap": true,
+                                    "text": "Your nickname  gjsadg jads;g asdklg asdgj;l akjsdglkadsg adsgjlkasjdgla;dsg adgsgjk asdjg; kajgkladjsglk ajdgl;jadgl;adsg",
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 15,
+                                        "colour": "#7d5528ff"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "system_block",
+                    "display": "block",
+                    "boxes": [
+                        {
+                            "width": 55,
+                            "height": 40,
+                            "padding": {
+                                "left": 10,
+                                "top": 5
+                            },
+                            "vAlignment": "top",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "alert_icon",
+                                    "width": 25,
+                                    "height": 40,
+
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "textAlign": "center",
+                                    "background": {
+                                        "image": "res/images/interface/windows/clans/clans_wall/icon_alert.png"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "time",
+                                    "width": 290,
+                                    "text": "12:40",
+                                    "hAlignment": "right",
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 13,
+                                        "colour": "#7d5528ff"
+                                    }
+                                },
+                                {
+                                    "name": "description",
+                                    "maxWidth": 280,
+                                    "width": 280,
+                                    "margin": {
+                                        "top": -3
+                                    },
+                                    "textWrap": true,
+                                    "text": "Your nickname  gjsadg jads;g asdklg asdgj;l akjsdglkadsg adsgjlkasjdgla;dsg adgsgjk asdjg; kajgkladjsglk ajdgl;jadgl;adsg",
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 15,
+                                        "colour": "#0066ccff"
+                                    }
+                                },
+                                {
+                                    "name": "showButton",
+                                    "width": 280,
+                                    "height": 35,
+                                    "display": "block",
+                                    "margin": {
+                                        "top": 10
+                                    },
+
+                                    "class": "btn_tap_anim",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        "res/ui/buttons/button_green_44.json",
+                                        {
+                                            "name": "showButtonText",
+                                            "maxWidth": "30%",
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 20,
+                                                "colour": "#ffffffff",
+                                                "outline": {
+                                                    "width": 1.5,
+                                                    "colour": "#3c5000ff",
+                                                    "yoffset": 1
+                                                }
+                                            },
+                                            "hAlignment": "center",
+                                            "textAlign": "center",
+                                            "text": "showButton",
+                                            "padding": {
+                                                "bottom": 5.5
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

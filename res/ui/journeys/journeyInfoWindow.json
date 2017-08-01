@@ -1,0 +1,184 @@
+{
+  "name": "root",
+  "width": "100%",
+  "vAlignment": "bottom",
+  "hAlignment": "center",
+  "_backgroundColour": "#FFFF0078",
+  "boxes": [
+    {
+      "name": "infoContainer",
+      "height": "90%",
+      "width": "65%sh",
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "_backgroundColour": "#00FF0033",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "boxes": [
+        {
+          "width": "46%sh",
+          "height": "10%sh",
+    	  "hAlignment": "center",
+	      "vAlignment": "center",
+          "boxes": [
+            {
+              "width": "46%sh",
+              "height": "10%sh",
+              "_backgroundColour": "#0000FFAA",
+              "class": "windowTitleClass"
+            },
+            {
+              "name": "closeButtonContainer",
+              "width": "120%",
+              "height": "25%",
+              "hAlignment": "right",
+              "vAlignment": "bottom",
+              "_backgroundColour": "#00FF0033",
+              "boxes": [
+                {
+                  "name": "closeButton",
+                  "class": "buttonClose"
+                }
+              ]
+            }
+          ]
+        },
+        "_res/ui/journeys/journeyInfo.json",
+        "_res/ui/journeys/journeyInfo.json",
+        "_res/ui/journeys/journeyInfo.json"
+      ]
+    },
+    {
+      "name": "shopPanel",
+      "hAlignment": "center",
+      "vAlignment": "top",
+      "width": "100%",
+      "height": "17%sh",
+      "backgroundColour": "#00FF0078",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true,
+        "onMoved": true
+      },
+      "boxes": [
+        {
+          "name": "journeyAvatarBackground",
+          "width": "100%",
+          "height": "100%",
+          "vAlignment": "bottom",
+          "sizeBase": "shopContent",
+          "background": {
+            "image": "res/images/interface/bottomMenu/bttm_bg.png",
+            "scale": "stretch"
+          }
+        },
+{
+              "height": "0%",
+              "width": "97%",
+              "vAlignment": "bottom",
+              "hAlignment": "right",
+              "boxes": [
+                {
+                  "name": "journeyAvatar",
+                  "width": "28.73%sh",
+                  "height": "57.46%sh",
+                  "vAlignment": "center",
+                  "background": {
+                    "image": "res/images/icons/npcIcons/dialogBubbles/frog_1.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            },
+        {
+          "width": "100%",
+          "height": "17.5%sh",
+          "_backgroundColour": "#FF00FF45",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "bottom",
+          "boxes": [
+            {
+              "height": "100%",
+              "width": "50%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "_backgroundColour": "#00FF0033",
+              "boxes": [
+                {
+                  "height": "1%sh"
+                },
+                {
+                  "name": "needResLabel",
+                  "height": "3.0%SH",
+                  "width": "90%sh",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "textAlign": "center",
+                  "lineSpacing": 0.75,
+                  "_backgroundColour": "#00FF0055",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.64%sh",
+                    "colour": "#FFFFFFFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200FF",
+                        "yoffset": "4%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200FF"
+                      }
+                    ]
+                  },
+                  "_text": "Journey_need_res"
+                },
+                {
+                  "name": "needResscroll",
+                  "height": "100%",
+                  "width": "25.5%sh",
+                  "hAlignment": "by_height",
+                  "vAlignment": "by_height",
+                  "_backgroundColour": "#00FF0033",
+                  "boxes": [
+                    "res/ui/journeys/journeyNeedResCell.json",
+                    "res/ui/journeys/journeyNeedResCell.json",
+                    "res/ui/journeys/journeyNeedResCell.json",
+                    "res/ui/journeys/journeyNeedResCell.json",
+                    "res/ui/journeys/journeyNeedResCell.json",
+                    "res/ui/journeys/journeyNeedResCell.json"
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "100%",
+              "width": "50%",
+              "hAlignment": "from_right_to_left",
+              "vAlignment": "center",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+              	{
+              		"width": "25%h"
+              	},
+                {
+                  "name": "okButton",
+                  "_height": "20%",
+                  "height": "50%",
+                  "width": "50%H",
+                  "minWidth": "20%SH",
+                  "minHeight": "8%SH",
+                  "_backgroundColour": "#33000075",
+                  "class": "buttonGreenScalable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

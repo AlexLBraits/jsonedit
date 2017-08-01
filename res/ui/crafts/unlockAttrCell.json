@@ -1,0 +1,159 @@
+{
+	"name": "attributeContainer",
+	"width": "100%",
+	"height": "7%SH",
+	"minHeight": "5.185185185185185%SW",
+	"vAlignment": "CENTER",
+	"hAlignment": "CENTER",
+	"boxes": [
+		{
+			"name": "attributeContainerHorizont",
+			"width": "100%",
+			"vAlignment": "CENTER",
+			"hAlignment": "FROM_LEFT_TO_RIGHT",
+			"boxes": [
+				{
+					"name":"spacer",
+					"width":"3%SH",
+					"minWidth":"2.222222222222222%SW"
+				},
+				{
+					"name": "iconResCell",
+					"width": "100%H",
+					"height": "6.866%SH",
+					"minHeight": "5.085925925925926%SW",
+					"background": {
+						"hAlignment": "left",
+						"scale": "fit",
+						"images": {
+							"normal": "res/images/interface/commonArt/icon_time.png"
+						}
+					}
+				},
+				{
+					"name": "attributeTextContainer",
+					"width":"auto",
+					"hAlignment": "LEFT",
+					"vAlignment": "FROM_TOP_TO_BOTTOM",
+					"boxes":[
+						{
+							"name": "upgradeText",
+							"maxWidth": "100%",
+							"height": "2.640845%SH",
+							"minHeight": "1.9561814814814815%SW",
+							"vAlignment": "CENTER",
+							"textAlign": "CENTER",
+							"text":"Time to upgrade:",
+							"font": {
+								"file": "res/fonts/Loyola.otf",
+								"size": "2.640845%SH",
+								"minSize": "1.9561814814814815%SW",
+										"colour": "#FFFFFFFF",
+										"outline": [
+											{
+												"width": "4%",
+												"colour": "#503200FF",
+												"yoffset": "4%"
+											},
+											{
+												"width": "4%",
+												"colour": "#503200FF"
+											}
+										]
+							}
+						},
+						{
+							"name": "attribeteText",
+							"width": "100%",
+							"height": "3.69718%SH",
+							"minHeight": "2.7386518518518517%SW",
+							"hAlignment": "FROM_LEFT_TO_RIGHT",
+							"vAlignment": "CENTER",
+							"boxes":[
+								{
+									"name":"oldText",
+									"minWidth":"5%",
+									"_maxWidth":"45%",
+									"height": "3.69718%SH",
+									"minHeight": "2.7386518518518517%SW",
+									"textAlign": "CENTER",
+									"hAlignment":"CENTER",
+									"vAlignment":"CENTER",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "3.69718%SH",
+										"minSize": "2.7386518518518517%SW",
+										"colour": "#FFFFFFFF",
+										"outline": [
+											{
+												"width": "4%",
+												"colour": "#503200FF",
+												"yoffset": "4%"
+											},
+											{
+												"width": "4%",
+												"colour": "#503200FF"
+											}
+										]
+									},
+									"text": "123 m"
+								},
+								{
+									"name": "arrowText",
+									"height": "3.69718%SH",
+									"minHeight": "2.7386518518518517%SW",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "3.69718%SH",
+										"minSize": "2.7386518518518517%SW",
+										"colour": "#FFFFFFFF",
+										"outline": [
+											{
+												"width": "4%",
+												"colour": "#503200FF",
+												"yoffset": "4%"
+											},
+											{
+												"width": "4%",
+												"colour": "#503200FF"
+											}
+										]
+									},
+									"text": " > "
+								},
+								{
+									"name":"newText",
+									"minWidth": "5%",
+									"_maxWidth":"45%",
+									"height": "3.69718%SH",
+									"minHeight": "2.7386518518518517%SW",
+									"textAlign": "left",
+									"hAlignment":"left",
+									"vAlignment":"CENTER",
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "3.69718%SH",
+										"minSize": "2.7386518518518517%SW",
+										"colour": "#8cd214FF",
+										"outline": [
+											{
+												"width": "4%",
+												"colour": "#503200FF",
+												"yoffset": "4%"
+											},
+											{
+												"width": "4%",
+												"colour": "#503200FF"
+											}
+										]
+									},
+									"text": "345"
+								}
+							]
+						}
+					]			
+				}
+			]
+		}
+	]
+}

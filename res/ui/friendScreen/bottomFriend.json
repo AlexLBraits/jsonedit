@@ -1,0 +1,371 @@
+{
+    "height": 0,
+    "width": "100%",
+    "vAlignment": "BOTTOM",
+    "hAlignment": "LEFT",
+    "overflow": "show",
+    "boxes": [
+        {
+            "name": "goHomeButton2",
+            "class": "btn_tap_highlight_anim",
+            "width": 124,
+            "height": 124,
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_home.png"
+                },
+                "vAlignment": "center",
+                "hAlignment": "center"
+            },
+            "vAlignment": "top",
+            "hAlignment": "right",
+            "handlers": {
+                "onControlEventBegan": true,
+                "onControlEventEnded": true
+            }
+        },
+        {
+            "name": "bottomFriend",
+            "height": 0,
+            "width": "100%",
+            "vAlignment": "BOTTOM",
+            "hAlignment": "center",
+            "overflow": "show",
+            "boxes": [
+                {
+                    "name": "actualFriendPanel",
+                    "width": "100%",
+                    "vAlignment": "BOTTOM",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+                            "hAlignment": "CENTER",
+                            "boxes": [
+                                {
+                                    "name": "notifiers_container",
+                                    "vAlignment": "FROM_BOTTOM_TO_TOP",
+                                    "hAlignment": "LEFT"
+                                }
+                            ],
+                            "margin": {
+                                "bottom": 180
+                            },
+                            "width": "100%"
+                        },
+                        {
+                            "name": "topTabsContainer",
+                            "width": 0,
+                            "height": 47,
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "top",
+                            "margin": {
+                                "bottom": 128
+                            },
+                            "boxes": [
+                                {
+                                    "name": "inactiveTabsContainer",
+                                    "width": 0,
+                                    "height": 47,
+                                    "hidden": true,
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "top",
+                                    "margin": {
+                                        "bottom": 128
+                                    },
+                                    "_boxes": [
+                                        "res/ui/friendScreen/bottomPanelTab.json",
+                                        "res/ui/friendScreen/bottomPanelTab.json",
+                                        "res/ui/friendScreen/bottomPanelTab.json"
+                                    ]
+                                },
+                                {
+                                    "name": "hideFriendPanelButton",
+                                    "class": "btn_tap_anim",
+                                    "width": 64,
+                                    "height": 64,
+                                    "hidden": true,
+                                    "margin": {
+                                        "left": -20,
+                                        "top": -15
+                                    },
+                                    "background": {
+                                        "image": "res/images/interface/Island2Art/buttons/bttn_close.png"
+                                    },
+                                    "handlers": {
+                                        "onControlEventBegan": true,
+                                        "onControlEventEnded": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "bg",
+                            "width": "100%",
+                            "height": 141,
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/panel_bg.png"
+                                },
+                                "scale": "stretch",
+                                "vAlignment": "bottom"
+                            }
+                        },
+                        {
+                            "name": "topTabsContainer",
+                            "width": 0,
+                            "height": 47,
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "top",
+                            "margin": {
+                                "bottom": 128
+                            },
+                            "boxes": [
+                                {
+                                    "name": "activeTabsContainer",
+                                    "width": 0,
+                                    "height": 47,
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "top",
+                                    "margin": {
+                                        "bottom": 128
+                                    },
+                                    "_boxes": [
+                                        "res/ui/friendScreen/bottomPanelTab.json",
+                                        "res/ui/friendScreen/bottomPanelTab.json",
+                                        "res/ui/friendScreen/bottomPanelTab.json"
+                                    ]
+                                },
+                                {
+                                    "name": "fakespacer",
+                                    "width": 64,
+                                    "height": 64,
+                                    "hidden": true,
+                                    "margin": {
+                                        "left": -20,
+                                        "top": -15
+                                    }
+                                }
+                            ]
+                        },
+                        "res/ui/friendScreen/friendsButton.json",
+                        {
+                            "name": "panel",
+                            "width": "100%",
+                            "height": 141,
+                            "overflow": "show",
+                            "vAlignment": "bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "friendsCover",
+                                    "width": "100%",
+                                    "height": 125,
+                                    "handlers": {
+                                        "onControlEventBegan": true,
+                                        "onControlEventEnded": true,
+                                        "onTap": true
+                                    }
+                                },
+                                {
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "vAlignment": "bottom",
+                                    "hAlignment": "from_left_to_right",
+                                    "boxes": [
+                                        {
+                                            "name": "goHomeButton",
+                                            "class": "btn_tap_highlight_anim",
+                                            "width": 124,
+                                            "height": 124,
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_mygift.png"
+                                                },
+                                                "vAlignment": "center",
+                                                "hAlignment": "center"
+                                            },
+                                            "vAlignment": "top",
+                                            "hAlignment": "right",
+                                            "boxes": [
+                                                {
+                                                    "margin": {
+                                                        "left": 15,
+                                                        "bottom": 15
+                                                    },
+                                                    "width": 47,
+                                                    "height": 29,
+                                                    "vAlignment": "center",
+                                                    "hAlignment": "center",
+                                                    "name": "giftsBadgeContainer",
+                                                    "hidden": "true",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/token_1.png"
+                                                        },
+                                                        "hAlignment": "center"
+                                                    },
+                                                    "boxes": [
+                                                        {
+                                                            "name": "badgeLabel",
+                                                            "textAlign": "center",
+                                                            "vAlignment": "center",
+                                                            "hAlignment": "center",
+                                                            "width": "100%",
+                                                            "height": "100%",
+                                                            "padding": {
+                                                                "bottom": 2
+                                                            },
+                                                            "font": {
+                                                                "size": 20,
+                                                                "file": "res/fonts/loyola.otf",
+                                                                "colour": "#ffffffff",
+                                                                "outline": {
+                                                                    "width": 1,
+                                                                    "colour": "#910005ff",
+                                                                    "yoffset": 1
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "width": 51,
+                                            "height": 130,
+                                            "margin": {
+                                                "bottom": 15
+                                            },
+                                            "vAlignment": "from_bottom_to_top",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "height": 49,
+                                                    "width": 51,
+                                                    "name": "toBeginningButton",
+                                                    "class": "btn_tap_highlight",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_LL.png",
+                                                            "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_LL_gray.png"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "height": 49,
+                                                    "width": 39,
+                                                    "name": "leftButton",
+                                                    "class": "btn_tap_highlight",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_L.png",
+                                                            "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_L_gray.png"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "width": "auto",
+                                            "height": 0,
+                                            "hAlignment": "left",
+                                            "vAlignment": "bottom",
+                                            "name": "friendContainerScrollAnim",
+                                            "margin": {
+                                                "bottom": 7
+                                            },
+                                            "boxes": [
+                                                {
+                                                    "name": "friendsScroll",
+                                                    "width": "100%",
+                                                    "height": 130,
+                                                    "vAlignment": "bottom",
+                                                    "hAlignment": "from_left_to_right",
+                                                    "overflow": "hidden",
+                                                    "_boxes": [
+                                                        "res/ui/friendScreen/searchFriendsButton.json",
+                                                        "res/ui/friendScreen/friendsPanelCell.json",
+                                                        "res/ui/friendScreen/friendsPanelCell.json",
+                                                        "res/ui/friendScreen/friendsPanelCell.json",
+                                                        "res/ui/friendScreen/friendsPanelCell.json"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "proxyFriendsScroll",
+                                                    "width": "100%",
+                                                    "height": 120,
+                                                    "overflow": "scroll",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "proxyFriendsScrollFriendList",
+                                                            "height": "100%"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "animContainer",
+                                                    "width": "100%",
+                                                    "height": 120,
+                                                    "hAlignment": "center",
+                                                    "vAlignment": "center",
+                                                    "font": {
+                                                        "file": "res/fonts/loyola.otf",
+                                                        "size": 25,
+                                                        "maxSize": 25,
+                                                        "colour": "#ffffffff",
+                                                        "outline": {
+                                                            "width": 2,
+                                                            "colour": "#553c1eff",
+                                                            "yoffset": 1
+                                                        }
+                                                    },
+                                                    "textWrap": true,
+                                                    "textAlign": "center"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "width": 51,
+                                            "height": 130,
+                                            "margin": {
+                                                "bottom": 15
+                                            },
+                                            "vAlignment": "from_bottom_to_top",
+                                            "hAlignment": "center",
+                                            "boxes": [
+                                                {
+                                                    "height": 49,
+                                                    "width": 51,
+                                                    "name": "toEndButton",
+                                                    "class": "btn_tap_highlight",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/hd/bttn_arrow_RR.png",
+                                                            "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_RR_gray.png"
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "height": 49,
+                                                    "width": 39,
+                                                    "name": "rightButton",
+                                                    "class": "btn_tap_highlight",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_R.png",
+                                                            "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_R_gray.png"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "name": "giftListCell",
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "width": 430,
+    "height": 85,
+    "boxes": [
+        {
+            "width": 430,
+            "height": "100%",
+            "vAlignment": "top",
+            "hAlignment": "center",
+            "boxes": [
+                {
+                    "width": "100%",
+                    "height": 0,
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "top",
+                    "margin": {
+                        "top": 0
+                    },
+                    "boxes": [
+                        {
+                            "width": 0,
+                            "height": 0,
+                            "hAlignment": "center",
+                            "vAlignment": "top",
+                            "margin": {
+                                "left": 12
+                            },
+                            "boxes": [
+                                {
+                                    "name": "avatarNode",
+                                    "width": 0,
+                                    "height": 0,
+                                    "vAlignment": "center",
+                                    "hAlignment": "left",
+                                    "margin": {
+                                        "top": 6
+                                    },
+                                    "boxes": [
+                                        {
+                                            "name": "avatarButton",
+                                            "margin": {
+                                                "left": 11,
+                                                "top": 3
+                                            },
+                                            "width": 55,
+                                            "height": 55,
+                                            "vAlignment": "top",
+                                            "hAlignment": "left",
+                                            "background": {
+                                                "scale": "stretch",
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/social/avatars/fake_avatar.png"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "width": 78,
+                                            "height": 78,
+                                            "vAlignment": "top",
+                                            "hAlignment": "right",
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/giftsWindow/frame_avatar.png"
+                                                }
+                                            },
+                                            "boxes": [
+                                                {
+                                                    "margin": {
+                                                        "right": -12,
+                                                        "top": -7
+                                                    },
+                                                    "width": 55,
+                                                    "height": 55,
+                                                    "vAlignment": "center",
+                                                    "hAlignment": "center",
+                                                    "background": {
+                                                        "images": {
+                                                            "normal": "res/images/interface/Island2Art/giftsWindow/lvl_friend.png"
+                                                        }
+                                                    },
+                                                    "boxes": [
+                                                        {
+                                                            "name": "level",
+                                                            "width": 0,
+                                                            "height": 0,
+                                                            "textAlign": "center",
+                                                            "font": {
+                                                                "file": "res/fonts/loyola.otf",
+                                                                "size": 20,
+                                                                "colour": "#ffffffFF",
+                                                                "outline": {
+                                                                    "width": 1.5,
+                                                                    "colour": "#6e2300ff",
+                                                                    "yoffset": 1
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "width": 100,
+                            "height": 0,
+                            "vAlignment": "from_top_to_bottom",
+                            "hAlignment": "left",
+                            "margin": {
+                                "left": 7
+                            },
+                            "boxes": [
+                                {
+                                    "name": "nameLabel",
+                                    "maxWidth": 100,
+                                    "height": 0,
+                                    "textAlign": "left",
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 15,
+                                        "minSize": 12,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1.5,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 1
+                                        }
+                                    },
+                                    "margin": {
+                                        "top": 5
+                                    }
+                                },
+                                {
+                                    "margin": {
+                                        "top": 0
+                                    },
+                                    "width": 105,
+                                    "height": 0,
+                                    "name": "giftDesc",
+                                    "textAlign": "left",
+                                    "textWrap": true,
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "colour": "#7d5528FF",
+                                        "size": 13,
+                                        "outline": {
+                                            "width": 0,
+                                            "colour": "#ffffffff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "giftIcon",
+                            "margin": {
+                                "left": 3,
+                                "top": 5
+                            },
+                            "width": 78,
+                            "height": 78,
+                            "background": {
+                                "vAlignment": "center",
+                                "hAlignment": "center",
+                                "scale": "contain"
+                            }
+                        },
+                        {
+                            "width": "auto",
+                            "height": "100%",
+                            "vAlignment": "top",
+                            "hAlignment": "right",
+                            "boxes": [
+                                {
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "margin": {
+                                        "top": 5
+                                    },
+                                    "boxes": [
+                                        {
+                                            "name": "actionButton",
+                                            "class": "btn_tap_highlight_anim",
+                                            "width": 127,
+                                            "maxWidth": 127,
+                                            "height": 55,
+                                            "vAlignment": "center",
+                                            "hAlignment": "center",
+                                            "padding": {
+                                                "left": 9,
+                                                "right": 9,
+                                                "bottom": 5
+                                            },
+                                            "background": {
+                                                "_images": {
+                                                    "normal": "res/images/interface/Island2Art/buttons/solidButtons/bttn_blue_55.png"
+                                                },
+                                                "scale": "stretch"
+                                            },
+                                            "textAlign": "center",
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 22,
+                                                "colour": "#FFFFFFFF",
+                                                "outline": {
+                                                    "width": 1.5,
+                                                    "colour": "#00325aff",
+                                                    "yoffset": 1
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "removeButton",
+                                    "class": "btn_tap_highlight",
+                                    "width": 22,
+                                    "height": 22,
+                                    "margin": {
+                                        "right": 12,
+                                        "top": 0
+                                    },
+                                    "vAlignment": "top",
+                                    "background": {
+                                        "images": {
+                                            "normal": "res/images/interface/Island2Art/buttons/bttn_x.png"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": 362,
+                    "height": 20,
+                    "overflow": "show",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/giftsWindow/line_01.png"
+                        }
+                    },
+                    "margin": {
+                        "top": 66
+                    }
+                }
+            ]
+        }
+    ]
+}

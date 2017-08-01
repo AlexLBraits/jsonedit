@@ -1,0 +1,58 @@
+{
+    "width": "100%",
+    "height": "100%",
+    "boxes": [
+        {
+            "name": "logo",
+            "vAlignment": "STACK",
+            "hAlignment": "STACK",
+            "width": "100%",
+            "height": "100%",
+            "boxes": [
+                {
+                    "name": "background",
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clans_wall/bg3.png",
+                        "scale": "fit"
+                    }
+                },
+                {
+                    "name": "frame",
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clans_wall/frame3.png",
+                        "scale": "fit"
+                    }
+                },
+                {
+                    "name": "image",
+                    "vAlignment": "top",
+                    "hAlignment": "center",
+                    "background": {
+                        "image": "res/images/interface/Island2Art/clans_wall/pic_palms.png",
+                        "scale": "fit"
+                    },
+                    "boxes": [
+                        {
+                            "width": "100%",
+                            "height": "85%w",
+                            "hAlignment": "RIGHT",
+                            "vAlignment": "BOTTOM",
+                            "boxes": [
+                                {
+                                    "name": "lock",
+                                    "hidden": false,
+                                    "width": "50%w",
+                                    "height": "50%h",
+                                    "background": {
+                                        "image": "res/images/interface/Island2Art/clans_wall/lock.png",
+                                        "scale": "fit"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

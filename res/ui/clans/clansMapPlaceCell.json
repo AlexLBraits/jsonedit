@@ -1,0 +1,78 @@
+{
+	"name":"middle_panel",
+	"width":120,
+	"height":84,
+	"hAlignment":"center",
+	"vAlignment":"from_top_to_bottom",
+    "class": "cover_layer",
+	"boxes":[
+		{
+			"name":"playerName",
+			"maxWidth": 120,
+			"height": 20,
+            "textAlign": "center",
+            "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 14,
+                "minSize": 14,
+                "colour": "#FFFFFFFF",
+                "outline":[ 
+                    {
+                        "width": 1,
+                        "colour": "#503200FF",
+                        "yoffset":1
+                    },
+                    {
+                        "width": 1,
+                        "colour": "#503200FF" 
+                    }
+                ]
+            }
+		},
+		{
+			"name":"placeBtn",
+			"width":69,
+			"height":64,
+			"hAlignment": "center",
+            "vAlignment": "center",
+            "background":{
+                "images":{
+                    "normal": "res/images/interface/windows/clans/clanMap/circles_small.png",
+                    "subTexture": "res/images/interface/windows/clans/clanMap/circles_small.png"
+                },
+                "scale":"fit",
+                "shaders": {
+                    "all": {
+                        "psh": "res/shaders/cut_circle_avatar.psh",
+                        "vsh": "res/shaders/texture.vsh"
+                    }
+                }
+            },
+			"boxes": [
+				{
+					"name":"placeLabel",
+					"maxWidth": 65,
+					"height": 0,
+                    "textAlign": "center",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": 18,
+                        "minSize": 10,
+                        "colour": "#FFFFFFFF",
+                        "outline":[ 
+                            {
+                                "width": 1,
+                                "colour": "#503200FF",
+                                "yoffset":1
+                            },
+                            {
+                                "width": 1,
+                                "colour": "#503200FF" 
+                            }
+                        ]
+                    }
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"name": "root",
+    "vAlignment": "center",
+    "hAlignment": "from_left_to_right",
+    "boxes": [
+    	{
+    		"name": "leftArrow",
+    		"width": "3.35%sh",
+			"height": "4.93%sh",
+			"class": "button_class",
+			"background": {
+				"image":  "res/images/interface/buttons/bttn_arrow_left.png",
+				"scale": "fit"
+			}
+    	},
+        {
+           
+        	"hAlignment": "center",
+            "vAlignment": "center",
+            "width": "49.68%sh",
+            "height":"16.73%sh",
+            "boxes": [
+            	{
+            		"height": "100%",
+            		"maxWidth": "100%",
+					"name": "craftSlotsContainer",
+            		"hAlignment": "from_left_to_right",
+            		"overflow": "hidden",
+            		"stepHScroll": "12.42%sh",
+					"type_": "Scroller",
+            		"_boxes": [
+						"res/ui/crafts/craftSlot.json",
+						"res/ui/crafts/craftSlot.json",
+						"res/ui/crafts/craftSlot.json",
+						"res/ui/crafts/craftSlot.json",
+						"res/ui/crafts/craftSlot.json"
+					]
+            	}
+            ]
+        },
+        {
+        	"name": "rightArrow",
+    		"width": "3.35%sh",
+			"height": "4.93%sh",
+			"class": "button_class",
+			"background": {
+				"image":  "res/images/interface/buttons/bttn_arrow_right.png",
+				"scale": "fit"
+			}
+        }
+    ]
+}

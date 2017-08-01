@@ -14,7 +14,6 @@ SOURCES += main.cpp \
     jsonvalue/schema.cpp \
     jsonvalue/stringutils.cpp \
     jsonvalue/value.cpp \
-    moc_mainwindow.cpp \
     jsonvalue/3rdparty/jsmn/jsmn.c \
     jsonvalue/3rdparty/utf8/utf8.c
 

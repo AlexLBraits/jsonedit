@@ -1,0 +1,59 @@
+{
+    "name": "resBoxItem",
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "_backgroundColour": "#00FF0078",
+    "height": "5.92%SH",
+    "minHeight":"4.5%SW",
+    "width": "5.92%SH",
+    "minWidth":"4.5%SW",
+    "boxes": [
+        {
+            "name": "resBoxIcon",
+            "width": "4.96478873%SH",
+            "minWidth":"4%SW",
+            "height": "4.96478873%SH",
+            "minHeight":"4%SW",
+            "vAlignment": "from_top_to_bottom",
+            "hAlignment": "center",
+            "_backgroundColour": "#ff000078",
+            "background": {
+                "_image": "res/images/icons/attributeIcons/resBoxPanel/production_oil.png",
+                "scale": "fit",
+                "hAlignment": "center",
+                "vAlignment": "center"
+            },
+            "boxes": [
+                {
+                    "name": "spacer",
+                    "height": "3.5%SH",
+                    "minHeight":"2.5%SW",
+                },
+                {
+                    "name": "resBoxCount",
+                    "textAlign": "center",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "text": "256",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.5%SH",
+                        "minSize":"2%SW",
+                        "colour": "#ffffffFF",
+                        "outline": [
+                            {
+                                "width": "5%",
+                                "colour": "#503200ff",
+                                "yoffset": "5%"
+                            },
+                            {
+                                "width": "5%",
+                                "colour": "#503200ff"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

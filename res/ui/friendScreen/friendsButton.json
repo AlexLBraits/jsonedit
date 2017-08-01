@@ -1,0 +1,109 @@
+{
+    "name": "friendsButton",
+    "minWidth": 102,
+    "height": 47,
+    "hAlignment": "center",
+    "vAlignment": "bottom",
+    "background": {
+        "images": {
+            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/tab_on.png",
+            "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/tab_on.png"
+        },
+        "scale": "window",
+        "corner": [
+            51,
+            24
+        ]
+    },
+    "padding": {
+        "left": 30,
+        "right": 30,
+        "bottom": 5
+    },
+    "margin": {
+        "left": -8,
+        "right": -8,
+        "bottom": 128
+    },
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true
+    },
+    "boxes": [
+        {
+            "width": 0,
+            "height": 25,
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "tabText",
+                    "width": 0,
+                    "height": 35,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "font": {
+                        "size": 30,
+                        "file": "res/fonts/loyola.otf",
+                        "colour": "#7d5528ff",
+                        "outline": {
+                            "colour": "#ffffffff",
+                            "yoffset": 1.0
+                        }
+                    },
+                    "text": "friends_list_friends_tab"
+                }
+            ]
+        },
+        {
+            "width": "100%",
+            "height": 47,
+            "hAlignment": "left",
+            "vAlignment": "top",
+            "boxes": [
+                {
+                    "margin": {
+                        "left": -34,
+                        "top": 7
+                    },
+                    "width": 47,
+                    "height": 29,
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "name": "badgeContainer",
+                    "hidden": "true",
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/token_1.png"
+                        },
+                        "hAlignment": "center"
+                    },
+                    "boxes": [
+                        {
+                            "name": "badgeLabel",
+                            "textAlign": "center",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "width": "100%",
+                            "height": "100%",
+                            "padding": {
+                                "bottom": 2
+                            },
+                            "font": {
+                                "size": 20,
+                                "file": "res/fonts/loyola.otf",
+                                "colour": "#ffffffff",
+                                "outline": {
+                                    "width": 1,
+                                    "colour": "#910005ff",
+                                    "yoffset": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

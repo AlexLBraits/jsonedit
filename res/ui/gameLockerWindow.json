@@ -1,0 +1,86 @@
+{
+  "name": "cover",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "padding": 0,
+  "boxes": [{
+    "name": "gameLockerWindow",
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "width": 500,
+    "minHeight": 222,
+    "height": 0,
+    "background": {
+      "scale": "window",
+      "corner": [
+        111,
+        111
+      ],
+      "images": {
+        "normal": "res/images/interface/commonArt/win/win.png"
+      }
+    },
+    "boxes": [
+      {
+        "vAlignment": "TOP",
+        "hAlignment": "RIGHT",
+        "width": "100%",
+        "height": 0,
+        "boxes": [{
+          "name": "closeButton",
+          "class": "buttonClose",
+          "margin": {
+            "right": 1,
+            "top": -8
+          }
+        }]
+      },
+      {
+        "width": "100%",
+        "hAlignment": "center",
+        "vAlignment": "bottom",
+        "height": 45,
+        "boxes": [{
+          "class": "windowTitleClass"
+        }]
+      },
+      {
+        "hAlignment": "CENTER",
+        "vAlignment": "FROM_TOP_TO_BOTTOM",
+        "padding": {
+          "left": 5,
+          "right": 5,
+          "bottom": 24
+        },
+        "margin": {
+          "top": 55
+        },
+        "boxes": [{
+          "name": "gameLockerText",
+          "text": "drtrwrwrwr234324 wrwrwr2 wr2324234 234 2342 23 234 24 24 24 234 24 24242",
+          "textAlign": "center",
+          "textWrap": true,
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "colour": "#713704FF",
+            "size": 15
+          },
+          "width": 420,
+          "height": 0
+        }, {
+          "name": "buttonsContainer",
+          "width": 420,
+          "height": 0,
+          "vAlignment": "CENTER",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "margin": {
+            "top": 16,
+            "bottom": 7
+          }
+        }]
+      }
+    ]
+  }]
+}

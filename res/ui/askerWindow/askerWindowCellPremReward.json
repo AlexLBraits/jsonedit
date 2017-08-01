@@ -1,0 +1,49 @@
+{
+    "vAlignment": "center",
+    "hAlignment": "center",
+    "width": "9.42%sh",
+    "height": "8.42%sh",
+    "_backgroundColour": "#77000077",
+    "boxes": [
+        {
+            "name": "icon",
+            "width": "7.9%sh",
+			"height": "7.9%sh",
+            "hAlignment": "right",
+            "vAlignment": "bottom",
+            "background": {
+                "scale": "fit",
+                "images": {
+                    "_normal": "res/images/icons/resourcesIcons/res_wheat.png",
+                    "normal": "res/images/icons/attributeIcons/money2_drop.png"
+                }
+            },
+            "boxes": [
+            	{
+					"name": "item_count",
+					"maxWidth": "100%",
+					"height": "100%",
+					"vAlignment": "bottom",
+					"_backgroundColour": "#00770077",
+					"font": {
+						"file": "res/fonts/Loyola.otf",
+						"size": "2.6%sh",
+						"colour": "#FFFFFFFF",
+						"outline": [
+							{
+								"width": "5%",
+								"colour": "#503200FF",
+								"yoffset": "6%"
+							},
+							{
+								"width": "5%",
+								"colour": "#503200FF"
+							}
+						]
+					},
+					"text": "25/10"
+				}
+            ]
+        }
+    ]
+}

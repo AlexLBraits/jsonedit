@@ -1,0 +1,196 @@
+{
+    "hAlignment": "left",
+    "vAlignment": "top",
+    "name": "clanWallWindow",
+    "class": "cover_layer",
+    "offset": [
+        -500,
+        0
+    ],
+    "alpha": 0,
+    "animation": {
+        "xoffset": [
+            null,
+            0,
+            0.2,
+            "linear",
+            0.1
+        ],
+        "alpha": [
+            null,
+            1,
+            0.2,
+            "linear",
+            0.1
+        ]
+    },
+    "dac": {
+        "remove": {
+            "animation": [
+                {
+                    "xoffset": [
+                        null,
+                        -500,
+                        0.2,
+                        "linear"
+                    ],
+                    "alpha": [
+                        null,
+                        0,
+                        0.2,
+                        "linear"
+                    ]
+                },
+                {
+                    "call": {
+                        "from": "remove",
+                        "duration": 0
+                    }
+                }
+            ]
+        }
+    },
+    "boxes": [
+        {
+            "height": "100%",
+            "width": 380,
+            "handlers": {
+                "onTap": true
+            }
+        },
+    	{
+    		"name": "background",
+    		"vAlignment": "from_top_to_bottom",
+    		"hAlignment": "left",
+            "height":"100%",
+            "hAlignment":"LEFT",
+            "vAlignment":"TOP",
+            "boxes": [                
+	            {
+                    "name": "bg",
+	            	"height": "100%",
+                    "width": 427,
+                	"background": {
+                        "images": {
+                            "normal": "res/images/interface/commonArt/win/win.png"
+                        },
+                        "scale": "window",
+                        "corner": [
+                            111,
+                            111
+                        ]
+                    }
+	            },
+                {
+                    "name":"stub_texts",
+                    "height":"100%",
+                    "width":"100%",
+                    "hAlignment":"LEFT",
+                    "vAlignment":"FROM_TOP_TO_BOTTOM",
+                    "boxes":[
+                        {
+                            "name":"stub_chat_title",
+                            "text":"stub_chat_title",
+                            "height":70,
+                            "width":"100%",
+                            "hAlignment":"CENTER",
+                            "vAlignment":"BOTTOM",
+                            "textAlign":"CENTER",
+                            "font":{
+                                "file":"res/fonts/Loyola.otf",
+                                "size":25,
+                                "outline":[
+                                    {
+                                        "width":1,
+                                        "colour":"#503200FF"
+                                    },
+                                    {
+                                        "width":1,
+                                        "colour":"#503200FF",
+                                        "yoffset":1
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "width":"100%",
+                            "hAlignment":"CENTER",
+                            "boxes":[
+                                {
+                                    "name":"open_clanMainWindow",
+                                    "class":"buttonYellowScalable",
+                                    "width":100,
+                                    "height":50
+                                }
+                            ]
+                        },
+                        
+                        {
+                            "name":"stub_text",
+                            "height":100,
+                            "width":"100%",
+                            "padding":{
+                                "left":25,
+                                "right":25
+                            },
+                            "textWrap":true,
+                            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum lorem eu ultricies sollicitudin. Sed molestie erat diam, eu pharetra metus tempus eleifend",
+                            "lineSpacing":1.25,
+                            "font":{
+                                "file":"res/fonts/FryPro.otf",
+                                "size":16,
+                                "colour":"#503200FF"
+                            }
+                        },
+                        {
+                            "name":"stub_text",
+                            "height":100,
+                            "width":"100%",
+                            "padding":{
+                                "left":25,
+                                "right":25
+                            },
+                            "textWrap":true,
+                            "text":"Pellentesque vel euismod lorem. Etiam tempor dui ut dolor gravida congue. Sed facilisis nisl enim, in scelerisque massa auctor eu.",
+                            "lineSpacing":1.25,
+                            "font":{
+                                "file":"res/fonts/FryPro.otf",
+                                "size":16,
+                                "colour":"#503200FF"
+                            }
+                        },
+                        {
+                            "name":"stub_text",
+                            "height":100,
+                            "width":"100%",
+                            "padding":{
+                                "left":25,
+                                "right":25
+                            },
+                            "textWrap":true,
+                            "text":"Sed et nulla sit amet neque venenatis mattis vel sed massa. Fusce nisi urna, iaculis ac nisi nec, lacinia pretium nibh.",
+                            "lineSpacing":1.25,
+                            "font":{
+                                "file":"res/fonts/FryPro.otf",
+                                "size":16,
+                                "colour":"#503200FF"
+                            }
+                        },
+                        {
+                            "width":"100%",
+                            "hAlignment":"CENTER",
+                            "boxes":[
+                                {
+                                    "name":"joinClanBtn",
+                                    "class":"buttonGreenScalable",
+                                    "width":100,
+                                    "height":50
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+    	}    	
+    ]
+}

@@ -1,0 +1,463 @@
+{
+  "name": "levelUpMain",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "width": "100%",
+      "height": "60%sh",
+      "hAlignment": "CENTER",
+      "vAlignment": "TOP",
+      "boxes": [
+        {
+          "name": "windowBackground",
+          "class": "windowFullFillingBackgroundClass",
+          "height": "51%sh",
+          "width": "44%sh"
+        }
+      ]
+    },
+    {
+      "name": "starsContainerNode",
+      "hAlignment": "left",
+      "vAlignment": "top",
+      "width": "100%",
+      "height": "100%",
+      "boxes": []
+    },
+    {
+      "name": "parent",
+      "width": "56%SH",
+      "height": "80%SH",
+      "hAlignment": "center",
+      "vAlignment": "center",
+      "_backgroundColour": "#FF000078",
+      "boxes": [
+        {
+          "name": "levelUpWindow",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "width": "100%",
+          "_backgroundColour": "#FF000055",
+          "handlers": {
+            "onTap": true
+          },
+          "boxes": [
+            {
+              "_backgroundColour": "#FF000078",
+              "width": "100%",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "height": "16%sh",
+              "boxes": [
+                {
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "top",
+                  "width": "52.2887323943662%sh",
+                  "height": "16%sh",
+                  "_backgroundColour": "#0000FF78",
+                  "name": "titleRibbon",
+                  "background": {
+                    "image": "res/images/interface/windows/levelUp/title_ribbon.png",
+                    "scale": "fit"
+                  }
+                },
+                {
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "top",
+                  "width": "52.2887323943662%sh",
+                  "height": "16%sh",
+                  "name":"congradLabelContainer",
+                  "boxes":[
+                    {
+                      "height": "100%",
+                      "width": "16.5%"
+                    },
+                    {
+                      "height": "60%",
+                      "width": "55%",
+                      "hAlignment": "center",
+                      "vAlignment": "CENTER",
+                      "_backgroundColour": "#00FF0078",
+                      "boxes": [
+                        
+                        {
+                          "name": "congradLabel",
+                          "maxWidth": "100%",
+                          "height": "4.8%SH",
+                          "_backgroundColour": "#000000B2",
+                          "text": "newLevelText",
+                          "hAlignment":"CENTER",
+                          "vAlignment":"CENTER",
+                          "font": {
+                            "size": "3.6971830985915495%SH",
+                            "file": "res/fonts/Loyola.otf",
+                            "colour": "#ffffffff",
+                            "outline": [
+                              {
+                                "width": "4%",
+                                "colour": "#503200FF",
+                                "yoffset": "4%"
+                              },
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "titleRibbonGlow",
+                  "width": "52.2887323943662%sh",
+                  "height": "16%sh",
+                  "_backgroundColour": "#0000FF78",
+                  "blendMode":3,
+                  "background": {
+                    "image": "res/images/interface/windows/levelUp/Ribbon_Glow.png",
+                    "scale": "fit"
+                  }
+                },
+                {
+                  "name":"titleRibbonParticles",
+                  "width":"100%",
+                  "height":"100%",
+                  "hAlignment":"CENTER",
+                  "vAlignment":"CENTER",
+                  "_backgroundColour":"#FF000066"
+                }
+              ]
+            },
+            {
+              "name": "levelUpBgWindow",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "width": "100%",
+              "height": "26%sh",
+              "_backgroundColour": "#FF000055",
+              "boxes": [
+                {
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "width": "85%",
+                  "height": 0,
+                  "boxes": [
+                    {
+                      "_backgroundColour": "#00FF0069",
+                      "vAlignment": "from_top_to_bottom",
+                      "hAlignment": "center",
+                      "width": "100%",
+                      "height": 0,
+                      "boxes": [
+                        {
+                          "height": "3%sh"
+                        },
+                        {
+                          "name": "unlockContainer",
+                          "vAlignment": "from_top_to_bottom",
+                          "hAlignment": "center",
+                          "width": "100%",
+                          "height": 0,
+                          "boxes": [
+                            {
+                              "name": "unlockLabel",
+                              "text": "lvlupWindowUnlockedText",
+                              "height": "5%sh",
+                              "hAlignment": "center",
+                              "vAlignment": "center",
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#503200ff",
+                                "size": "2.640845070422535%SH"
+                              }
+                            },
+                            {
+                              "name": "unlockPanel",
+                              "hAlignment": "center",
+                              "width": "105%",
+                              "vAlignment": "center",
+                              "boxes": [
+                                {
+                                  "width": "100%",
+                                  "hAlignment": "center",
+                                  "boxes": [
+                                    {
+                                      "name": "items_unlock",
+                                      "_backgroundColour": "#ff000077",
+                                      "width": "42%sh",
+                                      "height": "15%sh",
+                                      "hAlignment": "center",
+                                      "boxes": [
+                                        {
+                                          "name": "items_unlock_container",
+                                          "overflow": "ignore",
+                                          "_backgroundColour": "#00ff0077",
+                                          "height": "15%sh",
+                                          "maxWidth": "42%sh",
+                                          "_boxes": [
+                                            "res/ui/levelUp/levelUpBuildingCell.json",
+                                            "res/ui/levelUp/levelUpBuildingCell.json",
+                                            "res/ui/levelUp/levelUpBuildingCell.json",
+                                            "res/ui/levelUp/levelUpBuildingCell.json"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "unlockScrollBar",
+                              "hAlignment": "center",
+                              "vAlignment": "center",
+                              "width": "37.68%sh",
+                              "height": "1%sh",
+                              "_backgroundColour": "#00770077",
+                              "boxes": [
+                                {
+                                  "class": "scrollSliderHorisontal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "height": "1.5%sh"
+                        },
+                        {
+                          "name": "rewardContainer",
+                          "vAlignment": "from_top_to_bottom",
+                          "hAlignment": "center",
+                          "width": "100%",
+                          "boxes": [
+                            {
+                              "name": "rewardLabel",
+                              "text": "lvlupWindowYouRewardText",
+                              "height": "2.0%sh",
+                              "hAlignment": "center",
+                              "vAlignment": "center",
+                              "_backgroundColour": "#00FF0069",
+                              "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "colour": "#503200ff",
+                                "size": "2.640845070422535%sh"
+                              }
+                            },
+                            {
+                              "name": "rewardPanel",
+                              "hAlignment": "center",
+                              "width": "105%",
+                              "vAlignment": "center",
+                              "boxes": [
+                                {
+                                  "name": "items_reward",
+                                  "width": "100%",
+                                  "hAlignment": "center",
+                                  "boxes": [
+                                    {
+                                      "_backgroundColour": "#ff000077",
+                                      "width": "42%sh",
+                                      "height": "15%sh",
+                                      "hAlignment": "center",
+                                      "boxes": [
+                                        {
+                                          "name": "items_reward_container",
+                                          "overflow": "scroll",
+                                          "_backgroundColour": "#0000ff77",
+                                          "height": "15%sh",
+                                          "maxWidth": "42%sh",
+                                          "_boxes": [
+                                            "res/ui/levelUp/levelUpContractCell.json",
+                                            "res/ui/levelUp/levelUpContractCell.json",
+                                            "res/ui/levelUp/levelUpContractCell.json",
+                                            "res/ui/levelUp/levelUpContractCell.json"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "rewardScrollBar",
+                              "hAlignment": "center",
+                              "vAlignment": "center",
+                              "width": "37.68%sh",
+                              "height": "1%sh",
+                              "_backgroundColour": "#00770077",
+                              "boxes": [
+                                {
+                                  "class": "scrollSliderHorisontal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": "100%",
+              "height": "30%sh",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#0000FF55",
+              "boxes": [
+                {
+                  "name": "okButton",
+                  "width": "18.1%SH",
+                  "height": "7.5%SH",
+                  "class": "buttonGreenScalable"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": "56%SH",
+      "height": "72%SH",
+      "_backgroundColour": "#FF0000AA",
+      "hAlignment": "FROM_LEFT_TO_RIGHT",
+      "vAlignment": "TOP",
+      "boxes": [
+        {
+          "name": "spacer",
+          "height": "100%",
+          "_backgroundColour": "#FF0000FF",
+          "width": "69%"
+        },
+        {
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "height": "16%sh",
+          "boxes": [
+            {
+              "height": "54%",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#00FF0078",
+              "boxes": [
+                {
+                  "name": "underParticle",
+                  "width": "10%sh",
+                  "height": "10%sh",
+                  "_backgroundColour": "#00FF0078"
+                },
+                {
+                  "name": "levelIcon",
+                  "hAlignment": "center",
+                  "vAlignment": "center",
+                  "width": "10.035211267605634%sh",
+                  "height": "10.035211267605634%sh",
+                  "background": {
+                    "image": "res/images/interface/windows/levelUp/star.png",
+                    "scale": "fit"
+                  },
+                  "boxes": [
+                    {
+                      "name": "levelLabel",
+                      "textAlign": "center",
+                      "lineSpacing": 0.4,
+                      "text": "25",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "4.753521126760564%SH",
+                        "colour": "#ffffffFF",
+                        "outline": [
+                          {
+                            "width": "4%",
+                            "colour": "#503200ff",
+                            "yoffset": "4%"
+                          },
+                          {
+                            "width": "4%",
+                            "colour": "#503200ff"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bigStarContainer",
+      "hAlignment": "CENTER",
+      "vAlignment": "CENTER",
+      "width": "100%",
+      "height": "100%",
+      "boxes": [
+        {
+          "name": "bigStarParticles",
+          "width": "5%SH",
+          "height": "5%SH"
+        },
+        {
+          "name": "levelIconBig",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "width": "26.23%sh",
+          "height": "26.23%sh",
+          "background": {
+            "image": "res/images/interface/windows/levelUp/star.png",
+            "scale": "fit"
+          }
+        },
+        {
+          "name": "levelLabelBig",
+          "textAlign": "center",
+          "lineSpacing": 0.4,
+          "text": "25",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": "13%SH",
+            "colour": "#ffffffFF",
+            "outline": [
+              {
+                "width": "2%",
+                "colour": "#503200ff",
+                "yoffset": "2%"
+              },
+              {
+                "width": "2%",
+                "colour": "#503200ff"
+              }
+            ]
+          }
+        },
+        {
+          "name": "levelIconBigGlow",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "width": "5.28%sh",
+          "height": "5.28%sh",
+          "blendMode":3,
+          "background": {
+            "image": "res/images/interface/windows/levelUp/Star_big_Glow.png",
+            "scale": "fit"
+          }
+        }
+      ]
+    }
+  ]
+}

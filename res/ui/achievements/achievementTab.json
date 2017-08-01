@@ -1,0 +1,251 @@
+{
+  "name": "tabContent",
+  "vAlignment": "bottom",
+  "hAlignment": "center",
+  "_backgroundColour": "#0000FF55",
+  "boxes": [
+    {
+      "_hidden": true,
+      "name": "tabActive",
+      "width": "8.97887323943662%SH",
+      "minWidth": "7.967057000387418%SW",
+      "height": "6.971830985915493%SH",
+      "minHeight": "6.186185435594936%SW",
+      "vAlignment": "bottom",
+      "hAlignment": "center",
+      "boxes": [
+        {
+          "name": "tab",
+          "height": "100%",
+          "width": "100%",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "CENTER",
+          "boxes": [
+            {
+              "name": "topRow",
+              "width": "100%",
+              "height": "1.7957746478873238%sh",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "topLeft",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_left_top.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "topCenter",
+                  "width": "auto",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_top_center.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "topRight",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_right_top.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "middleRow",
+              "width": "100%",
+              "height": "auto",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "middleLeft",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_left_center.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "center",
+                  "width": "auto",
+                  "height": "100%",
+                  "backgroundColour": "#FFFFFFFF",
+                  "_background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_left_center.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "middleRight",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_right_center.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "bottomRow",
+              "width": "100%",
+              "height": "0.4225352112676056%sh",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "bottomLeft",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "backgroundColour": "#FF0000FF",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_left_bottom.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "bottomCenter",
+                  "width": "auto",
+                  "height": "100%",
+                  "backgroundColour": "#FFFFFFFF"
+                },
+                {
+                  "name": "bottomRight",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_activ_right_bottom.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tabIcon",
+          "height": "100%",
+          "width": "100%H",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "background": {
+            "image": "res/images/icons/achievementsIcons/icon_achieve_progress.png",
+            "scale": "fit"
+          }
+        }
+      ]
+    },
+    {
+      "_hidden": true,
+      "name": "tabInactiv",
+      "width": "8.767605633802816%SH",
+      "minWidth": "7.779596835672419%SW",
+      "height": "6.654929577464789%SH",
+      "minHeight": "5.904995188522439%SW",
+      "vAlignment": "bottom",
+      "hAlignment": "center",
+      "boxes": [
+        {
+          "name": "tab",
+          "height": "100%",
+          "width": "100%",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "CENTER",
+          "boxes": [
+            {
+              "name": "topRow",
+              "width": "100%",
+              "height": "1.7957746478873238%sh",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "topLeft",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_left_top.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "topCenter",
+                  "width": "auto",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_top_center.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "topRight",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_right_top.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "middleRow",
+              "width": "100%",
+              "height": "auto",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "middleLeft",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_left_center.png",
+                    "scale": "stretch"
+                  }
+                },
+                {
+                  "name": "center",
+                  "width": "auto",
+                  "height": "100%",
+                  "backgroundColour": "#EED3A0FF"
+                },
+                {
+                  "name": "middleRight",
+                  "width": "1.9014084507042253%sh",
+                  "height": "100%",
+                  "background": {
+                    "image": "res/images/interface/commonArt/tabs/tab_right_center.png",
+                    "scale": "stretch"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "bottomRow",
+              "width": "100%",
+              "height": "0.4225352112676056%sh",
+              "hAlignment": "from_left_to_right"
+            }
+          ]
+        },
+        {
+          "name": "tabIcon",
+          "height": "90%",
+          "width": "100%H",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "background": {
+            "image": "res/images/icons/achievementsIcons/icon_achieve_progress.png",
+            "scale": "fit"
+          }
+        }
+      ]
+    }
+  ]
+}

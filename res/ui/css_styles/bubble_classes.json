@@ -1,0 +1,85 @@
+{
+  "panel_corner_down_white": {
+    "applyTo": {
+      "bottomCenter": {
+        "vAlignment": "CENTER",
+        "hAlignment": "CENTER",
+        "boxes": [
+          {
+            "name": "tail",
+            "width": "2.1126761%sh",
+            "height": "3.3450704%sh",
+    	    "vAlignment": "CENTER",
+	        "hAlignment": "CENTER",
+            "_backgroundColour": "#FF000055",
+            "background": {
+              "image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTailBottom_white.png",
+              "scale": "stretch"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "panel_corner_up_white": {
+    "applyTo": {
+      "topCenter": {
+        "vAlignment": "CENTER",
+        "hAlignment": "CENTER",
+        "boxes": [
+          {
+            "name": "tail",
+            "width": "2.1126761%sh",
+            "height": "3.3450704%sh",
+            "vAlignment": "CENTER",
+            "hAlignment": "CENTER",
+            "background": {
+              "image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTailTop_white.png",
+              "scale": "stretch"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "panel_corner_right_white": {
+    "applyTo": {
+      "middleRight": {
+        "vAlignment": "CENTER",
+        "hAlignment": "LEFT",
+        "boxes": [
+          {
+            "name": "tail",
+            "width": "3.3450704%sh",
+            "height": "2.2887324%sh",
+            "_backgroundColour": "#0000FF55",
+            "background": {
+              "image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTailRight_white.png",
+              "scale": "stretch"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "panel_corner_left_white": {
+    "applyTo": {
+      "middleLeft": {
+        "vAlignment": "CENTER",
+        "hAlignment": "RIGHT",
+        "boxes": [
+          {
+            "name": "tail",
+            "width": "3.3450704%sh",
+            "height": "2.2887324%sh",
+            "_backgroundColour": "#0000FF55",
+            "background": {
+              "image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTailLeft_white.png",
+              "scale": "stretch"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

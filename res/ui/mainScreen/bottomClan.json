@@ -1,0 +1,28 @@
+{
+    "name": "bottomClan",
+    "width": "100%",
+    "vAlignment": "bottom",
+    "boxes": [
+        {
+			"name": "returnToMap",
+			"class": "button_class",
+			"width": 121,
+			"height": 126,
+			"vAlignment": "bottom",
+			"hAlignment": "from_right_to_left",
+			"margin": {
+				"bottom": 2
+			},
+			"background": {
+				"images": {
+					"normal": "res/images/interface/mainScreen/EventIcon.png"
+				}
+			},
+			"handlers": {
+				"onGuiUp": "mainMap",
+				"onControlEventBegan": true,
+				"onControlEventEnded": true
+			}
+		}
+    ]
+}

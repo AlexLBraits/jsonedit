@@ -1,0 +1,52 @@
+{
+    "name": "cellContainer",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "_backgroundColour": "#00ff0077",
+    "width": "14%SH",
+    "height": "14%SH",
+    "boxes": [
+        {
+            "name": "cellIcon",
+            "enableGuiEvents": true,
+            "width": "14%SH",
+            "height": "14%SH",
+            "_backgroundColour": "#ff000077",
+            "background": {
+                "image": "res/images/icons/buildingsShopIcons/resProduction_well.png",
+                "scale": "fit"
+            }
+        },
+        {
+            "width": "14%SH",
+            "height": "14%SH",
+            "hAlignment": "RIGHT",
+            "vAlignment": "BOTTOM",
+            "boxes": [
+                {
+                    "name": "countItem",
+                    "text": "+1",
+                    "vAlignment": "center",
+                    "hAlignment": "center",
+                    "height": "25%",
+                    "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "3.6971830985915495%SH",
+                        "colour": "#FFFFFFFF",
+                        "outline": [
+                            {
+                                "width": "5%",
+                                "colour": "#503200FF",
+                                "yoffset": "5%"
+                            },
+                            {
+                                "width": "5%",
+                                "colour": "#503200ff"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

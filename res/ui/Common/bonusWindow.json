@@ -1,0 +1,199 @@
+{
+    "name": "root",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "cover_layer",
+    "backgroundColour": "#000000B2",
+	"activeBackgroundColour": "#000000B2",
+    "boxes": [
+        {
+            "name": "contentWindow",
+            "hAlignment": "CENTER",
+            "vAlignment": "FROM_TOP_TO_BOTTOM",
+            "width": "42.15%sh",
+            "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+            },
+            "boxes": [
+                {
+                    "name": "mainContainer",
+                    "hAlignment": "center",
+                    "vAlignment": "top",
+                    "width": "100%",
+                    "boxes": [
+                        {
+                            "name": "bgWithArrows",
+                            "sizeBase": "content",
+                            "height": "100%",
+                            "_backgroundColour": "#007700AA",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "bottom",
+                            "boxes": [
+                                {
+                                    "name": "windowBg",
+                                    "sizeBase": "content",
+                                    "width": "42.15%sh",
+                                    "height": "100%",
+                                    "_backgroundColour": "#000000B2",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "class": "windowBackgroundClass"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "titlePanel",
+                            "maxWidth": "90%",
+                            "hAlignment": "bottom",
+                            "height": "9.0%sh",
+                            "vAlignment": "center",
+                            "_backgroundColour": "#0000FF75",
+                            "class": "windowFlatTitleClass"
+                        },
+                        {
+                            "name": "closeButtonContainer",
+                            "width": "120%",
+                            "height": "5.9%sh",
+                            "hAlignment": "right",
+                            "vAlignment": "bottom",
+                            "boxes": [
+                                {
+                                    "name": "closeButton",
+                                    "class": "buttonClose"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "content",
+                            "width": "100%",
+                            "minHeight": "10%sh",
+                            "hAlignment": "center",
+                            "vAlignment": "from_top_to_bottom",
+                            "_backgroundColour": "#007700AA",
+                            "_class": "windowBackgroundClass",
+                            "boxes": [
+                                {
+                                    "name": "upperPadding",
+                                    "height": "9.5%sh"
+                                },
+                                {
+                                    "name": "repeatDialogueButtonContainer",
+                                    "height": "10%sh",
+                                    "width": "87%",
+                                    "vAlignment": "center",
+                                    "hAlignment": "from_left_to_right",
+                                    "boxes": [
+                                        {
+                                            "name": "repeatDialogueButton",
+                                            "width": "32%",
+                                            "height": "10.56338028169014%sh",
+                                            "_backgroundColour": "#007700AA",
+                                            "background": {
+                                            	"image": "res/images/interface/windows/achievementsWindow/achieve_cup_award.png",
+                                            	"scale": "fit"
+                                            }
+                                        },
+										{
+											"name": "description",
+											"width": "68%",
+											"maxHeight": "100%",
+		                                    "hAlignment": "center",
+		                                    "vAlignment": "center",
+		                                    "textAlign": "left",
+											"textWrap": true,
+											"lineSpacing": 1.25,
+											"_backgroundColour": "#77000077",
+											"text": "Supercup for supermastership",
+											"font": {
+												"minSize": "1.58%sh",
+												"size": "10.0%sh",
+												"file": "res/fonts/Loyola.otf",
+												"colour": "#503200ff"
+											}
+										}
+                                    ]
+                                },
+                                {
+                                    "name": "upperPadding",
+                                    "height": "3.0%sh"
+                                },
+                                {
+                                    "name": "descriptionAward",
+                                    "width": "100%",
+                                    "_minHeight": "5.5%sh",
+                                    "maxHeight": "5.5%sh",
+									"hAlignment": "center",
+									"vAlignment": "center",
+		                            "textAlign": "center",
+									"textWrap": true,
+                                    "_backgroundColour": "#00770077",
+                                    "font": {
+                                        "file": "res/fonts/Loyola.otf",
+                                        "colour": "#503200FF",
+                                        "size": "2.640845070422535%sh"
+                                    },
+                                    "_text": "You will find inside!"
+                                },
+                                {
+                                    "name": "upperPadding",
+                                    "height": "1.5%sh"
+                                },
+                                {
+                                    "name": "scroll",
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "maxWidth": "37.68%sh",
+                                    "maxHeight": "8%sh",
+                                    "minHeight": "0.1%sh",
+                                    "overflow": "scroll",
+                                    "_backgroundColour": "#00770077",
+                                    "_boxes": [
+                                        "res/ui/Common/bonusWindowCell.json",
+                                        "res/ui/Common/bonusWindowCell.json",
+                                        "res/ui/Common/bonusWindowCell.json",
+                                        "res/ui/Common/bonusWindowCell.json",
+                                        "res/ui/Common/bonusWindowCell.json",
+                                        "res/ui/Common/bonusWindowCell.json"
+                                    ]
+                                },
+                                {
+                                	"name": "scrollBar",
+                                	"hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "width": "37.68%sh",
+                                    "height": "3%sh",
+                                    "_backgroundColour": "#00770077",
+                                    "boxes": [
+                                    	{
+                                    		"class": "scrollSliderHorisontal"
+                                    	}
+                                    ]
+                                },
+                                {
+                                	"height": "6%sh"
+                                },
+                                {
+                                    "name": "buttonsContainer",
+                                    "width": "100%",
+                                    "height": "1%sh",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "_backgroundColour": "#00770077",
+                                    "boxes": [
+                                        {
+                                            "name": "okButton",
+                                            "class": "buttonGreenScalable",
+                                            "width": "13.0%sh",
+                                            "height": "9%sh"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

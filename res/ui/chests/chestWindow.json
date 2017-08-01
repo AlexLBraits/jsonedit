@@ -1,0 +1,160 @@
+{
+  "name": "cover",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "class": "cover_layer",
+  "boxes": [{
+    "name": "chest_info_window",
+    "class": "windowBackgroundClass",
+    "width": "50%SH",
+    "height": "41%SH",
+    "handlers": {
+      "onTap": true,
+      "onControlEventBegan": true,
+      "onGuiFirstEnter": true,
+      "onGuiUp": true
+    },
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "_backgroundColour": "#FF000078",
+    "boxes": [{
+
+      "name": "contentContainer",
+      "width": "100%",
+      "height": "100%",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "boxes": [{
+        "class": "windowTitleClass"
+      }, {
+        "name": "chestInfoContainer",
+        "hAlignment": "from_left_to_right",
+        "vAlignment": "center",
+        "_backgroundColour": "#FF000078",
+        "width": "90%",
+        "height": "40%",
+        "boxes": [{
+          "name": "infoText",
+          "hAlignment": "center",
+          "vAlignment": "center",
+          "textAlign": "center",
+          "textWrap": true,
+          "width": "100%",
+          "height": "100%",
+          "_backgroundColour": "#FF000078",
+          "font": {
+            "file": "res/fonts/FryPro.otf",
+            "colour": "#503200FF",
+            "size": "2.8%SH"
+          },
+          "text": "chest_info_text"
+        }]
+      }, {
+        "name": "itemsPanel",
+        "hAlignment": "center",
+        "_backgroundColour": "#00ff0077",
+        "height": "12%SH",
+        "vAlignment": "center",
+        "boxes": [{
+          "hAlignment": "from_left_to_right",
+          "width": "100%",
+          "vAlignment": "center",
+          "boxes": [{
+            "name": "leftArrow",
+            "width": "5%SH",
+            "height": "7.93%SH",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "_backgroundColour": "#007700AA",
+            "class": "button_anim_child_class",
+            "boxes": [{
+              "name": "tapAnimatedBox",
+              "width": "5%sh",
+              "height": "7.93%sh",
+              "background": {
+                "image": "res/images/interface/buttons/bttn_arrow_left.png",
+                "scale": "fit"
+              }
+            }]
+          }, {
+            "name": "spacer",
+            "width": "auto"
+          }, {
+            "name": "rightArrow",
+            "width": "5%SH",
+            "height": "7.93%SH",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "_backgroundColour": "#007700AA",
+            "class": "button_anim_child_class",
+            "boxes": [{
+              "name": "tapAnimatedBox",
+              "width": "5%sh",
+              "height": "7.93%sh",
+              "background": {
+                "image": "res/images/interface/buttons/bttn_arrow_right.png",
+                "scale": "fit"
+              }
+            }]
+          }]
+        }, {
+          "sizeBase": "chestInfoContainer",
+          "minWidth": "100%",
+          "_backgroundColour": "#00ff0077",
+          "hAlignment": "center",
+          "boxes": [{
+            "name": "toolsScroll",
+            "overflow": "scroll",
+            "maxWidth": "70%",
+            "height": "12%SH",
+            "vAlignment": "center",
+            "boxes": [
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json",
+              "res/ui/mainScreen/nextLevelCell.json"
+            ]
+          }]
+        }]
+      }, {
+        "name": "dots_container",
+        "hAlignment": "from_left_to_right",
+        "height": 9,
+        "boxes": [
+          "res/ui/mainScreen/scrollPointWhite.json",
+          "res/ui/mainScreen/scrollPointWhite.json",
+          "res/ui/mainScreen/scrollPointWhite.json"
+        ]
+      }, {
+        "type": "spacer"
+      }, {
+        "name": "buttonsContainer",
+        "hAlignment": "center",
+        "vAlignment": "center",
+        "width": 1,
+        "height": 1,
+        "_backgroundColour": "#FF000078",
+        "boxes": [{
+          "name": "bottomButton",
+          "height": "10%SH",
+          "width": "20%SH",
+          "class": "buttonBlueScalable"
+        }]
+      }]
+    }]
+  }, {
+    "name": "closeButtonContainer",
+    "hAlignment": "right",
+    "vAlignment": "top",
+    "width": "50%SH",
+    "height": "41%SH",
+    "_backgroundColour": "#FF000078",
+    "boxes": [{
+      "name": "closeButton",
+      "class": "buttonClose"
+    }]
+  }]
+}

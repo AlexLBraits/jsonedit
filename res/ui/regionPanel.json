@@ -1,0 +1,255 @@
+{  
+    "hAlignment":"center",
+    "vAlignment":"center",
+    "name":"root",
+    "boxes":[  
+        {  
+            "_backgroundColour":"#ff000077",
+            "hAlignment":"center",
+            "vAlignment":"top",
+            "boxes":[  
+				{
+				  "name": "panelBg",
+				  "_sizeBase": "panelContent",
+				  "width": "100%",
+				  "height": "80%",
+				  "vAlignment": "FROM_TOP_TO_BOTTOM",
+				  "hAlignment": "center",
+				  "_backgroundColour": "#FF000055",
+				  "boxes": [
+						{
+							"name": "topRow",
+							"width": "100%",
+							"height": "2.535211267605634%sh",
+							"_backgroundColour": "#0000FF55",
+							"hAlignment": "from_left_to_right",
+							"boxes": [
+								{
+									"name": "topLeft",
+									"width": "100%h",
+									"height": "100%",
+									"hAlignment": "left",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleCornerLeft_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"name": "topCenter",
+									"width": "auto",
+									"height": "100%",
+									"hAlignment": "top",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTop_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"name": "topRight",
+									"width": "100%h",
+									"height": "100%",
+									"hAlignment": "left",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleCornerRight_white.png",
+										"scale": "stretch"
+									}
+								}
+							]
+						},
+						{
+							"name": "middleRow",
+							"width": "100%",
+							"height": "auto",
+							"vAlignment": "center",
+							"hAlignment": "from_left_to_right",
+							"boxes": [
+								{
+									"name": "middleLeft",
+									"width": "2.535211267605634%sh",
+									"height": "100%",
+									"hAlignment": "left",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleSideLeft_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"name": "center",
+									"width": "auto",
+									"height": "100%",
+									"backgroundColour": "#FFFFFFFF",
+									"_background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleCenter_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"_backgroundColour": "#0000FF55",
+									"name": "middleRight",
+									"width": "2.535211267605634%sh",
+									"height": "100%",
+									"vAlignment": "center",
+									"hAlignment": "right",
+									"_backgroundColour": "#FF000055",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleSideRight_white.png",
+										"scale": "stretch"
+									}
+								}
+							]
+						},
+						{
+							"name": "bottomRow",
+							"width": "100%",
+							"height": "2.535211267605634%sh",
+							"hAlignment": "from_left_to_right",
+							"vAlignment": "top",
+							"_backgroundColour": "#0000FF55",
+							"boxes": [
+								{
+									"name": "bottomLeft",
+									"width": "100%h",
+									"height": "100%",
+									"vAlignment": "bottom",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleCornerBottomLeft_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"name": "bottomCenter",
+									"width": "auto",
+									"height": "100%",
+									"vAlignment": "bottom",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleBottom_white.png",
+										"scale": "stretch"
+									}
+								},
+								{
+									"name": "bottomRight",
+									"width": "100%h",
+									"height": "100%",
+									"vAlignment": "bottom",
+									"background": {
+										"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleCornerBottomRight_white.png",
+										"scale": "stretch"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+				  "name": "panel",
+				  "vAlignment": "BOTTOM",
+				  "hAlignment": "CENTER",
+				  "width": "100%",
+				  "height": "80%",
+				  "boxes": [
+					{
+                      "height":"0.6338028169014085%SH",
+					  "width": "50%",
+					  "hAlignment": "CENTER",
+					  "vAlignment": "top",
+					  "_backgroundColour": "#FF000075",
+					  "boxes": [
+						{
+						  "width": "2.74647887%sh",
+						  "height": "1.7957746478873238%sh",
+						  "_backgroundColour": "#FF000055",
+						  "background": {
+							"image": "res/images/interface/commonArt/bubble/bubbleCompositeWhite/bubbleTail_white.png",
+							"scale": "fit"
+						  }
+						}
+					  ]
+					}
+				  ]
+				},
+                {  
+                    "name":"panelContent",
+                    "hAlignment":"center",
+                    "vAlignment":"from_top_to_bottom",
+                    "padding":{  
+                        "left":15,
+                        "right":15,
+                        "bottom":66
+                    },
+                    "boxes":[  
+                        {  
+                            "name":"titleContainer",
+                            "height":46,
+                            "boxes":[  
+                                {  
+                                    "name":"popup_title",
+                                    "vAlignment":"center",
+                                    "hAlignment":"center",
+                                    "minWidth":60,
+                                    "height":25,
+                                    "padding":{  
+                                        "left":27,
+                                        "right":27,
+                                        "top":8
+                                    },
+                                    "text":"Factory Name",
+                                    "font":{  
+                                        "file":"res/fonts/Loyola.otf",
+                                        "size":25,
+                                        "colour":"#ffffffFF",
+                                        "outline":[  
+                                            {  
+                                                "width":1,
+                                                "colour":"#503200ff",
+                                                "yoffset":1
+                                            },
+                                            {  
+                                                "width":1,
+                                                "colour":"#503200ff"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "name":"contractsPanel",
+                            "hAlignment":"left",
+                            "_backgroundColour":"#00ff0077",
+                            "height":65,
+                            "vAlignment":"center",
+                            "padding":{  
+                                "left":19,
+                                "right":19
+                            },
+                            "margin":{  
+                                "top":-8
+                            },
+                            "boxes":[  
+                                {  
+                                    "sizeBase":"titleContainer",
+                                    "minWidth":"100%",
+                                    "_backgroundColour":"#00ff0077",
+                                    "hAlignment":"center",
+                                    "boxes":[  
+                                        {  
+                                            "name":"toolsScroll",
+                                            "overflow":"scroll",
+                                            "maxWidth":376,
+                                            "height":80,
+                                            "boxes":[  
+                                                "res/ui/mainScreen/regionResourceCell.json",
+                                                "res/ui/mainScreen/regionResourceCell.json",
+                                                "res/ui/mainScreen/regionResourceCell.json"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

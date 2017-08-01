@@ -1,0 +1,57 @@
+{
+    "name": "chat_button",
+    "width": 126,
+    "height": 126,
+    "class": "button_class",
+    "vAlignment": "top",
+    "handlers": {
+        "onGuiUp": "showClansWall",
+        "onControlEventBegan": true,
+        "onControlEventEnded": true
+    },
+    "background": {
+        "images": {
+            "normal": "res/images/interface/windows/clans/bttn_chat.png"
+            
+        },
+        "vAlignment": "top",
+        "scale": "fit"
+    },
+    "boxes": [
+        {
+            "name": "countIcon",
+            "height": 32,
+            "width": 32,
+            "maxWidth": 32,
+            "hidden": true,
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "margin": {
+                    "left": 34
+                },
+            "background": {
+                "images": {
+                    "normal": "res/images/interface/windows/clans/levelup_numb_icon_bg.png"
+                }
+            },
+            "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 18,
+                "colour": "#ffffffff",
+                "outline":[ 
+                    {
+                        "width": 1,
+                        "colour": "#910005ff",
+                        "yoffset":1
+                    },
+                    {
+                        "width": 1,
+                        "colour": "#910005ff"
+                    }
+                ],
+                "textWrap": true
+            },
+            "text": "42"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    
+"animations":{
+
+"possible_easing":{ "linear":0, "in":1, "out":2, "inout":3, "expin":4, "expout":5, "wave":6, "wave2":7, "bounce":8 }, 
+"possible_properties_float":{"rotate":0, "width":1, "height":2, "alpha":3, "xscale":4, "yscale":5, "xoffset":6, "yoffset":7, "xscroll":8, "yscroll":9, "minWidth":10, "maxWidth":11, "minHeight":12, "maxHeight":13, "linespacing":14 }, 
+"possible_properties_vec2f":{"offset":0, "size":1, "scroll":2, "scale":3, "pivot":4 },
+"possible_properties_skip":{"text":0, "value":1, "boxes":2, "applyto":3, "call":4 }, 
+
+"fadeIn":[ "alpha", 0, 1 ],
+"fadeOut":[ "alpha", 1, 0 ], 
+"slideY":[ "yoffset",  -50, 0 ],
+"slideX":[ "xoffset",  -50, 0 ]
+
+
+}
+    
+} 

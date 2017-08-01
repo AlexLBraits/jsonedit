@@ -1,0 +1,149 @@
+{
+  "name": "root",
+  "class": "cover_layer",
+  "vAlignment": "center",
+  "hAlignment": "center",
+  "_backgroundColour": "#00000075",
+  "handlers": {
+    "onTap": true,
+    "onControlEventBegan": true
+  },
+  "boxes": [
+    {
+      "name": "spaceScrollArea",
+      "width": "100%",
+      "height": "100%",
+      "vAlignment": "bottom",
+      "hAlignment": "center",
+      "_backgroundColour": "#FF000055",
+      "boxes": [
+        {
+          "name": "scrollArea",
+          "width": "100%",
+          "height": "93.75%SH",
+          "type": "Scroller",
+          "overflow": "scroll",
+          "_backgroundColour": "#00FF00FF",
+          "vAlignment": "from_top_to_bottom",
+          "_vAlignment": "from_bottom_to_top",
+          "hAlignment": "center",
+          "handlers": {
+            "_onTap": true,
+            "_onControlEventBegan": true,
+            "onMoved": true
+          },
+          "boxes": [
+            {
+              "name": "space",
+              "height": "100%SH",
+              "vAlignment": "center",
+              "hAlignment": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cancelBox",
+      "height": "100%",
+      "width": "100%",
+      "vAlignment": "TOP",
+      "hAlignment": "RIGHT",
+      "_backgroundColour": "#FF000075",
+      "boxes": [
+        {
+          "name": "cancelBoxSpace",
+          "width": "7.0%sh",
+          "height": "19.5%sh",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "boxes": [
+            {
+              "name": "cancelButton",
+              "class": "buttonClose"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fakeBox",
+      "height": "100%",
+      "width": "100%",
+      "vAlignment": "TOP",
+      "boxes": [
+        {
+          "name": "topMain",
+          "width": "100%",
+          "height": "6.43%sh",
+          "hAlignment": "from_left_to_right",
+          "vAlignment": "center",
+          "boxes": [
+            {
+              "name": "leftPadding",
+              "width": "0.6%sh"
+            },
+            {
+              "name": "leftCenterPanel",
+              "_backgroundColour": "#77000077",
+              "height": "100%",
+              "hAlignment": "left",
+              "boxes": [
+                {
+                  "name": "expBar",
+                  "height": "100%",
+                  "width": "16%sh",
+                  "minWidth": "14.2%sw",
+                  "vAlignment": "center",
+                  "hAlignment": "left"
+                }
+              ]
+            },
+            {
+              "type": "spacer"
+            },
+            {
+              "name": "money1Button",
+              "height": "100%",
+              "width": "18.5%sh",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "money1BarIcon",
+                  "_backgroundColour": "#FF000078",
+                  "width": "5.3%sh",
+                  "height": "5.1%sh"
+                }
+              ]
+            },
+            {
+              "name": "money2Button",
+              "height": "100%",
+              "width": "14%sh",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "boxes": [
+                {
+                  "name": "money2BarIcon",
+                  "_backgroundColour": "#FF000078",
+                  "width": "5.3%sh",
+                  "height": "5.1%sh"
+                }
+              ]
+            },
+            {
+              "name": "settings",
+              "width": "5.8%sh",
+              "height": "5.8%sh"
+            },
+            {
+              "name": "rightPadding",
+              "width": "0.6%sh"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

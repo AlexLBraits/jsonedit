@@ -1,0 +1,120 @@
+{
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "margin": {
+        "left": 0,
+        "right": 0,
+        "bottom": 0
+    },
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true
+    },
+    "name": "playerMenu",
+    "boxes": [
+        {
+            "name": "playerMenuBg",
+            "width": 98,
+            "height": 340,
+            "vAlignment": "from_bottom_to_top",
+            "hAlignment": "center",
+            "background": {
+                "scale": "window",
+                "corner": [
+                    98,
+                    180
+                ],
+                "image": "res/images/interface/Island2Art/mainScreen/friendScreen/friendbttns_bg.png"
+            },
+            "padding": {
+                "left": 9,
+                "right": 9,
+                "top": 0,
+                "bottom": 0
+            },
+            "boxes": [
+                {
+                    "width": 98,
+                    "height": 265,
+                    "hAlignment": "center",
+                    "vAlignment": "from_bottom_to_top",
+                    "margin": {
+                        "bottom": 15
+                    },
+                    "boxes": [
+                        {
+                            "name": "giftButton",
+                            "class": "btn_tap_highlight_anim",
+                            "width": 68,
+                            "height": 68,
+                            "hAlignment": "center",
+                            "vAlignment": "from_top_to_bottom",
+                            "margin": {
+                                "left": 3,
+                                "right": 3
+                            },
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_gift.png",
+                                    "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_gift.png"
+                                }
+                            }
+                        },
+                        {
+                            "name": "goToFriendButton",
+                            "class": "btn_tap_highlight_anim",
+                            "width": 68,
+                            "height": 68,
+                            "hAlignment": "center",
+                            "vAlignment": "from_top_to_bottom",
+                            "margin": {
+                                "left": 3,
+                                "right": 3
+                            },
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_guest.png",
+                                    "pressed": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_guest.png"
+                                }
+                            }
+                        },
+                        {
+                            "name": "clanButton",
+                            "class": "btn_tap_highlight_anim",
+                            "width": 68,
+                            "height": 68,
+                            "vAlignment": "top",
+                            "hAlignment": "left",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/windows/clans/bttn_union.png",
+                                    "pressed": "res/images/interface/Island2Art/windows/clans/bttn_union.png"
+                                }
+                            },
+                            "handlers": {
+                                "onControlEventBegan": true,
+                                "onControlEventEnded": true
+                            }
+                        },
+                        {
+                            "name": "userInfoButton",
+                            "class": "btn_tap_highlight_anim",
+                            "width": 68,
+                            "height": 68,
+                            "vAlignment": "top",
+                            "hAlignment": "left",
+                            "background": {
+                                "image": "res/images/interface/Island2Art/mainScreen/bttn_stat.png"
+                            },
+                            "handlers": {
+                                "onControlEventBegan": true,
+                                "onControlEventEnded": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

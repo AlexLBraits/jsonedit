@@ -1,0 +1,78 @@
+{
+    "hAlignment": "center",
+    "vAlignment": "from_top_to_bottom",
+    "_backgroundColour": "#00ff0077",
+    "height": 65,
+    "boxes": [
+    	{
+    		"name": "iconConainer",
+    		"hAlignment": "center",
+    		"vAlignment": "center",
+    		"_backgroundColour": "#00ff0077",
+    		"width": 100,
+    		"boxes" : [
+    			  {
+					"name": "icon",
+					"enableGuiEvents": true,
+					"_backgroundColour": "#00ff0077",
+					"width": 65,
+					"vAlignment": "bottom",
+					"hAlignment": "center",
+					"height": 65,
+					"background": {
+						"images": {
+							"normal": "res/images/icons/attributeIcons/exp_drop.png"
+						},
+						"scale": "fit"
+					},
+					"boxes": [
+						{
+							"name": "sign_ok_container",
+							"width": 65,
+							"height": 65,
+							"_backgroundColour": "#00ff0077",
+							"vAlignment": "bottom",
+							"hAlignment": "right",
+							"hidden": true,
+							"boxes":[
+								{
+									"name": "sign_ok",
+									"width": 35,
+									"height": 35,
+									"vAlignment": "center",
+									"hAlignment": "center",
+									"background": {
+									"images": {
+										"normal": "res/images/interface/commonArt/sign_ok.png"
+									},
+									"scale": "fit"
+								}
+								}
+							]
+						},
+			
+						{
+							"name": "item_count",
+							"vAlignment": "center",
+							"hAlignment": "center",
+							"margin": {
+						
+								"bottom":-20
+						
+							},
+							"text": "10000 / 100000",
+							"font": {
+														"file": "res/fonts/Loyola.otf",
+														"size": 18,
+														"colour": "#503200FF"
+													}
+						}
+					]
+				}
+    		]
+    	}
+      
+        
+        
+    ]
+}

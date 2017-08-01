@@ -1,0 +1,17 @@
+{
+    "name": "cover",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "cover_layer",
+    "boxes": [
+        {
+            "name": "content",
+            "width": "100%",
+            "height": "100%",
+            "handlers":{
+                "onControlEventBegan":true,
+                "onTap":true
+            }
+        }
+    ]
+}

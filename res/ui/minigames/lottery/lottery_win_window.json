@@ -1,0 +1,142 @@
+{
+  "name": "root_layer",
+  "width": "100%",
+  "height": "100%",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "backgroundColour": "#00000099",
+  "activeBackgroundColour": "#00000099",
+  "handlers ": {
+    "onControlEventBegan": true,
+    "onTap": true
+  },
+  "boxes": [
+    {
+      "name": "lotteryWinWindow",
+      "width": 585,
+      "height": 500,
+      "hAlignment": "center",
+      "vAlignment": "from_top_to_bottom",
+      "handlers ": {
+        "onControlEventBegan": true,
+        "onTap": true
+      },
+      "boxes": [
+        {
+          "name": "congrat_label",
+          "width": "100%",
+          "height": 150,
+          "backgroundColour": "#53410554",
+          "hAlignment": "CENTER",
+          "vAlignment": "CENTER",
+          "text": "congratulations",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": 25,
+            "colour": "#FFFF00FF",
+            "outline": {
+              "width": 1,
+              "colour": "#FFFFFFFF"
+            }
+          }
+        },
+        {
+          "name": "subtitle",
+          "width": "100%",
+          "height": 50,
+          "backgroundColour": "#53410554",
+          "hAlignment": "CENTER",
+          "vAlignment": "CENTER",
+          "text": "You Reward:",
+          "font": {
+            "file": "res/fonts/Loyola.otf",
+            "size": 20,
+            "colour": "#FFFFFFFF"
+          }
+        },
+        {
+          "name": "reward_icon_and_count",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "height": 150,
+          "boxes": [
+            {
+              "name": "icon",
+              "height": 80,
+              "width": 80,
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "background": {
+                "hAlignment": "RIGHT",
+                "vAlignment": "CENTER",
+                "images": {
+                  "normal": "res/images/icons/resourcesIcons/res_big_dynamite.png"
+                }
+              }
+            },
+            {
+              "name": "counter",
+              "height": 80,
+              "width": 80,
+              "hAlignment": "LEFT",
+              "vAlignment": "CENTER",
+              "text": "150",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 20,
+                "colour": "#FFFFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "name": "buttons_container",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "height": 100,
+          "boxes": [
+            {
+              "name": "buy_more_button",
+              "width": 100,
+              "height": "100%",
+              "backgroundColour": "#0000FFFF",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "text": "Buy Moar!",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 20,
+                "colour": "#FFFFFFFF"
+              }
+            },
+            {
+              "name": "spacer",
+              "width": 100
+            },
+            {
+              "name": "ok_button",
+              "width": 100,
+              "height": "100%",
+              "backgroundColour": "#0000FFFF",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "text": "OK",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": 20,
+                "colour": "#FFFFFFFF"              
+              }
+            }            
+          ]
+        }
+      ]
+    },
+    {
+      "name": "new_box_container",
+      "hAlignment": "LEFT",
+      "vAlignment": "TOP",
+      "width": "100%",
+      "height": "100%"
+    }
+  ]
+}

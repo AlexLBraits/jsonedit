@@ -1,0 +1,72 @@
+{
+    "name": "tab",
+    "minWidth": 102,
+    "height": 47,
+    "hAlignment": "center",
+    "vAlignment": "bottom",
+    "background": {
+        "images": {
+            "normal": "res/images/interface/Island2Art/windows/optionsWindow/tabs/tab_off.png",
+            "pressed": "res/images/interface/Island2Art/windows/optionsWindow/tabs/tab_off.png"
+        },
+        "scale": "window",
+        "corner": [
+            51,
+            24
+        ]
+    },
+    "padding": {
+        "left": 25,
+        "right": 25,
+        "bottom": 5
+    },
+    "margin": {
+        "left": -8,
+        "right": -8
+    },
+    "handlers": {
+        "onControlEventBegan": true,
+        "onControlEventEnded": true,
+        "onTap": true
+    },
+    "boxes": [
+        {
+            "width": 0,
+            "height": 25,
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "additionalIcon",
+                    "width": 21,
+                    "height": 21,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "background": {
+                        "_images": {
+                            "normal": "res/images/interface/Island2Art/windows/clans/icon_crown.png"
+                        },
+                        "scale":"contain"
+                    }
+                },
+                {
+                    "name": "tabText",
+                    "width": 0,
+                    "height": 25,
+                    "hAlignment": "center",
+                    "vAlignment": "center",
+                    "font": {
+                        "size": 20,
+                        "file": "res/fonts/loyola.otf",
+                        "colour": "#7d5528ff",
+                        "outline": {
+                            "colour": "#ffffffff",
+                            "yoffset": 1.0
+                        }
+                    },
+                    "text": "Friends"
+                }
+            ]
+        }
+    ]
+}

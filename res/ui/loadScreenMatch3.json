@@ -1,0 +1,30 @@
+{
+    "vAlignment": "CENTER",
+    "hAlignment": "CENTER",
+    "width": "100%",
+	"height": "100%",
+	"handlers": {
+      "onControlEventBegan": true,
+      "onControlEventEnded": true,
+      "onTap": true,
+      "onSwipe": true,
+      "onWheel": true,
+      "onMove": true,
+      "onDrag": true,
+      "onHover": true,
+      "onGuiUp": true
+    },
+	"boxes": [
+        {
+            "name": "backgroundImage",
+            "width": "100%",
+            "height": "100%",
+            "background": {
+                "scale": "stretch",
+                "images": {
+                    "normal": "res/images/loadscreens/loadingBack.png"
+                }
+            }
+		}
+	]
+}

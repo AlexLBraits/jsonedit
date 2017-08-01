@@ -1,0 +1,93 @@
+{
+	"name": "attributeContainer",
+	"width": "50%",
+	"height": "9%SH",
+	"vAlignment": "CENTER",
+	"hAlignment": "LEFT",
+	"_backgroundColour": "#0000FFAA",
+	"boxes": [
+		{
+			"name": "attributeContainerHorizont",
+			"width": "100%",
+			"vAlignment": "CENTER",
+			"hAlignment": "FROM_LEFT_TO_RIGHT",
+			"boxes": [
+
+				{
+					"name": "icon",
+					"width": "8.45%SH",
+					"height": "8.45%SH",
+					"background": {
+						"hAlignment": "left",
+						"scale": "fit",
+						"images": {
+							"_normal": "res/images/interface/commonArt/icon_time.png"
+						}
+					}
+				},
+				{
+					"name": "attributeTextContainer",
+					"maxWidth":"80%",
+					"hAlignment": "left",
+					"vAlignment": "FROM_TOP_TO_BOTTOM",
+					"boxes":[
+						{
+							"name": "textTop",
+							"minWidth":"5%",
+							"maxWidth": "100%",
+							"height": "2.641%SH",
+							"vAlignment": "CENTER",
+							"textAlign": "CENTER",
+							"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": "2.64%SH",
+										"colour": "#FFFFFFFF",
+										"outline": [
+											{
+												"width": "4%",
+												"colour": "#503200FF",
+												"yoffset": "4%"
+											},
+											{
+												"width": "4%",
+												"colour": "#503200FF"
+											}
+										]
+									},
+							"_text": "Можно собрать"
+						},
+						{
+							"name":"textBottom",
+							"minWidth":"5%",
+							"maxWidth":"100%",
+							"height": "3.697%SH",
+							"textAlign": "CENTER",
+							"hAlignment":"CENTER",
+							"vAlignment":"CENTER",
+							"font": {
+								"file": "res/fonts/Loyola.otf",
+								"size": "4.225%SH",
+								"colour": "#FFFFFFFF",
+								"outline": [
+									{
+										"width": "4%",
+										"colour": "#503200FF",
+										"yoffset": "4%"
+									},
+									{
+										"width": "4%",
+										"colour": "#503200FF"
+									}
+								]
+							},
+							"_text": "1-3"
+						}
+					]			
+				},
+				{
+					"width": "auto"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"name": "buttonsContainer",
+	"hAlignment": "from_left_to_right",
+	"width": "100%",
+	"vAlignment": "CENTER",
+	"boxes":[
+		{
+			"width": "4.0%",
+			"height": "100%",
+		},
+		{
+			"name": "leftButton",
+			"width": "7%SH",
+			"height": "7%SH",
+			"hAlignment": "center",
+			"vAlignment": "CENTER",
+			"class": "buttonRedScalable",
+		},
+
+		{
+			"width": "6.5%",
+			"height": "100%",
+		},
+
+		{
+			"name": "rightButton",
+			"width": "18.1%SH",
+			"height": "8.4%SH",
+			"hAlignment": "center",
+			"vAlignment": "CENTER",
+			"class": "buttonVioletScalable"
+		}
+	]
+}

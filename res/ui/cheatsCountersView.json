@@ -1,0 +1,18 @@
+{
+    "name": "root",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "class": "cover_layer",
+    "boxes": [
+        {
+            "name": "content",
+            "width": "80%",
+            "height": "80%",
+            "overflow": "scroll",
+            "handlers":{
+                "onControlEventBegan":true,
+                "onTap":true
+            }
+        }
+    ]
+}

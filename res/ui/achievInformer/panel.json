@@ -1,0 +1,231 @@
+{
+  "handlers": {
+    "onControlEventBegan": true,
+    "onControlEventEnded": true,
+    "onTap": true
+  },
+  "boxes": [
+    {
+      "name": "backgrounds_root",
+      "vAlignment": "CENTER",
+      "hAlignment": "CENTER",
+      "width": "41.37%SH",
+      "height": "11.62%SH",
+      "boxes": [
+        {
+          "hAlignment": "CENTER",
+          "vAlignment": "FROM_TOP_TO_BOTTOM",
+          "boxes": [
+            {
+              "name": "glare",
+              "width": "10.21%SH",
+              "height": "3.43%SH",
+              "background": {
+                "hAlignment": "CENTER",
+                "vAlignment": "CENTER",
+                "scale": "fit",
+                "image": "res/images/interface/windows/achievInformer/glare.png"
+              }
+            },
+            {
+              "name": "spacer",
+              "height": "0.5%SH"
+            }
+          ]
+        },
+        {
+          "name": "backgrounds_root1",
+          "width": "41.37%SH",
+          "height": "11.62%SH",
+          "class": "whitePanelBackgroundClass"
+        },
+        {
+          "name": "iconAndDescriptionContainer",
+          "width": "100%",
+          "height": "100%",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "BOTTOM",
+          "boxes": [
+            {
+              "name": "iconBgContainer",
+              "width": "100%H",
+              "height": "100%",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "_backgroundColour": "#FF000080",
+              "boxes": [
+                {
+                  "name": "iconBg",
+                  "_width": "9.07%SH",
+                  "_height": "9.07%SH",
+                  "width": "10.5%SH",
+                  "height": "10.5%SH",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "CENTER",
+                  "_backgroundColour": "#FF000080",
+                  "background": {
+                    "scale": "fit",
+                    "images": {
+                      "normal": "res/images/interface/windows/achievInformer/icon_achievement.png"
+                    }
+                  },
+                  "boxes": [
+                    {
+                      "name": "underParticle",
+                      "width": "100%",
+                      "height": "100%"
+                    },
+                    {
+                      "name": "icon",
+                      "_backgroundColour": "#00FF0080",
+                      "alpha": 0,
+                      "background": {
+                        "scale": "fit",
+                        "images": {
+                          "normal": "res/images/icons/buildingBadges/icon_star2.png"
+                        }
+                      },
+                      "width": "85%",
+                      "height": "85%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "CENTER"
+                    }
+                  ]
+                },
+                {
+                  "name": "stageContainer",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "RIGHT",
+                  "vAlignment": "TOP",
+                  "boxes": [
+                    {
+                      "name": "stage",
+                      "width": "44%",
+                      "height": "44%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "CENTER",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "3.25%SH",
+                        "colour": "#ffffffff",
+                        "outline": [
+                          {
+                            "width": 1,
+                            "colour": "#503200FF",
+                            "yoffset": 1
+                          },
+                          {
+                            "width": 1,
+                            "colour": "#503200FF"
+                          }
+                        ]
+                      },
+                      "text": "IV"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "infoContainer",
+          "width": "100%",
+          "height": "100%",
+          "hAlignment": "FROM_LEFT_TO_RIGHT",
+          "vAlignment": "CENTER",
+          "boxes": [
+            {
+              "name": "iconSpacer",
+              "width": "90%H",
+              "height": "100%"
+            },
+            {
+              "name": "infoContainer",
+              "width": "72%",
+              "height": "100%",
+              "hAlignment": "CENTER",
+              "vAlignment": "CENTER",
+              "boxes": [
+                {
+                  "vAlignment": "FROM_TOP_TO_BOTTOM",
+                  "hAlignment": "LEFT",
+                  "width": "100%",
+                  "height": "87%",
+                  "boxes": [
+                    {
+                      "width": "100%",
+                      "height": "28%",
+                      "name": "title",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.3%SH",
+                        "colour": "#503200FF"
+                      },
+                      "hAlignment": "CENTER",
+                      "vAlignment": "BOTTOM",
+                      "textAlign": "CENTER",
+                      "text": "achivGetText"
+                    }
+                  ]
+                },
+                {
+                  "name": "achTitleContainer",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "CENTER",
+                  "vAlignment": "FROM_TOP_TO_BOTTOM",
+                  "boxes": [
+                    {
+                      "name": "titleSpacer",
+                      "width": "100%",
+                      "height": "25%"
+                    },
+                    {
+                      "width": "100%",
+                      "height": "65%",
+                      "hAlignment": "CENTER",
+                      "vAlignment": "CENTER",
+                      "boxes": [
+                        {
+                          "name": "achiev_title",
+                          "width": "100%",
+                          "textAlign": "CENTER",
+                          "maxHeight": "100%",
+                          "_hAlignment": "CENTER",
+                          "vAlignment": "CENTER",
+                          "textWrap": true,
+                          "lineSpacing": 0.8,
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": "3.2%SH",
+                            "_minSize": "1.7%SH",
+                            "_colour": "#ffffffff",
+                            "colour": "#FFECC4FF",
+                            "outline": [
+                              {
+                                "width": 1,
+                                "colour": "#503200FF",
+                                "yoffset": 1
+                              },
+                              {
+                                "width": 1,
+                                "colour": "#503200FF"
+                              }
+                            ]
+                          },
+                          "text": "Worker of the Year"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

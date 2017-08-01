@@ -1,0 +1,9 @@
+{  
+    "name":"cellContainer",
+    "hAlignment":"center",
+    "width":"18.50%sh",
+	"minWidth":"16.415%SW",
+	"height":"29.0%sh",
+	"minHeight":"25.73%SW",
+    "class":"button_anim_child_class"
+}

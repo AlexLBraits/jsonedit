@@ -1,0 +1,60 @@
+{
+	"name":"capacity_content_container",
+	"width":"8%sh",
+	"maxHeight":"5.3%SH",
+	"vAlignment":"from_top_to_bottom",
+	"hAlignment":"center",
+	"_backgroundColour": "#ff000075",
+	"boxes":[
+		{
+			"name":"capacity_content",
+			"maxWidth":"100%",
+			"vAlignment":"center",
+			"hAlignment":"center",
+			"textAlign": "center",
+			"lineSpacing": 0.5,
+			"font":{  
+				"file":"res/fonts/Loyola.otf",
+				"size":"2.5%SH",
+				"colour":"#ffffffff",
+				"outline":[  
+					{  
+						"width":"4%",
+						"colour":"#503200ff",
+						"yoffset":"5%"
+					},
+					{  
+						"width":"4%",
+						"colour":"#503200ff"
+					}
+				]
+			},
+			"text":"Capacity:"
+		},
+		{
+			"name":"capacity_content_value",
+			"maxWidth":"100%",
+			"vAlignment":"center",
+			"hAlignment":"center",
+			"textAlign": "center",
+			"lineSpacing": 1.0,
+			"font":{  
+				"file":"res/fonts/Loyola.otf",
+				"size":"3.7%SH",
+				"colour":"#ffca2aff",
+				"outline":[  
+					{  
+						"width":"4%",
+						"colour":"#503200ff",
+						"yoffset":"5%"
+					},
+					{  
+						"width":"4%",
+						"colour":"#503200ff"
+					}
+				]
+			},
+			"text":"145/999"
+		}
+	]
+}

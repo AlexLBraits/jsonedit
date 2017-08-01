@@ -1,0 +1,20 @@
+{
+	"boxes": [
+		{
+			"name": "fb",
+			"class": "buttonFacebook"
+		},
+		{
+			"name":"spicer",
+			"width": "auto"
+		},
+		{
+			"name": "tw",
+			"class": "buttonTwitter"
+		}
+	],
+	"width": "100%",
+	"hAlignment": "FROM_LEFT_TO_RIGHT",
+	"name": "socPostNode",
+	"vAlignment": "top"
+}

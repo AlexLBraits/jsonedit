@@ -1,0 +1,160 @@
+{
+	"name": "leftPersonContainer",
+	"width": "100%",
+	"height": "100%",
+	"hAlignment": "from_left_to_right",
+	"vAlignment": "bottom",
+	"_backgroundColour": "#78787855",
+	"boxes": [{
+			"name": "spacer",
+			"width": "3.125%SH",
+			"minWidth": "2.773%sw"
+		},
+		{
+			"width": "50%SH",
+			"minWidth": "50%SW",
+			"_backgroundColour": "#78680055",
+			"hAlignment": "left",
+			"vAlignment": "from_top_to_bottom",
+			"boxes": [{
+					"name": "topChicken",
+					"_backgroundColour": "#78680099",
+					"width": "80%",
+					"height": "42%SH",
+					"minHeight": "32%sw",
+					"hAlignment": "left",
+					"boxes": [
+						{
+							"name": "chickenContainer",
+							"height": "100%",
+							"vAlignment": "TOP",
+							"_backgroundColour": "#FF0000AA",
+							"boxes": [{
+								"name": "leftPersonImage",
+								"width": "28.169014%sh",
+								"minWidth": "21.6684723%sw",
+								"height": "56.3380281%sh",
+								"minHeight": "43.3369446%sw",
+								"_backgroundColour": "#007700AA",
+								"background": {
+									"scale": "fit",
+									"_image": "res/images/icons/npcIcons/dialogBubbles/vampire_1.png",
+									"hAlignment": "left",
+									"vAlignment": "top"
+								}
+							}]
+						},
+						{
+							"name": "npcNameContainer",
+							"width": "100%",
+							"height": "100%",
+							"hAlignment": "left",
+							"vAlignment": "bottom",
+							"boxes": [{
+								"name": "charName",
+								"maxHeight": "100%",
+								"width": "28.169014%sh",
+								"minWidth": "21.6684723%sw",
+								"textAlign": "center",
+								"_backgroundColour": "#000000B2",
+								"textWrap": "true",
+								"font": {
+									"file": "res/fonts/Loyola.otf",
+									"size": "4.3%SH",
+									"colour": "#FFFFFFFF",
+									"outline": [{
+											"width": "5%",
+											"colour": "#503200FF",
+											"yoffset": "5%"
+										},
+										{
+											"width": "5%",
+											"colour": "#503200FF"
+										}
+									]
+								},
+								"text": "charName"
+							}]
+						}
+					]
+				},
+				{
+					"name": "bubbleContainer",
+					"_backgroundColour": "#10880099",
+					"width": "100%",
+					"height": "20.0%SH",
+					"minHeight": "17.7462289%SW",
+					"hAlignment": "center",
+					"vAlignment": "top",
+					"boxes": [{
+							"name": "windowBg",
+							"width": "100%",
+							"height": "100%",
+							"_backgroundColour": "#000000B2",
+							"class": "windowFullFillingBackgroundClass"
+						},
+						{
+							"name": "bubbleContent",
+							"vAlignment": "from_top_to_bottom",
+							"hAlignment": "center",
+							"width": "100%",
+							"height": "100%",
+							"boxes": [{
+									"name": "topspacer",
+									"height": "5%",
+									"backgroundColour": "#770000AA"
+								},
+								{
+									"width": "90%",
+									"height": "auto",
+									"_backgroundColour": "#770000AA",
+									"boxes": [{
+										"name": "dialogBubbleText",
+										"width": "100%",
+										"maxHeight": "100%",
+										"textAlign": "left",
+										"_backgroundColour": "#00770055",
+										"textWrap": true,
+										"lineSpacing": 0.8,
+										"font": {
+											"file": "res/fonts/PTS75F.ttf",
+											"size": "2.7%sh",
+											"minSize": "2.1%SW",
+											"colour": "#503200FF"
+										},
+										"_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+									}]
+								},
+								{
+									"hidden": true,
+									"name": "tapToSkipButton",
+									"width": "90%",
+									"hAlignment": "right",
+									"vAlignment": "bottom",
+									"_backgroundColour": "#770000AA",
+									"font": {
+										"file": "res/fonts/PTS55F.ttf",
+										"maxSize": "2.7%SH",
+										"minSize": "1.8%SW",
+										"colour": "#0095b2FF"
+									},
+									"text": "tapToSkipText"
+								},
+								{
+									"name": "bottomspacer",
+									"height": "5.0%",
+									"_backgroundColour": "#770000AA"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "bottomSpacer",
+					"height": "3.125%SH",
+					"minHeight": "2.773%sw"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,223 @@
+{
+    "name": "root",
+    "class": "cover_layer",
+    "hAlignment": "center",
+    "vAlignment": "center",
+    "backgroundColour":"#00000055",
+    "boxes": [
+        {
+            "name": "lotteryWindow",
+            "width": 350,
+            "height": 500,
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "handlers ": {
+                "onControlEventBegan": true,
+                "onTap": true
+            },
+            "backgroundColour":"#fdf9daFF",
+            "boxes": [
+                {
+                    "name": "title",
+                    "width": "100%",
+                    "height": 1,
+                    "hAlignment": "from_right_to_left",
+                    "vAlignment": "center",                    
+                    "boxes": [
+                        {
+                            "name": "closeButton",
+                            "width": "45",
+                            "height": "50",
+                            "class": "buttonClose"
+                        },
+                        {
+                            "name": "titleText",
+                            "width": "AUTO",
+                            "height": "100%",
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "textAlign": "center",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": 16,
+                                "colour": "#FFFFFFFF"
+                            }
+                            
+                        }
+                    ]
+                },
+                {
+                    "name": "main_container",
+                    "width": "100%",
+                    "height": 420,
+                    "hAlignment": "center",                    
+                    "vAlignment": "from_top_to_bottom",
+                    "boxes": [
+                        {
+                            "name": "subtitle_container",
+                            "width": "100%",
+                            "height": "100",
+                            "hAlignment": "CENTER",
+                            "vAlignment": "CENTER",
+                            "text": "Lottery! ",
+                            "font": {
+							"file": "res/fonts/Loyola.otf",
+							"size": 35,
+							"outline": [
+							  {
+								"width": 2,
+								"colour": "#503200FF"
+							  },
+							  {
+								"width": 2,
+								"colour": "#503200FF",
+								"yoffset": 1
+							  } 
+							]
+						  }
+                        },
+                        {
+							"name":"rewardPanel",
+							"hAlignment": "center",
+							"vAlignment": "CENTER",
+							"boxes":[
+								"res/ui/minigames/lottery/rewardPanel.json"
+							]
+						},
+                        {
+                            "name": "fields_and_cover_container",
+                            "width": "100%",
+                            "height": 300,
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "name": "fields_container",
+                                    "width": "100%",
+                                    "height": 300,
+                                    "hAlignment": "by_width",
+                                    "vAlignment": "by_width",
+                                    "_backgroundColour": "#00000099",
+
+                                    
+                                    "boxes": [
+                                        {
+                                            "name": "res_1",
+                                            "width": "50%W",
+                                            "_backgroundColour": "#00000055",
+                                            "height": 100,
+                                            "border": 0,
+                                            "borderColour": "#FF0000FF",
+                                            "hAlignment": "CENTER",
+                                            "vAlignment": "CENTER",
+                                            "boxes": [
+                                                {
+                                                    "name": "win_icon",
+                                                    "width": 70,
+                                                    "height": 70,
+                                                    "border": 0,
+                                                    "hAlignment": "CENTER",
+                                                    "vAlignment": "from_top_to_bottom",
+                                                    "background": {
+                                                        "hAlignment": "CENTER",
+                                                        "vAlignment": "CENTER",
+                                                        "images": {
+                                                            "normal": "res/images/icons/resourcesIcons/res_big_dynamite.png"
+                                                        }
+                                                    }                                                    
+                                                },
+                                                {
+                                                    "name":"nodes",
+                                                    "width":100,
+                                                    "height":100,
+                                                    "hAlignment":"CENTER",
+                                                    "vAlignment":"from_top_to_bottom",
+                                                    "boxes": [
+                                                        {
+                                                            "name": "top",
+                                                            "width": "100%",
+                                                            "height": "AUTO",
+                                                            "boxes": [
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                    
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                    
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "height": "100%",
+                                                                    "width": "AUTO"
+                                                                    
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "middle",
+                                                            "width": "100%",
+                                                            "height": "AUTO",
+                                                            "boxes": [
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "height": "100%",
+                                                                    "width": "AUTO"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "name": "bottom",
+                                                            "width": "100%",
+                                                            "height": "AUTO",
+                                                            "boxes": [
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "width": "AUTO",
+                                                                    "height": "100%"
+                                                                },
+                                                                {
+                                                                    "name": "checkpoint",
+                                                                    "height": "100%",
+                                                                    "width": "AUTO"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "mask_cover",
+                                    "width": 585,
+                                    "height": 200
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

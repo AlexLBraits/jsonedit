@@ -1,0 +1,10 @@
+{
+  "name": "bankCellBox",
+  "vAlignment": "CENTER",
+  "hAlignment": "CENTER",
+  "_backgroundColour": "#FF000099",
+  "class" : "button_anim_child_class",
+  "boxes": [
+    "res/ui/purchaseWindow/bankCellContent.json"
+  ]
+}

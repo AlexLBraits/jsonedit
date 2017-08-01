@@ -1,0 +1,374 @@
+{
+  "name": "cell",
+  "sizeBase": "cellContent",
+  "width": "100%",
+  "height": "100%",
+  "hAlignment": "CENTER",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "name": "backgroundContainer",
+      "vAlignment": "CENTER",
+      "hAlignment": "CENTER",
+      "width": "44%sh",
+      "minWidth": "32.98350824587706%sw",
+      "height": "11.48%sh",
+      "minHeight": "8.605697151424287%sw",
+      "_backgroundColour": "#FFAA88FF",
+      "boxes": [
+        {
+          "hidden": true,
+          "name": "background_1",
+          "vAlignment": "CENTER",
+          "hAlignment": "from_left_to_right",
+          "width": "100%",
+          "height": "100%",
+          "boxes": [
+            {
+              "vAlignment": "CENTER",
+              "hAlignment": "CENTER",
+              "width": "21.238938%h",
+              "height": "100%",
+              "background": {
+                "image": "res/images/interface/windows/competitions/top_background/gold_left.png",
+                "scale": "stretch"
+              }
+            },
+            {
+              "vAlignment": "CENTER",
+              "hAlignment": "CENTER",
+              "width": "auto",
+              "height": "100%",
+              "background": {
+                "image": "res/images/interface/windows/competitions/top_background/gold.png",
+                "scale": "stretch"
+              }
+            }
+          ]
+        },
+        {
+          "hidden": true,
+          "name": "background_2",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "width": "100%",
+          "height": "100%",
+          "background": {
+            "image": "res/images/interface/windows/competitions/top_background/blue.png",
+            "scale": "stretch"
+          }
+        },
+        {
+          "hidden": true,
+          "name": "background_3",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "width": "100%",
+          "height": "100%",
+          "background": {
+            "image": "res/images/interface/windows/competitions/top_background/brown.png",
+            "scale": "stretch"
+          }
+        },
+        {
+          "hidden": true,
+          "name": "background",
+          "vAlignment": "CENTER",
+          "hAlignment": "CENTER",
+          "width": "100%",
+          "height": "100%",
+          "background": {
+            "image": "res/images/interface/windows/competitions/top_background/gray.png",
+            "scale": "stretch"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cellContent",
+      "width": "44%sh",
+      "minWidth": "32.98350824587706%sw",
+      "height": "11.48%sh",
+      "minHeight": "8.605697151424287%sw",
+      "vAlignment": "center",
+      "hAlignment": "from_left_to_right",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+        {
+          "width": "8%",
+          "height": "40%",
+          "vAlignment": "bottom",
+          "hAlignment": "center",
+          "_backgroundColour": "#FF00FF33",
+          "boxes": [
+            {
+              "name": "numPosTextImage",
+              "width": "2.1126760563380285%sh",
+              "minWidth": "1.5837151846611908%sw",
+              "height": "2.640845070422535%sh",
+              "minHeight": "1.9796439808264878%sw",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#00FF0033",
+              "background": {
+                "_image": "res/images/interface/windows/competitions/top_1.png",
+                "scale": "stretch"
+              }
+            },
+            {
+              "name": "numPosText",
+              "hAlignment": "right",
+              "vAlignment": "center",
+              "textAlign": "right",
+              "_backgroundColour": "#00FF0033",
+              "lineSpacing": 1,
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "size": "3.380281690140845%sh",
+                "minSize": "2.533944295457905%sw",
+                "colour": "#503200FF"
+              },
+              "_text": "4"
+            }
+          ]
+        },
+        {
+          "width": "27%",
+          "height": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF33",
+          "boxes": [
+            {
+              "width": "11.03%sh",
+              "minWidth": "8.268365817091453%sw",
+              "height": "10%sh",
+              "minHeight": "7.496251874062968%sw",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#00FF0033",
+              "background": {
+                "image": "res/images/interface/windows/competitions/avatar_background.png",
+                "scale": "stretch"
+              },
+              "boxes": [
+                {
+                  "width": "100%",
+                  "height": "97%",
+                  "vAlignment": "bottom",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "iconLeader",
+                      "width": "8.13380281690141%sh",
+                      "minWidth": "6.097303460945584%sw",
+                      "height": "8.450704225352114%sh",
+                      "minHeight": "6.334860738644763%sw",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#00FF0033",
+                      "background": {
+                        "image": "res/images/interface/windows/competitions/avatar.png",
+                        "scale": "stretch"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": "100%",
+              "height": "90%",
+              "vAlignment": "top",
+              "hAlignment": "left",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "width": "4.25%sh",
+                  "minWidth": "3.1859070464767614%sw",
+                  "height": "4.25%sh",
+                  "minHeight": "3.1859070464767614%sw",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#00FF0033",
+                  "background": {
+                    "image": "res/images/interface/windows/competitions/avatar_star.png",
+                    "scale": "stretch"
+                  },
+                  "boxes": [
+                    {
+                      "name": "levelText",
+                      "width": "auto",
+                      "height": "100%",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "textWrap": true,
+                      "lineSpacing": 0.5,
+                      "textAlign": "center",
+                      "font": {
+                        "file": "res/fonts/Loyola.otf",
+                        "size": "2.376760563380282%SH",
+                        "minSize": "1.7816795827438394%SW",
+                        "colour": "#ffffffFF",
+                        "outline": [
+                          {
+                            "width": "4%",
+                            "colour": "#503200ff",
+                            "yoffset": "4%"
+                          },
+                          {
+                            "width": "4%",
+                            "colour": "#503200ff"
+                          }
+                        ]
+                      },
+                      "_text": "80"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "width": "auto",
+          "height": "100%",
+          "vAlignment": "from_top_to_bottom",
+          "hAlignment": "center",
+          "_backgroundColour": "#FF000033",
+          "boxes": [
+            {
+              "width": "100%",
+              "height": "50%",
+              "vAlignment": "bottom",
+              "hAlignment": "left",
+              "_backgroundColour": "#FF000033",
+              "boxes": [
+                {
+                  "name": "namePlayerText",
+                  "maxWidth": "100%",
+                  "hAlignment": "right",
+                  "vAlignment": "center",
+                  "textAlign": "right",
+                  "_backgroundColour": "#00FF0033",
+                  "lineSpacing": 1,
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "_size": "3.169014084507042%sh",
+                    "_minSize": "2.3755727769917856%sw",
+                    "colour": "#503200FF"
+                  },
+                  "text": "Имя игрока длинное"
+                }
+              ]
+            },
+            {
+              "width": "100%",
+              "height": "20%",
+              "vAlignment": "center",
+              "hAlignment": "left",
+              "_backgroundColour": "#00FF0033",
+              "boxes": [
+                {
+                  "name": "ResPlayerValueText",
+                  "hAlignment": "right",
+                  "vAlignment": "center",
+                  "textAlign": "right",
+                  "_backgroundColour": "#00FF0033",
+                  "lineSpacing": 1,
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "2.640845070422535%sh",
+                    "minSize": "1.9796439808264878%sw",
+                    "colour": "#503200FF"
+                  },
+                  "text": "99 999"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "iconRewardContainer",
+          "width": "26%",
+          "height": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#00FF0033",
+          "boxes": [
+            {
+              "name": "underParticle",
+              "width": "150%",
+              "height": "150%",
+              "_backgroundColour": "#00FF0033"
+            },
+            {
+              "name": "iconReward",
+              "width": "10.56338028169014%sh",
+              "minWidth": "7.918575923305951%sw",
+              "height": "10.56338028169014%sh",
+              "minHeight": "7.918575923305951%sw",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#00FF0033",
+              "background": {
+                "_image": "res/images/interface/windows/competitions/bonus_pack/enigma_icon.png",
+                "scale": "stretch"
+              },
+              "boxes": [
+                {
+                  "hidden": true,
+                  "name": "iconRewardTape",
+                  "width": "100%",
+                  "height": "100%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#00FF0033",
+                  "background": {
+                    "image": "res/images/interface/windows/competitions/avatar_tape.png",
+                    "scale": "stretch"
+                  },
+                  "boxes": [
+                    {
+                      "width": "100%",
+                      "height": "65%",
+                      "vAlignment": "bottom",
+                      "hAlignment": "center",
+                      "boxes": [
+                        {
+                          "hAlignment": "right",
+                          "vAlignment": "center",
+                          "textAlign": "right",
+                          "_backgroundColour": "#00FF0033",
+                          "rotate": -19,
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "size": "1.9014084507042253%SH",
+                            "minSize": "1.4253436661950714%SW",
+                            "colour": "#ffffffFF",
+                            "outline": [
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff",
+                                "yoffset": "4%"
+                              },
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff"
+                              }
+                            ]
+                          },
+                          "text": "My reward"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

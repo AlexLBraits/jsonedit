@@ -1,0 +1,135 @@
+{
+    "name": "back",
+    "hAlignment": "left",
+    "vAlignment": "top",
+    "class": "cover_layer",
+    "boxes": [
+        {
+            "name": "stairsContainer",
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "center",
+            "vAlignment": "from_top_to_bottom",
+            "handlers":{
+                "onTap":true
+            },
+            "boxes": [
+                {
+                    "name": "topStairContainer",
+                    "width": "100%",
+                    "height": "13%",
+                    "hAlignment": "center",
+                    "vAlignment": "top",
+                    "boxes": [
+                        {
+                            "name": "topStair",
+                            "width": "100%",
+                            "height": "100%",
+                            "hAlignment": "right",
+                            "vAlignment": "center",
+                            "backgroundColour": "#000000FF",
+                            "boxes": [
+                            {
+                               "name":"skipContainer",
+                               "width":0,
+                               "height":"100%",
+                               "hAlignment":"from_right_to_left",
+                               "vAlignment":"center",
+                               "_backgroundColour": "#FF000078",
+                               "hidden": true,
+                               "margin":{
+                                    "right":10
+                               },
+                               "boxes":[
+                                {
+                                    "name": "skipArrow",
+                                    "width": 37,
+                                    "height": 27,
+                                    "hAlignment":"center",
+                                    "vAlignment":"center",
+                                    "_backgroundColour":"#FF000078",
+                                    "background":{
+                                        "images":{
+                                            "normal":"res/images/interface/windows/dialogScreen/arrow.png",
+                                            "pressed":"res/images/interface/windows/dialogScreen/arrow.png"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "skipDialogButton",
+                                    "width": 0,
+                                    "height": "100%",
+                                    "hAlignment": "right",
+                                    "vAlignment": "center",
+                                    "textAlign":"right",
+                                    "font": {
+                                        "file": "res/fonts/Loyola.otf",
+                                        "size": 30,
+                                        "colour": "#FFFFFFFF"
+                                    },
+                                    "text": "dialog_skip",
+                                    "margin":{
+                                        "right":7
+                                    }
+                                }
+                               ]
+                            }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "spicer",
+                    "width": "100%",
+                    "height": "AUTO",
+                    "hAlignment": "center",
+                    "vAlignment": "center"
+                },
+                {
+                    "name": "bottomStairContainer",
+                    "width": "100%",
+                    "height": "13%",
+                    "hAlignment": "center",
+                    "vAlignment": "bottom",
+                    "boxes": [
+                        {
+                            "name": "bottomStair",
+                            "width": "100%",
+                            "height": "100%",
+                            "backgroundColour": "#000000FF",
+                            "hAlignment":"center",
+                            "vAlignment":"center",
+                            "boxes": [
+                                {
+                                    "name": "nextStepButton",
+                                    "width": 300,
+                                    "maxHeight": "100%",
+                                    "hAlignment": "center",
+                                    "vAlignment": "center",
+                                    "textAlign":"center",
+                                    "textWrap":true,
+                                    "hidden": true,
+                                    "font": {
+                                        "file": "res/fonts/Loyola.otf",
+                                        "size": 26,
+                                        "colour": "#FFFFFF34"
+                                    },
+                                    "text": "dialog_continue"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "dialogScreen",
+            "width": "100%",
+            "height": "100%",
+            "hAlignment": "left",
+            "vAlignment": "center",
+            "boxes": [
+            ]
+        }
+    ]
+}

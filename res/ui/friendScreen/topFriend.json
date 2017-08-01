@@ -1,0 +1,329 @@
+{
+    "name": "topFriend",
+    "width": "100%",
+    "hAlignment": "from_left_to_right",
+    "vAlignment": "top",
+    "height": 0,
+    "boxes": [
+        {
+            "width": 0,
+            "hAlignment": "left",
+            "vAlignment": "from_top_to_bottom",
+            "margin": {
+                "left": 2,
+                "top": 2
+            },
+            "boxes": [
+                {
+                    "name": "friendliness_node",
+                    "hAlignment": "from_right_to_left",
+                    "vAlignment": "center",
+                    "height": 80,
+                    "boxes": [
+                        {
+                            "height": 40,
+                            "width": 176,
+                            "vAlignment": "center",
+                            "hAlignment": "left",
+                            "padding": {
+                                "top": 5,
+                                "left": 10,
+                                "right": 10
+                            },
+                            "background": {
+                                "scale": "window",
+                                "corner": [
+                                    22,
+                                    50
+                                ],
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bar_frendliness.png"
+                                }
+                            },
+                            "boxes": [
+                                {
+                                    "height": 26,
+                                    "maxWidth": "100%",
+                                    "width": "0%",
+                                    "name": "friendliness_progressbar",
+                                    "background": {
+                                        "scale": "window",
+                                        "corner": [
+                                            20,
+                                            20
+                                        ],
+                                        "images": {
+                                            "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bar_frendliness_fill.png"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "friendliness_count",
+                                    "text": "75/100",
+                                    "width": "90%",
+                                    "maxWidth": "90%",
+                                    "hAlignment": "center",
+                                    "margin": {
+                                        "left": 20
+                                    },
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 18,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 0
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "friendliness_bubble_entry",
+                                    "width": 20,
+                                    "margin": {
+                                        "left": 120
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "friendliness_icon",
+                            "width": 87,
+                            "height": 87,
+                            "margin": {
+                                "right": -46
+                            },
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/icon_flower.png"
+                                }
+                            },
+                            "boxes": [
+                                {
+                                    "name": "friendliness_level",
+                                    "maxWidth": "40%",
+                                    "text": "10",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 30,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 0
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "help_node",
+                    "hAlignment": "from_right_to_left",
+                    "vAlignment": "center",
+                    "height": 80,
+                    "margin": {
+                        "left": 60,
+                        "top": -34
+                    },
+                    "boxes": [
+                        {
+                            "height": 30,
+                            "width": 130,
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "padding": {
+                                "top": 5,
+                                "left": 30,
+                                "right": 10
+                            },
+                            "background": {
+                                "scale": "window",
+                                "corner": [
+                                    8,
+                                    14
+                                ],
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bar_help.png"
+                                }
+                            },
+                            "boxes": [
+                                {
+                                    "name": "fp_count",
+                                    "text": "75/100",
+                                    "maxWidth": "100%",
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "size": 18,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 0
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "help_icon",
+                            "width": 55,
+                            "height": 55,
+                            "margin": {
+                                "right": -30
+                            },
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "background": {
+                                "scale": "contain",
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/icon_handshake.png"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "timerNode",
+                    "height": 20,
+                    "width": 40,
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "center",
+                    "margin": {
+                        "top": -22,
+                        "left": 130
+                    },
+                    "boxes": [
+                        {
+                            "height": 20,
+                            "width": 20,
+                            "background": {
+                                "images": {
+                                    "normal": "res/images/interface/windows/competitions/timer.png"
+                                }
+                            }
+                        },
+                        {
+                            "name": "timerText",
+                            "width": 40,
+                            "maxWidth": 40,
+                            "height": "100%",
+                            "text": "2:59",
+                            "vAlignment": "top",
+                            "font": {
+                                "file": "res/fonts/PTS75F_W.ttf",
+                                "size": 12,
+                                "colour": "#ffffffFF",
+                                "outline": {
+                                    "width": 1,
+                                    "colour": "#553c1eff",
+                                    "yoffset": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "centerContainer",
+            "width": "auto",
+            "hAlignment": "center",
+            "vAlignment": "top",
+            "height": 0,
+            "boxes": [
+                {
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "top",
+                    "boxes": [
+                        {
+                            "height": 100,
+                            "width": 48,
+                            "name": "leftArrow",
+                            "class": "btn_tap_highlight",
+                            "background": {
+                                "vAlignment": "center",
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_L.png",
+                                    "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_L_gray.png"
+                                }
+                            }
+                        },
+                        {
+                            "name": "centerPanelContainer",
+                            "width": 0,
+                            "height": 100,
+                            "vAlignment": "center",
+                            "hAlignment": "left",
+                            "_boxes": [
+                                "res/ui/FriendScreen/topFriendCenterPanel.json"
+                            ]
+                        },
+                        {
+                            "height": 100,
+                            "width": 39,
+                            "name": "rightArrow",
+                            "class": "btn_tap_highlight",
+                            "background": {
+                                "vAlignment": "center",
+                                "images": {
+                                    "normal": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_R.png",
+                                    "disabled": "res/images/interface/Island2Art/mainScreen/friendScreen/bttn_arrow_R_gray.png"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "friend_island_name",
+                    "maxWidth": "90%",
+                    "font": {
+                        "file": "res/fonts/loyola.otf",
+                        "size": 35,
+                        "minSize": 35,
+                        "colour": "#ffffffFF",
+                        "outline": {
+                            "width": 1,
+                            "colour": "#6e2300ff",
+                            "yoffset": 1
+                        }
+                    },
+                    "textAlign": "center",
+                    "vAlignment": "top",
+                    "margin": {
+                        "top": 90
+                    },
+                    "hAlignment": "center",
+                    "text": "blablala"
+                }
+            ]
+        },
+        {
+            "vAlignment": "top",
+            "hAlignment": "right",
+            "width": 0,
+            "height": 69,
+            "boxes": [
+                {
+                    "name": "fullscreenButton",
+                    "width": 69,
+                    "height": 69,
+                    "class": "btn_tap_highlight_anim",
+                    "handlers": {
+                        "onTap": "switchFullscreen",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/mainScreen/bttn_fulscr_on.png"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

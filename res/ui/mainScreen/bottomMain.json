@@ -1,0 +1,398 @@
+{
+    "name": "bottomMain",
+    "width": "100%",
+    "height": "12%SH",
+    "_backgroundColour": "#00FF0078",
+    "vAlignment": "bottom",
+    "hAlignment": "center",
+    "boxes": [
+        {
+            "name": "panel_background",
+            "height": "7.4%SH",
+            "width": "56%SH",
+            "hAlignment": "from_left_to_right",
+            "vAlignment": "bottom",
+            "boxes": [
+                {
+                    "height": "100%",
+                    "width": "10.15%sh",
+                    "background": {
+                        "image": "res/images/interface/mainScreen/bg_bottom_left.png",
+                        "scale": "fit",
+                        "hAlignment": "right"
+                    }
+                },
+                {
+                    "height": "100%",
+                    "width": "auto",
+                    "background": {
+                        "image": "res/images/interface/mainScreen/bg_bottom_center.png",
+                        "scale": "stretch"
+                    }
+                },
+                {
+                    "height": "100%",
+                    "width": "10.15%sh",
+                    "background": {
+                        "image": "res/images/interface/mainScreen/bg_bottom_right.png",
+                        "scale": "fit",
+                        "hAlignment": "left"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "centralButtonsContainer",
+            "hAlignment": "from_left_to_right",
+            "width": "56.0%sh",
+            "vAlignment": "bottom",
+            "boxes": [
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                },
+                {
+                    "name": "bankButton",
+                    "class": "button_class",
+                    "height": "12%SH",
+                    "width": "8.68%SH",
+                    "_backgroundColour": "#00FF0078",
+                    "vAlignment": "from_bottom_to_top",
+                    "hAlignment": "center",
+                    "handlers": {
+                        "onGuiUp": "showBank",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "boxes": [
+                        {
+                            "name": "bankButtonLabel",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "textWrap": false,
+                            "textAlign": "center",
+                            "text": "mainscreenBankTab",
+                            "height": "3.17%sh",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.7%SH",
+                                "colour": "#ffffffFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "bankButtonImage",
+                            "_backgroundColour": "#00FF0078",
+                            "background": {
+                                "image": "res/images/interface/mainScreen/icons_bttm_bank.png",
+                                "scale": "fit"
+                            },
+                            "width": "8.14%SH",
+                            "height": "7.19%SH",
+                            "vAlignment": "bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "width": "112%",
+                                    "height": "120%",
+                                    "vAlignment": "top",
+                                    "hAlignment": "right",
+                                    "boxes": [
+                                        {
+                                            "name": "bankNotifier",
+                                            "height": "4.55%SH",
+                                            "width": "2.75%SH",
+                                            "hidden": true,
+                                            "background": {
+                                                "image":"res/images/interface/commonArt/notif/notif_dot.png",
+                                                "scale": "fit"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                },
+                {
+                    "name": "shopButton",
+                    "class": "button_class",
+                    "handlers": {
+                        "onGuiUp": "showShop",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "height": "12%SH",
+                    "width": "8.68%SH",
+                    "vAlignment": "from_bottom_to_top",
+                    "hAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "shopButtonLabel",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "textWrap": false,
+                            "textAlign": "center",
+                            "height": "3.17%sh",
+                            "text": "mainscreenShopTab",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.7%SH",
+                                "colour": "#ffffffFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "shopButtonImage",
+                            "background": {
+                                "image": "res/images/interface/mainScreen/icons_bttm_shop.png",
+                                "scale": "fit"
+                            },
+                            "width": "7.72%SH",
+                            "height": "6.66%SH",
+                            "vAlignment": "bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "width": "112%",
+                                    "height": "120%",
+                                    "vAlignment": "top",
+                                    "hAlignment": "right",
+                                    "boxes": [
+                                        {
+                                            "name": "shopNotifier",
+                                            "height": "4.55%SH",
+                                            "width": "2.75%SH",
+                                            "hidden": true,
+                                            "background": {
+                                                "image":"res/images/interface/commonArt/notif/notif_dot.png",
+                                                "scale": "fit"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                },
+                {
+                    "name": "resStorageButton",
+                    "class": "button_class",
+                    "hAlignment": "center",
+                    "vAlignment": "from_bottom_to_top",
+                    "height": "12%SH",
+                    "width": "8.68%SH",
+                    "handlers": {
+                        "onGuiUp": "showStorage",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "boxes": [
+                        {
+                            "name": "storageButtonLabel",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "textWrap": false,
+                            "textAlign": "center",
+                            "height": "3.17%sh",
+                            "text": "mainscreenWarehouseTab",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.7%SH",
+                                "colour": "#ffffffFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "resStorageButtonIcon",
+                            "_backgroundColour": "#00FF0078",
+                            "background": {
+                                "image": "res/images/interface/mainScreen/icons_bttm_storage.png",
+                                "scale": "fit"
+                            },
+                            "width": "7.5%SH",
+                            "height": "6.87%SH",
+                            "vAlignment": "bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "width": "120%",
+                                    "height": "120%",
+                                    "hAlignment": "right",
+                                    "vAlignment": "top",
+                                    "boxes": [
+                                        {
+                                            "name": "barnFullMark",
+                                            "height": "4.55%SH",
+                                            "width": "2.75%SH",
+                                            "hidden": true,
+                                            "background": {
+                                                "image":"res/images/interface/commonArt/notif/notif_dot.png",
+                                                "scale": "fit"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "underParticle",
+                            "width": "9.68%SH",
+                            "height": 0
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                },
+                {
+                    "name": "mainSocialButton",
+                    "class": "button_class",
+                    "hAlignment": "center",
+                    "vAlignment": "from_bottom_to_top",
+                    "height": "12%SH",
+                    "width": "8.68%SH",
+                    "handlers": {
+                        "onGuiUp": "showFriendsPanel",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "boxes": [
+                        {
+                            "name": "mainSocialButtonLabel",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "textWrap": false,
+                            "textAlign": "center",
+                            "height": "3.17%sh",
+                            "text": "mainscreenFriendsTab",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.7%SH",
+                                "colour": "#ffffffFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mainSocialButtonIcon",
+                            "_backgroundColour": "#00FF0078",
+                            "background": {
+                                "image": "res/images/interface/mainScreen/icons_bttm_chat.png",
+                                "scale": "fit"
+                            },
+                            "width": "7.5%SH",
+                            "height": "6.87%SH"
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                },
+                {
+                    "name": "mainClansButton",
+                    "class": "button_class",
+                    "hAlignment": "center",
+                    "vAlignment": "from_bottom_to_top",
+                    "height": "12%SH",
+                    "width": "8.68%SH",
+                    "handlers": {
+                        "onGuiUp": "showClansWindow",
+                        "onControlEventBegan": true,
+                        "onControlEventEnded": true
+                    },
+                    "boxes": [
+                        {
+                            "name": "mainClansButtonLabel",
+                            "vAlignment": "center",
+                            "hAlignment": "center",
+                            "textWrap": false,
+                            "textAlign": "center",
+                            "height": "3.17%sh",
+                            "text": "mainscreenClanTab",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "size": "2.7%SH",
+                                "colour": "#ffffffFF",
+                                "outline": [
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff",
+                                        "yoffset": "5%"
+                                    },
+                                    {
+                                        "width": "5%",
+                                        "colour": "#503200ff"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mainClansButtonIcon",
+                            "_backgroundColour": "#00FF0078",
+                            "background": {
+                                "image": "res/images/interface/mainScreen/icons_bttm_chat.png",
+                                "scale": "fit"
+                            },
+                            "width": "7.5%SH",
+                            "height": "6.87%SH"
+                        }
+                    ]
+                },
+                {
+                    "type": "spacer",
+                    "minWidth": "2%SH"
+                }
+            ]
+        }
+    ]
+}

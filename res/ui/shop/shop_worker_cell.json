@@ -1,0 +1,402 @@
+{
+  "name": "tapAnimatedBox",
+  "hAlignment": "center",
+  "vAlignment": "center",
+  "boxes": [
+    {
+      "name": "background_container",
+      "width": "16.26760563380282%sh",
+      "minWidth": "14.434432683054853%SW",
+      "_height": "23.87323943661972%sh",
+      "_minHeight": "21.182998612794783%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "_backgroundColour": "#FF000075",
+      "background": {
+        "image": "res/images/interface/bottomMenu/slot_craft.png",
+        "scale": "fit",
+        "vAlignment": "bottom"
+      },
+      "boxes": [
+        {
+          "height": "16.0%",
+          "width": "100%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#00FF0075"
+        },
+        {
+          "name": "captionContainer",
+          "height": "15%",
+          "width": "90%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#FF000055",
+          "boxes": [
+            {
+              "name": "caption",
+              "width": "90%",
+              "maxHeight": "100%",
+              "textAlign": "center",
+              "textWrap": true,
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#0000FF55",
+              "font": {
+                "size": "4%sh",
+                "file": "res/fonts/Loyola.otf",
+                "colour": "#FFFFFFFF",
+                "outline": [
+                  {
+                    "width": "4%",
+                    "colour": "#503200ff",
+                    "yoffset": "5%"
+                  },
+                  {
+                    "width": "4%",
+                    "colour": "#503200ff"
+                  }
+                ]
+              },
+              "text": "Grill master"
+            }
+          ]
+        },
+        {
+          "name": "centerContent",
+          "height": "44%",
+          "width": "90%",
+          "vAlignment": "center",
+          "hAlignment": "from_left_to_right",
+          "_backgroundColour": "#00FF0033",
+          "boxes": [
+            {
+              "width": "auto",
+              "height": "100%",
+              "_backgroundColour": "#FF0000FF"
+            },
+            {
+              "name": "workerIcon",
+              "height": "13%SH",
+              "minHeight": "11.8%SW",
+              "width": "6.3%SH",
+              "minWidth": "5.5%SW",
+              "_backgroundColour": "#00FF0075",
+              "background": {
+                "image": "res/images/icons/buildingsShopIcons/worker_grillmaster.png",
+                "scale": "fit",
+                "hAlignment": "center"
+              }
+            },
+            {
+              "name": "attributesContainer",
+              "width": "8.0%SH",
+              "minWidth": "7.09849157%SW",
+              "height": "13.5%SH",
+              "minHeight": "11.978705%SW",
+              "_type": "Scroller",
+              "overflow": "hidden",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#FF000033",
+              "boxes": [
+                {
+                  "hidden": false,
+                  "name": "attributesContainer1x3",
+                  "width": "4.0%SH",
+                  "minWidth": "3.549246%SW",
+                  "height": "13.5%SH",
+                  "minHeight": "11.978705%SW",
+                  "_type": "Scroller",
+                  "overflow": "hidden",
+                  "vAlignment": "from_top_to_bottom",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#FF000033",
+                  "_boxes": [
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json"
+                  ]
+                },
+                {
+                  "hidden": false,
+                  "name": "attributesContainer2x3",
+                  "width": "8.0%SH",
+                  "minWidth": "7.09849157%SW",
+                  "height": "13.5%SH",
+                  "minHeight": "11.978705%SW",
+                  "overflow": "hidden",
+                  "vAlignment": "by_height",
+                  "hAlignment": "by_height",
+                  "_backgroundColour": "#FF000033",
+                  "_boxes": [
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json",
+                    "res/ui/shop/shop_worker_cellAttribute.json"
+                  ]
+                },
+                {
+                  "hidden": false,
+                  "name": "attributesBox2x2",
+                  "width": "8.0%SH",
+                  "minWidth": "7.09849157%SW",
+                  "height": "13.5%SH",
+                  "minHeight": "11.978705%SW",
+                  "vAlignment": "from_top_to_bottom",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#FF000033",
+                  "boxes": [
+                    {
+                      "name": "attributesContainer2x2",
+                      "width": "8.0%SH",
+                      "minWidth": "7.09849157%SW",
+                      "height": "9.0%SH",
+                      "minHeight": "7.985803%SW",
+                      "_type": "Scroller",
+                      "overflow": "hidden",
+                      "vAlignment": "by_height",
+                      "hAlignment": "by_height",
+                      "_backgroundColour": "#FF000033",
+                      "_boxes": [
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json",
+                        "res/ui/shop/shop_worker_cellAttribute.json"
+                      ]
+                    },
+                    {
+                      "name": "arrow_container",
+                      "class": "button_anim_child_class",
+                      "height": "auto",
+                      "width": "80%",
+                      "hAlignment": "from_left_to_right",
+                      "vAlignment": "center",
+                      "_backgroundColour": "#00FF00FF",
+                      "boxes": [
+                        {
+                          "height": "100%",
+                          "width": "50%",
+                          "hAlignment": "left",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#FF0000FF",
+                          "boxes": [
+                            {
+                              "hidden": true,
+                              "name": "arrow_left",
+                              "height": "3.169%SH",
+                              "minHeight": "2.8119%SW",
+                              "width": "2.007%SH",
+                              "minWidth": "1.781%SW",
+                              "class": "button_anim_child_class",
+                              "scale": [
+                                -1,
+                                1
+                              ],
+                              "_backgroundColour": "#FF0000FF",
+                              "background": {
+                                "image": "res/images/interface/commonArt/shop_cell_arrow.png",
+                                "scale": "fit"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "height": "100%",
+                          "width": "50%",
+                          "hAlignment": "right",
+                          "vAlignment": "center",
+                          "_backgroundColour": "#FF0000FF",
+                          "boxes": [
+                            {
+                              "hidden": true,
+                              "name": "arrow_right",
+                              "height": "3.169%SH",
+                              "minHeight": "2.8119%SW",
+                              "width": "2.007%SH",
+                              "minWidth": "1.781%SW",
+                              "class": "button_anim_child_class",
+                              "_backgroundColour": "#FF0000FF",
+                              "background": {
+                                "image": "res/images/interface/commonArt/shop_cell_arrow.png",
+                                "scale": "fit"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "width": "auto",
+              "height": "100%",
+              "_backgroundColour": "#FF0000FF"
+            }
+          ]
+        },
+        {
+          "name": "bottomContent",
+          "height": "20%",
+          "width": "90%",
+          "vAlignment": "center",
+          "hAlignment": "center",
+          "_backgroundColour": "#0000FF75",
+          "boxes": [
+            {
+              "hidden": false,
+              "name": "priceContainer",
+              "height": "100%",
+              "width": "100%",
+              "vAlignment": "center",
+              "hAlignment": "center",
+              "_backgroundColour": "#0000FF75",
+              "boxes": [
+                {
+                  "height": "100%",
+                  "width": "100%",
+                  "vAlignment": "from_top_to_bottom",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#F0000075",
+                  "boxes": [
+                    {
+                      "name": "hireLabel",
+                      "height": "50%",
+                      "maxWidth": "90%",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#0000FF75",
+                      "font": {
+                        "_size": "2.6408%SH",
+                        "_minSize": "2.34325%SW",
+                        "file": "res/fonts/Loyola.otf",
+                        "colour": "#503200ff"
+                      },
+                      "text": "WorkerPanelHireBtn"
+                    },
+                    {
+                      "height": "60%",
+                      "maxWidth": "90%",
+                      "vAlignment": "center",
+                      "hAlignment": "from_left_to_right",
+                      "_backgroundColour": "#00FF0075",
+                      "boxes": [
+                        {
+                          "name": "moneyIcon",
+                          "height": "3.697%SH",
+                          "minHeight": "3.28%SW",
+                          "width": "3.697%SH",
+                          "minWidth": "3.28%SW",
+                          "vAlignment": "center",
+                          "hAlignment": "right",
+                          "_backgroundColour": "#F0FF0075",
+                          "background": {
+                            "image": "res/images/icons/attributeIcons/money1_drop.png",
+                            "scale": "fit"
+                          }
+                        },
+                        {
+                          "name": "priceLabel",
+                          "height": "100%",
+                          "maxWidth": "75%",
+                          "vAlignment": "center",
+                          "hAlignment": "left",
+                          "_backgroundColour": "#00FF0FFF",
+                          "font": {
+                            "file": "res/fonts/Loyola.otf",
+                            "colour": "#FFFFFFFF",
+                            "size": "3.9612676056338025%SH",
+                            "minSize": "2.34325%SW",
+                            "outline": [
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff",
+                                "yoffset": "5%"
+                              },
+                              {
+                                "width": "4%",
+                                "colour": "#503200ff"
+                              }
+                            ]
+                          },
+                          "text": "150"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "hidden": false,
+              "name": "statusText",
+              "maxWidth": "90%",
+              "height": "5.1%SH",
+              "vAlignment": "bottom",
+              "hAlignment": "center",
+              "font": {
+                "file": "res/fonts/Loyola.otf",
+                "_size": "2.6408%SH",
+                "_minSize": "2.34325%SW",
+                "colour": "#503200ff"
+              },
+              "text": "WorkerPanelHaveHiredBtn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "container_notif_base",
+      "width": "16.26760563380282%sh",
+      "minWidth": "14.434432683054853%SW",
+      "_height": "23.87323943661972%sh",
+      "_minHeight": "21.182998612794783%SW",
+      "height": "28.20%sh",
+      "minHeight": "25.02%SW",
+      "vAlignment": "from_top_to_bottom",
+      "hAlignment": "center",
+      "_backgroundColour": "#FF000075",
+      "boxes": [
+        {
+          "name": "spacer",
+          "width": "90%",
+          "height": "11.5%",
+          "_backgroundColour": "#FF000075"
+        },
+        {
+          "name": "containerNotif",
+          "width": "90%",
+          "height": "23%",
+          "vAlignment": "top",
+          "hAlignment": "right",
+          "_backgroundColour": "#000000ff",
+          "boxes": [
+            {
+              "name": "boxNotif",
+              "hidden": true,
+              "_backgroundColour": "#000000ff",
+              "vAlignment": "top",
+              "hAlignment": "right",
+              "width": "30%",
+              "height": "50%",
+              "boxes": [
+                "res/ui/notifier.json"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

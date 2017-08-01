@@ -1,0 +1,224 @@
+{
+    "name": "shopHeaderPanel",
+    "width": "100%",
+    "height": "100%",
+    "vAlignment": "from_top_to_bottom",
+    "hAlignment": "center",
+    "boxes": [
+        {
+            "name": "emptyBox",
+            "width": "56.34%SH",
+            "height": "6.43%SH"
+        },
+        {
+            "name": "panel_background",
+            "_backgroundColour": "#00FF0075",
+            "width": "56.34%SH",
+            "height": "17.8%SH",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "boxes": [
+                {
+                    "name": "panel_background_continer_text",
+                    "hAlignment": "center",
+                    "width": "100%",
+                    "vAlignment": "center",
+                    "boxes": [
+                        {
+                            "name": "panel_background_continer",
+                            "maxWidth": "100%",
+                            "minWidth": "36%sh",
+                            "sizeBase": "titleContent",
+                            "width": "140%",
+                            "_backgroundColour": "#00FF0075",
+                            "hAlignment": "from_left_to_right",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "name": "left_part",
+                                    "width": "6.9%sh",
+                                    "height": "14.15492957746479%sh",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_1.png",
+                                        "scale": "fit",
+                                        "hAlignment": "right",
+                                        "vAlignment": "bottom"
+                                    }
+                                },
+                                {
+                                    "name": "left_middle_part",
+                                    "width": "auto",
+                                    "height": "14.15492957746479%sh",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4.png",
+                                        "scale": "stretch",
+                                        "vAlignment": "bottom"
+                                    }
+                                },
+                                {
+                                    "name": "center_part",
+                                    "width": "21.987%sh",
+                                    "height": "14.15492957746479%sh",
+                                    "_backgroundColour": "#00FF0075",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_2.png",
+                                        "scale": "cover",
+                                        "vAlignment": "bottom"
+                                    }
+                                },
+                                {
+                                    "name": "right_middle_part",
+                                    "width": "auto",
+                                    "height": "14.15492957746479%sh",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_4_r.png",
+                                        "scale": "stretch",
+                                        "vAlignment": "bottom"
+                                    }
+                                },
+                                {
+                                    "name": "right_part",
+                                    "width": "6.9%sh",
+                                    "height": "14.15492957746479%sh",
+                                    "background": {
+                                        "image": "res/images/interface/commonArt/win/titleCoposite/title2_red_3.png",
+                                        "scale": "fit",
+                                        "vAlignment": "bottom"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "titleContent",
+                            "maxWidth": "100%SW",
+                            "height": "8.8%SH",
+                            "vAlignment": "bottom",
+                            "_hAlignment": "center",
+                            "hAlignment": "from_left_to_right",
+                            "_backgroundColour": "#FF000075",
+                            "boxes": [
+                                {
+                                    "width": "3.0%SH",
+                                    "height": "100%",
+                                    "_backgroundColour": "#0000FF75"
+                                },
+                                {
+                                    "name": "title",
+                                    "maxWidth": "90%SW",
+                                    "height": "4.0%SH",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "_backgroundColour": "#00FF0055",
+                                    "font": {
+                                        "file": "res/fonts/Loyola.otf",
+                                        "size": "3.5%SH",
+                                        "colour": "#ffffffFF",
+                                        "outline": [
+                                            {
+                                                "width": "4%",
+                                                "colour": "#503200ff",
+                                                "yoffset": "5%"
+                                            },
+                                            {
+                                                "width": "4%",
+                                                "colour": "#503200ff"
+                                            }
+                                        ]
+                                    },
+                                    "text": "RESOURCES"
+                                },
+                                {
+                                    "width": "3.0%SH",
+                                    "height": "100%",
+                                    "_backgroundColour": "#0000FF75"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "shopHeaderTabIconContainerText",
+                    "width": "70%",
+                    "height": "70%",
+                    "_backgroundColour": "#FFf00075",
+                    "hAlignment": "center",
+                    "_hidden": true,
+                    "vAlignment": "from_top_to_bottom",
+                    "boxes": [
+                        {
+                            "name": "shopHeaderTabIconContainerMain",
+                            "height": "60%",
+                            "width": "40%",
+                            "_backgroundColour": "#FF000075",
+                            "hAlignment": "center",
+                            "vAlignment": "center",
+                            "boxes": [
+                                {
+                                    "name": "shopHeaderTabIconContainer",
+                                    "_height": "100%",
+                                    "height": "5.0%SH",
+                                    "_backgroundColour": "#0000F075",
+                                    "hAlignment": "from_left_to_right",
+                                    "vAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "shopHeaderTabIcon",
+                                            "width": "7.0%SH",
+                                            "height": "7.0%SH",
+                                            "_backgroundColour": "#0000FF75",
+                                            "background": {
+                                                "_image": "res/images/icons/shopIcons/tabicon_factories.png",
+                                                "scale": "fit",
+                                                "vAlignment": "center"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "shopHeaderButtonContainer",
+                    "width": "30%",
+                    "height": "120%",
+                    "_backgroundColour": "#0000FF75",
+                    "hAlignment": "center",
+                    "vAlignment": "bottom",
+                    "boxes": [
+                        {
+                            "name": "buySlotButton",
+                            "class": "buttonGreenScalable",
+                            "width": "15.57%sh",
+                            "height": "6.2%sh",
+                            "hAlignment": "center",
+                            "vAlignment": "center"
+                        },
+                        {
+                            "name": "additionalText",
+                            "maxWidth": "100%",
+                            "_backgroundColour": "#0000FF75",
+                            "font": {
+                                "file": "res/fonts/Loyola.otf",
+                                "maxSize": "2.6%SH",
+                                "colour": "#FFFFFFFF",
+                                "outline": [
+                                    {
+                                        "width": "6%",
+                                        "colour": "#5032007F",
+                                        "yoffset": "6%"
+                                    },
+                                    {
+                                        "width": "6%",
+                                        "colour": "#5032007F"
+                                    }
+                                ]
+                            },
+                            "text": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

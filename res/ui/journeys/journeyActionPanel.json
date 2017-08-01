@@ -1,0 +1,159 @@
+{
+	"name": "root",
+	"vAlignment": "bottom",
+	"hAlignment": "CENTER",
+	"width": "100%",
+	"height": "100%",
+	"boxes": [{
+		"name": "itemsContainer",
+		"width": 0,
+		"height": 0,
+		"handlers": {
+			"onControlEventBegan": true,
+			"onGuiFirstEnter": true,
+			"onTap": true,
+			"onSwipe": true,
+			"onWheel": true,
+			"onHover": true,
+			"onGuiUp": true
+		},
+		"hAlignment": "CENTER",
+		"vAlignment": "FROM_TOP_TO_BOTTOM",
+		"_backgroundColour": "#77000077",
+		"boxes": [
+			{
+				"name": "titleLabel",
+				"maxWidth": "40%sh",
+				"height": "4.0%SH",
+				"vAlignment": "center",
+				"hAlignment": "center",
+				"textAlign": "center",
+				"_backgroundColour": "#00FF0055",
+				"class": "loyolaRelativeText60",
+				"text": "Приключения"
+			},
+			{
+				"name": "container",
+				"vAlignment": "CENTER",
+				"hAlignment": "CENTER",
+				"width": "58.0985915%sh",
+				"height": "8.87323944%sh",
+				"background": {
+					"image": "res/images/interface/commonArt/green_panel_bg.png",
+					"scale": "fit"
+				},
+				"_backgroundColour": "#77000077",
+				"boxes": [{
+					"name": "panelContent",
+					"height": "100%",
+					"width": "100%",
+					"hAlignment": "FROM_LEFT_TO_RIGHT",
+					"vAlignment": "center",
+					"_backgroundColour": "#77000055",
+					"boxes": [{
+							"name": "leftSpacer",
+							"width": "auto",
+							"height": "100%"
+						},
+						{
+							"name": "infoContainer",
+							"width": "60%",
+							"hAlignment": "center",
+							"vAlignment": "from_top_to_bottom",
+							"_backgroundColour": "#00007755",
+							"boxes": [{
+									"name": "panelLabel",
+									"height": "4%SH",
+									"maxWidth": "90%",
+									"vAlignment": "center",
+									"hAlignment": "center",
+									"textAlign": "center",
+									"_backgroundColour": "#77000055",
+									"lineSpacing": 0.75,
+									"text": "Factory Kitchen",
+									"class": "loyolaRelativeText60"
+								},
+								{
+									"name": "journeyProgressContainer",
+									"height": "4.2%SH",
+									"width": "100%",
+									"vAlignment": "CENTER",
+									"hAlignment": "center",
+									"_backgroundColour": "#FF000055",
+									"boxes": [{
+											"name": "progressBar",
+											"width": "90%",
+											"height": "3.16901408%sh",
+											"class": "progressBarBlueClass60",
+											"_backgroundColour": "#77000077"
+										},
+										{
+											"width": "110%",
+											"height": "100%",
+											"vAlignment": "center",
+											"hAlignment": "left",
+											"_backgroundColour": "#FF000077",
+											"boxes": [{
+												"name": "levelContainer",
+												"height": "100%",
+												"width": "100%",
+												"hAlignment": "LEFT",
+												"vAlignment": "CENTER",
+												"boxes": [{
+													"width": "6.5%SH",
+													"height": "6.5%SH",
+													"name": "levelIcon",
+													"_backgroundColour": "#00330075",
+													"hAlignment": "center",
+													"vAlignment": "center",
+													"background": {
+														"images": {
+															"normal": "res/images/interface/commonArt/icon_xp_blue.png"
+														},
+														"scale": "fit",
+														"hAlignment": "CENTER",
+														"vAlignment": "CENTER"
+													},
+													"boxes": [{
+														"name": "level",
+														"maxWidth": "3%SH",
+														"height": "6.9%SH",
+														"_backgroundColour": "#33000075",
+														"hAlignment": "center",
+														"vAlignment": "center",
+														"textAlign": "center",
+														"class": "loyolaRelativeText60",
+														"text": "5"
+													}]
+												}]
+											}]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "rightSpacer",
+							"width": "auto",
+							"height": "100%"
+						}
+					]
+				}]
+			},
+			{
+				"name": "buttonsContainer",
+				"vAlignment": "TOP",
+				"hAlignment": "from_left_to_right",
+				"_hAlignment": "from_right_to_left",
+				"_width": "auto",
+				"maxWidth": "90%SW",
+				"_backgroundColour": "#77000077",
+				"_boxes": [
+					"res/ui/journeys/journeySlot.json",
+					"res/ui/journeys/journeySlot.json",
+					"res/ui/journeys/journeySlot.json"
+				]
+			}
+		]
+	}]
+}

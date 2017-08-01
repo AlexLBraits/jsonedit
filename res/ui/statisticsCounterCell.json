@@ -1,0 +1,9 @@
+{
+    "name":"counter_cell",
+    "height":25,
+    "maxWidth":"90%",
+    "class":"fryText",                                            
+    "vAlignment":"CENTER",
+    "textAlign":"LEFT",
+    "text":"qwe: 50"
+} 

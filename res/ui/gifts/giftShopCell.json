@@ -1,0 +1,224 @@
+{
+    "name": "giftListCell",
+    "hAlignment": "center",
+    "vAlignment": "top",
+    "width": 430,
+    "height": 85,
+    "boxes": [
+        {
+            "width": 430,
+            "height": "100%",
+            "vAlignment": "top",
+            "hAlignment": "center",
+            "boxes": [
+                {
+                    "width": "100%",
+                    "height": 0,
+                    "hAlignment": "from_left_to_right",
+                    "vAlignment": "top",
+                    "margin": {
+                        "top": 6
+                    },
+                    "boxes": [
+                        {
+                            "name": "giftIcon",
+                            "margin": {
+                                "left": 25,
+                                "bottom": 3
+                            },
+                            "width": 73,
+                            "height": 73,
+                            "background": {
+                                "vAlignment": "center",
+                                "hAlignment": "center",
+                                "scale": "contain"
+                            },
+                            "vAlignment": "bottom",
+                            "hAlignment": "left",
+                            "boxes": [
+                                {
+                                    "name": "lockIcon",
+                                    "width": 42,
+                                    "height": 42,
+                                    "background": {
+                                        "vAlignment": "CENTER",
+                                        "hAlignment": "CENTER",
+                                        "images": {
+                                            "normal": "res/images/interface/Island2Art/buildingMenu/lvl_lock_2.png"
+                                        }
+                                    },
+                                    "margin": {
+                                        "bottom": 40,
+                                        "left": 40
+                                    },
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "levelText",
+                                            "width": 0,
+                                            "font": {
+                                                "size": 15,
+                                                "colour": "#FFFFFFFF",
+                                                "outline": {
+                                                    "width": 1.5,
+                                                    "colour": "#6E2300FF",
+                                                    "yoffset": 1
+                                                },
+                                                "file": "res/fonts/loyola.otf"
+                                            },
+                                            "textAlign": "CENTER",
+                                            "hAlingnment": "CENTER",
+                                            "vAlignment": "center",
+                                            "text": "112",
+                                            "padding": {
+                                                "left": 2,
+                                                "bottom": -2
+                                            },
+                                            "margin": {
+                                                "top": 0,
+                                                "left": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "width": 0,
+                            "height": "100%",
+                            "vAlignment": "center",
+                            "hAlignment": "left",
+                            "margin": {
+                                "left": 5
+                            },
+                            "boxes": [
+                                {
+                                    "name": "nameLabel",
+                                    "width": 92,
+                                    "maxWidth": 92,
+                                    "height": 0,
+                                    "textAlign": "left",
+                                    "hAlignment": "left",
+                                    "vAlignment": "center",
+                                    "text": "naaaame",
+                                    "textWrap": true,
+                                    "font": {
+                                        "file": "res/fonts/PTS75F_W.ttf",
+                                        "size": 14,
+                                        "colour": "#ffffffFF",
+                                        "outline": {
+                                            "width": 1,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "vAlignment": "center",
+                            "height": "100%",
+                            "width": 90,
+                            "maxWidth": 90,
+                            "margin": {
+                                "left": 2
+                            },
+                            "boxes": [
+                                {
+                                    "name": "priceText",
+                                    "text": "giftSendWindowFreeText",
+                                    "textAlign": "center",
+                                    "vAlignment": "center",
+                                    "maxWidth": 60,
+                                    "height": 40,
+                                    "font": {
+                                        "file": "res/fonts/loyola.otf",
+                                        "minSize": 10,
+                                        "colour": "#FFFFFFFF",
+                                        "outline": {
+                                            "width": 1.5,
+                                            "colour": "#553c1eff",
+                                            "yoffset": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "moneyIcon",
+                                    "vAlignment": "center",
+                                    "width": 60,
+                                    "height": 60,
+                                    "background": {
+                                        "scale": "stretch",
+                                        "images": {
+                                            "normal": "res/images/icons/attributeIcons/money1_drop.png"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "width": "auto",
+                            "height": "100%",
+                            "vAlignment": "top",
+                            "hAlignment": "right",
+                            "boxes": [
+                                {
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "vAlignment": "center",
+                                    "hAlignment": "center",
+                                    "boxes": [
+                                        {
+                                            "name": "actionButton",
+                                            "class": "btn_tap_highlight_anim",
+                                            "width": 110,
+                                            "maxWidth":110,
+                                            "height": 44,
+                                            "vAlignment": "center",
+                                            "hAlignment": "center",
+                                            "padding":{
+                                                "left":8,
+                                                "right":8
+                                            },
+                                            "background": {
+                                                "images": {
+                                                    "normal": "res/images/interface/Island2Art/buttons/solidButtons/bttn_orange_44.png"
+                                                },
+                                                "scale": "stretch"
+                                            },
+                                            "textAlign": "center",
+                                            "text": "giftSendWindowGiveText",
+                                            "font": {
+                                                "file": "res/fonts/loyola.otf",
+                                                "size": 18,
+                                                "colour": "#FFFFFFFF",
+                                                "outline": {
+                                                    "width": 1.5,
+                                                    "colour": "#6e2300ff",
+                                                    "yoffset": 1
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "width": 362,
+                    "height": 53,
+                    "background": {
+                        "images": {
+                            "normal": "res/images/interface/Island2Art/giftsWindow/line_01.png"
+                        }
+                    },
+                    "margin": {
+                        "top": 66
+                    }
+                }
+            ]
+        }
+    ]
+}

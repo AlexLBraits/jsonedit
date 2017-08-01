@@ -1,0 +1,394 @@
+{
+  "name": "root",
+  "hAlignment": "CENTER",
+  "vAlignment": "CENTER",
+  "class": "cover_layer",
+  "backgroundColour": "#000000B2",
+  "activeBackgroundColour": "#000000B2",
+  "boxes": [
+    {
+      "name": "content",
+      "hAlignment": "CENTER",
+      "vAlignment": "FROM_TOP_TO_BOTTOM",
+      "width": "40.0%sh",
+      "_backgroundColour": "#000000B2",
+      "height": "50%sh",
+      "handlers": {
+        "onTap": true,
+        "onControlEventBegan": true
+      },
+      "boxes": [
+      	{
+      		"height": "6%"
+      	},
+     
+        {
+          "name": "mainContainer",
+          "hAlignment": "center",
+          "vAlignment": "top",
+          "width": "100%",
+          "boxes": [
+            {
+			  "name": "windowBg",
+			  "sizeBase": "contentWindow",
+			  "width": "100.0%",
+			  "height": "100%",
+			  "_backgroundColour": "#000000B2",
+			  "class": "windowFullFillingBackgroundClass"
+			},
+            {
+              "name": "closeButtonContainer",
+              "width": "120%",
+              "height": "2.0%sh",
+              "hAlignment": "right",
+              "vAlignment": "bottom",
+              "boxes": [
+                {
+                  "name": "closeButton",
+                  "class": "buttonClose"
+                }
+              ]
+            },
+            {
+              "name": "contentWindow",
+              "width": "100%",
+              "hAlignment": "center",
+              "vAlignment": "from_top_to_bottom",
+              "_backgroundColour": "#000000AA",
+              "boxes": [
+           
+                {
+                	"name":"topContainer",
+                	"height": "25%sh",
+                  	"width": "100%",
+                  	 "_backgroundColour": "#000000AA",
+                  	 "hAlignment": "from_left_to_right",
+             		 "vAlignment": "center",
+                  	 "boxes":[
+                  	 	 {
+                  	 	 	"name": "imageContainer",
+                  	 	 	"height": "150%",
+                  			"width": "45%",	 
+                  			"_backgroundColour": "#000000AA",
+                  			"hAlignment": "center",
+             		 		"vAlignment": "top",
+                  			"boxes":[
+                  				{
+								  "name": "charFrame",
+								  "width": "25%SH",
+								  "height": "25%SH",
+								  "_backgroundColour": "#00003375",
+								  "background": {
+									"image": "res/images/interface/windows/personInfoWindow/char_frame.png",
+									"scale": "fit"
+								  }
+								},
+								
+								{
+								  "name": "personImageContainer",
+								  "width": "25%SH",
+								  "height": "20%SH",
+								  "vAlignment": "center",
+								  "hAlignment": "center",
+								  "_backgroundColour": "#00003375",
+								  "boxes" : [
+								  	{
+								  		 "name": "personImage",
+								 		 "width": "25%SH",
+								  		"height": "25%SH",
+								  		"vAlignment": "top",
+								  		"hAlignment": "center",
+								  		"background": {
+											"image": "res/images/icons/npcIcons/dialogBubbles/vampire_1.png",
+											"scale": "fit",
+											"hAlignment": "center"
+									  	}
+								  	}
+								  ]
+								  
+								},
+								
+								{
+									"name": "nameSignboard",
+									"width": "22%SH",
+								  	"height": "24%SH",
+								  	"_backgroundColour": "#00003375",
+								  	"vAlignment": "from_top_to_bottom",
+								  	"hAlignment": "center",
+								 	 "background": {
+										"image": "res/images/interface/windows/personInfoWindow/name_signboard.png",
+										"scale": "fit",
+										"vAlignment": "bottom"
+								  	},
+								  	"boxes":[
+								  		{
+								  			"width":"100%",
+								  			"height":"79%",
+								  			"_backgroundColour": "#33000075"
+								  		},
+								  			 {
+												  "name": "namePersonText",
+												  "width":"100%",
+												  "maxHeight":"20%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "3.6%SH",
+													
+													"colour": "#FFFFFFFF",
+													"outline": [
+													  {
+														"width": "4%",
+														"colour": "#503200FF",
+														"yoffset": "4%"
+													  },
+													  {
+														"width": "4%",
+														"colour": "#503200FF"
+													  }
+													]
+												  },
+												  "text": "Амелия"
+												}
+								  			
+								  		
+								  	]
+								}
+                  			]                 	 	 
+                  	 	 },
+                  	 	 {
+                  	 	 	"name": "parametersContainer",
+                  	 	 	"height": "100%",
+                  			"width": "50%",	
+                  			"vAlignment": "from_top_to_bottom",
+							"hAlignment": "center", 
+                  			"_backgroundColour": "#000000AA",
+                  			"boxes":[
+                  				{
+                  					"height": "10%",
+                  					"width": "50%"
+                  				},
+                  				{
+                  					"name":"ageContainer",
+                  					"height": "25%",
+                  					"width": "100%",
+                  					"_backgroundColour": "#33000075",
+                  					"vAlignment": "from_top_to_bottom",
+								  	"hAlignment": "center",
+								  	"boxes":[
+								  		{
+												  "name": "ageTitle",
+												  "width":"100%",
+												  "maxHeight":"45%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "2.6%SH",
+													
+													"colour": "#FFFFFFFF",
+													"outline": [
+													  {
+														"width": "4%",
+														"colour": "#503200FF",
+														"yoffset": "4%"
+													  },
+													  {
+														"width": "4%",
+														"colour": "#503200FF"
+													  }
+													]
+												  },
+												  "text": "Возраст:"
+												},
+								  		{
+												  "name": "ageText",
+												  "width":"100%",
+												  "maxHeight":"35%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "2.6%SH",
+		
+													"colour": "#503200FF"
+													
+												
+												  },
+												  "text": "прекрасный"
+												}
+											
+								  	] 
+                  				},
+                  				
+                  				{
+                  					"name":"characterContainer",
+                  					"height": "25%",
+                  					"width": "100%",
+                  					"vAlignment": "from_top_to_bottom",
+								  	"hAlignment": "center",
+								  	"boxes":[
+								  		{
+												  "name": "characterTitle",
+												  "width":"100%",
+												  "maxHeight":"45%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "2.6%SH",
+													
+													"colour": "#FFFFFFFF",
+													"outline": [
+													  {
+														"width": "4%",
+														"colour": "#503200FF",
+														"yoffset": "4%"
+													  },
+													  {
+														"width": "4%",
+														"colour": "#503200FF"
+													  }
+													]
+												  },
+												  "text": "Характер:"
+												},
+								  		{
+												  "name": "characterText",
+												  "width":"100%",
+												  "maxHeight":"35%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "2.6%SH",
+		
+													"colour": "#503200FF"
+													
+												
+												  },
+												  "text": "вздорный"
+												}	
+								  	] 
+                  				},
+                  				
+                  				{
+                  					"name":"liveContainer",
+                  					"height": "25%",
+                  					"width": "100%",
+                  					"vAlignment": "from_top_to_bottom",
+								  	"hAlignment": "center",
+								  	"boxes":[
+								  		{
+												  "name": "liveTitle",
+												  "width":"100%",
+												  "maxHeight":"45%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "2.6%SH",
+													
+													"colour": "#FFFFFFFF",
+													"outline": [
+													  {
+														"width": "4%",
+														"colour": "#503200FF",
+														"yoffset": "4%"
+													  },
+													  {
+														"width": "4%",
+														"colour": "#503200FF"
+													  }
+													]
+												  },
+												  "text": "Живет:"
+												},
+								  		{
+												  "name": "liveText",
+												  "width":"100%",
+												  "maxHeight":"35%",
+												  "_backgroundColour": "#33000075",
+												  "hAlignment": "center",
+												  "textAlign": "center",
+												  "textWrap":"true",
+												  "font": {
+													"file": "res/fonts/Loyola.otf",
+													"size": "3.6%SH",
+		
+													"colour": "#503200FF"
+													
+												
+												  },
+												  "text": "в Лукоморске"
+												}	
+								  	] 
+                  				}
+                  				
+                  			]   
+                  	 	 }
+                  	 ]
+                },
+                  {
+                  "name": "description",
+                  "width": "86%",
+                  "maxHeight": "20%sh",
+                  "minHeight": "20%sh",
+                  "textWrap": true,
+                  "lineSpacing": 0.8,
+                  "_backgroundColour": "#00770077",
+                  "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed erat. In in velit quis arcu ornare lao!",
+                  "font": {
+                    "file": "res/fonts/PTS75F.ttf",
+                    "colour": "#503200FF",
+                    "minSize": "2.68%sh",
+                    "size": "2.9%sh"
+                  }
+                },
+                {
+                	"width": "3%sh",
+                	"height": "2%sh"
+                },
+          
+                {
+                  "height": "5.75%sh",
+                  "width": "100%",
+                  "boxes": [
+                    {
+                      "name": "buttonsContainer",
+                      "width": "100%",
+                      "height": "11.4%sh",
+                      "hAlignment": "center",
+                      "vAlignment": "center",
+                      "boxes": [
+                        {
+                          "name": "bottomButton",
+                          "class": "buttonGreenScalable",
+                          "width": "17.7%sh",
+                          "height": "8.4%sh"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

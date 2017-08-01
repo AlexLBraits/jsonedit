@@ -1,0 +1,348 @@
+{
+  "backgroundColour": "#000000B2",
+  "name": "root",
+  "activeBackgroundColour": "#000000B2",
+  "hAlignment": "center",
+  "vAlignment": "from_top_to_bottom",
+  "class": "cover_layer",
+  "boxes": [
+    {
+      "name": "topPanelSpace",
+      "height": "9.0%sh",
+      "width": "100%",
+      "_backgroundColour": "#0000FF33"
+    },
+    {
+      "name": "windowSpace",
+      "width": "100%",
+      "height": "auto",
+      "hAlignment": "center",
+      "vAlignment": "center",
+      "_backgroundColour": "#00FF0033",
+      "boxes": [
+        {
+          "width": "100%",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "height": "4.2%sh",
+              "minHeight": "3.1484257871064467%sw"
+            },
+            {
+              "width": "48.5%sh",
+              "minWidth": "36.356821589205396%sw",
+              "height": "auto",
+              "handlers": {
+                "onTap": true,
+                "onControlEventBegan": true
+              },
+              "class": "windowFullFillingBackgroundClass"
+            },
+            {
+              "height": "5%"
+            }
+          ]
+        },
+        {
+          "name": "windowContent",
+          "width": "45%sh",
+          "minWidth": "33.733133433283356%sw",
+          "height": "100%",
+          "hAlignment": "center",
+          "vAlignment": "from_top_to_bottom",
+          "boxes": [
+            {
+              "width": "100%",
+              "height": "9%sh",
+              "minHeight": "6.746626686656671%sw",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "boxes": [
+                {
+                  "handlers": {
+                    "onTap": true,
+                    "onControlEventBegan": true
+                  },
+                  "class": "windowCompetitionTitleClass"
+                },
+                {
+                  "name": "closeButtonContainer",
+                  "width": "52%sh",
+                  "minWidth": "38.980509745127435%sw",
+                  "height": "13%sh",
+                  "minHeight": "8.995502248875562%sw",
+                  "hAlignment": "right",
+                  "vAlignment": "top",
+                  "_backgroundColour": "#0000FF33",
+                  "boxes": [
+                    {
+                      "name": "close",
+                      "class": "buttonClose"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "descriptionContainer",
+              "width": "100%",
+              "height": "11%",
+              "minHeight": "8.245877061469265%sw",
+              "hAlignment": "from_left_to_right",
+              "vAlignment": "center",
+              "_backgroundColour": "#00FF0033",
+              "boxes": [
+                {
+                  "name": "iconContainer",
+                  "width": "100%h",
+                  "height": "100%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "_backgroundColour": "#FF0000FF",
+                  "boxes": [
+                    {
+                      "name": "iconItem",
+                      "height": "10.56338028169014%sh",
+                      "minHeight": "7.918575923305951%sw",
+                      "width": "10.56338028169014%sh",
+                      "minWidth": "7.918575923305951%sw",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#FF0000FF",
+                      "background": {
+                        "_image": "res/images/icons/resourcesIcons/res_wheat.png",
+                        "scale": "stretch"
+                      }
+                    },
+                    {
+                      "hidden": true,
+                      "name": "iconPersonContainer",
+                      "width": "13.0%sh",
+                      "minWidth": "9.745127436281859%sw",
+                      "height": "13.0%sh",
+                      "minHeight": "9.745127436281859%sw",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "scale": 0.75,
+                      "background": {
+                        "image": "res/images/interface/windows/competitions/comp_frame.png",
+                        "scale": "stretch"
+                      },
+                      "boxes": [
+                        {
+                          "name": "iconOffset",
+                          "height": "64%",
+                          "rotate": "-3.5",
+                          "vAlignment": "bottom",
+                          "hAlignment": "center",
+                          "_backgroundColour": "#FF0000FF",
+                          "boxes": [
+                            {
+                              "name": "iconPerson",
+                              "width": "9.1%sh",
+                              "minWidth": "6.8215892053973%sw",
+                              "height": "13%sh",
+                              "minHeight": "9.745127436281859%sw",
+                              "vAlignment": "center",
+                              "hAlignment": "center",
+                              "_backgroundColour": "#FF0000FF",
+                              "background": {
+                                "image": "res/images/icons/npcIcons/dialogBubbles/sleepy_girl_3.png",
+                                "scale": "stretch"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "height": "80%",
+                          "width": "110%",
+                          "vAlignment": "bottom",
+                          "hAlignment": "right",
+                          "_backgroundColour": "#00FF0033",
+                          "boxes": [
+                            {
+                              "hidden": true,
+                              "name": "mark",
+                              "width": "4.54225352112676%sh",
+                              "minWidth": "3.404987647021559%sw",
+                              "height": "3.6971830985915495%sh",
+                              "minHeight": "2.7715015731570833%sw",
+                              "vAlignment": "center",
+                              "hAlignment": "center",
+                              "_backgroundColour": "#00FF0033",
+                              "background": {
+                                "image": "res/images/interface/commonArt/sign_ok.png",
+                                "scale": "stretch"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "description",
+                  "width": "auto",
+                  "height": "100%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "textWrap": true,
+                  "textAlign": "center",
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.169014084507042%SH",
+                    "minSize": "2.3755727769917856%SW",
+                    "colour": "#ffffffFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff",
+                        "yoffset": "4%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff"
+                      }
+                    ]
+                  },
+                  "_text": "competitionsTopsNotMade"
+                }
+              ]
+            },
+            {
+              "name": "contentContainer",
+              "width": "100%",
+              "height": "auto",
+              "hAlignment": "center",
+              "vAlignment": "center",
+              "_backgroundColour": "#FF0000FF",
+              "boxes": [
+                {
+                  "hidden": true,
+                  "name": "emptyContent",
+                  "maxWidth": "90%",
+                  "height": "100%",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "textWrap": true,
+                  "font": {
+                    "file": "res/fonts/Loyola.otf",
+                    "size": "3.6971830985915495%SH",
+                    "minSize": "2.7715015731570833%Sw",
+                    "colour": "#ffffffFF",
+                    "outline": [
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff",
+                        "yoffset": "5%"
+                      },
+                      {
+                        "width": "4%",
+                        "colour": "#503200ff"
+                      }
+                    ]
+                  },
+                  "text": "NoLeadersCompetitionsText"
+                },
+                {
+                  "name": "content",
+                  "width": "100%",
+                  "height": "100%",
+                  "hAlignment": "from_left_to_right",
+                  "vAlignment": "center",
+                  "_backgroundColour": "#FF0000FF",
+                  "boxes": [
+                    {
+                      "name": "listLeadersContainer",
+                      "height": "100%",
+                      "width": "44.022000000000006%sh",
+                      "minWidth": "33%sw",
+                      "hAlignment": "by_width",
+                      "vAlignment": "by_width",
+                      "type": "Scroller",
+                      "overflow": "scroll",
+                      "vslider": "scroller",
+                      "_backgroundColour": "#FF000033",
+                      "_boxes": [
+                        "res/ui/competition/TopCompetitionCell.json",
+                        "res/ui/competition/TopCompetitionCell.json",
+                        "res/ui/competition/TopCompetitionCell.json",
+                        "res/ui/competition/TopCompetitionCell.json",
+                        "res/ui/competition/TopCompetitionCell.json",
+                        "res/ui/competition/TopCompetitionCell.json"
+                      ]
+                    },
+                    {
+                      "hidden": true,
+                      "name": "scrollBar",
+                      "height": "100%",
+                      "width": "auto",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "_backgroundColour": "#00FF0033",
+                      "class": "scrollSliderVertical"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "height": "5%sh"
+            },
+            {
+              "width": "50%sh",
+              "minWidth": "37.48125937031484%sw",
+              "height": "0%",
+              "vAlignment": "center",
+              "hAlignment": "from_left_to_right",
+              "_backgroundColour": "#0000FF33",
+              "boxes": [
+                {
+                  "width": "auto",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "buttonBack",
+                      "width": "6%SH",
+                      "height": "6%SH",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "class": "buttonYellowScalable"
+                    }
+                  ]
+                },
+                {
+                  "width": "auto",
+                  "vAlignment": "center",
+                  "hAlignment": "center",
+                  "boxes": [
+                    {
+                      "name": "findMeButton",
+                      "width": "20%SH",
+                      "height": "8%SH",
+                      "vAlignment": "center",
+                      "hAlignment": "center",
+                      "class": "buttonGreenScalable"
+                    }
+                  ]
+                },
+                {
+                  "width": "auto"
+                }
+              ]
+            },
+            {
+              "height": "6%",
+              "width": "100%",
+              "_backgroundColour": "#0000FF33"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

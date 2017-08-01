@@ -1,0 +1,216 @@
+{
+	"name": "cellBody",
+	"hAlignment": "center",
+	"vAlignment": "top",
+	"width": 427,
+	"height": 81,
+	"boxes": [
+		{
+			"name": "separate_line",
+			"width":427,
+			"height":3, 
+			"background":{
+				"image": "res/images/interface/commonArt/separate_line.png",
+				"scale":"window",
+				"corner":[2, 2]
+			}
+		},
+		{
+			"name": "cellBackground",
+			"width": 427,
+			"height": 81,
+			"background": {
+				"image": "res/images/interface/commonArt/leaderboards/1place_bg.png",
+				"scale": "window",
+				"corner": [
+					1,
+					80
+				]
+			},
+			"hAlignment": "from_left_to_right",
+			"vAlignment": "center",
+			"padding": {
+				"top": 3
+			},
+			"boxes": [
+				{
+					"name": "placeLabel",
+					"_backgroundColour": "#70000077",
+					"maxWidth": 43,
+					"width": 43,
+					"height": "100%",
+					"hAlignment": "center",
+					"vAlignment": "center",
+					"textAlignment": "center",
+					"text": "25",
+					"font": {
+						"file": "res/fonts/Loyola.otf",
+						"size": 25,
+						"minSize": 15,
+						"colour": "#FFFFFFFF",
+						"outline":[ 
+						    {
+						        "width": 1,
+						        "colour": "#503200FF",
+						        "yoffset":1
+						    },
+						    {
+						        "width": 1,
+						        "colour": "#503200FF" 
+						    }
+						]
+					}
+				},
+				{
+					"name": "playerAvatarContainer",
+					"width": 71,
+					"height": "100%",
+					"hAlignment": "left",
+					"vAlignment": "top",
+					"margin": {
+						"left": 3,
+						"right": 10
+					},
+					"boxes": [
+						{
+							"name": "leaderStars",
+							"width": 166,
+							"height": 67,
+							"margin": {
+								"left": 58,
+								"top": 10
+							},
+							"background": {
+								"image": "res/images/interface/commonArt/leaderboards/1place_stars.png"
+							}
+						},
+						{
+							"name": "playerAvatar",
+							"width": 55,
+							"height": 55,
+							"margin": {
+								"left": 7,
+								"top": 13
+							},
+							"background": {
+								"image": "res/images/interface/social/avatars/default_avatar.png",
+								"scale": "fit"
+							}
+						},
+						{
+							"name": "avaFrame",
+							"width": 70,
+							"height": 72,
+							"margin": {
+								"left": 0,
+								"top": 7
+							},
+							"background": {
+								"image": "res/images/interface/commonArt/leaderboards/avaframe_110.png"
+							}
+						},
+						{
+							"name": "expStar",
+							"width": 45,
+							"height": 45,
+							"hAlignment": "center",
+							"vAlignment": "center",
+							"margin": {
+								"left": -11,
+								"top": -1
+							},
+							"background": {
+								"image": "res/images/icons/attributeIcons/exp_drop.png",
+								"scale": "fit"
+							},
+							"boxes": [
+								{
+									"name": "levelText",
+									"text": "50",
+									"padding": {
+										"left": -2,
+										"top": 2
+									},
+									"font": {
+										"file": "res/fonts/Loyola.otf",
+										"size": 18,
+										"colour": "#FFFFFFFF",
+										"outline":[ 
+										    {
+										        "width": 1,
+										        "colour": "#503200FF",
+										        "yoffset":1
+										    },
+										    {
+										        "width": 1,
+										        "colour": "#503200FF" 
+										    }
+										]
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "playerNameContainer",
+					"hAlignment": "left",
+					"vAlignment": "center",
+					"_backgroundColour": "#70000077",
+					"boxes": [
+						{
+							"name": "playerName",
+							"text": "Player Name",
+							"width": 120,
+							"textWrap": true,
+							"font": {
+								"file": "res/fonts/FryPro.otf",
+								"size": 16,
+								"colour": "#503200FF"
+							}
+						}
+					]
+				},
+				{
+					"type": "spacer"
+				},
+				{
+					"name": "pointsCountLabel",
+					"hAlignment": "center",
+					"vAlignment": "center",
+					"textAlignment": "center",
+					"text": "99 999",
+					"font": {
+						"file": "res/fonts/Loyola.otf",
+						"size": 25,
+						"colour": "#FFFFFFFF",
+						"outline":[ 
+						    {
+						        "width": 1,
+						        "colour": "#503200FF",
+						        "yoffset":1
+						    },
+						    {
+						        "width": 1,
+						        "colour": "#503200FF" 
+						    }
+						]
+					}
+				},
+				{
+					"name": "chestRewardIcon",
+					"width": 88,
+					"height": 73,
+					"hidden": true,
+					"margin": {
+						"left": 10,
+						"right": 3
+					},
+					"background": {
+						"image": "res/images/interface/commonArt/leaderboards/chests/parcel_5.png"
+					}
+				}
+			]
+		}
+	]
+}

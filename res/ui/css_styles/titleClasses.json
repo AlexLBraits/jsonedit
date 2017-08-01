@@ -1,0 +1,72 @@
+{
+  "titleRibbonOrangeText80": {
+    "boxes": [
+      {
+        "width": "100%",
+        "height": "100%",
+        "hAlignment": "center",
+        "vAlignment": "top",
+        "background": {
+          "image": "res/images/interface/commonArt/ribbon_yellow.png",
+          "scale": "stretch"
+        },
+        "boxes": [
+          {
+            "height": "70%",
+            "width": "100%",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "boxes": [
+              {
+                "name": "windowTitle",
+                "comment": "80px",
+                "height": "38%",
+                "maxWidth": "70%",
+                "textAlign": "center",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "class": "loyolaWhiteWithoutSizeText",
+                "text": "Congratulations!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "titleRibbonOrangeText70": {
+    "boxes": [
+      {
+        "width": "100%",
+        "height": "100%",
+        "hAlignment": "center",
+        "vAlignment": "top",
+        "background": {
+          "image": "res/images/interface/commonArt/ribbon_yellow.png",
+          "scale": "stretch"
+        },
+        "boxes": [
+          {
+            "height": "70%",
+            "width": "100%",
+            "hAlignment": "center",
+            "vAlignment": "center",
+            "boxes": [
+              {
+                "name": "windowTitle",
+                "comment": "70px",
+                "height": "33%",
+                "maxWidth": "70%",
+                "textAlign": "center",
+                "hAlignment": "center",
+                "vAlignment": "center",
+                "class": "loyolaWhiteWithoutSizeText",
+                "text": "Reputation unlocked!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

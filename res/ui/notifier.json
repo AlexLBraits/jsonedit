@@ -1,0 +1,70 @@
+{
+    "name": "figure_cell_container",
+    "width": "100%",
+    "height": "100%",
+    "_backgroundColour": "#00ff00ff",
+    "hAlignment": "center",
+    "vAlignment": "CENTER",
+    "boxes": [
+        
+        {
+        	"name":"notifContainerImage",
+        	"hAlignment": "from_left_to_right",
+    		"vAlignment": "CENTER",
+    		"width": "170%",
+    		"height": "100%",
+    		"sizeBase":"notifText",
+    		"minWidth":"3.5%sh",
+    		"_backgroundColour": "#000000ff",
+    		"boxes":[
+    			{
+    				"name":"rightImage",
+    				"width": "50.0%H",
+    				"height": "100%",
+    				"background": {
+						"image": "res/images/interface/commonArt/notif/notif_1.png",
+                    	"scale": "stretch",
+                    	"hAlignment":"right"
+					}
+    			},
+    			{
+    				"name":"middleImage",
+    				"width": "auto",
+    				"height": "100%",
+    				"background": {
+						"image": "res/images/interface/commonArt/notif/notif_2.png",
+                    	"scale": "stretch"
+					}
+    			},
+    			{
+    				"name":"leftImage",
+    				"width": "50.0%H",
+    				"height": "100%",
+    				"background": {
+						"image": "res/images/interface/commonArt/notif/notif_3.png",
+                    	"scale": "stretch",
+                    	"hAlignment":"left"
+					}
+    			}
+    		]
+        },
+        
+          {
+            "name": "notifText",
+            "height": "100%",
+            "vAlignment": "center",
+            "hAlignment": "center",
+            "_backgroundColour": "#00FF0055",
+            "font": {
+              "file": "res/fonts/Loyola.otf",
+              "_size": "20.1%SH",
+              "size": "76%",
+              "colour": "#FFFFFFFF"
+            },
+            "text": "New"
+          }
+    
+         
+        
+    ]
+}

@@ -1,0 +1,1 @@
+{    "name": "cover",    "hAlignment": "CENTER",    "vAlignment": "CENTER",    "backgroundColour": "#000000B2",    "activeBackgroundColour": "#000000B2",    "class": "cover_layer",    "boxes": [        {            "name": "camomileContainer",            "width": 50,            "height": 50        }     ]}

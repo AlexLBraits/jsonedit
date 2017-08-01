@@ -1,0 +1,64 @@
+{
+	"name": "attributeContainer",
+	"width": "100%",
+	"height": "100%",
+	"vAlignment": "CENTER",
+	"hAlignment": "FROM_RIGHT_TO_LEFT",
+	"boxes": [
+			{
+			"name": "moneyImage",
+			"width":"4.5%SH",
+			"height": "3.697%SH",
+			"hAlignment":"CENTER",
+			"vAlignment":"CENTER",
+			"background": {
+					"image": "res/images/icons/attributeIcons/hd/money2_drop.png",
+					"scale": "fit"
+				}
+		},
+		{
+			"name": "buttonLabel",
+			"minWidth": "4.401%SH",
+			"maxWidth": "7.042%SH",
+			"hAlignment":"CENTER",
+			"vAlignment": "CENTER",
+			"textAlign": "RIGHT",
+			"text":"50",
+			"font": {
+			"file": "res/fonts/Loyola.otf",
+			"size": "3.697%SH",
+			"colour": "#ffffffFF",
+			"outline": [
+				{
+					"width": "4%",
+					"colour": "#503200ff",
+					"yoffset": "5%"
+				},
+				{
+					"width": "4%",
+					"colour": "#503200ff"
+				}
+				]
+			}
+		},
+		{
+			"name":"spacerCenter",
+			"width":"auto"
+		},
+		{
+			"name": "arrowImage",
+			"width":"3.697%SH",
+			"height": "3.697%SH",
+			"hAlignment":"CENTER",
+			"vAlignment":"CENTER",
+			"background": {
+					"image": "res/images/interface/commonArt/smallicon_upgrade.png",
+					"scale": "fit"
+				}
+		},
+		{
+			"name":"spacerLeft",
+			"width":"1%SH"
+		}
+	]
+}

@@ -1,0 +1,171 @@
+{  
+    "name":"craftSlot",
+    "vAlignment":"center",
+    "hAlignment":"center",
+    "width":"12.42%sh",
+    "height":"16.73%sh",
+    "class":"button_class",
+    "handlers":{  
+        "onControlEventBegan":true,
+        "onControlEventEnded":true
+    },
+    "boxes":[  
+        {  
+            "name":"itemBackground",
+            "width":"13.21%sh",
+            "height":"16.73%sh",
+            "background":{  
+                "image":"res/images/interface/mainScreen/craftSlots/craft_normal.png",
+                "scale":"fit"
+            }
+        },
+        {  
+            "name":"itemContent",
+            "width":"12.42%sh",
+            "height":"16.73%sh",
+            "_backgroundColour":"#77000077",
+            "vAlignment":"center",
+            "hAlignment":"center",
+            "boxes":[  
+                {  
+                    "name":"loadedView",
+                    "vAlignment":"from_top_to_bottom",
+                    "hAlignment":"center",
+                    "boxes":[  
+                        {  
+                            "width":"9.69%sh",
+                            "height":"9.69%sh",
+                            "vAlignment":"center",
+                            "hAlignment":"center",
+                            "boxes":[  
+                                {  
+                                    "name":"underParticle",
+                                    "_backgroundColour":"#77000077",
+                                    "width":"100%",
+                                    "height":"100%",
+                                    "overflow":"ignore"
+                                },
+                                {  
+                                    "name":"resourceIcon",
+                                    "width":"100%",
+                                    "height":"100%",
+                                    "background":{  
+                                        "image":"res/images/icons/resourcesIcons/res_carrot.png",
+                                        "scale":"fit"
+                                    }
+                                }
+                            ]
+                        },
+                        {  
+                            "name":"slotLabel",
+                            "_backgroundColour":"#77000077",
+                            "maxWidth":"9.69%sh",
+                            "height":"3%sh",
+                            "text":"Ready!",
+                            "vAlignment":"center",
+                            "hAlignment":"center",
+                            "font":{  
+                                "file":"res/fonts/Loyola.otf",
+                                "size":"2.7%sh",
+                                "minSize":"1%sh",
+                                "colour":"#ffffffFF",
+                                "outline":[  
+                                    {  
+                                        "width":"4%",
+                                        "colour":"#503200ff",
+                                        "yoffset":"5%"
+                                    },
+                                    {  
+                                        "width":"4%",
+                                        "colour":"#503200ff"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {  
+                    "name":"addSlotView",
+                    "vAlignment":"center",
+                    "hAlignment":"center",
+                    "width": "100%",
+					"height": "100%",
+                    "hidden":true,
+                    "boxes":[  
+                        {  
+                            "name":"plusIcon",
+                            "width":"3.88%sh",
+                            "height":"3.88%sh",
+                            "background":{  
+                                "image":"res/images/interface/mainScreen/craftSlots/plus.png",
+                                "scale":"fit"
+                            }
+                        },
+                        {
+                        	"name": "addTextContainer",
+                        	"width": "80%",
+							"vAlignment":"from_top_to_bottom",
+							"hAlignment":"center",
+                        	"boxes": [
+                        		{  
+									"width":"9.69%sh",
+									"height":"9.69%sh",
+									"vAlignment":"center",
+									"hAlignment":"center",
+								},
+                        		{
+                        			"name": "addText",
+									"_backgroundColour":"#77000077",
+									"text": "AddCellText",
+									"width": "100%",
+									"textAlign": "center",
+									"maxHeight": "5%sh",
+									"textWrap": "true",
+									"lineSpacing": 0.8,
+									"font":{  
+										"file":"res/fonts/Loyola.otf",
+										"size":"2.7%sh",
+										"minSize":"1%sh",
+										"colour":"#ffffffFF",
+										"outline":[  
+											{  
+												"width":"4%",
+												"colour":"#503200ff",
+												"yoffset":"5%"
+											},
+											{  
+												"width":"4%",
+												"colour":"#503200ff"
+											}
+										]
+									}
+                        		}
+                        	]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+        	"name": "upgradedSlotArt",
+        	"width":"12.42%sh",
+			"height":"17.7%sh",
+			"hidden": true,
+        	"_backgroundColour":"#77000077",
+        	"overflow":"ignore",
+        	"vAlignment":"top",
+            "hAlignment":"center",
+            "boxes": [
+            	{
+            		"name": "upperUpgradedDecor",
+            		"width": "6.2%sh",
+					"height": "3.1%sh",
+					"background":{  
+						"image":"res/images/interface/mainScreen/craftSlots/slot_upgrage.png",
+						"scale":"fit"
+					}
+            	}
+            ]
+        }
+    ]
+}
