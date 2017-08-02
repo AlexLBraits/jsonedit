@@ -3,5 +3,8 @@
 *.user
 *.o
 Makefile
+Makefile.*
 moc_*.*
 *.app
+debug
+release
