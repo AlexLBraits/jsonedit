@@ -123,7 +123,7 @@ const QStringList g_columnHeaders = {"Key", "Type", "Value"};
 JsonModel::JsonModel(QObject *parent)
     : QAbstractItemModel(parent)
 {
-    m_jsonDocument = parse_string("{\"A\":[0, 1]}");
+    m_jsonDocument = parse_string("{\"A\":0}");
 }
 
 JsonModel::JsonModel(const JsonValue& jsonDocument)
@@ -159,7 +159,8 @@ QModelIndex JsonModel::parent(const QModelIndex& index) const
     if (!index.isValid()) return QModelIndex();
 
     const JsonValue* childItem = getValue(index);
-    const JsonValue* parentItem = childItem->owner();
+
+    const JsonValue* parentItem = childItem->parent();
     if (parentItem == 0) return QModelIndex();
     return QAbstractItemModel::createIndex(parentItem->pos(), 0, (void*)parentItem);
 }
