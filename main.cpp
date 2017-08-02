@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 {
 	QApplication app(argc, argv);
 
-    JsonModel model; // (argv[1]);
+    JsonModel model(argv[1]);
 
     JsonView win;
     win.setModel(&model);

@@ -162,6 +162,7 @@ QModelIndex JsonModel::parent(const QModelIndex& index) const
 
     const JsonValue* parentItem = childItem->parent();
     if (parentItem == 0) return QModelIndex();
+    if (parentItem == &m_jsonDocument) return QModelIndex();
     return QAbstractItemModel::createIndex(parentItem->pos(), 0, (void*)parentItem);
 }
 
