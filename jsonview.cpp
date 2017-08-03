@@ -7,7 +7,7 @@ JsonView::JsonView(QWidget *parent)
     connect(this, SIGNAL(expanded(QModelIndex)), this, SLOT(autoResize()));
     connect(this, SIGNAL(collapsed(QModelIndex)), this, SLOT(autoResize()));
 
-    setEditTriggers(QAbstractItemView::EditKeyPressed);
+    setEditTriggers(QAbstractItemView::EditKeyPressed|QAbstractItemView::AnyKeyPressed);
 
     m_undoAction = new QAction(tr("Undo"));
     m_undoAction->setShortcut(QKeySequence::Undo);
@@ -37,6 +37,7 @@ JsonView::JsonView(QWidget *parent)
     });
     addAction(m_removeAction);
 
+    setSelectionBehavior (QAbstractItemView::SelectItems);
 }
 
 void JsonView::autoResize()
