@@ -1,4 +1,6 @@
 #include "jsonmodel.h"
+#include <QBrush>
+#include <QPalette>
 
 JsonUndoCommand::JsonUndoCommand(JsonModel *model, const std::string &pointer)
     : m_model(model),
@@ -73,16 +75,24 @@ void SetValueCommand::redo()
     const JsonValue& obj = target();
     if(!obj.isDummyValue())
     {
-        (JsonValue&)obj = m_newValue;
-
         QModelIndex index = m_model->index(obj);
-        emit m_model->dataChanged(
-            index,
-            index.sibling(
-                m_model->rowCount(index),
-                m_model->columnCount(index)
-            )
-        );
+        if(m_newValue.size())
+        {
+            m_model->beginInsertRows(index, 0, m_newValue.size() - 1);
+            (JsonValue&)obj = m_newValue;
+            m_model->endInsertRows();
+        }
+        else
+        {
+            (JsonValue&)obj = m_newValue;
+            emit m_model->dataChanged(
+                index,
+                index.sibling(
+                    m_model->rowCount(index),
+                    m_model->columnCount(index)
+                )
+            );
+        }
     }
 }
 
@@ -91,28 +101,38 @@ void SetValueCommand::undo()
     const JsonValue& obj = target();
     if(!obj.isDummyValue())
     {
-        (JsonValue&)obj = m_oldValue;
-
         QModelIndex index = m_model->index(obj);
-        emit m_model->dataChanged(
-            index,
-            index.sibling(
-                m_model->rowCount(index),
-                m_model->columnCount(index)
-            )
-        );
+        if(m_newValue.size())
+        {
+            m_model->beginRemoveRows(index, 0, m_newValue.size() - 1);
+            (JsonValue&)obj = m_oldValue;
+            m_model->endRemoveRows();
+        }
+        else
+        {
+            (JsonValue&)obj = m_oldValue;
+            emit m_model->dataChanged(
+                index,
+                index.sibling(
+                    m_model->rowCount(index),
+                    m_model->columnCount(index)
+                )
+            );
+        }
     }
 }
 
-RemoveCommand::RemoveCommand(JsonModel *model,
-                             const std::string &pointer,
-                             int position,
-                             const JsonValue &key,
-                             const JsonValue &value
-                            ) : JsonUndoCommand(model, pointer),
-    m_pos(position),
-    m_key(key),
-    m_value(value)
+RemoveCommand::RemoveCommand(
+    JsonModel *model,
+    const std::string &pointer,
+    int position,
+    const JsonValue &key,
+    const JsonValue &value
+)
+    : JsonUndoCommand(model, pointer),
+      m_pos(position),
+      m_key(key),
+      m_value(value)
 {
 }
 
@@ -155,6 +175,56 @@ void RemoveCommand::undo()
         m_model->endInsertRows();
     }
 }
+
+InsertCommand::InsertCommand(
+    JsonModel *model,
+    const std::string &pointer,
+    int position)
+    : JsonUndoCommand(model, pointer),
+      m_pos(position)
+{
+}
+
+void InsertCommand::redo()
+{
+    JsonValue& parentValue = (JsonValue&)target();
+
+    m_model->beginInsertRows(m_model->index(parentValue), m_pos, m_pos);
+    switch(parentValue.type())
+    {
+    case JsonValue::Type::ARRAY:
+        parentValue.insert(m_pos, JsonValue());
+        break;
+    case JsonValue::Type::OBJECT:
+    {
+        std::string key = "New Key";
+        if(parentValue.hasKey(key))
+        {
+            int n = 2;
+            do
+            {
+                key = std::string("New Key (") + std::to_string(n++) + ")";
+            }
+            while(parentValue.hasKey(key));
+        }
+        parentValue.insert(m_pos, key, JsonValue());
+        break;
+    }
+    default:
+        break;
+    }
+    m_model->endInsertRows();
+}
+
+void InsertCommand::undo()
+{
+    JsonValue& parentValue = (JsonValue&)target();
+
+    m_model->beginRemoveRows(m_model->index(parentValue), m_pos, m_pos);
+    parentValue.erase(parentValue.at(m_pos).key());
+    m_model->endRemoveRows();
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
@@ -255,8 +325,10 @@ QVariant JsonModel::data(const QModelIndex &index, int role) const
             case JsonValue::Type::NUMBER:
             case JsonValue::Type::INTEGER:
                 return QVariant("number");
+            case JsonValue::Type::BOOLEAN:
+                return QVariant("bool");
             default:
-                return QVariant();
+                return QVariant("?");
             }
         case JSON_MODEL_COLUMN_VALUE:
             switch(v->type())
@@ -271,6 +343,11 @@ QVariant JsonModel::data(const QModelIndex &index, int role) const
             return QVariant();
         }
     }
+//    else if(role == Qt::BackgroundRole)
+//    {
+//        QPalette pal;
+//        return QVariant(QBrush(pal.brush(QPalette::ToolTipBase)));
+//    }
     else
     {
         return QVariant();
@@ -321,7 +398,8 @@ Qt::ItemFlags JsonModel::flags(const QModelIndex &index) const
     return flags;
 }
 
-bool JsonModel::setData(const QModelIndex &index, const QVariant &value, int role)
+bool JsonModel::setData(const QModelIndex &index, const QVariant &value,
+                        int role)
 {
     if (role != Qt::EditRole) return false;
 
@@ -356,6 +434,9 @@ bool JsonModel::setData(const QModelIndex &index, const QVariant &value, int rol
         switch(oldValue.type())
         {
         case JsonValue::Type::UNDEFINED:
+            newValue = parse_string(value.toString().toStdString().c_str());
+            if(newValue.isUndefined())
+                newValue = JsonValue(value.toString().toStdString().c_str(), 0);
             break;
         case JsonValue::Type::BOOLEAN:
             newValue = newValue.asBoolean();
@@ -397,6 +478,21 @@ bool JsonModel::insertRows(int position, int rows, const QModelIndex& parent)
     (void)(parent);
 
     return false;
+}
+
+bool JsonModel::insertDefaultRow(int position, const QModelIndex &parent)
+{
+    const JsonValue* parentItem = getValue(parent);
+
+    m_undoStack.push(
+        new InsertCommand(
+            this,
+            parentItem->getPointer(),
+            position
+        )
+    );
+
+    return true;
 }
 
 bool JsonModel::removeRows(int position, int rows, const QModelIndex& parent)

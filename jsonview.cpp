@@ -7,11 +7,15 @@ JsonView::JsonView(QWidget *parent)
     connect(this, SIGNAL(expanded(QModelIndex)), this, SLOT(autoResize()));
     connect(this, SIGNAL(collapsed(QModelIndex)), this, SLOT(autoResize()));
 
-    setEditTriggers(QAbstractItemView::EditKeyPressed|QAbstractItemView::AnyKeyPressed);
+    setEditTriggers(
+        QAbstractItemView::EditKeyPressed
+    );
+    setSelectionBehavior (QAbstractItemView::SelectItems);
 
     m_undoAction = new QAction(tr("Undo"));
     m_undoAction->setShortcut(QKeySequence::Undo);
-    connect(m_undoAction, &QAction::triggered, [this](){
+    connect(m_undoAction, &QAction::triggered, [this]()
+    {
         JsonModel* model = dynamic_cast<JsonModel*>(this->model());
         if(model) model->undoStask().undo();
     });
@@ -19,7 +23,8 @@ JsonView::JsonView(QWidget *parent)
 
     m_redoAction = new QAction(tr("Redo"));
     m_redoAction->setShortcut(QKeySequence::Redo);
-    connect(m_redoAction, &QAction::triggered, [this](){
+    connect(m_redoAction, &QAction::triggered, [this]()
+    {
         JsonModel* model = dynamic_cast<JsonModel*>(this->model());
         if(model) model->undoStask().redo();
     });
@@ -27,7 +32,8 @@ JsonView::JsonView(QWidget *parent)
 
     m_removeAction = new QAction(tr("Remove"));
     m_removeAction->setShortcut(QKeySequence::Delete);
-    connect(m_removeAction, &QAction::triggered, [this](){
+    connect(m_removeAction, &QAction::triggered, [this]()
+    {
         JsonModel* model = dynamic_cast<JsonModel*>(this->model());
         if(model)
         {
@@ -37,7 +43,31 @@ JsonView::JsonView(QWidget *parent)
     });
     addAction(m_removeAction);
 
-    setSelectionBehavior (QAbstractItemView::SelectItems);
+    m_insertAction = new QAction(tr("Insert"));
+    m_insertAction->setShortcut(Qt::Key_Space);
+    connect(m_insertAction, &QAction::triggered, [this]()
+    {
+        JsonModel* model = dynamic_cast<JsonModel*>(this->model());
+        if(model)
+        {
+            QModelIndex index = this->currentIndex();
+            model->insertDefaultRow(index.row(), index.parent());
+        }
+    });
+    addAction(m_insertAction);
+
+    m_insertInsideAction = new QAction(tr("Insert Inside"));
+    m_insertInsideAction->setShortcut(Qt::SHIFT + Qt::Key_Space);
+    connect(m_insertInsideAction, &QAction::triggered, [this]()
+    {
+        JsonModel* model = dynamic_cast<JsonModel*>(this->model());
+        if(model)
+        {
+            model->insertDefaultRow(0, this->currentIndex());
+        }
+    });
+    addAction(m_insertInsideAction);
+
 }
 
 void JsonView::autoResize()

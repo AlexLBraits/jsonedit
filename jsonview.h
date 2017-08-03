@@ -17,6 +17,8 @@ private:
     QAction* m_undoAction;
     QAction* m_redoAction;
     QAction* m_removeAction;
+    QAction* m_insertAction;
+    QAction* m_insertInsideAction;
 };
 
 #endif // JSONVIEW_H

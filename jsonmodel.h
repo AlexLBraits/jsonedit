@@ -89,6 +89,22 @@ private:
     JsonValue m_key;
     JsonValue m_value;
 };
+///
+/// \brief The InsertCommand class - команда вставки дефолтного ряда
+///
+class InsertCommand : public JsonUndoCommand
+{
+public:
+    InsertCommand(JsonModel* model,
+                  const std::string& pointer,
+                  int position);
+
+    void redo() override;
+    void undo() override;
+
+private:
+    size_t m_pos;
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
@@ -99,6 +115,7 @@ class JsonModel : public QAbstractItemModel
     friend class SetKeyCommand;
     friend class SetValueCommand;
     friend class RemoveCommand;
+    friend class InsertCommand;
 public:
     JsonModel(QObject *parent = Q_NULLPTR);
     JsonModel(const JsonValue& jsonDocument);
@@ -127,6 +144,7 @@ public:
                  int role = Qt::EditRole) override;
     bool insertRows(int position, int rows,
                     const QModelIndex& parent = QModelIndex()) override;
+    bool insertDefaultRow(int position, const QModelIndex& parent);
     bool removeRows(int position, int rows,
                     const QModelIndex& parent = QModelIndex()) override;
 
