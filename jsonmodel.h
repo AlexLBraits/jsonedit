@@ -8,6 +8,16 @@
 
 class JsonModel;
 
+////////////////////////////////////////////////////////////////////////////////
+///
+/// Команрды редактирования JsonModel
+/// Нужны для обеспечения механизма Undo-Redo
+///
+
+///
+/// \brief The JsonUndoCommand class - базовый класс для команд редактирования
+/// json-модели
+///
 class JsonUndoCommand : public QUndoCommand
 {
 public:
@@ -19,7 +29,31 @@ protected:
     JsonModel* m_model;
     std::string m_pointer;
 };
+///
+/// \brief The SetKeyCommand class - команда установки нового значения для
+/// ключа json-объекта
+///
+class SetKeyCommand : public JsonUndoCommand
+{
+public:
+    SetKeyCommand(JsonModel* model,
+                    const std::string& pointer,
+                    int position,
+                    const std::string& oldValue,
+                    const std::string& newValue);
 
+    void redo() override;
+    void undo() override;
+
+private:
+    int m_position;
+    std::string m_oldKey;
+    std::string m_newKey;
+};
+///
+/// \brief The SetValueCommand class - команда установки нового значения для
+/// json-value
+///
 class SetValueCommand : public JsonUndoCommand
 {
 public:
@@ -35,7 +69,9 @@ private:
     JsonValue m_oldValue;
     JsonValue m_newValue;
 };
-
+///
+/// \brief The RemoveCommand class - команда удаления значения по ключу
+///
 class RemoveCommand : public JsonUndoCommand
 {
 public:
@@ -54,9 +90,13 @@ private:
     JsonValue m_value;
 };
 
-
+////////////////////////////////////////////////////////////////////////////////
+///
+/// \brief The JsonModel class
+///
 class JsonModel : public QAbstractItemModel
 {
+    friend class SetKeyCommand;
     friend class SetValueCommand;
     friend class RemoveCommand;
 public:
@@ -71,19 +111,24 @@ public:
 /// интерфейс Model
 public:
     /// R/O model
-    QModelIndex index(int row, int column, const QModelIndex& index) const override;
+    QModelIndex index(int row, int column,
+                      const QModelIndex& index) const override;
     QModelIndex index(const JsonValue& value) const;
     QModelIndex parent(const QModelIndex& index) const override;
     int rowCount(const QModelIndex& index) const override;
     int columnCount(const QModelIndex& index) const override;
     QVariant data(const QModelIndex& index, int role) const override;
-    QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
+    QVariant headerData(int section, Qt::Orientation orientation,
+                        int role) const override;
 
     // Editable model
     Qt::ItemFlags flags(const QModelIndex &index) const override;
-    bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
-//    bool insertRows(int position, int rows, const QModelIndex &parent = QModelIndex()) override;
-    bool removeRows(int position, int rows, const QModelIndex &index = QModelIndex()) override;
+    bool setData(const QModelIndex &index, const QVariant &value,
+                 int role = Qt::EditRole) override;
+    bool insertRows(int position, int rows,
+                    const QModelIndex& parent = QModelIndex()) override;
+    bool removeRows(int position, int rows,
+                    const QModelIndex& parent = QModelIndex()) override;
 
 private:
     const JsonValue *getValue(const QModelIndex &index = QModelIndex()) const;

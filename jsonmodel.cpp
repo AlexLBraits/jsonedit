@@ -2,13 +2,58 @@
 
 JsonUndoCommand::JsonUndoCommand(JsonModel *model, const std::string &pointer)
     : m_model(model),
-    m_pointer(pointer)
+      m_pointer(pointer)
 {
 }
 
 const JsonValue& JsonUndoCommand::target() const
 {
     return m_model->json().evalPointer(m_pointer);
+}
+
+SetKeyCommand::SetKeyCommand(
+    JsonModel* model,
+    const std::string& pointer,
+    int position,
+    const std::string& oldValue,
+    const std::string& newValue
+) : JsonUndoCommand(model, pointer),
+    m_position(position),
+    m_oldKey(oldValue),
+    m_newKey(newValue)
+{
+}
+
+void SetKeyCommand::redo()
+{
+    JsonValue& parent = (JsonValue&)this->target();
+    if(parent.isDummyValue()) return;
+
+    JsonValue saveValue = parent[m_oldKey];
+
+    m_model->beginRemoveRows(m_model->index(parent), m_position, m_position);
+    parent.erase(m_oldKey);
+    m_model->endRemoveRows();
+
+    m_model->beginInsertRows(m_model->index(parent), m_position, m_position);
+    parent.insert(m_position, m_newKey, saveValue);
+    m_model->endInsertRows();
+}
+
+void SetKeyCommand::undo()
+{
+    JsonValue& parent = (JsonValue&)this->target();
+    if(parent.isDummyValue()) return;
+
+    JsonValue saveValue = parent[m_newKey];
+
+    m_model->beginRemoveRows(m_model->index(parent), m_position, m_position);
+    parent.erase(m_newKey);
+    m_model->endRemoveRows();
+
+    m_model->beginInsertRows(m_model->index(parent), m_position, m_position);
+    parent.insert(m_position, m_oldKey, saveValue);
+    m_model->endInsertRows();
 }
 
 SetValueCommand::SetValueCommand(
@@ -25,7 +70,7 @@ SetValueCommand::SetValueCommand(
 void SetValueCommand::redo()
 {
     const JsonValue& obj = target();
-    if(!obj.isEmptyValue())
+    if(!obj.isDummyValue())
     {
         (JsonValue&)obj = m_newValue;
 
@@ -43,7 +88,7 @@ void SetValueCommand::redo()
 void SetValueCommand::undo()
 {
     const JsonValue& obj = target();
-    if(!obj.isEmptyValue())
+    if(!obj.isDummyValue())
     {
         (JsonValue&)obj = m_oldValue;
 
@@ -59,11 +104,11 @@ void SetValueCommand::undo()
 }
 
 RemoveCommand::RemoveCommand(JsonModel *model,
-    const std::string &pointer,
-    int position,
-    const JsonValue &key,
-    const JsonValue &value
-) : JsonUndoCommand(model, pointer),
+                             const std::string &pointer,
+                             int position,
+                             const JsonValue &key,
+                             const JsonValue &value
+                            ) : JsonUndoCommand(model, pointer),
     m_pos(position),
     m_key(key),
     m_value(value)
@@ -73,7 +118,7 @@ RemoveCommand::RemoveCommand(JsonModel *model,
 void RemoveCommand::redo()
 {
     const JsonValue& obj = target();
-    if(!obj.isEmptyValue())
+    if(!obj.isDummyValue())
     {
         QModelIndex index = m_model->index(obj);
         m_model->beginRemoveRows(index, m_pos, m_pos);
@@ -87,7 +132,7 @@ void RemoveCommand::redo()
 void RemoveCommand::undo()
 {
     const JsonValue& obj = target();
-    if(!obj.isEmptyValue())
+    if(!obj.isDummyValue())
     {
         QModelIndex index = m_model->index(obj);
         m_model->beginInsertRows(index, m_pos, m_pos);
@@ -143,15 +188,21 @@ JsonModel::JsonModel(const char* jsonFileName)
 QModelIndex JsonModel::index(int row, int column, const QModelIndex& parent) const
 {
     if (!hasIndex(row, column, parent)) return QModelIndex();
-    const JsonValue* v = getValue(parent);
-    return QAbstractItemModel::createIndex(row, column, (void*)&(v->at(row)));
+
+    const JsonValue* parentItem = getValue(parent);
+    const JsonValue& childItem = parentItem->at(row);
+
+    if(childItem.isDummyValue())
+        return QModelIndex();
+    else
+        return QAbstractItemModel::createIndex(row, column, (void*)&childItem);
 }
 
 QModelIndex JsonModel::index(const JsonValue& value) const
 {
     if(value.root() != &m_jsonDocument) return QModelIndex();
     if(&value == &m_jsonDocument)  return QModelIndex();
-    return QAbstractItemModel::createIndex(value.pos(), 0, (void*)&(value));
+    return createIndex(value.pos(), 0, (void*)&value);
 }
 
 QModelIndex JsonModel::parent(const QModelIndex& index) const
@@ -159,11 +210,12 @@ QModelIndex JsonModel::parent(const QModelIndex& index) const
     if (!index.isValid()) return QModelIndex();
 
     const JsonValue* childItem = getValue(index);
-
     const JsonValue* parentItem = childItem->parent();
+
     if (parentItem == 0) return QModelIndex();
     if (parentItem == &m_jsonDocument) return QModelIndex();
-    return QAbstractItemModel::createIndex(parentItem->pos(), 0, (void*)parentItem);
+
+    return createIndex(parentItem->pos(), 0, (void*)parentItem);
 }
 
 int JsonModel::rowCount(const QModelIndex& index) const
@@ -238,20 +290,34 @@ Qt::ItemFlags JsonModel::flags(const QModelIndex &index) const
 
     JsonValue& value = (JsonValue&)*getValue(index);
     Qt::ItemFlags flags = QAbstractItemModel::flags(index);
+
     switch(index.column())
     {
+    case JSON_MODEL_COLUMN_KEY:
+    {
+        JsonValue& parent = (JsonValue&)*getValue(this->parent(index));
+        if(parent.type() == JsonValue::Type::OBJECT)
+        {
+            flags |= Qt::ItemIsEditable;
+        }
+    }
+    break;
+
     case JSON_MODEL_COLUMN_VALUE:
         switch(value.type())
         {
         case JsonValue::Type::OBJECT:
         case JsonValue::Type::ARRAY:
-            return flags;
+            break;
         default:
-            return flags | Qt::ItemIsEditable;
+            flags |= Qt::ItemIsEditable;
+            break;
         }
     default:
-        return flags;
+        break;
     }
+
+    return flags;
 }
 
 bool JsonModel::setData(const QModelIndex &index, const QVariant &value, int role)
@@ -259,55 +325,83 @@ bool JsonModel::setData(const QModelIndex &index, const QVariant &value, int rol
     if (role != Qt::EditRole) return false;
 
     JsonValue& oldValue = (JsonValue&)*getValue(index);
-    QString key = QString::fromStdString(oldValue.key().asString());
     JsonValue newValue = JsonValue(value.toString().toStdString().c_str(), 0);
 
-    switch(oldValue.type())
+    switch(index.column())
     {
-    case JsonValue::Type::UNDEFINED:
+    case JSON_MODEL_COLUMN_KEY:
+        m_undoStack.push(
+            new SetKeyCommand(
+                this,
+                oldValue.parent()->getPointer(),
+                oldValue.pos(),
+                oldValue.key().asString(),
+                newValue.asString()
+            )
+        );
         break;
-    case JsonValue::Type::BOOLEAN:
-        newValue = newValue.asBoolean();
+
+    case JSON_MODEL_COLUMN_VALUE:
+        switch(oldValue.type())
+        {
+        case JsonValue::Type::UNDEFINED:
+            break;
+        case JsonValue::Type::BOOLEAN:
+            newValue = newValue.asBoolean();
+            break;
+        case JsonValue::Type::NUMBER:
+            newValue = newValue.asNumber();
+            break;
+        case JsonValue::Type::INTEGER:
+            newValue = newValue.asInt();
+            break;
+        case JsonValue::Type::STRING:
+            newValue = newValue.asString();
+            break;
+        default:
+            break;
+        }
+
+        m_undoStack.push(
+            new SetValueCommand(
+                this,
+                oldValue.getPointer(),
+                oldValue,
+                newValue
+            )
+        );
         break;
-    case JsonValue::Type::NUMBER:
-        newValue = newValue.asNumber();
-        break;
-    case JsonValue::Type::INTEGER:
-        newValue = newValue.asInt();
-        break;
-    case JsonValue::Type::STRING:
-        newValue = newValue.asString();
-        break;
+
     default:
         break;
     }
 
-    m_undoStack.push(
-        new SetValueCommand(
-            this,
-            oldValue.getPointer(),
-            oldValue,
-            newValue
-        )
-    );
-
     return true;
 }
 
-bool JsonModel::removeRows(int position, int rows, const QModelIndex &index)
+bool JsonModel::insertRows(int position, int rows, const QModelIndex& parent)
+{
+    (void)(position);
+    (void)(rows);
+    (void)(parent);
+
+    return false;
+}
+
+bool JsonModel::removeRows(int position, int rows, const QModelIndex& parent)
 {
     (void)(rows);
 
-    JsonValue* parentItem = (JsonValue*)getValue(index);
-    const JsonValue& item = parentItem->at(position);
+    const JsonValue* parentItem = getValue(parent);
+    const JsonValue& childItem = parentItem->at(position);
 
     m_undoStack.push(
         new RemoveCommand(
             this,
             parentItem->getPointer(),
             position,
-            item.key(),
-            item
+            childItem.key(),
+            childItem
         )
     );
 
@@ -316,7 +410,7 @@ bool JsonModel::removeRows(int position, int rows, const QModelIndex &index)
 
 const JsonValue* JsonModel::getValue(const QModelIndex& index) const
 {
-    return index.isValid() ?
+    return index.isValid() && index.internalPointer() ?
            (JsonValue*)(index.internalPointer()) :
            &m_jsonDocument;
 }
