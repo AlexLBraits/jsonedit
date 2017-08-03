@@ -331,16 +331,26 @@ bool JsonModel::setData(const QModelIndex &index, const QVariant &value, int rol
     switch(index.column())
     {
     case JSON_MODEL_COLUMN_KEY:
+    {
+        ///
+        /// переименование ключа у члена объекта
+        ///
+        const JsonValue* parentValue = oldValue.parent();
+        ///
+        /// если член с ключом newValue уже есть в объекте, то уходим
+        ///
+        if(parentValue->hasKey(newValue.asString())) return false;
         m_undoStack.push(
             new SetKeyCommand(
                 this,
-                oldValue.parent()->getPointer(),
+                parentValue->getPointer(),
                 oldValue.pos(),
                 oldValue.key().asString(),
                 newValue.asString()
             )
         );
-        break;
+    }
+    break;
 
     case JSON_MODEL_COLUMN_VALUE:
         switch(oldValue.type())
