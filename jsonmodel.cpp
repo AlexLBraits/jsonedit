@@ -28,6 +28,7 @@ void SetKeyCommand::redo()
 {
     JsonValue& parent = (JsonValue&)this->target();
     if(parent.isDummyValue()) return;
+    if(parent.hasKey(m_newKey)) return;
 
     JsonValue saveValue = parent[m_oldKey];
 
