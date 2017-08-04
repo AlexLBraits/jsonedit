@@ -8,7 +8,8 @@ JsonView::JsonView(QWidget *parent)
     connect(this, SIGNAL(collapsed(QModelIndex)), this, SLOT(autoResize()));
 
     setEditTriggers(
-        QAbstractItemView::EditKeyPressed
+        QAbstractItemView::EditKeyPressed |
+        QAbstractItemView::SelectedClicked
     );
     setSelectionBehavior (QAbstractItemView::SelectItems);
 
