@@ -1,19 +1,27 @@
 #include <QApplication>
-#include <QFont>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
-#include <jsonmodel.h>
-#include <jsonview.h>
-
+#include "mainwindow.h"
 
 int main(int argc, char* argv[])
 {
 	QApplication app(argc, argv);
+    QCoreApplication::setOrganizationName("17Bullets");
+    QCoreApplication::setApplicationName("JsonEdit");
+    QCoreApplication::setApplicationVersion(QT_VERSION_STR);
 
-    JsonModel model(argv[1]);
+    QCommandLineParser parser;
+    parser.setApplicationDescription(QCoreApplication::applicationName());
+    parser.addHelpOption();
+    parser.addVersionOption();
+    parser.addPositionalArgument("file", "The file to open.");
+    parser.process(app);
 
-    JsonView win;
-    win.setModel(&model);
-    win.show();
+    MainWindow mainWin;
+    if (!parser.positionalArguments().isEmpty())
+        mainWin.loadFile(parser.positionalArguments().first());
+    mainWin.show();
 
 	return app.exec();
 }

@@ -2,7 +2,7 @@
 #include <QBrush>
 #include <QPalette>
 
-JsonUndoCommand::JsonUndoCommand(JsonModel *model, const std::string &pointer)
+JsonUndoCommand::JsonUndoCommand(JsonDocumentAndModel *model, const std::string &pointer)
     : m_model(model),
       m_pointer(pointer)
 {
@@ -14,7 +14,7 @@ const JsonValue& JsonUndoCommand::target() const
 }
 
 SetKeyCommand::SetKeyCommand(
-    JsonModel* model,
+    JsonDocumentAndModel* model,
     const std::string& pointer,
     int position,
     const std::string& oldValue,
@@ -60,7 +60,7 @@ void SetKeyCommand::undo()
 }
 
 SetValueCommand::SetValueCommand(
-    JsonModel* model,
+    JsonDocumentAndModel* model,
     const std::string& pointer,
     const JsonValue& oldValue,
     const JsonValue& newValue
@@ -123,7 +123,7 @@ void SetValueCommand::undo()
 }
 
 RemoveCommand::RemoveCommand(
-    JsonModel *model,
+    JsonDocumentAndModel *model,
     const std::string &pointer,
     int position,
     const JsonValue &key,
@@ -177,7 +177,7 @@ void RemoveCommand::undo()
 }
 
 InsertCommand::InsertCommand(
-    JsonModel *model,
+    JsonDocumentAndModel *model,
     const std::string &pointer,
     int position)
     : JsonUndoCommand(model, pointer),
@@ -236,27 +236,82 @@ void InsertCommand::undo()
 
 const QStringList g_columnHeaders = {"Key", "Type", "Value"};
 
-JsonModel::JsonModel(QObject *parent)
+JsonDocumentAndModel::JsonDocumentAndModel(QObject *parent)
     : QAbstractItemModel(parent)
 {
-    m_jsonDocument = parse_string("{\"A\":0}");
+    m_jsonDocument = JsonValue(JsonValue::Type::OBJECT);
+
+    connect(
+        &m_undoStack,
+        &QUndoStack::canUndoChanged,
+        [this](bool canUndo) {
+        if(canUndo)
+            emit contentsChanged();
+    });
 }
 
-JsonModel::JsonModel(const JsonValue& jsonDocument)
+JsonDocumentAndModel::JsonDocumentAndModel(const JsonValue& jsonDocument)
+    : JsonDocumentAndModel()
 {
     m_jsonDocument = jsonDocument;
 }
 
-JsonModel::JsonModel(const char* jsonFileName)
+JsonDocumentAndModel::JsonDocumentAndModel(const std::string& jsonSource)
+    : JsonDocumentAndModel()
+{
+    m_jsonDocument = parse_string(jsonSource.c_str());
+}
+
+JsonDocumentAndModel::JsonDocumentAndModel(const char* jsonFileName)
+    : JsonDocumentAndModel()
 {
     m_jsonDocument = parse_file(jsonFileName);
+}
+
+const JsonValue &JsonDocumentAndModel::json()
+{
+    return m_jsonDocument;
+}
+
+QUndoStack *JsonDocumentAndModel::undoStack()
+{
+    return &m_undoStack;
+}
+
+void JsonDocumentAndModel::undo()
+{
+    m_undoStack.undo();
+}
+
+void JsonDocumentAndModel::redo()
+{
+    m_undoStack.redo();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+///
+/// интерфейс Document
+///
+void JsonDocumentAndModel::setModified(bool m)
+{
+
+}
+
+bool JsonDocumentAndModel::isModified()
+{
+    return m_undoStack.canUndo();
+}
+
+QString JsonDocumentAndModel::toPlainText() const
+{
+    return QString::fromStdString(stringify(m_jsonDocument));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 ///
 /// интерфейс Model
 ///
-QModelIndex JsonModel::index(int row, int column, const QModelIndex& parent) const
+QModelIndex JsonDocumentAndModel::index(int row, int column, const QModelIndex& parent) const
 {
     if (!hasIndex(row, column, parent)) return QModelIndex();
 
@@ -269,14 +324,19 @@ QModelIndex JsonModel::index(int row, int column, const QModelIndex& parent) con
         return QAbstractItemModel::createIndex(row, column, (void*)&childItem);
 }
 
-QModelIndex JsonModel::index(const JsonValue& value) const
+QModelIndex JsonDocumentAndModel::index(const JsonValue& value) const
 {
     if(value.root() != &m_jsonDocument) return QModelIndex();
     if(&value == &m_jsonDocument)  return QModelIndex();
     return createIndex(value.pos(), 0, (void*)&value);
 }
 
-QModelIndex JsonModel::parent(const QModelIndex& index) const
+bool JsonDocumentAndModel::itemIsContainer(const QModelIndex &index) const
+{
+    return getValue(index)->isObject() || getValue(index)->isArray();
+}
+
+QModelIndex JsonDocumentAndModel::parent(const QModelIndex& index) const
 {
     if (!index.isValid()) return QModelIndex();
 
@@ -289,20 +349,20 @@ QModelIndex JsonModel::parent(const QModelIndex& index) const
     return createIndex(parentItem->pos(), 0, (void*)parentItem);
 }
 
-int JsonModel::rowCount(const QModelIndex& index) const
+int JsonDocumentAndModel::rowCount(const QModelIndex& index) const
 {
     if (index.column() > 0) return 0;
     const JsonValue* v = getValue(index);
     return v->size();
 }
 
-int JsonModel::columnCount(const QModelIndex& index) const
+int JsonDocumentAndModel::columnCount(const QModelIndex& index) const
 {
     (void)(index);
     return g_columnHeaders.size();
 }
 
-QVariant JsonModel::data(const QModelIndex &index, int role) const
+QVariant JsonDocumentAndModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid()) return QVariant();
 
@@ -318,8 +378,9 @@ QVariant JsonModel::data(const QModelIndex &index, int role) const
             switch(v->type())
             {
             case JsonValue::Type::OBJECT:
+                return QString("object{%1}").arg(v->size());
             case JsonValue::Type::ARRAY:
-                return QVariant(QString::fromStdString(v->asString()));
+                return QString("array[%1]").arg(v->size());
             case JsonValue::Type::STRING:
                 return QVariant("string");
             case JsonValue::Type::NUMBER:
@@ -354,7 +415,7 @@ QVariant JsonModel::data(const QModelIndex &index, int role) const
     }
 }
 
-QVariant JsonModel::headerData(int section, Qt::Orientation orientation, int role) const
+QVariant JsonDocumentAndModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (orientation == Qt::Horizontal && role == Qt::DisplayRole)
         return g_columnHeaders[section];
@@ -362,7 +423,7 @@ QVariant JsonModel::headerData(int section, Qt::Orientation orientation, int rol
     return QVariant();
 }
 
-Qt::ItemFlags JsonModel::flags(const QModelIndex &index) const
+Qt::ItemFlags JsonDocumentAndModel::flags(const QModelIndex &index) const
 {
     if (!index.isValid()) return 0;
 
@@ -398,8 +459,8 @@ Qt::ItemFlags JsonModel::flags(const QModelIndex &index) const
     return flags;
 }
 
-bool JsonModel::setData(const QModelIndex &index, const QVariant &value,
-                        int role)
+bool JsonDocumentAndModel::setData(const QModelIndex &index, const QVariant &value,
+                                   int role)
 {
     if (role != Qt::EditRole) return false;
 
@@ -471,7 +532,7 @@ bool JsonModel::setData(const QModelIndex &index, const QVariant &value,
     return true;
 }
 
-bool JsonModel::insertRows(int position, int rows, const QModelIndex& parent)
+bool JsonDocumentAndModel::insertRows(int position, int rows, const QModelIndex& parent)
 {
     (void)(position);
     (void)(rows);
@@ -480,7 +541,7 @@ bool JsonModel::insertRows(int position, int rows, const QModelIndex& parent)
     return false;
 }
 
-bool JsonModel::insertDefaultRow(int position, const QModelIndex &parent)
+bool JsonDocumentAndModel::insertDefaultRow(int position, const QModelIndex &parent)
 {
     const JsonValue* parentItem = getValue(parent);
 
@@ -495,7 +556,7 @@ bool JsonModel::insertDefaultRow(int position, const QModelIndex &parent)
     return true;
 }
 
-bool JsonModel::removeRows(int position, int rows, const QModelIndex& parent)
+bool JsonDocumentAndModel::removeRows(int position, int rows, const QModelIndex& parent)
 {
     (void)(rows);
 
@@ -515,7 +576,7 @@ bool JsonModel::removeRows(int position, int rows, const QModelIndex& parent)
     return true;
 }
 
-const JsonValue* JsonModel::getValue(const QModelIndex& index) const
+const JsonValue* JsonDocumentAndModel::getValue(const QModelIndex& index) const
 {
     return index.isValid() && index.internalPointer() ?
            (JsonValue*)(index.internalPointer()) :
